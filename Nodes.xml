@@ -52,6 +52,26 @@
             <Path>namespaceod.html</Path>
             <Subnodes>
              <Node>
+              <Name>ImageScene</Name>
+              <Path>classod_1_1_image_scene.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>ImageScene</Name>
+                <Path>classod_1_1_image_scene.html</Path>
+                <Anchor>ac98fe44210a6bb46a1d1914d1ce7410d</Anchor>
+               </Node>
+               <Node>
+                <Name>cvimage_</Name>
+                <Path>classod_1_1_image_scene.html</Path>
+                <Anchor>ad2c621064f276d2b4f6487dd139548b8</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
+              <Name>Scene</Name>
+              <Path>classod_1_1_scene.html</Path>
+             </Node>
+             <Node>
               <Name>ObjectDetector</Name>
               <Path>classod_1_1_object_detector.html</Path>
               <Subnodes>
@@ -131,11 +151,11 @@
               <Name>ODAlgorithmBase</Name>
               <Path>classod_1_1_o_d_algorithm_base.html</Path>
              </Node>
+             <Node>
+              <Name>ODImageLocalMatchingSimple</Name>
+              <Path>classod_1_1_o_d_image_local_matching_simple.html</Path>
+             </Node>
             </Subnodes>
-           </Node>
-           <Node>
-            <Name>Scene</Name>
-            <Path>class_scene.html</Path>
            </Node>
           </Subnodes>
          </Node>
@@ -154,12 +174,24 @@
              <Node>
               <Name>od::ODAlgorithmBase</Name>
               <Path>classod_1_1_o_d_algorithm_base.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>od::ODImageLocalMatchingSimple</Name>
+                <Path>classod_1_1_o_d_image_local_matching_simple.html</Path>
+               </Node>
+              </Subnodes>
              </Node>
             </Subnodes>
            </Node>
            <Node>
-            <Name>Scene</Name>
-            <Path>class_scene.html</Path>
+            <Name>od::Scene</Name>
+            <Path>classod_1_1_scene.html</Path>
+            <Subnodes>
+             <Node>
+              <Name>od::ImageScene</Name>
+              <Path>classod_1_1_image_scene.html</Path>
+             </Node>
+            </Subnodes>
            </Node>
           </Subnodes>
          </Node>
