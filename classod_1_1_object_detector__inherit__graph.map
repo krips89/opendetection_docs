@@ -1,4 +1,4 @@
 <map id="od::ObjectDetector" name="od::ObjectDetector">
-<area shape="rect" id="node2" href="$classod_1_1_o_d_algorithm_base.html" title="od::ODAlgorithmBase" alt="" coords="23,80,171,107"/>
-<area shape="rect" id="node3" href="$classod_1_1_o_d_image_local_matching_simple.html" title="od::ODImageLocalMatching\lSimple" alt="" coords="5,155,189,197"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_image_local_matching.html" title="ODImageLocalMatching. " alt="" coords="5,80,189,107"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_point_cloud_global_matching.html" title="ODPointCloudGlobalMatching: global feature based object detection in point cloud. ..." alt="" coords="213,80,432,107"/>
 </map>

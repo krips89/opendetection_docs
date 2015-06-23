@@ -1,0 +1,4 @@
+<map id="od::ODImageLocalMatchingDetector" name="od::ODImageLocalMatchingDetector">
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector.html" title="The main detection class; all Detector derives from this. " alt="" coords="40,80,155,107"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_algorithm_base.html" title="The base of all algorithm classes. " alt="" coords="23,5,171,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="od::ODPointCloudGlobalMatchingTrainer" name="od::ODPointCloudGlobalMatchingTrainer">
+<area shape="rect" id="node2" href="$classod_1_1_o_d_trainer.html" title="Maining Trainer class; all trainers derives from this. " alt="" coords="63,80,167,107"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_algorithm_base.html" title="The base of all algorithm classes. " alt="" coords="40,5,188,32"/>
+</map>

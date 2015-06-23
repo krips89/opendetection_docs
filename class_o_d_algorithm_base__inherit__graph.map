@@ -1,0 +1,8 @@
+<map id="ODAlgorithmBase" name="ODAlgorithmBase">
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector.html" title="od::ODDetector" alt="" coords="77,80,192,107"/>
+<area shape="rect" id="node5" href="$classod_1_1_o_d_trainer.html" title="od::ODTrainer" alt="" coords="235,80,339,107"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_image_local_matching_detector.html" title="od::ODImageLocalMatching\lDetector" alt="" coords="5,155,189,197"/>
+<area shape="rect" id="node4" href="$classod_1_1_simple_ransac_detector.html" title="od::SimpleRansacDetector" alt="" coords="8,245,187,272"/>
+<area shape="rect" id="node6" href="$classod_1_1_o_d_image_local_matching_trainer.html" title="od::ODImageLocalMatching\lTrainer" alt="" coords="213,155,397,197"/>
+<area shape="rect" id="node7" href="$classod_1_1_snapshot_corr_trainer.html" title="od::SnapshotCorrTrainer" alt="" coords="223,245,387,272"/>
+</map>

@@ -1,4 +1,11 @@
 <map id="od::ODAlgorithmBase" name="od::ODAlgorithmBase">
-<area shape="rect" id="node3" href="$classod_1_1_o_d_image_local_matching_simple.html" title="od::ODImageLocalMatching\lSimple" alt="" coords="5,155,189,197"/>
-<area shape="rect" id="node2" href="$classod_1_1_object_detector.html" title="od::ObjectDetector" alt="" coords="31,5,163,32"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector.html" title="The main detection class; all Detector derives from this. " alt="" coords="205,113,320,140"/>
+<area shape="rect" id="node7" href="$classod_1_1_o_d_trainer.html" title="Maining Trainer class; all trainers derives from this. " alt="" coords="211,195,315,221"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="388,5,572,46"/>
+<area shape="rect" id="node5" href="$classod_1_1_o_d_point_cloud_global_matching_detector.html" title="ODPointCloudGlobalMatchingDetector. " alt="" coords="371,70,589,111"/>
+<area shape="rect" id="node6" href="$classod_1_1_o_d_point_cloud_global_matching_detector.html" title="od::ODPointCloudGlobalMatching\lDetector\&lt; pcl::PointXYZ \&gt;" alt="" coords="747,102,965,143"/>
+<area shape="rect" id="node4" href="$classod_1_1_simple_ransac_detector.html" title="Simple ransac based 3D object detector; the details will be explained later. " alt="" coords="767,12,945,39"/>
+<area shape="rect" id="node8" href="$classod_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="388,187,572,229"/>
+<area shape="rect" id="node10" href="$classod_1_1_o_d_point_cloud_global_matching_trainer.html" title="ODPointCloudGlobalMatchingTrainer. " alt="" coords="371,253,589,294"/>
+<area shape="rect" id="node9" href="$classod_1_1_snapshot_corr_trainer.html" title="ODImageLocalMatchingTrainer; One of the new algorithm; details will be explained later. " alt="" coords="774,195,938,221"/>
 </map>

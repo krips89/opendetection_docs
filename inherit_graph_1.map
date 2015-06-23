@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classod_1_1_scene.html" title="od::Scene" alt="" coords="6,5,87,32"/>
-<area shape="rect" id="node2" href="$classod_1_1_image_scene.html" title="od::ImageScene" alt="" coords="136,5,253,32"/>
+<area shape="rect" id="node1" href="$classod_1_1_object_detector.html" title="This is the main class for object detection and recognition. " alt="" coords="6,31,138,57"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_image_local_matching.html" title="ODImageLocalMatching. " alt="" coords="204,5,388,32"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_point_cloud_global_matching.html" title="ODPointCloudGlobalMatching: global feature based object detection in point cloud. ..." alt="" coords="187,56,405,83"/>
 </map>

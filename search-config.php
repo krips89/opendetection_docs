@@ -16,7 +16,7 @@ $translator = array(
   'search_matches' => "Matches:",
   'search' => "Search",
   'split_bar' => "",
-  'logo' => "Generated on Fri Jun 5 2015 19:54:02 for Open Detection by&#160;\n<a href=\"http://www.doxygen.org/index.html\">\n<img class=\"footer\" src=\"doxygen.png\" alt=\"doxygen\"/></a> 1.8.6 ",
+  'logo' => "Generated on Tue Jun 23 2015 14:35:27 for Open Detection by&#160;\n<a href=\"http://www.doxygen.org/index.html\">\n<img class=\"footer\" src=\"doxygen.png\" alt=\"doxygen\"/></a> 1.8.6 ",
 );
 
 </script>

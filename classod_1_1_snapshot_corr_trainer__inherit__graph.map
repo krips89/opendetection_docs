@@ -1,0 +1,5 @@
+<map id="od::SnapshotCorrTrainer" name="od::SnapshotCorrTrainer">
+<area shape="rect" id="node2" href="$classod_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="5,155,189,197"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_trainer.html" title="Maining Trainer class; all trainers derives from this. " alt="" coords="45,80,149,107"/>
+<area shape="rect" id="node4" href="$classod_1_1_o_d_algorithm_base.html" title="The base of all algorithm classes. " alt="" coords="23,5,171,32"/>
+</map>

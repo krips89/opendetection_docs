@@ -1,3 +1,5 @@
 <map id="od::ODAlgorithmBase" name="od::ODAlgorithmBase">
-<area shape="rect" id="node2" href="$classod_1_1_object_detector.html" title="od::ObjectDetector" alt="" coords="13,5,144,32"/>
+<area shape="rect" id="node2" href="$classod_1_1_object_detector.html" title="This is the main class for object detection and recognition. " alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node3" href="$classod_1_1_detector.html" title="od::Detector" alt="" coords="161,5,255,32"/>
+<area shape="rect" id="node4" href="$classod_1_1_trainer.html" title="od::Trainer" alt="" coords="279,5,363,32"/>
 </map>

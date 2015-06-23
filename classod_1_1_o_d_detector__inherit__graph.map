@@ -1,0 +1,7 @@
+<map id="od::ODDetector" name="od::ODDetector">
+<area shape="rect" id="node3" href="$classod_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="388,5,572,46"/>
+<area shape="rect" id="node5" href="$classod_1_1_o_d_point_cloud_global_matching_detector.html" title="ODPointCloudGlobalMatchingDetector. " alt="" coords="371,70,589,111"/>
+<area shape="rect" id="node6" href="$classod_1_1_o_d_point_cloud_global_matching_detector.html" title="od::ODPointCloudGlobalMatching\lDetector\&lt; pcl::PointXYZ \&gt;" alt="" coords="747,102,965,143"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_algorithm_base.html" title="The base of all algorithm classes. " alt="" coords="5,77,155,104"/>
+<area shape="rect" id="node4" href="$classod_1_1_simple_ransac_detector.html" title="Simple ransac based 3D object detector; the details will be explained later. " alt="" coords="767,12,945,39"/>
+</map>
