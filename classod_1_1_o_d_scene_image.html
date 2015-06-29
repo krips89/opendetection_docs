@@ -105,6 +105,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a7791217a9edd14d6357aa960b746bf84"><td class="memItemLeft" align="right" valign="top">std::vector&lt; cv::KeyPoint &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_scene_image.html#a7791217a9edd14d6357aa960b746bf84">getKeypoints</a> () const </td></tr>
+<tr class="separator:a7791217a9edd14d6357aa960b746bf84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3df974cb1a8d9f6370ffdb8df2b74f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_scene_image.html#aa3df974cb1a8d9f6370ffdb8df2b74f2">setKeypoints</a> (std::vector&lt; cv::KeyPoint &gt; const &amp;<a class="el" href="classod_1_1_o_d_scene_image.html#ae94ce2399a5e642898701407dc34e702">keypoints_</a>)</td></tr>
+<tr class="separator:aa3df974cb1a8d9f6370ffdb8df2b74f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5aa45fe61eb97c6fc3a284e5c269f54"><td class="memItemLeft" align="right" valign="top">cv::Mat const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_scene_image.html#af5aa45fe61eb97c6fc3a284e5c269f54">getDescriptors</a> () const </td></tr>
+<tr class="separator:af5aa45fe61eb97c6fc3a284e5c269f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1693cea1cac21e1b42319b78ac3308a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_scene_image.html#a1693cea1cac21e1b42319b78ac3308a8">setDescriptors</a> (cv::Mat const &amp;<a class="el" href="classod_1_1_o_d_scene_image.html#a0b41a7b96f58988bffdc84b18ee81485">descriptors_</a>)</td></tr>
+<tr class="separator:a1693cea1cac21e1b42319b78ac3308a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b92b1ba4845a6b28e22347caf275622"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_scene_image.html#a1b92b1ba4845a6b28e22347caf275622">ODSceneImage</a> (cv::Mat const &amp;cvimage)</td></tr>
 <tr class="separator:a1b92b1ba4845a6b28e22347caf275622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d7593bd66935c149c617a38657d74cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_scene_image.html#a5d7593bd66935c149c617a38657d74cd">ODSceneImage</a> (std::string const &amp;path)</td></tr>
@@ -118,6 +126,12 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a07918bd1e17114fa064917b470239e7e"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_scene_image.html#a07918bd1e17114fa064917b470239e7e">cvimage_</a></td></tr>
 <tr class="separator:a07918bd1e17114fa064917b470239e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae94ce2399a5e642898701407dc34e702"><td class="memItemLeft" align="right" valign="top">std::vector&lt; cv::KeyPoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_scene_image.html#ae94ce2399a5e642898701407dc34e702">keypoints_</a></td></tr>
+<tr class="separator:ae94ce2399a5e642898701407dc34e702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b41a7b96f58988bffdc84b18ee81485"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_scene_image.html#a0b41a7b96f58988bffdc84b18ee81485">descriptors_</a></td></tr>
+<tr class="separator:a0b41a7b96f58988bffdc84b18ee81485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b51869592326113c83be20e50f9516f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_scene_image.html#a7b51869592326113c83be20e50f9516f">is_trained_</a></td></tr>
+<tr class="separator:a7b51869592326113c83be20e50f9516f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Image scene. </p>
@@ -147,9 +161,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00036">36</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00057">57</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_scene_8h_source.html#l00057">cvimage_</a>.</p>
+<p>References <a class="el" href="_o_d_scene_8h_source.html#l00078">cvimage_</a>.</p>
 
 </div>
 </div>
@@ -175,9 +189,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00041">41</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00062">62</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_scene_8h_source.html#l00057">cvimage_</a>.</p>
+<p>References <a class="el" href="_o_d_scene_8h_source.html#l00078">cvimage_</a>.</p>
 
 </div>
 </div>
@@ -203,9 +217,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00046">46</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00067">67</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_scene_8h_source.html#l00057">cvimage_</a>.</p>
+<p>References <a class="el" href="_o_d_scene_8h_source.html#l00078">cvimage_</a>.</p>
 
 </div>
 </div>
@@ -232,9 +246,119 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classod_1_1_o_d_scene.html">od::ODScene</a>.</p>
 
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00072">72</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+
+<p>References <a class="el" href="_o_d_scene_8h_source.html#l00078">cvimage_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5aa45fe61eb97c6fc3a284e5c269f54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat const&amp; od::ODSceneImage::getDescriptors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00046">46</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+
+<p>References <a class="el" href="_o_d_scene_8h_source.html#l00081">descriptors_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7791217a9edd14d6357aa960b746bf84"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;cv::KeyPoint&gt; const&amp; od::ODSceneImage::getKeypoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00036">36</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+
+<p>References <a class="el" href="_o_d_scene_8h_source.html#l00080">keypoints_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1693cea1cac21e1b42319b78ac3308a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void od::ODSceneImage::setDescriptors </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat const &amp;&#160;</td>
+          <td class="paramname"><em>descriptors_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00051">51</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_scene_8h_source.html#l00057">cvimage_</a>.</p>
+<p>References <a class="el" href="_o_d_scene_8h_source.html#l00081">descriptors_</a>, and <a class="el" href="_o_d_scene_8h_source.html#l00082">is_trained_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3df974cb1a8d9f6370ffdb8df2b74f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void od::ODSceneImage::setKeypoints </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; cv::KeyPoint &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>keypoints_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00041">41</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+
+<p>References <a class="el" href="_o_d_scene_8h_source.html#l00080">keypoints_</a>.</p>
 
 </div>
 </div>
@@ -257,9 +381,81 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00057">57</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00078">78</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_scene_8h_source.html#l00046">getCVImage()</a>, <a class="el" href="_o_d_scene_8h_source.html#l00051">getData()</a>, and <a class="el" href="_o_d_scene_8h_source.html#l00036">ODSceneImage()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_scene_8h_source.html#l00067">getCVImage()</a>, <a class="el" href="_o_d_scene_8h_source.html#l00072">getData()</a>, and <a class="el" href="_o_d_scene_8h_source.html#l00057">ODSceneImage()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b41a7b96f58988bffdc84b18ee81485"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat od::ODSceneImage::descriptors_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00081">81</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_o_d_scene_8h_source.html#l00046">getDescriptors()</a>, and <a class="el" href="_o_d_scene_8h_source.html#l00051">setDescriptors()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b51869592326113c83be20e50f9516f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool od::ODSceneImage::is_trained_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00082">82</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_o_d_scene_8h_source.html#l00051">setDescriptors()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae94ce2399a5e642898701407dc34e702"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;cv::KeyPoint&gt; od::ODSceneImage::keypoints_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_o_d_scene_8h_source.html#l00080">80</a> of file <a class="el" href="_o_d_scene_8h_source.html">ODScene.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_o_d_scene_8h_source.html#l00036">getKeypoints()</a>, and <a class="el" href="_o_d_scene_8h_source.html#l00041">setKeypoints()</a>.</p>
 
 </div>
 </div>
@@ -272,7 +468,7 @@ Protected Attributes</h2></td></tr>
 <p>
 This is a footer.
 </p>
-<p>Pages generated on Tue Jun 23 2015 14:35:27</p>
+<p>Pages generated on Mon Jun 29 2015 20:50:11</p>
 </div> <!-- #footer -->
 </body>
 </html>

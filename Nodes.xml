@@ -28,6 +28,10 @@
             <Path>namespacemembers.html</Path>
            </Node>
            <Node>
+            <Name>Functions</Name>
+            <Path>namespacemembers_func.html</Path>
+           </Node>
+           <Node>
             <Name>Enumerations</Name>
             <Path>namespacemembers_enum.html</Path>
            </Node>
@@ -408,9 +412,44 @@
                 <Anchor>a6e2d9f61c8d79907a1da0fc6d7b6f95a</Anchor>
                </Node>
                <Node>
+                <Name>getDescriptors</Name>
+                <Path>classod_1_1_o_d_scene_image.html</Path>
+                <Anchor>af5aa45fe61eb97c6fc3a284e5c269f54</Anchor>
+               </Node>
+               <Node>
+                <Name>getKeypoints</Name>
+                <Path>classod_1_1_o_d_scene_image.html</Path>
+                <Anchor>a7791217a9edd14d6357aa960b746bf84</Anchor>
+               </Node>
+               <Node>
+                <Name>setDescriptors</Name>
+                <Path>classod_1_1_o_d_scene_image.html</Path>
+                <Anchor>a1693cea1cac21e1b42319b78ac3308a8</Anchor>
+               </Node>
+               <Node>
+                <Name>setKeypoints</Name>
+                <Path>classod_1_1_o_d_scene_image.html</Path>
+                <Anchor>aa3df974cb1a8d9f6370ffdb8df2b74f2</Anchor>
+               </Node>
+               <Node>
                 <Name>cvimage_</Name>
                 <Path>classod_1_1_o_d_scene_image.html</Path>
                 <Anchor>a07918bd1e17114fa064917b470239e7e</Anchor>
+               </Node>
+               <Node>
+                <Name>descriptors_</Name>
+                <Path>classod_1_1_o_d_scene_image.html</Path>
+                <Anchor>a0b41a7b96f58988bffdc84b18ee81485</Anchor>
+               </Node>
+               <Node>
+                <Name>is_trained_</Name>
+                <Path>classod_1_1_o_d_scene_image.html</Path>
+                <Anchor>a7b51869592326113c83be20e50f9516f</Anchor>
+               </Node>
+               <Node>
+                <Name>keypoints_</Name>
+                <Path>classod_1_1_o_d_scene_image.html</Path>
+                <Anchor>ae94ce2399a5e642898701407dc34e702</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -512,6 +551,74 @@
               </Subnodes>
              </Node>
              <Node>
+              <Name>ODFeatureDetector2D</Name>
+              <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>FeatureType</Name>
+                <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                <Anchor>ab58494d9e5f9bfeac6ced69a7bdf1dae</Anchor>
+                <Subnodes>
+                 <Node>
+                  <Name>SIFT</Name>
+                  <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                  <Anchor>ab58494d9e5f9bfeac6ced69a7bdf1daea375c623c9088bad7d887f06823015af5</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>SURF</Name>
+                  <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                  <Anchor>ab58494d9e5f9bfeac6ced69a7bdf1daeac746160ec809f7e2d167f93ed1e0072e</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>ORB</Name>
+                  <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                  <Anchor>ab58494d9e5f9bfeac6ced69a7bdf1daea32aecaa6de40c8af29f7b75713fb6902</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>SIFT_GPU</Name>
+                  <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                  <Anchor>ab58494d9e5f9bfeac6ced69a7bdf1daea825092bcdf24dd808727edc2cca1cc30</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>ORB_GPU</Name>
+                  <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                  <Anchor>ab58494d9e5f9bfeac6ced69a7bdf1daeab41a6e27d84e2e1ec483b2ab121e539f</Anchor>
+                 </Node>
+                </Subnodes>
+               </Node>
+               <Node>
+                <Name>ODFeatureDetector2D</Name>
+                <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                <Anchor>ad0f1329f2d849f4cf0c72ebc5ac66943</Anchor>
+               </Node>
+               <Node>
+                <Name>ODFeatureDetector2D</Name>
+                <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                <Anchor>aeff93d7849410c1198d6ca9ab1d13053</Anchor>
+               </Node>
+               <Node>
+                <Name>computeKeypointsAndDescriptors</Name>
+                <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                <Anchor>ae4686c3cf2897bb994b5fd7efc351399</Anchor>
+               </Node>
+               <Node>
+                <Name>findSiftGPUDescriptors</Name>
+                <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                <Anchor>a7dbc62c533a2a0fb55fb07eda50a3766</Anchor>
+               </Node>
+               <Node>
+                <Name>findSiftGPUDescriptors</Name>
+                <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                <Anchor>ab846c1fab5ac2f240b6d651a67dad1f4</Anchor>
+               </Node>
+               <Node>
+                <Name>mode_</Name>
+                <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                <Anchor>a1a2b2e7c300417fb0e0b97ea1b635ff8</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
               <Name>ODFrameGenerator</Name>
               <Path>classod_1_1_o_d_frame_generator.html</Path>
               <Subnodes>
@@ -563,155 +670,186 @@
               </Subnodes>
              </Node>
              <Node>
-              <Name>ODFrameGenerator&lt; SceneT, FILE_LIST &gt;</Name>
-              <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_f_i_l_e___l_i_s_t_01_4.html</Path>
+              <Name>ODFrameGenerator&lt; SceneT, GENERATOR_TYPE_FILE_LIST &gt;</Name>
+              <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___f_i_l_e___l_i_s_t_01_4.html</Path>
               <Subnodes>
                <Node>
                 <Name>ODFrameGenerator</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_f_i_l_e___l_i_s_t_01_4.html</Path>
-                <Anchor>a5548c82f6e51cc56ad6289cfa4166faa</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___f_i_l_e___l_i_s_t_01_4.html</Path>
+                <Anchor>acd740330ac5cfdc2b477d76e5436d4e3</Anchor>
                </Node>
                <Node>
                 <Name>getNextFrame</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_f_i_l_e___l_i_s_t_01_4.html</Path>
-                <Anchor>af9e152b2075dc73eeffff00ffd11ea05</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___f_i_l_e___l_i_s_t_01_4.html</Path>
+                <Anchor>afb5a852e8425962685a29b507a5e4674</Anchor>
                </Node>
                <Node>
                 <Name>isValid</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_f_i_l_e___l_i_s_t_01_4.html</Path>
-                <Anchor>a38282be363e07df87d0d48c2f90d7ab4</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___f_i_l_e___l_i_s_t_01_4.html</Path>
+                <Anchor>a3d3536cddbd8da882403369892ddbd0e</Anchor>
                </Node>
                <Node>
                 <Name>curr_image_</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_f_i_l_e___l_i_s_t_01_4.html</Path>
-                <Anchor>a2ae8508b5a8e7689fa91e6e78bb50825</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___f_i_l_e___l_i_s_t_01_4.html</Path>
+                <Anchor>a033de1cecf02b6439fdd341ec5ebdb10</Anchor>
                </Node>
                <Node>
                 <Name>exhausted_</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_f_i_l_e___l_i_s_t_01_4.html</Path>
-                <Anchor>acd6fb6cdb6ec0f0176f66d65de88bd1a</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___f_i_l_e___l_i_s_t_01_4.html</Path>
+                <Anchor>a59539dead67ce5c08bfd37aab5456af9</Anchor>
                </Node>
                <Node>
                 <Name>file_list_</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_f_i_l_e___l_i_s_t_01_4.html</Path>
-                <Anchor>a9ad9d908a88acce7c6e6a74a87176386</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___f_i_l_e___l_i_s_t_01_4.html</Path>
+                <Anchor>a7691737d77ab33171d8c4e124a351d1b</Anchor>
                </Node>
               </Subnodes>
              </Node>
              <Node>
-              <Name>ODFrameGenerator&lt; ODSceneImage, DEVICE &gt;</Name>
-              <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_d_e_v_i_c_e_01_4.html</Path>
+              <Name>ODFrameGenerator&lt; ODSceneImage, GENERATOR_TYPE_DEVICE &gt;</Name>
+              <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___d_e_v_i_c_e_01_4.html</Path>
               <Subnodes>
                <Node>
                 <Name>ODFrameGenerator</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a2362e27e87c2fe95e37d801d6822e21c</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___d_e_v_i_c_e_01_4.html</Path>
+                <Anchor>a046c1b438154ffb3da355e27f63587b4</Anchor>
                </Node>
                <Node>
                 <Name>getNextFrame</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a08e7339a1a813d7d51126195f53b8f98</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___d_e_v_i_c_e_01_4.html</Path>
+                <Anchor>ac3e12c786b2562fe857458597550ffa6</Anchor>
                </Node>
                <Node>
                 <Name>isValid</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a52bbe3ba66be7677da8dfacfa11b9fb2</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___d_e_v_i_c_e_01_4.html</Path>
+                <Anchor>a61e905257964c8c0043ba3155d903edb</Anchor>
                </Node>
                <Node>
                 <Name>input_capture_</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a2ef7cb25e6b70353bb38700bc652e309</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___d_e_v_i_c_e_01_4.html</Path>
+                <Anchor>a2721995c987ac7f80a55b10db8ea413c</Anchor>
                </Node>
               </Subnodes>
              </Node>
              <Node>
-              <Name>ODFrameGenerator&lt; ODScenePointCloud&lt; pcl::PointXYZRGBA &gt;, DEVICE &gt;</Name>
-              <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
+              <Name>ODFrameGenerator&lt; ODScenePointCloud&lt; pcl::PointXYZRGBA &gt;, GENERATOR_TYPE_DEVICE &gt;</Name>
+              <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
               <Subnodes>
                <Node>
                 <Name>PointCloud</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a24c00588745379e76ceb49452c3259ae</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>af934966060bcd17664137754c600695d</Anchor>
                </Node>
                <Node>
                 <Name>PointCloudConstPtr</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>aa8f665963b4ff7755061c3bed3eca416</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>a9334b4be67bc5b8031d8cc9b4f289471</Anchor>
                </Node>
                <Node>
                 <Name>PointCloudPtr</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>ad259db27ff0bc2adde91491394614002</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>a74fecde95d35c14ecfc001ba13c620bc</Anchor>
                </Node>
                <Node>
                 <Name>PointT</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>ab35194def6e68bab9034137a71b8bc53</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>a39ab5529804564aebeadc59f4bc6ff0b</Anchor>
                </Node>
                <Node>
                 <Name>ODFrameGenerator</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a3fb98f8d915b3f76f1259c9009a206c8</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>af6bfdda08221112bb002af8c7acb064e</Anchor>
                </Node>
                <Node>
                 <Name>~ODFrameGenerator</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a4d76aa0128efed7adfe0438f4026c7c2</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>a0cc26c36c976322c2a76fe2355766322</Anchor>
                </Node>
                <Node>
                 <Name>getNextFrame</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>ab6748d531dd985b1ac988f6316507ec9</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>a65f199c61e88426273c97090c66f42ad</Anchor>
                </Node>
                <Node>
                 <Name>isActive</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a90d7e4a0d0f5475690c9d7d90e19dc22</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>a8843c6a1ac229da949c5e9af05b568bd</Anchor>
                </Node>
                <Node>
                 <Name>isValid</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a74a7e3be480add3c8bf4738fd2754bd9</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>ac910a2410e8252028b60fde47d9b3829</Anchor>
                </Node>
                <Node>
                 <Name>onKeyboardEvent</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a5db66938546c5ce4a401baca523ecca8</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>ae9332c32ce68c02fbdc4c18f04c354ad</Anchor>
                </Node>
                <Node>
                 <Name>onNewFrame</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a11c285675ac21673413ff581bb50bb34</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>a3d6c4afd22325e1fa3ebe7264e1a2d3e</Anchor>
                </Node>
                <Node>
                 <Name>snap</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a9f4a4a6efb801a7ed10621f998c69eb9</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>af5be1984980a2da438c47d03a63a93b8</Anchor>
                </Node>
                <Node>
                 <Name>active_</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>af22c76113a618071b70dd1b001f3fbc5</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>aca4e7b12c95fbe1dfa60ae40f95887b7</Anchor>
                </Node>
                <Node>
                 <Name>frame_counter_</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a52a3610a2f4826ffc19de6c9bb88cf68</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>a583d0c4f42539ead883a4e102925d115</Anchor>
                </Node>
                <Node>
                 <Name>grabber_</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>a2998668adc3c95282c054bcfa29d7284</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>a9343f526ad40c1a89aef3adce21498eb</Anchor>
                </Node>
                <Node>
                 <Name>most_recent_frame_</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>afba61d8b341387ff7ffa5193ed7342bf</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>ae8fb3383f3589a7054820d18657a8a2b</Anchor>
                </Node>
                <Node>
                 <Name>mutex_</Name>
-                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
-                <Anchor>af391b169e4a5beffa0741cd0a417b3b7</Anchor>
+                <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
+                <Anchor>a6d2557fa15b85ca47c02a6e381f23509</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
+              <Name>Timer</Name>
+              <Path>classod_1_1_timer.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>getDuration</Name>
+                <Path>classod_1_1_timer.html</Path>
+                <Anchor>aecdb143bfc8129e04f5e6ab7cf0acaae</Anchor>
+               </Node>
+               <Node>
+                <Name>printTime</Name>
+                <Path>classod_1_1_timer.html</Path>
+                <Anchor>a112de997a751febdfe4ce835eed6d946</Anchor>
+               </Node>
+               <Node>
+                <Name>start</Name>
+                <Path>classod_1_1_timer.html</Path>
+                <Anchor>a2d8d200c841dacaca60ae8369c93a41e</Anchor>
+               </Node>
+               <Node>
+                <Name>stop</Name>
+                <Path>classod_1_1_timer.html</Path>
+                <Anchor>af501e008ebaf5a391694cb9a29e172e6</Anchor>
+               </Node>
+               <Node>
+                <Name>duration_</Name>
+                <Path>classod_1_1_timer.html</Path>
+                <Anchor>abb1faad3c4f4d4c8f45686c0d922bfb2</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -885,9 +1023,19 @@
                 <Anchor>a106833639a932c0859adf74460defae0</Anchor>
                </Node>
                <Node>
+                <Name>f_type_default</Name>
+                <Path>classod_1_1_simple_ransac_detector.html</Path>
+                <Anchor>af4e32ae5a99b9190c92d274727851bb0</Anchor>
+               </Node>
+               <Node>
                 <Name>fast_match</Name>
                 <Path>classod_1_1_simple_ransac_detector.html</Path>
                 <Anchor>a1be8ed94e32345e3abe4f904827d2db0</Anchor>
+               </Node>
+               <Node>
+                <Name>featureDetector</Name>
+                <Path>classod_1_1_simple_ransac_detector.html</Path>
+                <Anchor>a18a386fcb85a1be0dbfc5489f6cc85c9</Anchor>
                </Node>
                <Node>
                 <Name>green</Name>
@@ -963,89 +1111,6 @@
                 <Name>yellow</Name>
                 <Path>classod_1_1_simple_ransac_detector.html</Path>
                 <Anchor>a952f4560d208432ff78260a0da499b85</Anchor>
-               </Node>
-              </Subnodes>
-             </Node>
-             <Node>
-              <Name>FrameGenerator</Name>
-              <Path>classod_1_1_frame_generator.html</Path>
-              <Subnodes>
-               <Node>
-                <Name>InputType</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>ac83337ade0b6ea849650e2e48cbb1ce7</Anchor>
-                <Subnodes>
-                 <Node>
-                  <Name>INVALID</Name>
-                  <Path>classod_1_1_frame_generator.html</Path>
-                  <Anchor>ac83337ade0b6ea849650e2e48cbb1ce7aa1546d06a7d0091e6fe3be96cad134eb</Anchor>
-                 </Node>
-                 <Node>
-                  <Name>CAMERA</Name>
-                  <Path>classod_1_1_frame_generator.html</Path>
-                  <Anchor>ac83337ade0b6ea849650e2e48cbb1ce7a3389b0d4f7a5496e05abab65630e3aca</Anchor>
-                 </Node>
-                 <Node>
-                  <Name>VIDEO_FILE</Name>
-                  <Path>classod_1_1_frame_generator.html</Path>
-                  <Anchor>ac83337ade0b6ea849650e2e48cbb1ce7a7f77fcac1cd7c3d677ad20c2bb776a9e</Anchor>
-                 </Node>
-                 <Node>
-                  <Name>IMAGE_LIST</Name>
-                  <Path>classod_1_1_frame_generator.html</Path>
-                  <Anchor>ac83337ade0b6ea849650e2e48cbb1ce7a62c524d7801cb5213ff66dbb45614aeb</Anchor>
-                 </Node>
-                </Subnodes>
-               </Node>
-               <Node>
-                <Name>FrameGenerator</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>a109a8e589e72ee6687cce54ad19319ea</Anchor>
-               </Node>
-               <Node>
-                <Name>getNextFrame</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>aed8110221c4fdbd177d1bc7dac8d7c1c</Anchor>
-               </Node>
-               <Node>
-                <Name>cameraID</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>a9c3a4708f14e4eae979e2cdaa7ffd615</Anchor>
-               </Node>
-               <Node>
-                <Name>curr_image</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>a44438990a49ff8a6e23398207202f352</Anchor>
-               </Node>
-               <Node>
-                <Name>exhausted</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>aeab1774a3d810409140a4c609e0a52ae</Anchor>
-               </Node>
-               <Node>
-                <Name>image_list</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>a7d00f049283f2f968a8f220db95147fc</Anchor>
-               </Node>
-               <Node>
-                <Name>input</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>a56c7ba058d001bba6d7e17bce2d84c44</Anchor>
-               </Node>
-               <Node>
-                <Name>inputCapture</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>a4c7cb2022353e468d2929093a23afded</Anchor>
-               </Node>
-               <Node>
-                <Name>inputType</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>aa492afc099b6a48b38db0bb527bdd364</Anchor>
-               </Node>
-               <Node>
-                <Name>video_read_path</Name>
-                <Path>classod_1_1_frame_generator.html</Path>
-                <Anchor>aaaaf19bf6f1de2c8cf57f37f9d801f4c</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -1263,37 +1328,6 @@
              </Node>
             </Subnodes>
            </Node>
-           <Node>
-            <Name>Timer</Name>
-            <Path>class_timer.html</Path>
-            <Subnodes>
-             <Node>
-              <Name>getDuration</Name>
-              <Path>class_timer.html</Path>
-              <Anchor>ad5505ea4fdebd6819325bb78325e83e5</Anchor>
-             </Node>
-             <Node>
-              <Name>printTime</Name>
-              <Path>class_timer.html</Path>
-              <Anchor>a590a86ff57680e9e4e50393f84a586df</Anchor>
-             </Node>
-             <Node>
-              <Name>start</Name>
-              <Path>class_timer.html</Path>
-              <Anchor>a3a8b5272198d029779dc9302a54305a8</Anchor>
-             </Node>
-             <Node>
-              <Name>stop</Name>
-              <Path>class_timer.html</Path>
-              <Anchor>a988f79aa183d9d5473c13106f5babe48</Anchor>
-             </Node>
-             <Node>
-              <Name>duration_</Name>
-              <Path>class_timer.html</Path>
-              <Anchor>ac1c15edb2a3f8ae63db94916d1135b2f</Anchor>
-             </Node>
-            </Subnodes>
-           </Node>
           </Subnodes>
          </Node>
          <Node>
@@ -1304,10 +1338,6 @@
           <Name>Class Hierarchy</Name>
           <Path>hierarchy.html</Path>
           <Subnodes>
-           <Node>
-            <Name>od::FrameGenerator</Name>
-            <Path>classod_1_1_frame_generator.html</Path>
-           </Node>
            <Node>
             <Name>od::ObjectDetector</Name>
             <Path>classod_1_1_object_detector.html</Path>
@@ -1387,20 +1417,24 @@
             </Subnodes>
            </Node>
            <Node>
+            <Name>od::ODFeatureDetector2D</Name>
+            <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+           </Node>
+           <Node>
             <Name>od::ODFrameGenerator&lt; SceneT, TYPE &gt;</Name>
             <Path>classod_1_1_o_d_frame_generator.html</Path>
            </Node>
            <Node>
-            <Name>od::ODFrameGenerator&lt; ODSceneImage, DEVICE &gt;</Name>
-            <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_d_e_v_i_c_e_01_4.html</Path>
+            <Name>od::ODFrameGenerator&lt; ODSceneImage, GENERATOR_TYPE_DEVICE &gt;</Name>
+            <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_image_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___d_e_v_i_c_e_01_4.html</Path>
            </Node>
            <Node>
-            <Name>od::ODFrameGenerator&lt; ODScenePointCloud&lt; pcl::PointXYZRGBA &gt;, DEVICE &gt;</Name>
-            <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_00_01_d_e_v_i_c_e_01_4.html</Path>
+            <Name>od::ODFrameGenerator&lt; ODScenePointCloud&lt; pcl::PointXYZRGBA &gt;, GENERATOR_TYPE_DEVICE &gt;</Name>
+            <Path>classod_1_1_o_d_frame_generator_3_01_o_d_scene_point_cloud_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4_15d80b33bf5241eb0c0d07b6e1be8941.html</Path>
            </Node>
            <Node>
-            <Name>od::ODFrameGenerator&lt; SceneT, FILE_LIST &gt;</Name>
-            <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_f_i_l_e___l_i_s_t_01_4.html</Path>
+            <Name>od::ODFrameGenerator&lt; SceneT, GENERATOR_TYPE_FILE_LIST &gt;</Name>
+            <Path>classod_1_1_o_d_frame_generator_3_01_scene_t_00_01_g_e_n_e_r_a_t_o_r___t_y_p_e___f_i_l_e___l_i_s_t_01_4.html</Path>
            </Node>
            <Node>
             <Name>od::ODScene</Name>
@@ -1417,8 +1451,8 @@
             </Subnodes>
            </Node>
            <Node>
-            <Name>Timer</Name>
-            <Path>class_timer.html</Path>
+            <Name>od::Timer</Name>
+            <Path>classod_1_1_timer.html</Path>
            </Node>
           </Subnodes>
          </Node>
@@ -1461,6 +1495,10 @@
              <Node>
               <Name>i</Name>
               <Path>functions_i.html</Path>
+             </Node>
+             <Node>
+              <Name>k</Name>
+              <Path>functions_k.html</Path>
              </Node>
              <Node>
               <Name>l</Name>

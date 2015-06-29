@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_sift_match_g_p_u.html" title="matcher export " alt="" coords="133,31,240,57"/>
+<area shape="rect" id="node2" href="$class_combo_sift_g_p_u.html" title="ComboSiftGPU" alt="" coords="289,56,402,83"/>
+<area shape="rect" id="node4" href="$class_sift_match_g_l.html" title="SiftMatchGL" alt="" coords="298,5,393,32"/>
+<area shape="rect" id="node3" href="$class_server_sift_g_p_u.html" title="ServerSiftGPU" alt="" coords="451,56,560,83"/>
+<area shape="rect" id="node5" href="$class_sift_param.html" title="SiftParam" alt="" coords="5,81,85,108"/>
+<area shape="rect" id="node6" href="$class_sift_g_p_u.html" title="SiftGPU" alt="" coords="151,81,222,108"/>
+<area shape="rect" id="node7" href="$class_sift_g_p_u_e_x.html" title="SiftGPUEX" alt="" coords="301,107,390,133"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ShaderMan" name="ShaderMan">
+<area shape="rect" id="node2" href="$class_shader_bag.html" title="ShaderBag" alt="" coords="6,365,92,392"/>
+<area shape="rect" id="node3" href="$class_program_g_p_u.html" title="ProgramGPU" alt="" coords="35,5,135,32"/>
+<area shape="rect" id="node4" href="$class_filter_program.html" title="FilterProgram" alt="" coords="167,177,267,204"/>
+</map>

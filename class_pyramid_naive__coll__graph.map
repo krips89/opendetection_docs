@@ -1,0 +1,12 @@
+<map id="PyramidNaive" name="PyramidNaive">
+<area shape="rect" id="node2" href="$class_pyramid_g_l.html" title="PyramidGL" alt="" coords="115,500,201,527"/>
+<area shape="rect" id="node3" href="$class_sift_pyramid.html" title="SiftPyramid" alt="" coords="127,365,217,392"/>
+<area shape="rect" id="node4" href="$class_global_util.html" title="GlobalUtil" alt="" coords="22,177,100,204"/>
+<area shape="rect" id="node7" href="$class_g_l_tex_image.html" title="GLTexImage" alt="" coords="5,365,101,392"/>
+<area shape="rect" id="node5" href="$class_global_param.html" title="GlobalParam" alt="" coords="13,5,109,32"/>
+<area shape="rect" id="node6" href="$class_sift_param.html" title="SiftParam" alt="" coords="132,177,211,204"/>
+<area shape="rect" id="node8" href="$class_shader_man.html" title="ShaderMan" alt="" coords="228,500,316,527"/>
+<area shape="rect" id="node9" href="$class_shader_bag.html" title="ShaderBag" alt="" coords="242,365,328,392"/>
+<area shape="rect" id="node10" href="$class_program_g_p_u.html" title="ProgramGPU" alt="" coords="307,5,407,32"/>
+<area shape="rect" id="node11" href="$class_filter_program.html" title="FilterProgram" alt="" coords="249,177,348,204"/>
+</map>

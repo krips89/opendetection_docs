@@ -1,0 +1,6 @@
+<map id="ServerSiftGPU" name="ServerSiftGPU">
+<area shape="rect" id="node2" href="$class_combo_sift_g_p_u.html" title="ComboSiftGPU" alt="" coords="45,155,157,181"/>
+<area shape="rect" id="node3" href="$class_sift_g_p_u.html" title="SiftGPU" alt="" coords="10,80,80,107"/>
+<area shape="rect" id="node4" href="$class_sift_param.html" title="SiftParam" alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node5" href="$class_sift_match_g_p_u.html" title="matcher export " alt="" coords="105,80,212,107"/>
+</map>

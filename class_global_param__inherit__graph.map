@@ -1,0 +1,10 @@
+<map id="GlobalParam" name="GlobalParam">
+<area shape="rect" id="node2" href="$class_global_util.html" title="GlobalUtil" alt="" coords="193,80,271,107"/>
+<area shape="rect" id="node3" href="$class_g_l_tex_image.html" title="GLTexImage" alt="" coords="125,155,221,181"/>
+<area shape="rect" id="node6" href="$class_sift_pyramid.html" title="SiftPyramid" alt="" coords="247,155,337,181"/>
+<area shape="rect" id="node4" href="$class_g_l_tex_input.html" title="GLTexInput" alt="" coords="5,229,96,256"/>
+<area shape="rect" id="node5" href="$class_g_l_tex_packed.html" title="GLTexPacked" alt="" coords="121,229,225,256"/>
+<area shape="rect" id="node7" href="$class_pyramid_g_l.html" title="PyramidGL" alt="" coords="250,229,336,256"/>
+<area shape="rect" id="node8" href="$class_pyramid_naive.html" title="PyramidNaive" alt="" coords="175,304,279,331"/>
+<area shape="rect" id="node9" href="$class_pyramid_packed.html" title="PyramidPacked" alt="" coords="303,304,417,331"/>
+</map>
