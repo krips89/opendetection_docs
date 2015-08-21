@@ -1,0 +1,5 @@
+<map id="od::l2d::SimpleRansacDetector" name="od::l2d::SimpleRansacDetector">
+<area shape="rect" id="node2" href="$classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="5,155,213,197"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_detector2_d_complete.html" title="od::ODDetector2DComplete" alt="" coords="16,80,203,107"/>
+<area shape="rect" id="node4" href="$classod_1_1_o_d_detector.html" title="The main detection class; all Detector derives from this. " alt="" coords="52,5,167,32"/>
+</map>

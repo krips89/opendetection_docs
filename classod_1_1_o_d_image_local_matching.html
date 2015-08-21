@@ -140,8 +140,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0e13a0936c0730d829e13d07ac825f4b inherit pub_methods_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93fb1361bd6aa742950e1859c6ebb93a inherit pub_methods_classod_1_1_object_detector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_object_detector.html#a93fb1361bd6aa742950e1859c6ebb93a">setTrainingDataLocation</a> (string <a class="el" href="classod_1_1_object_detector.html#a10c56231e211aa84c0f2fdd0b42e22c7">training_data_location_</a>)</td></tr>
 <tr class="separator:a93fb1361bd6aa742950e1859c6ebb93a inherit pub_methods_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6a29aefbde6a08b71957ce42554070a inherit pub_methods_classod_1_1_object_detector"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_object_detector.html#af6a29aefbde6a08b71957ce42554070a">detect</a> (<a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *scene, std::vector&lt; <a class="el" href="classod_1_1_o_d_detection.html">ODDetection</a> * &gt; detections)=0</td></tr>
-<tr class="separator:af6a29aefbde6a08b71957ce42554070a inherit pub_methods_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11072bef0cedee91acd810d043c65fd inherit pub_methods_classod_1_1_object_detector"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_object_detector.html#ae11072bef0cedee91acd810d043c65fd">initDetector</a> ()</td></tr>
+<tr class="separator:ae11072bef0cedee91acd810d043c65fd inherit pub_methods_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9572a6691d2457351c46911ac7270180 inherit pub_methods_classod_1_1_object_detector"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_object_detector.html#a9572a6691d2457351c46911ac7270180">initTrainer</a> ()</td></tr>
+<tr class="separator:a9572a6691d2457351c46911ac7270180 inherit pub_methods_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a487b98651a981af307745c6ad9048171 inherit pub_methods_classod_1_1_object_detector"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_object_detector.html#a487b98651a981af307745c6ad9048171">detect</a> (<a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *scene, std::vector&lt; <a class="el" href="classod_1_1_o_d_detection.html">ODDetection</a> * &gt; detections)</td></tr>
+<tr class="separator:a487b98651a981af307745c6ad9048171 inherit pub_methods_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bea8de0744dbf8d1cfba476b3063b4 inherit pub_methods_classod_1_1_object_detector"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_object_detector.html#ae0bea8de0744dbf8d1cfba476b3063b4">detect</a> (<a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *scene)</td></tr>
+<tr class="separator:ae0bea8de0744dbf8d1cfba476b3063b4 inherit pub_methods_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -154,6 +160,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a41ae2c315018477da34d63bf270de5db inherit pro_attribs_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b10bb3940b2dd44edf288dcc060c673 inherit pro_attribs_classod_1_1_object_detector"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_object_detector.html#a2b10bb3940b2dd44edf288dcc060c673">always_train_</a></td></tr>
 <tr class="separator:a2b10bb3940b2dd44edf288dcc060c673 inherit pro_attribs_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae106eb81a5a0b91a150a014ae12b4c6b inherit pro_attribs_classod_1_1_object_detector"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_object_detector.html#ae106eb81a5a0b91a150a014ae12b4c6b">trained_</a></td></tr>
+<tr class="separator:ae106eb81a5a0b91a150a014ae12b4c6b inherit pro_attribs_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452762c5fca1c88f48776c523f6d2122 inherit pro_attribs_classod_1_1_object_detector"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_object_detector.html#a452762c5fca1c88f48776c523f6d2122">training_input_location_</a></td></tr>
 <tr class="separator:a452762c5fca1c88f48776c523f6d2122 inherit pro_attribs_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c56231e211aa84c0f2fdd0b42e22c7 inherit pro_attribs_classod_1_1_object_detector"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_object_detector.html#a10c56231e211aa84c0f2fdd0b42e22c7">training_data_location_</a></td></tr>
@@ -445,7 +453,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/sarkar/opendetection/detectors/image_local/<a class="el" href="_o_d_image_local_matching_8h_source.html">ODImageLocalMatching.h</a></li>
+<li>/home/sarkar/opendetection/detectors/local2D/<a class="el" href="_o_d_image_local_matching_8h_source.html">ODImageLocalMatching.h</a></li>
 </ul>
 </div><!-- contents -->
 <hr>
@@ -453,7 +461,7 @@ Protected Attributes</h2></td></tr>
 <p>
 This is a footer.
 </p>
-<p>Pages generated on Mon Jun 29 2015 20:50:11</p>
+<p>Pages generated on Wed Jul 22 2015 12:07:40</p>
 </div> <!-- #footer -->
 </body>
 </html>

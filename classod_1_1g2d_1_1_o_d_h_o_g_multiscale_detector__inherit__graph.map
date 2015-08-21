@@ -1,0 +1,4 @@
+<map id="od::g2d::ODHOGMultiscaleDetector" name="od::g2d::ODHOGMultiscaleDetector">
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector2_d.html" title="od::ODDetector2D" alt="" coords="31,80,160,107"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_detector.html" title="The main detection class; all Detector derives from this. " alt="" coords="39,5,153,32"/>
+</map>

@@ -1,11 +1,13 @@
 <map id="od::ODAlgorithmBase" name="od::ODAlgorithmBase">
-<area shape="rect" id="node2" href="$classod_1_1_o_d_detector.html" title="The main detection class; all Detector derives from this. " alt="" coords="205,113,320,140"/>
-<area shape="rect" id="node7" href="$classod_1_1_o_d_trainer.html" title="Maining Trainer class; all trainers derives from this. " alt="" coords="211,195,315,221"/>
-<area shape="rect" id="node3" href="$classod_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="388,5,572,46"/>
-<area shape="rect" id="node5" href="$classod_1_1_o_d_point_cloud_global_matching_detector.html" title="ODPointCloudGlobalMatchingDetector. " alt="" coords="371,70,589,111"/>
-<area shape="rect" id="node6" href="$classod_1_1_o_d_point_cloud_global_matching_detector.html" title="od::ODPointCloudGlobalMatching\lDetector\&lt; pcl::PointXYZ \&gt;" alt="" coords="747,102,965,143"/>
-<area shape="rect" id="node4" href="$classod_1_1_simple_ransac_detector.html" title="Simple ransac based 3D object detector; the details will be explained later. " alt="" coords="767,12,945,39"/>
-<area shape="rect" id="node8" href="$classod_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="388,187,572,229"/>
-<area shape="rect" id="node10" href="$classod_1_1_o_d_point_cloud_global_matching_trainer.html" title="ODPointCloudGlobalMatchingTrainer. " alt="" coords="371,253,589,294"/>
-<area shape="rect" id="node9" href="$classod_1_1_snapshot_corr_trainer.html" title="ODImageLocalMatchingTrainer; One of the new algorithm; details will be explained later. " alt="" coords="774,195,938,221"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector.html" title="The main detection class; all Detector derives from this. " alt="" coords="205,165,320,192"/>
+<area shape="rect" id="node9" href="$classod_1_1_o_d_trainer.html" title="Maining Trainer class; all trainers derives from this. " alt="" coords="211,312,315,339"/>
+<area shape="rect" id="node3" href="$classod_1_1g2d_1_1_o_d_cascade_detector.html" title="ODCascadeDetector: This class classifies a scene (omni detection) using a provided cascade classifier..." alt="" coords="379,5,573,32"/>
+<area shape="rect" id="node4" href="$classod_1_1g2d_1_1_o_d_h_o_g_multiscale_detector.html" title="ODHOGMultiscaleDetector: A linear classifier detector for HOG features User can set any linear classi..." alt="" coords="385,57,567,98"/>
+<area shape="rect" id="node5" href="$classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html" title="ODPointCloudGlobalMatchingDetector. " alt="" coords="379,122,573,163"/>
+<area shape="rect" id="node6" href="$classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html" title="od::g3d::ODPointCloudGlobal\lMatchingDetector\&lt; pcl::PointXYZ \&gt;" alt="" coords="739,159,970,201"/>
+<area shape="rect" id="node7" href="$classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="371,239,581,281"/>
+<area shape="rect" id="node8" href="$classod_1_1l2d_1_1_simple_ransac_detector.html" title="Simple ransac based 3D object detector; the details will be explained later. " alt="" coords="753,247,957,273"/>
+<area shape="rect" id="node10" href="$classod_1_1g3d_1_1_o_d_point_cloud_global_matching_trainer.html" title="ODPointCloudGlobalMatchingTrainer. " alt="" coords="379,305,573,346"/>
+<area shape="rect" id="node11" href="$classod_1_1l2d_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="371,370,581,411"/>
+<area shape="rect" id="node12" href="$classod_1_1l2d_1_1_snapshot_corr_trainer.html" title="ODImageLocalMatchingTrainer; One of the new algorithm; details will be explained later. " alt="" coords="760,377,949,404"/>
 </map>

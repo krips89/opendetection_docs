@@ -1,3 +1,4 @@
 <map id="od::ODDetection3D" name="od::ODDetection3D">
-<area shape="rect" id="node2" href="$classod_1_1_o_d_detection.html" title="Detection: This class contains detection information; like if it is a type of recognition or a classi..." alt="" coords="13,5,133,32"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_detection_complete.html" title="Detection in 2D with complete information. " alt="" coords="5,155,181,181"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detection.html" title="The base class of all the detection. " alt="" coords="33,5,153,32"/>
 </map>

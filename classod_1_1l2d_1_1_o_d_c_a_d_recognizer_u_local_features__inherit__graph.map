@@ -1,0 +1,4 @@
+<map id="od::l2d::ODCADRecognizerULocalFeatures" name="od::l2d::ODCADRecognizerULocalFeatures">
+<area shape="rect" id="node3" href="$classod_1_1l2d_1_1_simple_ransac_detector.html" title="Simple ransac based 3D object detector; the details will be explained later. " alt="" coords="5,171,208,197"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector.html" title="The main detection class; all Detector derives from this. " alt="" coords="49,5,164,32"/>
+</map>

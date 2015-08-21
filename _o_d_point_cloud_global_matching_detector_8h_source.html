@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Open Detection: /home/sarkar/opendetection/detectors/pc_global/detection/ODPointCloudGlobalMatchingDetector.h Source File</title>
+<title>Open Detection: /home/sarkar/opendetection/detectors/global3D/detection/ODPointCloudGlobalMatchingDetector.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d5b1bec2c78dd22ca1e7668251a571ad.html">detectors</a></li><li class="navelem"><a class="el" href="dir_67da30a51bc2adbfab4a904e6020a4ee.html">pc_global</a></li><li class="navelem"><a class="el" href="dir_835225273b2e30a4fabd8cbf752eeb58.html">detection</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d5b1bec2c78dd22ca1e7668251a571ad.html">detectors</a></li><li class="navelem"><a class="el" href="dir_472f10f47db7ed0565572b3952124458.html">global3D</a></li><li class="navelem"><a class="el" href="dir_6105512931cb69c64cdece0efb17a615.html">detection</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,230 +92,276 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;pcl/console/parse.h&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>od</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{<span class="comment"></span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/** \brief ODPointCloudGlobalMatchingDetector</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  *</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">  * \author Kripasindhu Sarkar</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceod_1_1g3d.html">   27</a></span>&#160;  <span class="keyword">namespace </span>g3d</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  {<span class="comment"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/** \brief ODPointCloudGlobalMatchingDetector</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">  *</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T = pcl::Po<span class="keywordtype">int</span>XYZRGBA&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html">   33</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html">ODPointCloudGlobalMatchingDetector</a> : <span class="keyword">public</span> <a class="code" href="classod_1_1_o_d_detector.html">ODDetector</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a35ae76e462991cab357953c0f0c40ab9">   37</a></span>&#160;    <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a35ae76e462991cab357953c0f0c40ab9">ODPointCloudGlobalMatchingDetector</a>(<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;<a class="code" href="classod_1_1_o_d_detector.html#aa5f5358d56d68ad4924db836f97079c6">training_data_location_</a> = <span class="stringliteral">&quot;&quot;</span>) : <a class="code" href="classod_1_1_o_d_detector.html">ODDetector</a>(<a class="code" href="classod_1_1_o_d_detector.html#aa5f5358d56d68ad4924db836f97079c6">training_data_location_</a>), <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ab89e44b755f1286c4bcf5ce6c9b9f37d">NN</a>(2), <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ae4c230fdeaecc8ba1012b44314ed7bd9">desc_name</a>(<span class="stringliteral">&quot;esf&quot;</span>)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    { }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a73280944bcaf6a2a16f9a675ae183922">init</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#aab3ae444bddb4f97e1dabba9f1310d6e">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#aab3ae444bddb4f97e1dabba9f1310d6e">detect</a>(<a class="code" href="classod_1_1_o_d_scene.html">ODScene</a> *scene, vector&lt;ODDetection *&gt; &amp;detections)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classod_1_1_o_d_scene_point_cloud.html">ODScenePointCloud&lt;PointT&gt;</a> *scene_pc = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classod_1_1_o_d_scene_point_cloud.html">ODScenePointCloud&lt;PointT&gt;</a> *<span class="keyword">&gt;</span>(scene);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#aab3ae444bddb4f97e1dabba9f1310d6e">detect</a>(scene_pc, detections);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//template&lt;typename PointT&gt;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#aab3ae444bddb4f97e1dabba9f1310d6e">detect</a>(<a class="code" href="classod_1_1_o_d_scene_point_cloud.html">ODScenePointCloud&lt;PointT&gt;</a> *scene, vector&lt;ODDetection3D *&gt; &amp;detections);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  * \author Kripasindhu Sarkar</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">  *</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T = pcl::Po<span class="keywordtype">int</span>XYZRGBA&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html">   35</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html">ODPointCloudGlobalMatchingDetector</a> : <span class="keyword">public</span> <a class="code" href="classod_1_1_o_d_detector3_d.html">ODDetector3D</a>&lt;PointT&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a1873d86664d5ab36253986565d928319">   39</a></span>&#160;      <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a1873d86664d5ab36253986565d928319">ODPointCloudGlobalMatchingDetector</a>(<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;<a class="code" href="classod_1_1_o_d_detector.html#aa5f5358d56d68ad4924db836f97079c6">training_data_location_</a> = <span class="stringliteral">&quot;&quot;</span>) : <a class="code" href="classod_1_1_o_d_detector3_d.html">ODDetector3D</a>&lt;PointT&gt;(</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          <a class="code" href="classod_1_1_o_d_detector.html#aa5f5358d56d68ad4924db836f97079c6">training_data_location_</a>), <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#adc74ffd0523ffbae1f17e039f37a646e">NN</a>(2), <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a940c400813e267c2f8acd7b7a030a751">desc_name</a>(<span class="stringliteral">&quot;esf&quot;</span>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        this-&gt;<a class="code" href="classod_1_1_o_d_detector.html#ab58fdd4701edac2751a5d14e33e8462e">TRAINED_DATA_IDENTIFIER_</a> = <span class="stringliteral">&quot;GLOBAL3DVFH&quot;</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#aefe98fc65e8794100413986cbcef6c28">init</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="classod_1_1_o_d_detections.html">ODDetections</a>* <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#af8b0b3820e23e818636a7d516b619f3c">detect</a>(<a class="code" href="classod_1_1_o_d_scene_point_cloud.html">ODScenePointCloud&lt;PointT&gt;</a> *scene);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <a class="code" href="classod_1_1_o_d_detections3_d.html">ODDetections3D</a>* <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a8b63ecfd3e6c180e168d6bdfadde96a6">detectOmni</a>(<a class="code" href="classod_1_1_o_d_scene_point_cloud.html">ODScenePointCloud&lt;PointT&gt;</a> *scene);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a215d10fb507a37d8d607f73f5bb08b42">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a215d10fb507a37d8d607f73f5bb08b42">getNN</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ab89e44b755f1286c4bcf5ce6c9b9f37d">NN</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a8fe7454ac34bbfbafbe16af9d0e9a1a5">   51</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a8fe7454ac34bbfbafbe16af9d0e9a1a5">getNN</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">      </span>{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#adc74ffd0523ffbae1f17e039f37a646e">NN</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a291304a4272c72bb4edfa56dfb70fd7e">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a291304a4272c72bb4edfa56dfb70fd7e">setNN</a>(<span class="keywordtype">int</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ab89e44b755f1286c4bcf5ce6c9b9f37d">NN</a>)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ab89e44b755f1286c4bcf5ce6c9b9f37d">ODPointCloudGlobalMatchingDetector::NN</a> = <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ab89e44b755f1286c4bcf5ce6c9b9f37d">NN</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a43cec457f71f63e0049f10b4b9bdc870">   56</a></span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a43cec457f71f63e0049f10b4b9bdc870">setNN</a>(<span class="keywordtype">int</span> <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#adc74ffd0523ffbae1f17e039f37a646e">NN</a>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#adc74ffd0523ffbae1f17e039f37a646e">ODPointCloudGlobalMatchingDetector::NN</a> = <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#adc74ffd0523ffbae1f17e039f37a646e">NN</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a0d2153dfc86dacd261e659e19e443406">   61</a></span>&#160;    <span class="keywordtype">string</span> <span class="keyword">const</span> &amp;<a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a0d2153dfc86dacd261e659e19e443406">getDescName</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ae4c230fdeaecc8ba1012b44314ed7bd9">desc_name</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a3b805ec79b75c7ed8764ef0fe12331a2">   61</a></span>&#160;      <span class="keywordtype">string</span> <span class="keyword">const</span> &amp;<a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a3b805ec79b75c7ed8764ef0fe12331a2">getDescName</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">      </span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a940c400813e267c2f8acd7b7a030a751">desc_name</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a82faa7a7a7c96085278fdcd01cb15c7a">   66</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a82faa7a7a7c96085278fdcd01cb15c7a">setDescName</a>(<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;<a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ae4c230fdeaecc8ba1012b44314ed7bd9">desc_name</a>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ae4c230fdeaecc8ba1012b44314ed7bd9">ODPointCloudGlobalMatchingDetector::desc_name</a> = <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ae4c230fdeaecc8ba1012b44314ed7bd9">desc_name</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a38f3334917b30e3b4fbb82b592dc4433">   66</a></span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a38f3334917b30e3b4fbb82b592dc4433">setDescName</a>(<span class="keywordtype">string</span> <span class="keyword">const</span> &amp;<a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a940c400813e267c2f8acd7b7a030a751">desc_name</a>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a940c400813e267c2f8acd7b7a030a751">ODPointCloudGlobalMatchingDetector::desc_name</a> = <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a940c400813e267c2f8acd7b7a030a751">desc_name</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ab89e44b755f1286c4bcf5ce6c9b9f37d">   72</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ab89e44b755f1286c4bcf5ce6c9b9f37d">NN</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ae4c230fdeaecc8ba1012b44314ed7bd9">   73</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ae4c230fdeaecc8ba1012b44314ed7bd9">desc_name</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#afe8ad7575e43cfcd3adbaf3da7c77385">   74</a></span>&#160;    boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalClassifier&lt;pcl::PointXYZ&gt; &gt; <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#afe8ad7575e43cfcd3adbaf3da7c77385">global_</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#adc74ffd0523ffbae1f17e039f37a646e">   72</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#adc74ffd0523ffbae1f17e039f37a646e">NN</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a940c400813e267c2f8acd7b7a030a751">   73</a></span>&#160;      <span class="keywordtype">string</span> <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a940c400813e267c2f8acd7b7a030a751">desc_name</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a2e0414f2363f3c572ffa3c63592af55d">   74</a></span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalClassifier&lt;pcl::PointXYZ&gt; &gt; <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a2e0414f2363f3c572ffa3c63592af55d">global_</a>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  };</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a73280944bcaf6a2a16f9a675ae183922">   80</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a73280944bcaf6a2a16f9a675ae183922">ODPointCloudGlobalMatchingDetector&lt;PointT&gt;::init</a>()</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#aefe98fc65e8794100413986cbcef6c28">   80</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#aefe98fc65e8794100413986cbcef6c28">ODPointCloudGlobalMatchingDetector&lt;PointT&gt;::init</a>()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    boost::shared_ptr&lt;pcl::rec_3d_framework::MeshSource&lt;pcl::PointXYZ&gt; &gt; mesh_source(<span class="keyword">new</span> pcl::rec_3d_framework::MeshSource&lt;pcl::PointXYZ&gt;);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    mesh_source-&gt;setPath(training_input_location_);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    mesh_source-&gt;generate(training_data_location_);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    boost::shared_ptr&lt;pcl::rec_3d_framework::Source&lt;pcl::PointXYZ&gt; &gt; cast_source;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    cast_source = boost::static_pointer_cast&lt;pcl::rec_3d_framework::MeshSource&lt;pcl::PointXYZ&gt; &gt;(mesh_source);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    boost::shared_ptr&lt;pcl::rec_3d_framework::PreProcessorAndNormalEstimator&lt;pcl::PointXYZ, pcl::Normal&gt; &gt; normal_estimator;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    normal_estimator.reset(<span class="keyword">new</span> pcl::rec_3d_framework::PreProcessorAndNormalEstimator&lt;pcl::PointXYZ, pcl::Normal&gt;);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    normal_estimator-&gt;setCMR(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    normal_estimator-&gt;setDoVoxelGrid(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    normal_estimator-&gt;setRemoveOutliers(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    normal_estimator-&gt;setFactorsForCMR(3, 7);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span>(desc_name.compare(<span class="stringliteral">&quot;vfh&quot;</span>) == 0) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::VFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; vfh_estimator;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      vfh_estimator.reset(<span class="keyword">new</span> pcl::rec_3d_framework::VFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt;);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      vfh_estimator-&gt;setNormalEstimator(normal_estimator);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalEstimator&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; cast_estimator;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      cast_estimator = boost::dynamic_pointer_cast&lt;pcl::rec_3d_framework::VFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt;(</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          vfh_estimator);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalNNPipeline&lt;flann::L1, pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; global(<span class="keyword">new</span> pcl::rec_3d_framework::GlobalNNPipeline&lt;flann::L1, pcl::PointXYZ, pcl::VFHSignature308&gt;());</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      global-&gt;setDataSource(cast_source);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      global-&gt;setTrainingDir(training_data_location_);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      global-&gt;setDescriptorName(desc_name);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      global-&gt;setNN(NN);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      global-&gt;setFeatureEstimator(cast_estimator);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      global-&gt;initialize(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      this-&gt;global_ = global;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (desc_name.compare (<span class="stringliteral">&quot;cvfh&quot;</span>) == 0)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::CVFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; vfh_estimator;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      vfh_estimator.reset (<span class="keyword">new</span> pcl::rec_3d_framework::CVFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt;);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      vfh_estimator-&gt;setNormalEstimator (normal_estimator);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalEstimator&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; cast_estimator;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      cast_estimator = boost::dynamic_pointer_cast&lt;pcl::rec_3d_framework::CVFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; (vfh_estimator);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalNNPipeline&lt;Metrics::HistIntersectionUnionDistance, pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; global(<span class="keyword">new</span> pcl::rec_3d_framework::GlobalNNPipeline&lt;Metrics::HistIntersectionUnionDistance, pcl::PointXYZ, pcl::VFHSignature308&gt;());</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      global-&gt;setDataSource (cast_source);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      global-&gt;setTrainingDir (training_data_location_);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      global-&gt;setDescriptorName (desc_name);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      global-&gt;setFeatureEstimator (cast_estimator);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      global-&gt;setNN (NN);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      global-&gt;initialize (<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      this-&gt;global_ = global;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (desc_name.compare (<span class="stringliteral">&quot;esf&quot;</span>) == 0)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::ESFEstimation&lt;pcl::PointXYZ, pcl::ESFSignature640&gt; &gt; estimator;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      estimator.reset (<span class="keyword">new</span> pcl::rec_3d_framework::ESFEstimation&lt;pcl::PointXYZ, pcl::ESFSignature640&gt;);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalEstimator&lt;pcl::PointXYZ, pcl::ESFSignature640&gt; &gt; cast_estimator;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      cast_estimator = boost::dynamic_pointer_cast&lt;pcl::rec_3d_framework::ESFEstimation&lt;pcl::PointXYZ, pcl::ESFSignature640&gt; &gt; (estimator);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::MeshSource&lt;pcl::PointXYZ&gt; &gt; mesh_source(<span class="keyword">new</span> pcl::rec_3d_framework::MeshSource&lt;pcl::PointXYZ&gt;);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      mesh_source-&gt;setPath(this-&gt;training_input_location_);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      std::string training_dir_specific =  this-&gt;getSpecificTrainingDataLocation();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      mesh_source-&gt;generate(training_dir_specific);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::Source&lt;pcl::PointXYZ&gt; &gt; cast_source;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      cast_source = boost::static_pointer_cast&lt;pcl::rec_3d_framework::MeshSource&lt;pcl::PointXYZ&gt; &gt;(mesh_source);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::PreProcessorAndNormalEstimator&lt;pcl::PointXYZ, pcl::Normal&gt; &gt; normal_estimator;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      normal_estimator.reset(<span class="keyword">new</span> pcl::rec_3d_framework::PreProcessorAndNormalEstimator&lt;pcl::PointXYZ, pcl::Normal&gt;);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      normal_estimator-&gt;setCMR(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      normal_estimator-&gt;setDoVoxelGrid(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      normal_estimator-&gt;setRemoveOutliers(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      normal_estimator-&gt;setFactorsForCMR(3, 7);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">if</span>(desc_name.compare(<span class="stringliteral">&quot;vfh&quot;</span>) == 0)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        boost::shared_ptr&lt;pcl::rec_3d_framework::VFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; vfh_estimator;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        vfh_estimator.reset(<span class="keyword">new</span> pcl::rec_3d_framework::VFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt;);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        vfh_estimator-&gt;setNormalEstimator(normal_estimator);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalEstimator&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; cast_estimator;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        cast_estimator = boost::dynamic_pointer_cast&lt;pcl::rec_3d_framework::VFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt;(</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            vfh_estimator);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalNNPipeline&lt;flann::L1, pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; global(</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keyword">new</span> pcl::rec_3d_framework::GlobalNNPipeline&lt;flann::L1, pcl::PointXYZ, pcl::VFHSignature308&gt;());</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        global-&gt;setDataSource(cast_source);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        global-&gt;setTrainingDir(training_dir_specific);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        global-&gt;setDescriptorName(desc_name);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        global-&gt;setNN(NN);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        global-&gt;setFeatureEstimator(cast_estimator);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        global-&gt;initialize(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        this-&gt;global_ = global;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(desc_name.compare(<span class="stringliteral">&quot;cvfh&quot;</span>) == 0)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        boost::shared_ptr&lt;pcl::rec_3d_framework::CVFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; vfh_estimator;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        vfh_estimator.reset(<span class="keyword">new</span> pcl::rec_3d_framework::CVFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt;);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        vfh_estimator-&gt;setNormalEstimator(normal_estimator);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalEstimator&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; cast_estimator;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        cast_estimator = boost::dynamic_pointer_cast&lt;pcl::rec_3d_framework::CVFHEstimation&lt;pcl::PointXYZ, pcl::VFHSignature308&gt; &gt;(</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            vfh_estimator);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalNNPipeline&lt;Metrics::HistIntersectionUnionDistance, pcl::PointXYZ, pcl::VFHSignature308&gt; &gt; global(</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keyword">new</span> pcl::rec_3d_framework::GlobalNNPipeline&lt;Metrics::HistIntersectionUnionDistance, pcl::PointXYZ, pcl::VFHSignature308&gt;());</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        global-&gt;setDataSource(cast_source);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        global-&gt;setTrainingDir(training_dir_specific);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        global-&gt;setDescriptorName(desc_name);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        global-&gt;setFeatureEstimator(cast_estimator);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        global-&gt;setNN(NN);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        global-&gt;initialize(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        this-&gt;global_ = global;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(desc_name.compare(<span class="stringliteral">&quot;esf&quot;</span>) == 0)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        boost::shared_ptr&lt;pcl::rec_3d_framework::ESFEstimation&lt;pcl::PointXYZ, pcl::ESFSignature640&gt; &gt; estimator;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        estimator.reset(<span class="keyword">new</span> pcl::rec_3d_framework::ESFEstimation&lt;pcl::PointXYZ, pcl::ESFSignature640&gt;);</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalNNPipeline&lt;flann::L1, pcl::PointXYZ, pcl::ESFSignature640&gt; &gt; global(<span class="keyword">new</span> pcl::rec_3d_framework::GlobalNNPipeline&lt;flann::L1, pcl::PointXYZ, pcl::ESFSignature640&gt;());</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      global-&gt;setDataSource (cast_source);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      global-&gt;setTrainingDir (training_data_location_);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      global-&gt;setDescriptorName (desc_name);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      global-&gt;setFeatureEstimator (cast_estimator);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      global-&gt;setNN (NN);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      global-&gt;initialize (<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      this-&gt;global_ = global;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;FATAL: descriptor type not available.&quot;</span>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt;</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#adcccd9b8c02bec59d69efd96ae1dfdfc">  159</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classod_1_1_o_d_point_cloud_global_matching_detector.html#aab3ae444bddb4f97e1dabba9f1310d6e">ODPointCloudGlobalMatchingDetector&lt;PointT&gt;::detect</a>(<a class="code" href="classod_1_1_o_d_scene_point_cloud.html">ODScenePointCloud&lt;PointT&gt;</a> *scene, vector&lt;ODDetection3D *&gt; &amp;detections)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">typename</span> pcl::PointCloud&lt;PointT&gt;::Ptr frame;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">float</span> Z_DIST_ = 1.25f;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">float</span> text_scale = 0.015f;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    frame = scene-&gt;<a class="code" href="classod_1_1_o_d_scene_point_cloud.html#a12fa982b49cc6745c257f50b8a504ab1">getPointCloud</a>();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    pcl::PointCloud&lt;pcl::PointXYZ&gt;::Ptr xyz_points (<span class="keyword">new</span> pcl::PointCloud&lt;pcl::PointXYZ&gt;);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    pcl::copyPointCloud (*frame, *xyz_points);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="comment">//Step 1 -&gt; Segment</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    pcl::apps::DominantPlaneSegmentation&lt;pcl::PointXYZ&gt; dps;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    dps.setInputCloud (xyz_points);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    dps.setMaxZBounds (Z_DIST_);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    dps.setObjectMinHeight (0.005);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    dps.setMinClusterSize (1000);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    dps.setWSize (9);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    dps.setDistanceBetweenClusters (0.1f);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    std::vector&lt;pcl::PointCloud&lt;pcl::PointXYZ&gt;::Ptr&gt; clusters;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    std::vector&lt;pcl::PointIndices&gt; indices;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    dps.setDownsamplingSize (0.02f);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    dps.compute_fast (clusters);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    dps.getIndicesClusters (indices);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    Eigen::Vector4f table_plane_;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    Eigen::Vector3f normal_plane_ = Eigen::Vector3f (table_plane_[0], table_plane_[1], table_plane_[2]);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    dps.getTableCoefficients (table_plane_);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">float</span> dist_ = 0.03f;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; clusters.size (); i++)</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      global_-&gt;setInputCloud (xyz_points);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      global_-&gt;setIndices (indices[i].indices);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      global_-&gt;classify ();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalEstimator&lt;pcl::PointXYZ, pcl::ESFSignature640&gt; &gt; cast_estimator;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        cast_estimator = boost::dynamic_pointer_cast&lt;pcl::rec_3d_framework::ESFEstimation&lt;pcl::PointXYZ, pcl::ESFSignature640&gt; &gt;(</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            estimator);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        boost::shared_ptr&lt;pcl::rec_3d_framework::GlobalNNPipeline&lt;flann::L1, pcl::PointXYZ, pcl::ESFSignature640&gt; &gt; global(</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keyword">new</span> pcl::rec_3d_framework::GlobalNNPipeline&lt;flann::L1, pcl::PointXYZ, pcl::ESFSignature640&gt;());</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        global-&gt;setDataSource(cast_source);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        global-&gt;setTrainingDir(training_dir_specific);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        global-&gt;setDescriptorName(desc_name);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        global-&gt;setFeatureEstimator(cast_estimator);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        global-&gt;setNN(NN);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        global-&gt;initialize(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        this-&gt;global_ = global;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;FATAL: descriptor type not available.&quot;</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a8b63ecfd3e6c180e168d6bdfadde96a6">  163</a></span>&#160;    <a class="code" href="classod_1_1_o_d_detections3_d.html">ODDetections3D</a>* <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a8b63ecfd3e6c180e168d6bdfadde96a6">ODPointCloudGlobalMatchingDetector&lt;PointT&gt;::detectOmni</a>(<a class="code" href="classod_1_1_o_d_scene_point_cloud.html">ODScenePointCloud&lt;PointT&gt;</a> *scene)</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <a class="code" href="classod_1_1_o_d_detections3_d.html">ODDetections3D</a> *detections = <span class="keyword">new</span> <a class="code" href="classod_1_1_o_d_detections3_d.html">ODDetections3D</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <span class="keyword">typename</span> pcl::PointCloud&lt;PointT&gt;::Ptr frame;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordtype">float</span> Z_DIST_ = 1.25f;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="keywordtype">float</span> text_scale = 0.015f;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      frame = scene-&gt;<a class="code" href="classod_1_1_o_d_scene_point_cloud.html#a12fa982b49cc6745c257f50b8a504ab1">getPointCloud</a>();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      pcl::PointCloud&lt;pcl::PointXYZ&gt;::Ptr xyz_points(<span class="keyword">new</span> pcl::PointCloud&lt;pcl::PointXYZ&gt;);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      pcl::copyPointCloud(*frame, *xyz_points);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="comment">//Step 1 -&gt; Segment</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      pcl::apps::DominantPlaneSegmentation&lt;pcl::PointXYZ&gt; dps;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      dps.setInputCloud(xyz_points);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      dps.setMaxZBounds(Z_DIST_);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      dps.setObjectMinHeight(0.005);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      dps.setMinClusterSize(1000);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      dps.setWSize(9);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      dps.setDistanceBetweenClusters(0.1f);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      std::vector&lt;pcl::PointCloud&lt;pcl::PointXYZ&gt;::Ptr&gt; clusters;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      std::vector&lt;pcl::PointIndices&gt; indices;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      dps.setDownsamplingSize(0.02f);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      dps.compute_fast(clusters);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      dps.getIndicesClusters(indices);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      Eigen::Vector4f table_plane_;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      Eigen::Vector3f normal_plane_ = Eigen::Vector3f(table_plane_[0], table_plane_[1], table_plane_[2]);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      dps.getTableCoefficients(table_plane_);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordtype">float</span> dist_ = 0.03f;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      std::vector &lt; std::string &gt; categories;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      std::vector&lt;float&gt; conf;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      global_-&gt;getCategory (categories);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      global_-&gt;getConfidence (conf);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      <span class="comment">//detection done!</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      std::string category = categories[0];</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      Eigen::Vector4d centroid;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      pcl::compute3DCentroid (*xyz_points, indices[i].indices, centroid);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <span class="comment">//position at 3D identified!</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="comment">//now fill up the detection:</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <a class="code" href="classod_1_1_o_d_detection3_d.html">ODDetection3D</a> * detection = <span class="keyword">new</span> <a class="code" href="classod_1_1_o_d_detection3_d.html">ODDetection3D</a>;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      detection-&gt;<a class="code" href="classod_1_1_o_d_detection.html#a463d116387e63b9748999bbdcd3d9f6c">setType</a>(ODDetection::OD_DETECTION_CLASS);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      detection-&gt;<a class="code" href="classod_1_1_o_d_detection.html#a8529aa2641fa909383f74f5e790ecb59">setId</a>(categories[0]);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      detection-&gt;<a class="code" href="classod_1_1_o_d_detection3_d.html#ab9aa58caf5195e03d45f70fa4c698853">setLocation</a>(centroid);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      detection-&gt;<a class="code" href="classod_1_1_o_d_detection3_d.html#a2c0ae709f7e63523b39e7d009563d1b4">setMetainfoCluster</a>(clusters[i]);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      detections.push_back(detection);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#endif //OPENDETECTION_ODPOINTCLOUDGLOBALMATCHINGDETECTOR_H</span></div>
-<div class="ttc" id="classod_1_1_o_d_detector_html"><div class="ttname"><a href="classod_1_1_o_d_detector.html">od::ODDetector</a></div><div class="ttdoc">The main detection class; all Detector derives from this. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detector_8h_source.html#l00022">ODDetector.h:22</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html_ae4c230fdeaecc8ba1012b44314ed7bd9"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ae4c230fdeaecc8ba1012b44314ed7bd9">od::ODPointCloudGlobalMatchingDetector::desc_name</a></div><div class="ttdeci">string desc_name</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00073">ODPointCloudGlobalMatchingDetector.h:73</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_detector_html_aa5f5358d56d68ad4924db836f97079c6"><div class="ttname"><a href="classod_1_1_o_d_detector.html#aa5f5358d56d68ad4924db836f97079c6">od::ODDetector::training_data_location_</a></div><div class="ttdeci">std::string training_data_location_</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detector_8h_source.html#l00053">ODDetector.h:53</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html_a35ae76e462991cab357953c0f0c40ab9"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a35ae76e462991cab357953c0f0c40ab9">od::ODPointCloudGlobalMatchingDetector::ODPointCloudGlobalMatchingDetector</a></div><div class="ttdeci">ODPointCloudGlobalMatchingDetector(string const &amp;training_data_location_=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00037">ODPointCloudGlobalMatchingDetector.h:37</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_scene_html"><div class="ttname"><a href="classod_1_1_o_d_scene.html">od::ODScene</a></div><div class="ttdoc">This contains information about the scenes. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_scene_8h_source.html#l00022">ODScene.h:22</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_detection_html_a8529aa2641fa909383f74f5e790ecb59"><div class="ttname"><a href="classod_1_1_o_d_detection.html#a8529aa2641fa909383f74f5e790ecb59">od::ODDetection::setId</a></div><div class="ttdeci">void setId(string const &amp;id_)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00055">ODDetection.h:55</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_detection3_d_html_a2c0ae709f7e63523b39e7d009563d1b4"><div class="ttname"><a href="classod_1_1_o_d_detection3_d.html#a2c0ae709f7e63523b39e7d009563d1b4">od::ODDetection3D::setMetainfoCluster</a></div><div class="ttdeci">void setMetainfoCluster(typename pcl::PointCloud&lt; pcl::PointXYZ &gt;::Ptr const &amp;metainfo_cluster_)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00142">ODDetection.h:142</a></div></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; clusters.size(); i++)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        global_-&gt;setInputCloud(xyz_points);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        global_-&gt;setIndices(indices[i].indices);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        global_-&gt;classify();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        std::vector&lt;std::string&gt; categories;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        std::vector&lt;float&gt; conf;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        global_-&gt;getCategory(categories);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        global_-&gt;getConfidence(conf);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="comment">//detection done!</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        std::string category = categories[0];</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        Eigen::Vector4d centroid;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        pcl::compute3DCentroid(*xyz_points, indices[i].indices, centroid);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="comment">//position at 3D identified!</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="comment">//now fill up the detection:</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <a class="code" href="classod_1_1_o_d_detection3_d.html">ODDetection3D</a> *detection = <span class="keyword">new</span> <a class="code" href="classod_1_1_o_d_detection3_d.html">ODDetection3D</a>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        detection-&gt;<a class="code" href="classod_1_1_o_d_detection.html#a463d116387e63b9748999bbdcd3d9f6c">setType</a>(ODDetection::OD_DETECTION_CLASS);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        detection-&gt;<a class="code" href="classod_1_1_o_d_detection.html#a8529aa2641fa909383f74f5e790ecb59">setId</a>(categories[0]);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        detection-&gt;<a class="code" href="classod_1_1_o_d_detection3_d.html#ab9aa58caf5195e03d45f70fa4c698853">setLocation</a>(centroid);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        detection-&gt;<a class="code" href="classod_1_1_o_d_detection3_d.html#a2c0ae709f7e63523b39e7d009563d1b4">setMetainfoCluster</a>(clusters[i]);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        detections-&gt;<a class="code" href="classod_1_1_o_d_detections.html#a076cbfeb953d1e8c0fef206b076e9a41">push_back</a>(detection);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      <span class="keywordflow">return</span> detections;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#af8b0b3820e23e818636a7d516b619f3c">  229</a></span>&#160;    <a class="code" href="classod_1_1_o_d_detections.html">ODDetections</a>* <a class="code" href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#af8b0b3820e23e818636a7d516b619f3c">ODPointCloudGlobalMatchingDetector&lt;PointT&gt;::detect</a>(<a class="code" href="classod_1_1_o_d_scene_point_cloud.html">ODScenePointCloud&lt;PointT&gt;</a> *scene)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <a class="code" href="classod_1_1_o_d_detections.html">ODDetections</a> *detections = <span class="keyword">new</span> <a class="code" href="classod_1_1_o_d_detections.html">ODDetections</a>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      <span class="keyword">typename</span> pcl::PointCloud&lt;PointT&gt;::Ptr frame;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <span class="keywordtype">float</span> Z_DIST_ = 1.25f;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <span class="keywordtype">float</span> text_scale = 0.015f;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      frame = scene-&gt;<a class="code" href="classod_1_1_o_d_scene_point_cloud.html#a12fa982b49cc6745c257f50b8a504ab1">getPointCloud</a>();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      pcl::PointCloud&lt;pcl::PointXYZ&gt;::Ptr xyz_points(<span class="keyword">new</span> pcl::PointCloud&lt;pcl::PointXYZ&gt;);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      pcl::copyPointCloud(*frame, *xyz_points);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      global_-&gt;setInputCloud(xyz_points);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="comment">//no indices set, so it would try to classify the entire PC</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      global_-&gt;classify();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      std::vector&lt;std::string&gt; categories;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      std::vector&lt;float&gt; conf;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      global_-&gt;getCategory(categories);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      global_-&gt;getConfidence(conf);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      <span class="comment">//detection done!</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      std::string category = categories[0];</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      <span class="comment">//now fill up the detection:</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      <a class="code" href="classod_1_1_o_d_detection.html">ODDetection</a> *detection = <span class="keyword">new</span> <a class="code" href="classod_1_1_o_d_detection3_d.html">ODDetection3D</a>(ODDetection::OD_DETECTION_CLASS, categories[0], conf[0]);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      detections-&gt;<a class="code" href="classod_1_1_o_d_detections.html#a076cbfeb953d1e8c0fef206b076e9a41">push_back</a>(detection);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <span class="keywordflow">return</span> detections;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#endif //OPENDETECTION_ODPOINTCLOUDGLOBALMATCHINGDETECTOR_H</span></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_adc74ffd0523ffbae1f17e039f37a646e"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#adc74ffd0523ffbae1f17e039f37a646e">od::g3d::ODPointCloudGlobalMatchingDetector::NN</a></div><div class="ttdeci">int NN</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00072">ODPointCloudGlobalMatchingDetector.h:72</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html">od::g3d::ODPointCloudGlobalMatchingDetector</a></div><div class="ttdoc">ODPointCloudGlobalMatchingDetector. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00035">ODPointCloudGlobalMatchingDetector.h:35</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_a3b805ec79b75c7ed8764ef0fe12331a2"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a3b805ec79b75c7ed8764ef0fe12331a2">od::g3d::ODPointCloudGlobalMatchingDetector::getDescName</a></div><div class="ttdeci">string const &amp; getDescName() const </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00061">ODPointCloudGlobalMatchingDetector.h:61</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detector_html_aa5f5358d56d68ad4924db836f97079c6"><div class="ttname"><a href="classod_1_1_o_d_detector.html#aa5f5358d56d68ad4924db836f97079c6">od::ODDetector::training_data_location_</a></div><div class="ttdeci">std::string training_data_location_</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detector_8h_source.html#l00062">ODDetector.h:62</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detection_html_a8529aa2641fa909383f74f5e790ecb59"><div class="ttname"><a href="classod_1_1_o_d_detection.html#a8529aa2641fa909383f74f5e790ecb59">od::ODDetection::setId</a></div><div class="ttdeci">void setId(string const &amp;id_)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00064">ODDetection.h:64</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detection3_d_html_a2c0ae709f7e63523b39e7d009563d1b4"><div class="ttname"><a href="classod_1_1_o_d_detection3_d.html#a2c0ae709f7e63523b39e7d009563d1b4">od::ODDetection3D::setMetainfoCluster</a></div><div class="ttdeci">void setMetainfoCluster(typename pcl::PointCloud&lt; pcl::PointXYZ &gt;::Ptr const &amp;metainfo_cluster_)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00203">ODDetection.h:203</a></div></div>
 <div class="ttc" id="classod_1_1_o_d_scene_point_cloud_html_a12fa982b49cc6745c257f50b8a504ab1"><div class="ttname"><a href="classod_1_1_o_d_scene_point_cloud.html#a12fa982b49cc6745c257f50b8a504ab1">od::ODScenePointCloud::getPointCloud</a></div><div class="ttdeci">PointCloudPtr const &amp; getPointCloud() const </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_scene_8h_source.html#l00111">ODScene.h:111</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html_afe8ad7575e43cfcd3adbaf3da7c77385"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html#afe8ad7575e43cfcd3adbaf3da7c77385">od::ODPointCloudGlobalMatchingDetector::global_</a></div><div class="ttdeci">boost::shared_ptr&lt; pcl::rec_3d_framework::GlobalClassifier&lt; pcl::PointXYZ &gt; &gt; global_</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00074">ODPointCloudGlobalMatchingDetector.h:74</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html_a215d10fb507a37d8d607f73f5bb08b42"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a215d10fb507a37d8d607f73f5bb08b42">od::ODPointCloudGlobalMatchingDetector::getNN</a></div><div class="ttdeci">int getNN() const </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00051">ODPointCloudGlobalMatchingDetector.h:51</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html_aab3ae444bddb4f97e1dabba9f1310d6e"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html#aab3ae444bddb4f97e1dabba9f1310d6e">od::ODPointCloudGlobalMatchingDetector::detect</a></div><div class="ttdeci">int detect(ODScene *scene, vector&lt; ODDetection * &gt; &amp;detections)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00042">ODPointCloudGlobalMatchingDetector.h:42</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_detection3_d_html_ab9aa58caf5195e03d45f70fa4c698853"><div class="ttname"><a href="classod_1_1_o_d_detection3_d.html#ab9aa58caf5195e03d45f70fa4c698853">od::ODDetection3D::setLocation</a></div><div class="ttdeci">void setLocation(Eigen::Vector4d const &amp;location_)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00094">ODDetection.h:94</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html_a291304a4272c72bb4edfa56dfb70fd7e"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a291304a4272c72bb4edfa56dfb70fd7e">od::ODPointCloudGlobalMatchingDetector::setNN</a></div><div class="ttdeci">void setNN(int NN)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00056">ODPointCloudGlobalMatchingDetector.h:56</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html">od::ODPointCloudGlobalMatchingDetector</a></div><div class="ttdoc">ODPointCloudGlobalMatchingDetector. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00033">ODPointCloudGlobalMatchingDetector.h:33</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html_a73280944bcaf6a2a16f9a675ae183922"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a73280944bcaf6a2a16f9a675ae183922">od::ODPointCloudGlobalMatchingDetector::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00080">ODPointCloudGlobalMatchingDetector.h:80</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html_a82faa7a7a7c96085278fdcd01cb15c7a"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a82faa7a7a7c96085278fdcd01cb15c7a">od::ODPointCloudGlobalMatchingDetector::setDescName</a></div><div class="ttdeci">void setDescName(string const &amp;desc_name)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00066">ODPointCloudGlobalMatchingDetector.h:66</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_detection3_d_html"><div class="ttname"><a href="classod_1_1_o_d_detection3_d.html">od::ODDetection3D</a></div><div class="ttdoc">Detection in 3D. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00086">ODDetection.h:86</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_a43cec457f71f63e0049f10b4b9bdc870"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a43cec457f71f63e0049f10b4b9bdc870">od::g3d::ODPointCloudGlobalMatchingDetector::setNN</a></div><div class="ttdeci">void setNN(int NN)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00056">ODPointCloudGlobalMatchingDetector.h:56</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_a8b63ecfd3e6c180e168d6bdfadde96a6"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a8b63ecfd3e6c180e168d6bdfadde96a6">od::g3d::ODPointCloudGlobalMatchingDetector::detectOmni</a></div><div class="ttdeci">ODDetections3D * detectOmni(ODScenePointCloud&lt; PointT &gt; *scene)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00163">ODPointCloudGlobalMatchingDetector.h:163</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_af8b0b3820e23e818636a7d516b619f3c"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#af8b0b3820e23e818636a7d516b619f3c">od::g3d::ODPointCloudGlobalMatchingDetector::detect</a></div><div class="ttdeci">ODDetections * detect(ODScenePointCloud&lt; PointT &gt; *scene)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00229">ODPointCloudGlobalMatchingDetector.h:229</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detections_html_a076cbfeb953d1e8c0fef206b076e9a41"><div class="ttname"><a href="classod_1_1_o_d_detections.html#a076cbfeb953d1e8c0fef206b076e9a41">od::ODDetections::push_back</a></div><div class="ttdeci">void push_back(ODDetection *detection)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00251">ODDetection.h:251</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_a38f3334917b30e3b4fbb82b592dc4433"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a38f3334917b30e3b4fbb82b592dc4433">od::g3d::ODPointCloudGlobalMatchingDetector::setDescName</a></div><div class="ttdeci">void setDescName(string const &amp;desc_name)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00066">ODPointCloudGlobalMatchingDetector.h:66</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detection_html"><div class="ttname"><a href="classod_1_1_o_d_detection.html">od::ODDetection</a></div><div class="ttdoc">Detection: This class contains detection information; like if it is a type of recognition or a classi...</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00029">ODDetection.h:29</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_a940c400813e267c2f8acd7b7a030a751"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a940c400813e267c2f8acd7b7a030a751">od::g3d::ODPointCloudGlobalMatchingDetector::desc_name</a></div><div class="ttdeci">string desc_name</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00073">ODPointCloudGlobalMatchingDetector.h:73</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detector_html_ab58fdd4701edac2751a5d14e33e8462e"><div class="ttname"><a href="classod_1_1_o_d_detector.html#ab58fdd4701edac2751a5d14e33e8462e">od::ODDetector::TRAINED_DATA_IDENTIFIER_</a></div><div class="ttdeci">std::string TRAINED_DATA_IDENTIFIER_</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detector_8h_source.html#l00063">ODDetector.h:63</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detection3_d_html_ab9aa58caf5195e03d45f70fa4c698853"><div class="ttname"><a href="classod_1_1_o_d_detection3_d.html#ab9aa58caf5195e03d45f70fa4c698853">od::ODDetection3D::setLocation</a></div><div class="ttdeci">void setLocation(Eigen::Vector4d const &amp;location_)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00155">ODDetection.h:155</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_aefe98fc65e8794100413986cbcef6c28"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#aefe98fc65e8794100413986cbcef6c28">od::g3d::ODPointCloudGlobalMatchingDetector::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00080">ODPointCloudGlobalMatchingDetector.h:80</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_a1873d86664d5ab36253986565d928319"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a1873d86664d5ab36253986565d928319">od::g3d::ODPointCloudGlobalMatchingDetector::ODPointCloudGlobalMatchingDetector</a></div><div class="ttdeci">ODPointCloudGlobalMatchingDetector(string const &amp;training_data_location_=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00039">ODPointCloudGlobalMatchingDetector.h:39</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_a8fe7454ac34bbfbafbe16af9d0e9a1a5"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a8fe7454ac34bbfbafbe16af9d0e9a1a5">od::g3d::ODPointCloudGlobalMatchingDetector::getNN</a></div><div class="ttdeci">int getNN() const </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00051">ODPointCloudGlobalMatchingDetector.h:51</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detection3_d_html"><div class="ttname"><a href="classod_1_1_o_d_detection3_d.html">od::ODDetection3D</a></div><div class="ttdoc">Detection in 3D. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00144">ODDetection.h:144</a></div></div>
+<div class="ttc" id="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector_html_a2e0414f2363f3c572ffa3c63592af55d"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html#a2e0414f2363f3c572ffa3c63592af55d">od::g3d::ODPointCloudGlobalMatchingDetector::global_</a></div><div class="ttdeci">boost::shared_ptr&lt; pcl::rec_3d_framework::GlobalClassifier&lt; pcl::PointXYZ &gt; &gt; global_</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00074">ODPointCloudGlobalMatchingDetector.h:74</a></div></div>
 <div class="ttc" id="classod_1_1_o_d_scene_point_cloud_html"><div class="ttname"><a href="classod_1_1_o_d_scene_point_cloud.html">od::ODScenePointCloud</a></div><div class="ttdef"><b>Definition:</b> <a href="_o_d_scene_8h_source.html#l00089">ODScene.h:89</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_detection_html_a463d116387e63b9748999bbdcd3d9f6c"><div class="ttname"><a href="classod_1_1_o_d_detection.html#a463d116387e63b9748999bbdcd3d9f6c">od::ODDetection::setType</a></div><div class="ttdeci">void setType(DetectionType const &amp;type_)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00045">ODDetection.h:45</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html_a0d2153dfc86dacd261e659e19e443406"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html#a0d2153dfc86dacd261e659e19e443406">od::ODPointCloudGlobalMatchingDetector::getDescName</a></div><div class="ttdeci">string const &amp; getDescName() const </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00061">ODPointCloudGlobalMatchingDetector.h:61</a></div></div>
-<div class="ttc" id="classod_1_1_o_d_point_cloud_global_matching_detector_html_ab89e44b755f1286c4bcf5ce6c9b9f37d"><div class="ttname"><a href="classod_1_1_o_d_point_cloud_global_matching_detector.html#ab89e44b755f1286c4bcf5ce6c9b9f37d">od::ODPointCloudGlobalMatchingDetector::NN</a></div><div class="ttdeci">int NN</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_point_cloud_global_matching_detector_8h_source.html#l00072">ODPointCloudGlobalMatchingDetector.h:72</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detection_html_a463d116387e63b9748999bbdcd3d9f6c"><div class="ttname"><a href="classod_1_1_o_d_detection.html#a463d116387e63b9748999bbdcd3d9f6c">od::ODDetection::setType</a></div><div class="ttdeci">void setType(DetectionType const &amp;type_)</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00054">ODDetection.h:54</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detections3_d_html"><div class="ttname"><a href="classod_1_1_o_d_detections3_d.html">od::ODDetections3D</a></div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00321">ODDetection.h:321</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detections_html"><div class="ttname"><a href="classod_1_1_o_d_detections.html">od::ODDetections</a></div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00234">ODDetection.h:234</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detector3_d_html"><div class="ttname"><a href="classod_1_1_o_d_detector3_d.html">od::ODDetector3D</a></div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detector_8h_source.html#l00079">ODDetector.h:79</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <hr>
 <div id="footer">
 <p>
 This is a footer.
 </p>
-<p>Pages generated on Mon Jun 29 2015 20:50:11</p>
+<p>Pages generated on Mon Aug 10 2015 14:49:07</p>
 </div> <!-- #footer -->
 </body>
 </html>

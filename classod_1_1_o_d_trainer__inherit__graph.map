@@ -1,6 +1,7 @@
 <map id="od::ODTrainer" name="od::ODTrainer">
-<area shape="rect" id="node3" href="$classod_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="5,155,189,197"/>
-<area shape="rect" id="node5" href="$classod_1_1_o_d_point_cloud_global_matching_trainer.html" title="ODPointCloudGlobalMatchingTrainer. " alt="" coords="213,155,432,197"/>
-<area shape="rect" id="node2" href="$classod_1_1_o_d_algorithm_base.html" title="The base of all algorithm classes. " alt="" coords="135,5,283,32"/>
-<area shape="rect" id="node4" href="$classod_1_1_snapshot_corr_trainer.html" title="ODImageLocalMatchingTrainer; One of the new algorithm; details will be explained later. " alt="" coords="15,245,179,272"/>
+<area shape="rect" id="node3" href="$classod_1_1g2d_1_1_o_d_h_o_g_trainer.html" title="Class for training HOG based detector. " alt="" coords="397,5,560,32"/>
+<area shape="rect" id="node4" href="$classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html" title="Training class for the detector ODCADDetector3DGlobal. " alt="" coords="375,57,583,98"/>
+<area shape="rect" id="node5" href="$classod_1_1l2d_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="374,122,583,163"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="6,64,173,91"/>
+<area shape="rect" id="node6" href="$classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html" title="ODCADRecogTrainerSnapshotBased; One of the new algorithm; details will be explained later..." alt="" coords="633,122,829,163"/>
 </map>

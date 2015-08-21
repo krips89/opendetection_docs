@@ -74,73 +74,83 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="classod_1_1_o_d_detector-members.html">List of all members</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
+<a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">od::ODDetector Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">od::ODDetector Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The main detection class; all Detector derives from this.  
+<p>The main detector class; all special Detectors derives from this.  
  <a href="classod_1_1_o_d_detector.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for od::ODDetector:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for od::ODDetector:</div>
+<div class="dyncontent">
 <div class="center"><img src="classod_1_1_o_d_detector__inherit__graph.png" border="0" usemap="#od_1_1_o_d_detector_inherit__map" alt="Inheritance graph"/></div>
 <map name="od_1_1_o_d_detector_inherit__map" id="od_1_1_o_d_detector_inherit__map">
-<area shape="rect" id="node3" href="classod_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="388,5,572,46"/><area shape="rect" id="node5" href="classod_1_1_o_d_point_cloud_global_matching_detector.html" title="ODPointCloudGlobalMatchingDetector. " alt="" coords="371,70,589,111"/><area shape="rect" id="node6" href="classod_1_1_o_d_point_cloud_global_matching_detector.html" title="od::ODPointCloudGlobalMatching\lDetector\&lt; pcl::PointXYZ \&gt;" alt="" coords="747,102,965,143"/><area shape="rect" id="node2" href="classod_1_1_o_d_algorithm_base.html" title="The base of all algorithm classes. " alt="" coords="5,77,155,104"/><area shape="rect" id="node4" href="classod_1_1_simple_ransac_detector.html" title="Simple ransac based 3D object detector; the details will be explained later. " alt="" coords="767,12,945,39"/></map>
+<area shape="rect" id="node3" href="classod_1_1_o_d_detector2_d.html" title="The detector of 2D scene. " alt="" coords="421,9,552,36"/><area shape="rect" id="node5" href="classod_1_1_o_d_detector2_d_complete.html" title="The detector of 2D scene performing a &#39;complete detection&#39;. " alt="" coords="393,64,580,91"/><area shape="rect" id="node8" href="classod_1_1_o_d_detector3_d.html" title="The detector of 3D scene. " alt="" coords="390,129,583,156"/><area shape="rect" id="node11" href="classod_1_1_o_d_detector3_d.html" title="od::ODDetector3D\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="775,187,935,229"/><area shape="rect" id="node12" href="classod_1_1_o_d_detector_multi_algo.html" title="Class for running multiple Detection algorithms (with default parameters) on the same scene..." alt="" coords="403,245,571,272"/><area shape="rect" id="node2" href="classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="6,129,173,156"/><area shape="rect" id="node4" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="ODHOGDetector: A linear classification based detector for HOG features. " alt="" coords="768,5,941,32"/><area shape="rect" id="node6" href="classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="750,57,959,98"/><area shape="rect" id="node7" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html" title="Simple RANSAC based 3D object recognizer. " alt="" coords="1143,57,1334,98"/><area shape="rect" id="node9" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. " alt="" coords="741,122,968,163"/><area shape="rect" id="node10" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="od::g3d::ODCADDetector3DGlobal\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="1125,149,1352,190"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for od::ODDetector:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Collaboration diagram for od::ODDetector:</div>
+<div class="dyncontent">
 <div class="center"><img src="classod_1_1_o_d_detector__coll__graph.png" border="0" usemap="#od_1_1_o_d_detector_coll__map" alt="Collaboration graph"/></div>
 <map name="od_1_1_o_d_detector_coll__map" id="od_1_1_o_d_detector_coll__map">
-<area shape="rect" id="node2" href="classod_1_1_o_d_algorithm_base.html" title="The base of all algorithm classes. " alt="" coords="4,5,152,32"/></map>
+<area shape="rect" id="node2" href="classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="5,5,171,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aefe7562015d02db28798f1fe76a1c5fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#aefe7562015d02db28798f1fe76a1c5fb">ODDetector</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector.html#aa5f5358d56d68ad4924db836f97079c6">training_data_location_</a>)</td></tr>
+<tr class="memitem:aefe7562015d02db28798f1fe76a1c5fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#aefe7562015d02db28798f1fe76a1c5fb">ODDetector</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>)</td></tr>
 <tr class="separator:aefe7562015d02db28798f1fe76a1c5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0adbc4967ee577931e34da1600adbf7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#af0adbc4967ee577931e34da1600adbf7">detect</a> (<a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *scene, std::vector&lt; <a class="el" href="classod_1_1_o_d_detection.html">ODDetection</a> * &gt; &amp;detections)=0</td></tr>
-<tr class="separator:af0adbc4967ee577931e34da1600adbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1eb9c018889779a066506b5b30a1575"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#ac1eb9c018889779a066506b5b30a1575">getTrainingInputLocation</a> () const </td></tr>
-<tr class="separator:ac1eb9c018889779a066506b5b30a1575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92cfe2463e290f52094fae35336d83ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#a92cfe2463e290f52094fae35336d83ee">setTrainingInputLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector.html#a76b249fec4c2655c10abbd6c3e00c05c">training_input_location_</a>)</td></tr>
-<tr class="separator:a92cfe2463e290f52094fae35336d83ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada09bd8ae78e5e80a3c9ccd7ef38c2d8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#ada09bd8ae78e5e80a3c9ccd7ef38c2d8">getTrainingDataLocation</a> () const </td></tr>
-<tr class="separator:ada09bd8ae78e5e80a3c9ccd7ef38c2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a568b5bad225ac949b4262691a42b36ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#a568b5bad225ac949b4262691a42b36ee">setTrainingDataLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector.html#aa5f5358d56d68ad4924db836f97079c6">training_data_location_</a>)</td></tr>
-<tr class="separator:a568b5bad225ac949b4262691a42b36ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classod_1_1_o_d_algorithm_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classod_1_1_o_d_algorithm_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classod_1_1_o_d_algorithm_base.html">od::ODAlgorithmBase</a></td></tr>
-<tr class="memitem:a6f753de7c4f65708ff984d4ac2f97b68 inherit pub_methods_classod_1_1_o_d_algorithm_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_algorithm_base.html#a6f753de7c4f65708ff984d4ac2f97b68">getFilesInDirectory</a> (bf::path &amp;dir, std::string &amp;rel_path_so_far, std::vector&lt; std::string &gt; &amp;relative_paths, std::string const &amp;ext)</td></tr>
-<tr class="separator:a6f753de7c4f65708ff984d4ac2f97b68 inherit pub_methods_classod_1_1_o_d_algorithm_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21b1ac33727895059f2f6826ee025c6f inherit pub_methods_classod_1_1_o_d_algorithm_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_algorithm_base.html#a21b1ac33727895059f2f6826ee025c6f">createTrainingDir</a> (std::string &amp;training_dir)</td></tr>
-<tr class="separator:a21b1ac33727895059f2f6826ee025c6f inherit pub_methods_classod_1_1_o_d_algorithm_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a177009d2d35ec6f2289fa3a4308db5da inherit pub_methods_classod_1_1_o_d_algorithm_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_algorithm_base.html#a177009d2d35ec6f2289fa3a4308db5da">getArgvArgc</a> (std::string const &amp;commandline, char ***argv, int &amp;argc)</td></tr>
-<tr class="separator:a177009d2d35ec6f2289fa3a4308db5da inherit pub_methods_classod_1_1_o_d_algorithm_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c5692b0239e9982c20859d84cef17fa inherit pub_methods_classod_1_1_o_d_algorithm_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_algorithm_base.html#a3c5692b0239e9982c20859d84cef17fa">parseParameterString</a> (std::string parameter_string)</td></tr>
-<tr class="separator:a3c5692b0239e9982c20859d84cef17fa inherit pub_methods_classod_1_1_o_d_algorithm_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d417dc9ad57a06447a1c5aae551e4a1 inherit pub_methods_classod_1_1_o_d_algorithm_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_algorithm_base.html#a1d417dc9ad57a06447a1c5aae551e4a1">init</a> ()</td></tr>
-<tr class="separator:a1d417dc9ad57a06447a1c5aae551e4a1 inherit pub_methods_classod_1_1_o_d_algorithm_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa19bd1e93eb936602ef21b384b9ba62"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#afa19bd1e93eb936602ef21b384b9ba62">detect</a> (<a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *scene)</td></tr>
+<tr class="separator:afa19bd1e93eb936602ef21b384b9ba62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0afc0da6e085dec24e2cd1ddba8bfcd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#af0afc0da6e085dec24e2cd1ddba8bfcd">detectOmni</a> (<a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *scene)</td></tr>
+<tr class="separator:af0afc0da6e085dec24e2cd1ddba8bfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classod_1_1_o_d_detector_common"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classod_1_1_o_d_detector_common')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classod_1_1_o_d_detector_common.html">od::ODDetectorCommon</a></td></tr>
+<tr class="memitem:ae30bdc0902e79bc13392d1f15075cfce inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ae30bdc0902e79bc13392d1f15075cfce">ODDetectorCommon</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>=&quot;&quot;)</td></tr>
+<tr class="separator:ae30bdc0902e79bc13392d1f15075cfce inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb63286f6c84af9f73cce4af5bbe013 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a3eb63286f6c84af9f73cce4af5bbe013">init</a> ()=0</td></tr>
+<tr class="separator:a3eb63286f6c84af9f73cce4af5bbe013 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d6325c4a2d31f02615546430f13a07 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a04d6325c4a2d31f02615546430f13a07">getTrainingInputLocation</a> () const </td></tr>
+<tr class="memdesc:a04d6325c4a2d31f02615546430f13a07 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the directory containing the data for training.  <a href="#a04d6325c4a2d31f02615546430f13a07">More...</a><br/></td></tr>
+<tr class="separator:a04d6325c4a2d31f02615546430f13a07 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19122342f6d246755659c4c499a97be2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a19122342f6d246755659c4c499a97be2">setTrainingInputLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a661add7800b587118774393c0556d39d">training_input_location_</a>)</td></tr>
+<tr class="memdesc:a19122342f6d246755659c4c499a97be2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the directory containing the data for training.  <a href="#a19122342f6d246755659c4c499a97be2">More...</a><br/></td></tr>
+<tr class="separator:a19122342f6d246755659c4c499a97be2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56b4eaf07a01187c7a63cbba7f0995a inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ab56b4eaf07a01187c7a63cbba7f0995a">getTrainingDataLocation</a> () const </td></tr>
+<tr class="memdesc:ab56b4eaf07a01187c7a63cbba7f0995a inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the base directory for trained data.  <a href="#ab56b4eaf07a01187c7a63cbba7f0995a">More...</a><br/></td></tr>
+<tr class="separator:ab56b4eaf07a01187c7a63cbba7f0995a inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2b7f0044b9e0032d6eaeba8e6dc53f inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a1e2b7f0044b9e0032d6eaeba8e6dc53f">setTrainingDataLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>)</td></tr>
+<tr class="memdesc:a1e2b7f0044b9e0032d6eaeba8e6dc53f inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base directory for trained data.  <a href="#a1e2b7f0044b9e0032d6eaeba8e6dc53f">More...</a><br/></td></tr>
+<tr class="separator:a1e2b7f0044b9e0032d6eaeba8e6dc53f inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a1403c4fad4d452ac51018b0f5212a14d">getSpecificTrainingDataLocation</a> ()</td></tr>
+<tr class="memdesc:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the specific directory for a Trainer or a Detector inside training_data_location_.  <a href="#a1403c4fad4d452ac51018b0f5212a14d">More...</a><br/></td></tr>
+<tr class="separator:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a76b249fec4c2655c10abbd6c3e00c05c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#a76b249fec4c2655c10abbd6c3e00c05c">training_input_location_</a></td></tr>
-<tr class="separator:a76b249fec4c2655c10abbd6c3e00c05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f5358d56d68ad4924db836f97079c6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#aa5f5358d56d68ad4924db836f97079c6">training_data_location_</a></td></tr>
-<tr class="separator:aa5f5358d56d68ad4924db836f97079c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a1e65ee754ba37db23c18295a83c4ca6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#a1e65ee754ba37db23c18295a83c4ca6a">metainfo_</a></td></tr>
+<tr class="separator:a1e65ee754ba37db23c18295a83c4ca6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classod_1_1_o_d_detector_common"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classod_1_1_o_d_detector_common')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classod_1_1_o_d_detector_common.html">od::ODDetectorCommon</a></td></tr>
+<tr class="memitem:a661add7800b587118774393c0556d39d inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a661add7800b587118774393c0556d39d">training_input_location_</a></td></tr>
+<tr class="separator:a661add7800b587118774393c0556d39d inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a042147d5c57ea3af5617a84f99a52b inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a></td></tr>
+<tr class="separator:a4a042147d5c57ea3af5617a84f99a52b inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0737d7d7688052065cf27a7d7e390d1c inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a0737d7d7688052065cf27a7d7e390d1c">TRAINED_DATA_EXT_</a></td></tr>
+<tr class="separator:a0737d7d7688052065cf27a7d7e390d1c inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4394c495ef1d84985b0163242a6cdb inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a5c4394c495ef1d84985b0163242a6cdb">TRAINED_DATA_IDENTIFIER_</a></td></tr>
+<tr class="separator:a5c4394c495ef1d84985b0163242a6cdb inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The main detection class; all Detector derives from this. </p>
+<div class="textblock"><p>The main detector class; all special Detectors derives from this. </p>
+<p>Provides interface for two important function <a class="el" href="classod_1_1_o_d_detector.html#afa19bd1e93eb936602ef21b384b9ba62">detect()</a> and <a class="el" href="classod_1_1_o_d_detector.html#af0afc0da6e085dec24e2cd1ddba8bfcd">detectOmni()</a>. <a class="el" href="classod_1_1_o_d_detector.html#af0afc0da6e085dec24e2cd1ddba8bfcd">detectOmni()</a> performs a detection/recognition on the entire scene (unsegmented and unprocessed) and provides information about the detection as well as its exact location. <a class="el" href="classod_1_1_o_d_detector.html#afa19bd1e93eb936602ef21b384b9ba62">detect()</a> takes an 'object candidate' or a segmented/processed scene as an input and identifies if the entire scene is a detection.</p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
 
-<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00022">22</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00025">25</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aefe7562015d02db28798f1fe76a1c5fb"></a>
 <div class="memitem">
@@ -164,12 +174,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00026">26</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00029">29</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af0adbc4967ee577931e34da1600adbf7"></a>
+<a class="anchor" id="afa19bd1e93eb936602ef21b384b9ba62"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -177,35 +187,27 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int od::ODDetector::detect </td>
+          <td class="memname">virtual <a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a>* od::ODDetector::detect </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *&#160;</td>
-          <td class="paramname"><em>scene</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classod_1_1_o_d_detection.html">ODDetection</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>detections</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="_o_d_image_local_matching_8h_source.html#l00089">od::ODImageLocalMatching::detect()</a>.</p>
+<p>Reimplemented in <a class="el" href="classod_1_1_o_d_detector2_d.html#a15a867016967045014dceaa57665f5e6">od::ODDetector2D</a>.</p>
+
+<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00032">32</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ada09bd8ae78e5e80a3c9ccd7ef38c2d8"></a>
+<a class="anchor" id="af0afc0da6e085dec24e2cd1ddba8bfcd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -213,154 +215,38 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string od::ODDetector::getTrainingDataLocation </td>
+          <td class="memname">virtual <a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a>* od::ODDetector::detectOmni </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00041">41</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
-
-<p>References <a class="el" href="_o_d_detector_8h_source.html#l00053">training_data_location_</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac1eb9c018889779a066506b5b30a1575"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string od::ODDetector::getTrainingInputLocation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00031">31</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
-
-<p>References <a class="el" href="_o_d_detector_8h_source.html#l00053">training_input_location_</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a568b5bad225ac949b4262691a42b36ee"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void od::ODDetector::setTrainingDataLocation </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>training_data_location_</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00046">46</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
-
-<p>References <a class="el" href="_o_d_detector_8h_source.html#l00053">training_data_location_</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a92cfe2463e290f52094fae35336d83ee"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void od::ODDetector::setTrainingInputLocation </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>training_input_location_</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00036">36</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
-
-<p>References <a class="el" href="_o_d_detector_8h_source.html#l00053">training_input_location_</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00033">33</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aa5f5358d56d68ad4924db836f97079c6"></a>
+<a class="anchor" id="a1e65ee754ba37db23c18295a83c4ca6a"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string od::ODDetector::training_data_location_</td>
+          <td class="memname">bool od::ODDetector::metainfo_</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00053">53</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00035">35</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_detector_8h_source.html#l00041">getTrainingDataLocation()</a>, and <a class="el" href="_o_d_detector_8h_source.html#l00046">setTrainingDataLocation()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a76b249fec4c2655c10abbd6c3e00c05c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string od::ODDetector::training_input_location_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00053">53</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
-
-<p>Referenced by <a class="el" href="_o_d_detector_8h_source.html#l00031">getTrainingInputLocation()</a>, and <a class="el" href="_o_d_detector_8h_source.html#l00036">setTrainingInputLocation()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00034">od::g2d::ODHOGDetector::OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>.</p>
 
 </div>
 </div>
@@ -373,7 +259,7 @@ Protected Attributes</h2></td></tr>
 <p>
 This is a footer.
 </p>
-<p>Pages generated on Mon Jun 29 2015 20:50:11</p>
+<p>Pages generated on Fri Aug 21 2015 19:26:07</p>
 </div> <!-- #footer -->
 </body>
 </html>

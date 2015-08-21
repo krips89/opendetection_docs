@@ -1,12 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classod_1_1_o_d_algorithm_base.html" title="The base of all algorithm classes. " alt="" coords="5,160,155,187"/>
-<area shape="rect" id="node2" href="$classod_1_1_o_d_detector.html" title="The main detection class; all Detector derives from this. " alt="" coords="203,111,317,137"/>
-<area shape="rect" id="node7" href="$classod_1_1_o_d_trainer.html" title="Maining Trainer class; all trainers derives from this. " alt="" coords="208,208,312,235"/>
-<area shape="rect" id="node3" href="$classod_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="383,5,567,46"/>
-<area shape="rect" id="node5" href="$classod_1_1_o_d_point_cloud_global_matching_detector.html" title="ODPointCloudGlobalMatchingDetector. " alt="" coords="365,70,584,111"/>
-<area shape="rect" id="node6" href="$classod_1_1_o_d_point_cloud_global_matching_detector.html" title="od::ODPointCloudGlobalMatching\lDetector\&lt; pcl::PointXYZ \&gt;" alt="" coords="365,135,584,177"/>
-<area shape="rect" id="node4" href="$classod_1_1_simple_ransac_detector.html" title="Simple ransac based 3D object detector; the details will be explained later. " alt="" coords="632,12,811,39"/>
-<area shape="rect" id="node8" href="$classod_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="383,201,567,242"/>
-<area shape="rect" id="node10" href="$classod_1_1_o_d_point_cloud_global_matching_trainer.html" title="ODPointCloudGlobalMatchingTrainer. " alt="" coords="365,266,584,307"/>
-<area shape="rect" id="node9" href="$classod_1_1_snapshot_corr_trainer.html" title="ODImageLocalMatchingTrainer; One of the new algorithm; details will be explained later. " alt="" coords="639,208,803,235"/>
+<area shape="rect" id="node1" href="$classod_1_1_timer.html" title="An utility class for Timer related operations. " alt="" coords="5,5,83,32"/>
 </map>

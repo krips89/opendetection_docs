@@ -1,0 +1,5 @@
+<map id="od::g3d::ODPointCloudGlobalMatchingDetector&lt; PointT &gt;" name="od::g3d::ODPointCloudGlobalMatchingDetector&lt; PointT &gt;">
+<area shape="rect" id="node4" href="$classod_1_1g3d_1_1_o_d_point_cloud_global_matching_detector.html" title="od::g3d::ODPointCloudGlobal\lMatchingDetector\&lt; pcl::PointXYZ \&gt;" alt="" coords="5,267,235,309"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector3_d.html" title="od::ODDetector3D\&lt; PointT \&gt;" alt="" coords="23,83,216,109"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_detector.html" title="The main detection class; all Detector derives from this. " alt="" coords="63,5,177,32"/>
+</map>
