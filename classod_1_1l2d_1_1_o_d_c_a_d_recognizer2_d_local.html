@@ -17,6 +17,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -264,7 +265,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Simple RANSAC based 3D object recognizer. </p>
 <p>A recognizer which uses local features like SIFT/SURF to perform object recognition. Given a 'trained model' trained by <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html" title="ODCADRecogTrainerSnapshotBased; One of the new algorithm; details will be explained later...">ODCADRecogTrainerSnapshotBased</a> or trained externally (manually augmenting features in 3D cad models), this class performs a complete detection in an image. It first extracts 2D features from the scene, matches them with all the feature augmented models (the trained data) and in the end solves PnP under RANSAC.</p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_cadrecog_camera_8cpp-example.html#_a1">objectdetector/od_image_cadrecog_camera.cpp</a>, and <a class="el" href="objectdetector_2od_image_cadrecog_files_8cpp-example.html#_a1">objectdetector/od_image_cadrecog_files.cpp</a>.</dd>
+</dl>
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00045">45</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afa60a137173ce1ba8d1652a41818aa59"></a>
@@ -365,7 +367,8 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A number of detections as an <a class="el" href="classod_1_1_o_d_detections3_d.html" title="The container class for ODDetection3D returned by ODDetector3D. ">ODDetections3D</a> instance containing information about the detection and its pose in 3D. </dd></dl>
 
 <p>Implements <a class="el" href="classod_1_1_o_d_detector2_d_complete.html#ae742ac0f0b7dc75b3cc95d96510a8487">od::ODDetector2DComplete</a>.</p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_cadrecog_camera_8cpp-example.html#a7">objectdetector/od_image_cadrecog_camera.cpp</a>, and <a class="el" href="objectdetector_2od_image_cadrecog_files_8cpp-example.html#a8">objectdetector/od_image_cadrecog_files.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="aca5303c6cdbe1922894e9e0c6569cad0"></a>
@@ -652,7 +655,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classod_1_1_o_d_detector_common.html#a3eb63286f6c84af9f73cce4af5bbe013">od::ODDetectorCommon</a>.</p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_cadrecog_camera_8cpp-example.html#a4">objectdetector/od_image_cadrecog_camera.cpp</a>, and <a class="el" href="objectdetector_2od_image_cadrecog_files_8cpp-example.html#a4">objectdetector/od_image_cadrecog_files.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a5fbd1d6a7ded0a88c0003ac493675c68"></a>
@@ -776,7 +780,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_cadrecog_camera_8cpp-example.html#a2">objectdetector/od_image_cadrecog_camera.cpp</a>, and <a class="el" href="objectdetector_2od_image_cadrecog_files_8cpp-example.html#a2">objectdetector/od_image_cadrecog_files.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ae42453cc82cfaea2322d88efa0d111ab"></a>
@@ -800,7 +805,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_cadrecog_camera_8cpp-example.html#a3">objectdetector/od_image_cadrecog_camera.cpp</a>, and <a class="el" href="objectdetector_2od_image_cadrecog_files_8cpp-example.html#a3">objectdetector/od_image_cadrecog_files.cpp</a>.</dd>
+</dl>
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00053">53</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00206">camera_intrinsic_file</a>.</p>
@@ -1621,9 +1627,9 @@ Additional Inherited Members</h2></td></tr>
 <hr>
 <div id="footer">
 <p>
-This is a footer.
+Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Fri Aug 21 2015 19:26:07</p>
+<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
 </div> <!-- #footer -->
 </body>
 </html>

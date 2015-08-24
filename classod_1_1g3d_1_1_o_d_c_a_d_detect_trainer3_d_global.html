@@ -17,6 +17,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -151,7 +152,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Training class for the detector <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. ">ODCADDetector3DGlobal</a>. </p>
 <p>This class uses PCL 3d_recognition_framework in the background for the training of 3D CAD models (in PLY format) and should be used with <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. ">ODCADDetector3DGlobal</a> for their detection in a pointcloud. In the training_input_location_ the CAD models should be arranged in the following structure:</p>
 <ul>
-<li>&lt;Database dir&gt;=""&gt;<ul>
+<li>&lt;training_input_location_&gt;<ul>
 <li>&lt;Category 1 dir&gt;<ul>
 <li>...</li>
 <li>...</li>
@@ -184,7 +185,8 @@ Protected Attributes</h2></td></tr>
 </ul>
 <p>After the training use the detector class <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. ">ODCADDetector3DGlobal</a>.</p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_pc_global_files_8cpp-example.html#_a1">objectdetector/od_pc_global_files.cpp</a>, and <a class="el" href="objectdetector_2od_pc_global_real_time_8cpp-example.html#_a1">objectdetector/od_pc_global_real_time.cpp</a>.</dd>
+</dl>
 <p>Definition at line <a class="el" href="_o_d_c_a_d_detect_trainer3_d_global_8h_source.html#l00045">45</a> of file <a class="el" href="_o_d_c_a_d_detect_trainer3_d_global_8h_source.html">ODCADDetectTrainer3DGlobal.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a07ea2a6a90d365dcc39fe48aaff376d3"></a>
@@ -365,9 +367,9 @@ Protected Attributes</h2></td></tr>
 <hr>
 <div id="footer">
 <p>
-This is a footer.
+Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Fri Aug 21 2015 19:26:07</p>
+<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
 </div> <!-- #footer -->
 </body>
 </html>

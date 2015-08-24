@@ -17,6 +17,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="ODHOGDetector: A linear classification based detector for HOG features. ">ODHOGDetector</a>: A linear classification based detector for HOG features.  
+<p>A linear classifier for HOG features.  
  <a href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>&gt;</code></p>
@@ -205,11 +206,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a1e65ee754ba37db23c18295a83c4ca6a inherit pub_attribs_classod_1_1_o_d_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="ODHOGDetector: A linear classification based detector for HOG features. ">ODHOGDetector</a>: A linear classification based detector for HOG features. </p>
-<p>User can set any linear classifier through setSVMDetector function or one of the default available detectors like OD_DEFAULT_PEOPLE This class will then find HOG features in the scene and use the liniar classification model as an input to classify the scene It covers both simple region detection and omni detection (multiscale mitilocation detection on the entire scene). See examples for the usage.</p>
+<div class="textblock"><p>A linear classifier for HOG features. </p>
+<p>This class takes an image as an input, finds its HOG features using the parameters containing in the trained data, runs the linear classifier (present in the trained data) on the computed HOG features and finally produces the classification output. Covers both multiscale detection (<a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a09a780635034036daf2e0ff713523825" title="Function for performing detection on an entire scene. ">detectOmni()</a>) and detection on a fixed scene (<a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a3aec310547f0c963acd7ea6375b980e1" title="Function for performing detection on a segmented scene. ">detect()</a> - the scene is resized to the HOG window size).</p>
+<p>Use <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_trainer.html" title="Class for training HOG based detector. ">ODHOGTrainer</a> for the training of new objects. By default this class provides two people detector: OD_DEFAULT_PEOPLE, the people detector from OpenCV and OD_DAIMLER_PEOPLE, the second detector available from OpenCV. One can set any linear classifier, the linear weight vector through <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a5d5f0a14ec7dd111e0a2a0876e2b6b51">setSVMDetector()</a> function but it is highly not recommended as the HOG parameters and the weight vector can be out of sync. One must set appropriate HOG parameters after using <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a5d5f0a14ec7dd111e0a2a0876e2b6b51">setSVMDetector()</a> function with which the weight vector was trained.</p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
-
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00030">30</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#_a6">objectdetector/od_hog_train.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_8cpp-example.html#_a0">objectdetector/od_image_hog.cpp</a>, and <a class="el" href="objectdetector_2od_image_hog_files_8cpp-example.html#_a0">objectdetector/od_image_hog_files.cpp</a>.</dd>
+</dl>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00035">35</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a3aec310547f0c963acd7ea6375b980e1"></a>
 <div class="memitem">
@@ -279,7 +282,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00062">62</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00067">67</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +319,8 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>[out] detections A number of detections as an <a class="el" href="classod_1_1_o_d_detections2_d.html" title="The container class for ODDetection2D returned by ODDetector2D. ">ODDetections2D</a> instance containing information about the detection and its 2D location. </dd></dl>
 
 <p>Implements <a class="el" href="classod_1_1_o_d_detector2_d.html#aa4218ac2d7dfccc913c8eda6428c6892">od::ODDetector2D</a>.</p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a11">objectdetector/od_hog_train.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_8cpp-example.html#a4">objectdetector/od_image_hog.cpp</a>, and <a class="el" href="objectdetector_2od_image_hog_files_8cpp-example.html#a5">objectdetector/od_image_hog_files.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a27915a1ade9353e35044de7764d0fd4d"></a>
@@ -340,9 +344,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00086">86</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00091">91</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00130">blockSize</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00135">blockSize</a>.</p>
 
 </div>
 </div>
@@ -367,9 +371,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00096">96</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00101">101</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00131">blockStride</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00136">blockStride</a>.</p>
 
 </div>
 </div>
@@ -394,9 +398,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00106">106</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00111">111</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00132">cellSize</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00137">cellSize</a>.</p>
 
 </div>
 </div>
@@ -421,9 +425,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00116">116</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00121">121</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00134">hitThreshold</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00139">hitThreshold</a>.</p>
 
 </div>
 </div>
@@ -448,9 +452,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00066">66</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00071">71</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00137">svmtype_</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00142">svmtype_</a>.</p>
 
 </div>
 </div>
@@ -475,9 +479,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00076">76</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00081">81</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00129">winSize</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00134">winSize</a>.</p>
 
 </div>
 </div>
@@ -503,7 +507,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classod_1_1_o_d_detector_common.html#a3eb63286f6c84af9f73cce4af5bbe013">od::ODDetectorCommon</a>.</p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a8">objectdetector/od_hog_train.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_8cpp-example.html#a1">objectdetector/od_image_hog.cpp</a>, and <a class="el" href="objectdetector_2od_image_hog_files_8cpp-example.html#a2">objectdetector/od_image_hog_files.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ac8bfff0678686d61db65798915078a68"></a>
@@ -554,9 +559,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00034">34</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00039">39</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detector_8h_source.html#l00035">od::ODDetector::metainfo_</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00137">svmtype_</a>, <a class="el" href="_object_detector_8h_source.html#l00086">od::ODDetectorCommon::TRAINED_DATA_EXT_</a>, and <a class="el" href="_object_detector_8h_source.html#l00086">od::ODDetectorCommon::TRAINED_DATA_IDENTIFIER_</a>.</p>
+<p>References <a class="el" href="_o_d_detector_8h_source.html#l00035">od::ODDetector::metainfo_</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00142">svmtype_</a>, <a class="el" href="_object_detector_8h_source.html#l00086">od::ODDetectorCommon::TRAINED_DATA_EXT_</a>, and <a class="el" href="_object_detector_8h_source.html#l00086">od::ODDetectorCommon::TRAINED_DATA_IDENTIFIER_</a>.</p>
 
 </div>
 </div>
@@ -582,9 +587,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00091">91</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00096">96</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00130">blockSize</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00135">blockSize</a>.</p>
 
 </div>
 </div>
@@ -610,9 +615,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00101">101</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00106">106</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00131">blockStride</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00136">blockStride</a>.</p>
 
 </div>
 </div>
@@ -638,9 +643,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00111">111</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00116">116</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00132">cellSize</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00137">cellSize</a>.</p>
 
 </div>
 </div>
@@ -666,9 +671,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00121">121</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00126">126</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00134">hitThreshold</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00139">hitThreshold</a>.</p>
 
 </div>
 </div>
@@ -694,9 +699,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00054">54</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00059">59</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00136">hog_</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00141">hog_</a>.</p>
 
 </div>
 </div>
@@ -738,9 +743,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00071">71</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00076">76</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00137">svmtype_</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00142">svmtype_</a>.</p>
 
 </div>
 </div>
@@ -766,9 +771,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00081">81</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00086">86</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00129">winSize</a>.</p>
+<p>References <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00134">winSize</a>.</p>
 
 </div>
 </div>
@@ -791,9 +796,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00130">130</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00135">135</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00086">getBlockSize()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00091">setBlockSize()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00091">getBlockSize()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00096">setBlockSize()</a>.</p>
 
 </div>
 </div>
@@ -815,9 +820,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00131">131</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00136">136</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00096">getBlockStride()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00101">setBlockStride()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00101">getBlockStride()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00106">setBlockStride()</a>.</p>
 
 </div>
 </div>
@@ -839,9 +844,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00132">132</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00137">137</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00106">getCellSize()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00111">setCellSize()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00111">getCellSize()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00116">setCellSize()</a>.</p>
 
 </div>
 </div>
@@ -863,9 +868,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00134">134</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00139">139</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00116">getHitThreshold()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00121">setHitThreshold()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00121">getHitThreshold()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00126">setHitThreshold()</a>.</p>
 
 </div>
 </div>
@@ -887,9 +892,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00136">136</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00141">141</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00054">setSVMDetector()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00059">setSVMDetector()</a>.</p>
 
 </div>
 </div>
@@ -911,9 +916,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00137">137</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00142">142</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00066">getSvmtype()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00034">OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00071">setSvmtype()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00071">getSvmtype()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00039">OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00076">setSvmtype()</a>.</p>
 
 </div>
 </div>
@@ -935,9 +940,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00129">129</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00134">134</a> of file <a class="el" href="_o_d_h_o_g_detector_8h_source.html">ODHOGDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00076">getWinSize()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00081">setWinSize()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00081">getWinSize()</a>, and <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00086">setWinSize()</a>.</p>
 
 </div>
 </div>
@@ -948,9 +953,9 @@ Additional Inherited Members</h2></td></tr>
 <hr>
 <div id="footer">
 <p>
-This is a footer.
+Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Fri Aug 21 2015 19:26:07</p>
+<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
 </div> <!-- #footer -->
 </body>
 </html>

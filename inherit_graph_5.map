@@ -7,7 +7,7 @@
 <area shape="rect" id="node8" href="$classod_1_1_o_d_detector3_d.html" title="The detector of 3D scene. " alt="" coords="393,115,586,141"/>
 <area shape="rect" id="node10" href="$classod_1_1_o_d_detector_multi_algo.html" title="Class for running multiple Detection algorithms (with default parameters) on the same scene..." alt="" coords="405,165,573,192"/>
 <area shape="rect" id="node11" href="$classod_1_1_o_d_detector3_d.html" title="od::ODDetector3D\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="409,217,569,258"/>
-<area shape="rect" id="node4" href="$classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="ODHOGDetector: A linear classification based detector for HOG features. " alt="" coords="669,5,843,32"/>
+<area shape="rect" id="node4" href="$classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="A linear classifier for HOG features. " alt="" coords="669,5,843,32"/>
 <area shape="rect" id="node6" href="$classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="651,57,861,98"/>
 <area shape="rect" id="node7" href="$classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html" title="Simple RANSAC based 3D object recognizer. " alt="" coords="918,57,1109,98"/>
 <area shape="rect" id="node9" href="$classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. " alt="" coords="643,122,869,163"/>

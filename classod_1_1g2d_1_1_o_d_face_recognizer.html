@@ -17,6 +17,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classod_1_1g2d_1_1_o_d_face_recognizer.html" title="ODFaceRecognizer: global feature based facerecognizer. ">ODFaceRecognizer</a>: global feature based facerecognizer.  
+<p>A facerecognizer based on EigenFace and FischerFace algorithms.  
  <a href="classod_1_1g2d_1_1_o_d_face_recognizer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>&gt;</code></p>
@@ -192,11 +193,12 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a65b4bafd115d22714717acdb54d10d36 inherit pro_attribs_classod_1_1_object_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classod_1_1g2d_1_1_o_d_face_recognizer.html" title="ODFaceRecognizer: global feature based facerecognizer. ">ODFaceRecognizer</a>: global feature based facerecognizer. </p>
-<p>Supports EigenFace and FischerFace currently. As an global detector, it does not perform a multiscale omni detection. It just says if a given scene represents a face. To search for a face in an entire scene, you need to use a onnidetector which performs this task on multiscale on each locatoin</p>
+<div class="textblock"><p>A facerecognizer based on EigenFace and FischerFace algorithms. </p>
+<p>Currently it just supports detection on fixed scene (<a class="el" href="classod_1_1g2d_1_1_o_d_face_recognizer.html#a157872af2bddfda5f79696b2f5fcb2cd">detect()</a>) and does not support multiscale detection. This is due to the fact that class for cascade classifier - ODCascadeDetector supports multiscale detection and can be easily integrated with this recognizer - first by finding face using the Cascade and then applying this recognizer on that detected window. This is faster than trying to perform recognition on each multiscale window.</p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
-
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00035">35</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_facerecog_8cpp-example.html#_a0">objectdetector/od_image_facerecog.cpp</a>.</dd>
+</dl>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00036">36</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a157872af2bddfda5f79696b2f5fcb2cd"></a>
 <div class="memitem">
@@ -211,7 +213,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_facerecog_8cpp-example.html#a9">objectdetector/od_image_facerecog.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="acea330088fced3302a2c4acd40827778"></a>
@@ -235,9 +238,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00079">79</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00080">80</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00095">num_components_</a>.</p>
+<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00096">num_components_</a>.</p>
 
 </div>
 </div>
@@ -262,9 +265,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00059">59</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00060">60</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00091">recogtype_</a>.</p>
+<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00092">recogtype_</a>.</p>
 
 </div>
 </div>
@@ -289,9 +292,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00069">69</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00070">70</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00096">threshold_</a>.</p>
+<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00097">threshold_</a>.</p>
 
 </div>
 </div>
@@ -317,7 +320,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classod_1_1_object_detector.html#ae11072bef0cedee91acd810d043c65fd">od::ObjectDetector</a>.</p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_facerecog_8cpp-example.html#a6">objectdetector/od_image_facerecog.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a1652275d6356336664c4b0b344fee57a"></a>
@@ -342,7 +346,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classod_1_1_object_detector.html#a9572a6691d2457351c46911ac7270180">od::ObjectDetector</a>.</p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_facerecog_8cpp-example.html#a4">objectdetector/od_image_facerecog.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a67a46cf73c9d8d3608676a26072ca358"></a>
@@ -393,9 +398,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00084">84</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00085">85</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00095">num_components_</a>.</p>
+<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00096">num_components_</a>.</p>
 
 </div>
 </div>
@@ -420,10 +425,11 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_facerecog_8cpp-example.html#a3">objectdetector/od_image_facerecog.cpp</a>.</dd>
+</dl>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00065">65</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00064">64</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
-
-<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00091">recogtype_</a>.</p>
+<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00092">recogtype_</a>.</p>
 
 </div>
 </div>
@@ -449,9 +455,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00074">74</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00075">75</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00096">threshold_</a>.</p>
+<p>References <a class="el" href="_o_d_face_recognizer_8h_source.html#l00097">threshold_</a>.</p>
 
 </div>
 </div>
@@ -477,7 +483,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classod_1_1_object_detector.html#aed1b2afa5798b032c318c285647b261c">od::ObjectDetector</a>.</p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_facerecog_8cpp-example.html#a5">objectdetector/od_image_facerecog.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -499,7 +506,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00090">90</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00091">91</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +528,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00094">94</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00095">95</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
 </div>
 </div>
@@ -543,7 +550,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00093">93</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00094">94</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
 </div>
 </div>
@@ -557,7 +564,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00041">41</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00042">42</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
 </div>
 </div>
@@ -579,9 +586,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00095">95</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00096">96</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_face_recognizer_8h_source.html#l00079">getNumComponents()</a>, and <a class="el" href="_o_d_face_recognizer_8h_source.html#l00084">setNumComponents()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_face_recognizer_8h_source.html#l00080">getNumComponents()</a>, and <a class="el" href="_o_d_face_recognizer_8h_source.html#l00085">setNumComponents()</a>.</p>
 
 </div>
 </div>
@@ -603,9 +610,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00091">91</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00092">92</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_face_recognizer_8h_source.html#l00059">getRecogtype()</a>, and <a class="el" href="_o_d_face_recognizer_8h_source.html#l00064">setRecogtype()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_face_recognizer_8h_source.html#l00060">getRecogtype()</a>, and <a class="el" href="_o_d_face_recognizer_8h_source.html#l00065">setRecogtype()</a>.</p>
 
 </div>
 </div>
@@ -627,7 +634,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"></div>
 <div class="line">      <span class="keywordtype">void</span> <a class="code" href="classod_1_1_object_detector.html#ad5ff0fe0347ef361d5c358c1815fd9b1">init</a>()</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00041">41</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00042">42</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
 </div>
 </div>
@@ -649,9 +656,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00096">96</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_face_recognizer_8h_source.html#l00097">97</a> of file <a class="el" href="_o_d_face_recognizer_8h_source.html">ODFaceRecognizer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_face_recognizer_8h_source.html#l00069">getThreshold()</a>, and <a class="el" href="_o_d_face_recognizer_8h_source.html#l00074">setThreshold()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_face_recognizer_8h_source.html#l00070">getThreshold()</a>, and <a class="el" href="_o_d_face_recognizer_8h_source.html#l00075">setThreshold()</a>.</p>
 
 </div>
 </div>
@@ -662,9 +669,9 @@ Protected Attributes</h2></td></tr>
 <hr>
 <div id="footer">
 <p>
-This is a footer.
+Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Fri Aug 21 2015 19:26:07</p>
+<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -17,6 +17,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -182,7 +183,8 @@ class od::g3d::ODCADDetector3DGlobal&lt; PointT &gt;</h3>
 <p>This class uses PCL 3d_recognition_framework in the background for the detection. First train your data using <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html" title="Training class for the detector ODCADDetector3DGlobal. ">ODCADDetectTrainer3DGlobal</a> and use this class for the detection. This detection will assume the presence of a plane (like a table top) in the pointcloud. It segments the point cloud assuming the presence of a plane and using a simple Euclidian segmentation. After that it finds the global features of each segmented scene match them with the trained data thereby performing a clssification. Read the documentation of <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html" title="Training class for the detector ODCADDetector3DGlobal. ">ODCADDetectTrainer3DGlobal</a> to know how the training data should be arranged and trained to get meaningful detection.</p>
 <p>This class provides a detection for each segmented scenes which matches them the best. So the number of positive detection is same as the number of possible segmented scene in the point cloud.</p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_pc_global_files_8cpp-example.html#_a3">objectdetector/od_pc_global_files.cpp</a>, and <a class="el" href="objectdetector_2od_pc_global_real_time_8cpp-example.html#_a3">objectdetector/od_pc_global_real_time.cpp</a>.</dd>
+</dl>
 <p>Definition at line <a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html#l00042">42</a> of file <a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html">ODCADDetector3DGlobal.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af66c97ce07596d0b0345e87f6ff6d302"></a>
@@ -532,9 +534,9 @@ template&lt;typename PointT = pcl::PointXYZRGBA&gt; </div>
 <hr>
 <div id="footer">
 <p>
-This is a footer.
+Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Fri Aug 21 2015 19:26:07</p>
+<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
 </div> <!-- #footer -->
 </body>
 </html>

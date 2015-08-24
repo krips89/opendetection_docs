@@ -17,6 +17,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -211,9 +212,10 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for training HOG based detector. </p>
-<p>Use <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="ODHOGDetector: A linear classification based detector for HOG features. ">ODHOGDetector</a> after training with this class. This is the training class for training HOG based detector. <a class="el" href="class_s_v_mlight.html">SVMlight</a> is used here to train linear SVM on the HOG features. It supports the usage of multiple random windows in negetive training images to increase the number of negetive features by the function 'setNOFeaturesNeg'. It also supports "Hard negetive" training which collects all the false positive windows after initial training to retrain and obtain a new feature vector. Use the function 'setTrainHardNegetive' to enable this feature.</p>
+<p>Use <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="A linear classifier for HOG features. ">ODHOGDetector</a> after training with this class. This is the training class for training HOG based detector. <a class="el" href="class_s_v_mlight.html">SVMlight</a> is used here to train linear SVM on the HOG features. It supports the usage of multiple random windows in negetive training images to increase the number of negetive features by the function 'setNOFeaturesNeg'. It also supports "Hard negetive" training which collects all the false positive windows after initial training to retrain and obtain a new feature vector. Use the function 'setTrainHardNegetive' to enable this feature.</p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#_a0">objectdetector/od_hog_train.cpp</a>.</dd>
+</dl>
 <p>Definition at line <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00028">28</a> of file <a class="el" href="_o_d_h_o_g_trainer_8h_source.html">ODHOGTrainer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a82f9a4d1e69daa258ad28f3e609e059b"></a>
@@ -714,7 +716,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a2">objectdetector/od_hog_train.cpp</a>.</dd>
+</dl>
 <p>Definition at line <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00084">84</a> of file <a class="el" href="_o_d_h_o_g_trainer_8h_source.html">ODHOGTrainer.h</a>.</p>
 
 <p>References <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00192">negSamplesDir</a>.</p>
@@ -742,7 +745,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a3">objectdetector/od_hog_train.cpp</a>.</dd>
+</dl>
 <p>Definition at line <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00094">94</a> of file <a class="el" href="_o_d_h_o_g_trainer_8h_source.html">ODHOGTrainer.h</a>.</p>
 
 <p>References <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00186">nofeatures_neg</a>.</p>
@@ -770,7 +774,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a1">objectdetector/od_hog_train.cpp</a>.</dd>
+</dl>
 <p>Definition at line <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00074">74</a> of file <a class="el" href="_o_d_h_o_g_trainer_8h_source.html">ODHOGTrainer.h</a>.</p>
 
 <p>References <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00191">posSamplesDir</a>.</p>
@@ -826,7 +831,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a4">objectdetector/od_hog_train.cpp</a>.</dd>
+</dl>
 <p>Definition at line <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00164">164</a> of file <a class="el" href="_o_d_h_o_g_trainer_8h_source.html">ODHOGTrainer.h</a>.</p>
 
 <p>References <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00188">train_hard_negetive_</a>.</p>
@@ -911,7 +917,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classod_1_1_o_d_trainer.html#a06d82a0ac7adbf301d7535b302bdcdc5">od::ODTrainer</a>.</p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a5">objectdetector/od_hog_train.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1232,9 +1239,9 @@ Protected Attributes</h2></td></tr>
 <hr>
 <div id="footer">
 <p>
-This is a footer.
+Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Fri Aug 21 2015 19:26:07</p>
+<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
 </div> <!-- #footer -->
 </body>
 </html>

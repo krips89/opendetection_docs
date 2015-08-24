@@ -17,6 +17,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -86,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">   * This class uses PCL 3d_recognition_framework in the background for the training of 3D CAD models (in PLY format) and should be used with ODCADDetector3DGlobal for their detection in a pointcloud.</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   * In the training_input_location_ the CAD models should be arranged in the following structure:</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   * - &lt;Database dir&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   * - &lt;training_input_location_&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">        - &lt;Category 1 dir&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">          - ...</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">          - ...</span></div>
@@ -139,10 +140,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html#a6db5a89d423a5de84db3d113ec0459c0">   71</a></span>&#160;      std::string <a class="code" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html#a6db5a89d423a5de84db3d113ec0459c0">desc_name</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif //OPENDETECTION_ODPOINTCLOUDGLOBALMATCHINGTRAINER_H</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">    /** \example objectdetector/od_pc_global_real_time.cpp</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">     *  \example objectdetector/od_pc_global_files.cpp</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif //OPENDETECTION_ODPOINTCLOUDGLOBALMATCHINGTRAINER_H</span></div>
 <div class="ttc" id="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global_html_a8c7f434604152402725bca1b1b975cc1"><div class="ttname"><a href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html#a8c7f434604152402725bca1b1b975cc1">od::g3d::ODCADDetectTrainer3DGlobal::train</a></div><div class="ttdeci">int train()</div></div>
 <div class="ttc" id="classod_1_1_o_d_detector_common_html_a4a042147d5c57ea3af5617a84f99a52b"><div class="ttname"><a href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">od::ODDetectorCommon::training_data_location_</a></div><div class="ttdeci">std::string training_data_location_</div><div class="ttdef"><b>Definition:</b> <a href="_object_detector_8h_source.html#l00085">ObjectDetector.h:85</a></div></div>
 <div class="ttc" id="classod_1_1_o_d_detector_common_html_a661add7800b587118774393c0556d39d"><div class="ttname"><a href="classod_1_1_o_d_detector_common.html#a661add7800b587118774393c0556d39d">od::ODDetectorCommon::training_input_location_</a></div><div class="ttdeci">std::string training_input_location_</div><div class="ttdef"><b>Definition:</b> <a href="_object_detector_8h_source.html#l00085">ObjectDetector.h:85</a></div></div>
@@ -158,9 +164,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <hr>
 <div id="footer">
 <p>
-This is a footer.
+Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Fri Aug 21 2015 19:26:07</p>
+<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
 </div> <!-- #footer -->
 </body>
 </html>
