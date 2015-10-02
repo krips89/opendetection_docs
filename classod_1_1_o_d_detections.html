@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.6-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,9 +6,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
 <title>Open Detection: od::ODDetections Class Reference</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -17,7 +35,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -42,8 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -66,11 +86,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceod.html">od</a></li><li class="navelem"><a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classod_1_1_o_d_detections.html','');});
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="classod_1_1_o_d_detections-members.html">List of all members</a> &#124;
@@ -91,7 +121,7 @@ Inheritance diagram for od::ODDetections:</div>
 <div class="center"><img src="classod_1_1_o_d_detections__inherit__graph.png" border="0" usemap="#od_1_1_o_d_detections_inherit__map" alt="Inheritance graph"/></div>
 <map name="od_1_1_o_d_detections_inherit__map" id="od_1_1_o_d_detections_inherit__map">
 <area shape="rect" id="node2" href="classod_1_1_o_d_detections2_d.html" title="The container class for ODDetection2D returned by ODDetector2D. " alt="" coords="5,80,149,107"/><area shape="rect" id="node3" href="classod_1_1_o_d_detections3_d.html" title="The container class for ODDetection3D returned by ODDetector3D. " alt="" coords="173,80,317,107"/><area shape="rect" id="node4" href="classod_1_1_o_d_detections_complete.html" title="The container class for ODDetectionComplete returned by ODDetector2DComplete. " alt="" coords="342,80,524,107"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -134,7 +164,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_facerecog_8cpp-example.html#_a8">objectdetector/od_image_facerecog.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00248">248</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00249">249</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="adf82a664d3bafa944309400d21397535"></a>
 <div class="memitem">
@@ -158,7 +188,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00252">252</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00253">253</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
 </div>
 </div>
@@ -183,9 +213,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00256">256</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00257">257</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00300">detections_</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00263">size()</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00301">detections_</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00264">size()</a>.</p>
 
 </div>
 </div>
@@ -212,9 +242,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00270">270</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00271">271</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00300">detections_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00301">detections_</a>.</p>
 
 </div>
 </div>
@@ -240,7 +270,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00277">277</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00278">278</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
 </div>
 </div>
@@ -265,9 +295,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00289">289</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00290">290</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00302">metainfo_cluster_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00303">metainfo_cluster_</a>.</p>
 
 </div>
 </div>
@@ -293,9 +323,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_image_cadrecog_camera_8cpp-example.html#a9">objectdetector/od_image_cadrecog_camera.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00279">279</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00280">280</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00301">metainfo_image_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00302">metainfo_image_</a>.</p>
 
 </div>
 </div>
@@ -321,9 +351,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00276">276</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00277">277</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00300">detections_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00301">detections_</a>.</p>
 
 </div>
 </div>
@@ -348,10 +378,11 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="apps_2global2_d_2od_multihog_app_8cpp-example.html#a6">apps/global2D/od_multihog_app.cpp</a>.</dd>
+</dl>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00266">266</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00265">265</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
-
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00300">detections_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00301">detections_</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_detector3_d_global_8hpp_source.html#l00165">od::g3d::ODCADDetector3DGlobal&lt; PointT &gt;::detect()</a>, and <a class="el" href="_o_d_c_a_d_detector3_d_global_8hpp_source.html#l00099">od::g3d::ODCADDetector3DGlobal&lt; PointT &gt;::detectOmni()</a>.</p>
 
@@ -379,9 +410,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00294">294</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00295">295</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00302">metainfo_cluster_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00303">metainfo_cluster_</a>.</p>
 
 </div>
 </div>
@@ -407,7 +438,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00284">284</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00285">285</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
 </div>
 </div>
@@ -431,13 +462,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a12">objectdetector/od_hog_train.cpp</a>, <a class="el" href="objectdetector_2od_image_cadrecog_camera_8cpp-example.html#a8">objectdetector/od_image_cadrecog_camera.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_8cpp-example.html#a5">objectdetector/od_image_hog.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_files_8cpp-example.html#a6">objectdetector/od_image_hog_files.cpp</a>, <a class="el" href="objectdetector_2od_multialgo_files_8cpp-example.html#a5">objectdetector/od_multialgo_files.cpp</a>, <a class="el" href="objectdetector_2od_multialgo_pc_8cpp-example.html#a7">objectdetector/od_multialgo_pc.cpp</a>, <a class="el" href="objectdetector_2od_pc_global_files_8cpp-example.html#a10">objectdetector/od_pc_global_files.cpp</a>, and <a class="el" href="objectdetector_2od_pc_global_real_time_8cpp-example.html#a11">objectdetector/od_pc_global_real_time.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="apps_2global2_d_2od_multihog_app_8cpp-example.html#a5">apps/global2D/od_multihog_app.cpp</a>, <a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a12">objectdetector/od_hog_train.cpp</a>, <a class="el" href="objectdetector_2od_image_cadrecog_camera_8cpp-example.html#a8">objectdetector/od_image_cadrecog_camera.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_files_8cpp-example.html#a6">objectdetector/od_image_hog_files.cpp</a>, <a class="el" href="objectdetector_2od_multialgo_files_8cpp-example.html#a5">objectdetector/od_multialgo_files.cpp</a>, <a class="el" href="objectdetector_2od_multialgo_pc_8cpp-example.html#a7">objectdetector/od_multialgo_pc.cpp</a>, and <a class="el" href="objectdetector_2od_pc_global_files_8cpp-example.html#a10">objectdetector/od_pc_global_files.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00263">263</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00264">264</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00300">detections_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00301">detections_</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00256">~ODDetections()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00257">~ODDetections()</a>.</p>
 
 </div>
 </div>
@@ -460,9 +491,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00300">300</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00301">301</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00270">append()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00337">od::ODDetections2D::at()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00351">od::ODDetections3D::at()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00364">od::ODDetectionsComplete::at()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00276">operator[]()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00336">od::ODDetections2D::operator[]()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00350">od::ODDetections3D::operator[]()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00363">od::ODDetectionsComplete::operator[]()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00265">push_back()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00316">od::ODDetections2D::renderMetainfo()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00263">size()</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00256">~ODDetections()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00271">append()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00342">od::ODDetections2D::at()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00376">od::ODDetections3D::at()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00389">od::ODDetectionsComplete::at()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00277">operator[]()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00341">od::ODDetections2D::operator[]()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00375">od::ODDetections3D::operator[]()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00388">od::ODDetectionsComplete::operator[]()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00266">push_back()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00320">od::ODDetections2D::renderMetainfo()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00264">size()</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00257">~ODDetections()</a>.</p>
 
 </div>
 </div>
@@ -484,9 +515,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00302">302</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00303">303</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00289">getMetainfoCluster()</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00294">setMetainfoCluster()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00290">getMetainfoCluster()</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00295">setMetainfoCluster()</a>.</p>
 
 </div>
 </div>
@@ -508,9 +539,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00301">301</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00302">302</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00279">getMetainfoImage()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00280">getMetainfoImage()</a>.</p>
 
 </div>
 </div>
@@ -518,12 +549,13 @@ Protected Attributes</h2></td></tr>
 <li>/home/sarkar/opendetection/common/pipeline/<a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <hr>
 <div id="footer">
 <p>
 Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
+<p>Pages generated on Fri Oct 2 2015 04:20:06</p>
 </div> <!-- #footer -->
 </body>
 </html>

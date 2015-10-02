@@ -1,0 +1,27 @@
+var classod_1_1_object_detector =
+[
+    [ "ObjectDetector", "classod_1_1_object_detector.html#a4d21b01045f2e55ae3fe2b8eb0cc939f", null ],
+    [ "detect", "classod_1_1_object_detector.html#a487b98651a981af307745c6ad9048171", null ],
+    [ "detect", "classod_1_1_object_detector.html#aebd2fbc1b91948a58b4b372f7155e773", null ],
+    [ "detectOmni", "classod_1_1_object_detector.html#a9af7a479b071c4fc24874841e677fd16", null ],
+    [ "getAlwaysTrain", "classod_1_1_object_detector.html#ae535e0576bed728160b137c55d6606db", null ],
+    [ "getMethod", "classod_1_1_object_detector.html#aa0a9cb1e9b38a1b8104964511c42b79c", null ],
+    [ "getSpecificTrainingDataLocation", "classod_1_1_object_detector.html#adf07ac992eaae1a445a8986667e795f7", null ],
+    [ "getTrainingDataLocation", "classod_1_1_object_detector.html#a97f13105ceddbfa41186e68fe60d6a56", null ],
+    [ "getTrainingInputLocation", "classod_1_1_object_detector.html#a754e6fb1d71472450c66e827489de3d5", null ],
+    [ "init", "classod_1_1_object_detector.html#ad5ff0fe0347ef361d5c358c1815fd9b1", null ],
+    [ "initDetector", "classod_1_1_object_detector.html#ae11072bef0cedee91acd810d043c65fd", null ],
+    [ "initTrainer", "classod_1_1_object_detector.html#a9572a6691d2457351c46911ac7270180", null ],
+    [ "setAlwaysTrain", "classod_1_1_object_detector.html#ad5b8307982a486edb91ef694edc2e8ff", null ],
+    [ "setDetectionMethod", "classod_1_1_object_detector.html#aaf505117e4ece0314b68059670567597", null ],
+    [ "setTrainingDataLocation", "classod_1_1_object_detector.html#a3ab2dac369591ca6bf334121660a0bae", null ],
+    [ "setTrainingInputLocation", "classod_1_1_object_detector.html#a4250a830d390c2d74a37990766a87e57", null ],
+    [ "train", "classod_1_1_object_detector.html#aed1b2afa5798b032c318c285647b261c", null ],
+    [ "always_train_", "classod_1_1_object_detector.html#a2b10bb3940b2dd44edf288dcc060c673", null ],
+    [ "method_", "classod_1_1_object_detector.html#a41ae2c315018477da34d63bf270de5db", null ],
+    [ "trained_", "classod_1_1_object_detector.html#ae106eb81a5a0b91a150a014ae12b4c6b", null ],
+    [ "TRAINED_DATA_EXT_", "classod_1_1_object_detector.html#a83f1319a1ddcf84dd40bf3c2f7534421", null ],
+    [ "TRAINED_DATA_IDENTIFIER_", "classod_1_1_object_detector.html#a65b4bafd115d22714717acdb54d10d36", null ],
+    [ "training_data_location_", "classod_1_1_object_detector.html#aaf3126aaf2f9c3885fe46b9a218a2575", null ],
+    [ "training_input_location_", "classod_1_1_object_detector.html#a07c34202beca22b2530da3f4ca8c85dd", null ]
+];

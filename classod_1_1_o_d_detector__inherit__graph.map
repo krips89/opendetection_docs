@@ -1,13 +1,15 @@
 <map id="od::ODDetector" name="od::ODDetector">
-<area shape="rect" id="node3" href="$classod_1_1_o_d_detector2_d.html" title="The detector of 2D scene. " alt="" coords="421,9,552,36"/>
-<area shape="rect" id="node5" href="$classod_1_1_o_d_detector2_d_complete.html" title="The detector of 2D scene performing a &#39;complete detection&#39;. " alt="" coords="393,64,580,91"/>
-<area shape="rect" id="node8" href="$classod_1_1_o_d_detector3_d.html" title="The detector of 3D scene. " alt="" coords="390,129,583,156"/>
-<area shape="rect" id="node11" href="$classod_1_1_o_d_detector3_d.html" title="od::ODDetector3D\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="775,187,935,229"/>
-<area shape="rect" id="node12" href="$classod_1_1_o_d_detector_multi_algo.html" title="Class for running multiple Detection algorithms (with default parameters) on the same scene..." alt="" coords="403,245,571,272"/>
-<area shape="rect" id="node2" href="$classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="6,129,173,156"/>
-<area shape="rect" id="node4" href="$classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="A linear classifier for HOG features. " alt="" coords="768,5,941,32"/>
-<area shape="rect" id="node6" href="$classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="750,57,959,98"/>
-<area shape="rect" id="node7" href="$classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html" title="Simple RANSAC based 3D object recognizer. " alt="" coords="1143,57,1334,98"/>
-<area shape="rect" id="node9" href="$classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. " alt="" coords="741,122,968,163"/>
-<area shape="rect" id="node10" href="$classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="od::g3d::ODCADDetector3DGlobal\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="1125,149,1352,190"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_detector2_d.html" title="The detector of 2D scene. " alt="" coords="421,81,552,108"/>
+<area shape="rect" id="node7" href="$classod_1_1_o_d_detector2_d_complete.html" title="The detector of 2D scene performing a &#39;complete detection&#39;. " alt="" coords="393,173,580,200"/>
+<area shape="rect" id="node10" href="$classod_1_1_o_d_detector3_d.html" title="The detector of 3D scene. " alt="" coords="390,233,583,260"/>
+<area shape="rect" id="node13" href="$classod_1_1_o_d_detector3_d.html" title="od::ODDetector3D\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="775,289,935,330"/>
+<area shape="rect" id="node14" href="$classod_1_1_o_d_detector_multi_algo.html" title="od::ODDetectorMultiAlgo" alt="" coords="403,347,571,373"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="6,233,173,260"/>
+<area shape="rect" id="node4" href="$classod_1_1g2d_1_1_o_d_cascade_detector.html" title="A class for detection using Cascade classifiers. " alt="" coords="757,5,952,32"/>
+<area shape="rect" id="node5" href="$classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="A linear classifier for HOG features. " alt="" coords="768,56,941,83"/>
+<area shape="rect" id="node6" href="$classod_1_1_o_d_detector_multi_algo2_d.html" title="Class for running multiple Detection algorithms (with default parameters) on the same scene..." alt="" coords="762,107,947,133"/>
+<area shape="rect" id="node8" href="$classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="750,158,959,199"/>
+<area shape="rect" id="node9" href="$classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html" title="Simple RANSAC based 3D object recognizer. " alt="" coords="1143,158,1334,199"/>
+<area shape="rect" id="node11" href="$classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. " alt="" coords="741,223,968,265"/>
+<area shape="rect" id="node12" href="$classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="od::g3d::ODCADDetector3DGlobal\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="1125,250,1352,291"/>
 </map>

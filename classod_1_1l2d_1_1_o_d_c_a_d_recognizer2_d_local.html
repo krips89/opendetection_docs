@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.6-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,9 +6,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
 <title>Open Detection: od::l2d::ODCADRecognizer2DLocal Class Reference</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -17,7 +35,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -42,8 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -66,11 +86,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceod.html">od</a></li><li class="navelem"><a class="el" href="namespaceod_1_1l2d.html">l2d</a></li><li class="navelem"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html">ODCADRecognizer2DLocal</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html','');});
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local-members.html">List of all members</a> &#124;
@@ -92,14 +122,14 @@ Inheritance diagram for od::l2d::ODCADRecognizer2DLocal:</div>
 <div class="center"><img src="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local__inherit__graph.png" border="0" usemap="#od_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local_inherit__map" alt="Inheritance graph"/></div>
 <map name="od_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local_inherit__map" id="od_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local_inherit__map">
 <area shape="rect" id="node2" href="classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="5,230,213,271"/><area shape="rect" id="node3" href="classod_1_1_o_d_detector2_d_complete.html" title="The detector of 2D scene performing a &#39;complete detection&#39;. " alt="" coords="16,155,203,181"/><area shape="rect" id="node4" href="classod_1_1_o_d_detector.html" title="The main detector class; all special Detectors derives from this. " alt="" coords="52,80,167,107"/><area shape="rect" id="node5" href="classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="26,5,192,32"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for od::l2d::ODCADRecognizer2DLocal:</div>
 <div class="dyncontent">
 <div class="center"><img src="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local__coll__graph.png" border="0" usemap="#od_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local_coll__map" alt="Collaboration graph"/></div>
 <map name="od_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local_coll__map" id="od_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local_coll__map">
 <area shape="rect" id="node2" href="classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="5,230,213,271"/><area shape="rect" id="node3" href="classod_1_1_o_d_detector2_d_complete.html" title="The detector of 2D scene performing a &#39;complete detection&#39;. " alt="" coords="16,155,203,181"/><area shape="rect" id="node4" href="classod_1_1_o_d_detector.html" title="The main detector class; all special Detectors derives from this. " alt="" coords="52,80,167,107"/><area shape="rect" id="node5" href="classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="26,5,192,32"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -129,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aed039aeea4c9fcc348f7c745e57e9187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab86e8c41bc23bc398c37a7f434962eb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#ab86e8c41bc23bc398c37a7f434962eb8">isMetainfo</a> () const </td></tr>
 <tr class="separator:ab86e8c41bc23bc398c37a7f434962eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf3d19ebdafbc8141263a076cee1ec47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#acf3d19ebdafbc8141263a076cee1ec47">setMetainfo</a> (bool <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#afc06bacf656c5734afd915f9be36ba8f">metainfo</a>)</td></tr>
+<tr class="memitem:acf3d19ebdafbc8141263a076cee1ec47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#acf3d19ebdafbc8141263a076cee1ec47">setMetainfo</a> (bool metainfo)</td></tr>
 <tr class="separator:acf3d19ebdafbc8141263a076cee1ec47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a714f0535fb8d14609a3d52638bcecc0f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#a714f0535fb8d14609a3d52638bcecc0f">getIterationsCount</a> () const </td></tr>
 <tr class="separator:a714f0535fb8d14609a3d52638bcecc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,8 +181,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7d66d99a01b7cc3c51c97aa72d0abd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac088c0d8667655ebf727465889aec9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#aac088c0d8667655ebf727465889aec9d">setPnpMethod</a> (int <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#acb61a484c769ac87c75002adc271388e">pnpMethod</a>)</td></tr>
 <tr class="separator:aac088c0d8667655ebf727465889aec9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa60a137173ce1ba8d1652a41818aa59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#afa60a137173ce1ba8d1652a41818aa59">ODCADRecognizer2DLocal</a> (string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>=0)</td></tr>
-<tr class="separator:afa60a137173ce1ba8d1652a41818aa59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4caf92d7bdb23e9b51cc10765e70bd27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#a4caf92d7bdb23e9b51cc10765e70bd27">ODCADRecognizer2DLocal</a> (string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a>=0)</td></tr>
+<tr class="separator:a4caf92d7bdb23e9b51cc10765e70bd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae327392e670ad1189a241dde215e40d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#ae327392e670ad1189a241dde215e40d3">parseParameterString</a> (string parameter_string)</td></tr>
 <tr class="separator:ae327392e670ad1189a241dde215e40d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1f0a04214ff8fa76c0f3369e221ae29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#aa1f0a04214ff8fa76c0f3369e221ae29">init</a> ()</td></tr>
@@ -164,36 +194,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a492679e5b0ad41cc090f20b604efb0a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for performing detection on an entire scene.  <a href="#a492679e5b0ad41cc090f20b604efb0a6">More...</a><br/></td></tr>
 <tr class="separator:a492679e5b0ad41cc090f20b604efb0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classod_1_1l2d_1_1_o_d_image_local_matching_detector"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classod_1_1l2d_1_1_o_d_image_local_matching_detector')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classod_1_1l2d_1_1_o_d_image_local_matching_detector.html">od::l2d::ODImageLocalMatchingDetector</a></td></tr>
-<tr class="memitem:a38df022198d9226f142a5f59a1997692 inherit pub_methods_classod_1_1l2d_1_1_o_d_image_local_matching_detector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_image_local_matching_detector.html#a38df022198d9226f142a5f59a1997692">ODImageLocalMatchingDetector</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>)</td></tr>
+<tr class="memitem:a38df022198d9226f142a5f59a1997692 inherit pub_methods_classod_1_1l2d_1_1_o_d_image_local_matching_detector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_image_local_matching_detector.html#a38df022198d9226f142a5f59a1997692">ODImageLocalMatchingDetector</a> (std::string const &amp;training_data_location_)</td></tr>
 <tr class="separator:a38df022198d9226f142a5f59a1997692 inherit pub_methods_classod_1_1l2d_1_1_o_d_image_local_matching_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classod_1_1_o_d_detector2_d_complete"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classod_1_1_o_d_detector2_d_complete')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classod_1_1_o_d_detector2_d_complete.html">od::ODDetector2DComplete</a></td></tr>
-<tr class="memitem:ade8aa2c6a45a23b65ee55664c6cd34b3 inherit pub_methods_classod_1_1_o_d_detector2_d_complete"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector2_d_complete.html#ade8aa2c6a45a23b65ee55664c6cd34b3">ODDetector2DComplete</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>)</td></tr>
-<tr class="separator:ade8aa2c6a45a23b65ee55664c6cd34b3 inherit pub_methods_classod_1_1_o_d_detector2_d_complete"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7abd158f07a4acffe421c81c0e8b74 inherit pub_methods_classod_1_1_o_d_detector2_d_complete"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector2_d_complete.html#a7e7abd158f07a4acffe421c81c0e8b74">ODDetector2DComplete</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a>)</td></tr>
+<tr class="separator:a7e7abd158f07a4acffe421c81c0e8b74 inherit pub_methods_classod_1_1_o_d_detector2_d_complete"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classod_1_1_o_d_detector"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classod_1_1_o_d_detector')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classod_1_1_o_d_detector.html">od::ODDetector</a></td></tr>
-<tr class="memitem:aefe7562015d02db28798f1fe76a1c5fb inherit pub_methods_classod_1_1_o_d_detector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#aefe7562015d02db28798f1fe76a1c5fb">ODDetector</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>)</td></tr>
+<tr class="memitem:aefe7562015d02db28798f1fe76a1c5fb inherit pub_methods_classod_1_1_o_d_detector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#aefe7562015d02db28798f1fe76a1c5fb">ODDetector</a> (std::string const &amp;training_data_location_)</td></tr>
 <tr class="separator:aefe7562015d02db28798f1fe76a1c5fb inherit pub_methods_classod_1_1_o_d_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa19bd1e93eb936602ef21b384b9ba62 inherit pub_methods_classod_1_1_o_d_detector"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#afa19bd1e93eb936602ef21b384b9ba62">detect</a> (<a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *scene)</td></tr>
 <tr class="separator:afa19bd1e93eb936602ef21b384b9ba62 inherit pub_methods_classod_1_1_o_d_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0afc0da6e085dec24e2cd1ddba8bfcd inherit pub_methods_classod_1_1_o_d_detector"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#af0afc0da6e085dec24e2cd1ddba8bfcd">detectOmni</a> (<a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *scene)</td></tr>
 <tr class="separator:af0afc0da6e085dec24e2cd1ddba8bfcd inherit pub_methods_classod_1_1_o_d_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classod_1_1_o_d_detector_common"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classod_1_1_o_d_detector_common')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classod_1_1_o_d_detector_common.html">od::ODDetectorCommon</a></td></tr>
-<tr class="memitem:ae30bdc0902e79bc13392d1f15075cfce inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ae30bdc0902e79bc13392d1f15075cfce">ODDetectorCommon</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>=&quot;&quot;)</td></tr>
-<tr class="separator:ae30bdc0902e79bc13392d1f15075cfce inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410a9c4557998ba966f3ee28c00b3623 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a410a9c4557998ba966f3ee28c00b3623">ODDetectorCommon</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a>=&quot;&quot;)</td></tr>
+<tr class="separator:a410a9c4557998ba966f3ee28c00b3623 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d6325c4a2d31f02615546430f13a07 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a04d6325c4a2d31f02615546430f13a07">getTrainingInputLocation</a> () const </td></tr>
 <tr class="memdesc:a04d6325c4a2d31f02615546430f13a07 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the directory containing the data for training.  <a href="#a04d6325c4a2d31f02615546430f13a07">More...</a><br/></td></tr>
 <tr class="separator:a04d6325c4a2d31f02615546430f13a07 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19122342f6d246755659c4c499a97be2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a19122342f6d246755659c4c499a97be2">setTrainingInputLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a661add7800b587118774393c0556d39d">training_input_location_</a>)</td></tr>
 <tr class="memdesc:a19122342f6d246755659c4c499a97be2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the directory containing the data for training.  <a href="#a19122342f6d246755659c4c499a97be2">More...</a><br/></td></tr>
 <tr class="separator:a19122342f6d246755659c4c499a97be2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab56b4eaf07a01187c7a63cbba7f0995a inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ab56b4eaf07a01187c7a63cbba7f0995a">getTrainingDataLocation</a> () const </td></tr>
-<tr class="memdesc:ab56b4eaf07a01187c7a63cbba7f0995a inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the base directory for trained data.  <a href="#ab56b4eaf07a01187c7a63cbba7f0995a">More...</a><br/></td></tr>
-<tr class="separator:ab56b4eaf07a01187c7a63cbba7f0995a inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e2b7f0044b9e0032d6eaeba8e6dc53f inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a1e2b7f0044b9e0032d6eaeba8e6dc53f">setTrainingDataLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>)</td></tr>
-<tr class="memdesc:a1e2b7f0044b9e0032d6eaeba8e6dc53f inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base directory for trained data.  <a href="#a1e2b7f0044b9e0032d6eaeba8e6dc53f">More...</a><br/></td></tr>
-<tr class="separator:a1e2b7f0044b9e0032d6eaeba8e6dc53f inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76955e605672a2ad95fbc81869d79a35 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a76955e605672a2ad95fbc81869d79a35">getTrainedDataLocation</a> () const </td></tr>
+<tr class="memdesc:a76955e605672a2ad95fbc81869d79a35 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the base directory for trained data.  <a href="#a76955e605672a2ad95fbc81869d79a35">More...</a><br/></td></tr>
+<tr class="separator:a76955e605672a2ad95fbc81869d79a35 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace88b89c12b81dbce4b713a2f9dbcbe8 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ace88b89c12b81dbce4b713a2f9dbcbe8">setTrainedDataLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a>)</td></tr>
+<tr class="memdesc:ace88b89c12b81dbce4b713a2f9dbcbe8 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base directory for trained data.  <a href="#ace88b89c12b81dbce4b713a2f9dbcbe8">More...</a><br/></td></tr>
+<tr class="separator:ace88b89c12b81dbce4b713a2f9dbcbe8 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a1403c4fad4d452ac51018b0f5212a14d">getSpecificTrainingDataLocation</a> ()</td></tr>
-<tr class="memdesc:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the specific directory for a Trainer or a Detector inside training_data_location_.  <a href="#a1403c4fad4d452ac51018b0f5212a14d">More...</a><br/></td></tr>
+<tr class="memdesc:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the specific directory for a Trainer or a Detector inside trained_data_location_.  <a href="#a1403c4fad4d452ac51018b0f5212a14d">More...</a><br/></td></tr>
 <tr class="separator:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ede14f6944c19a295df1941f80e82f2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a6ede14f6944c19a295df1941f80e82f2">getSpecificTrainingData</a> ()</td></tr>
+<tr class="separator:a6ede14f6944c19a295df1941f80e82f2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31ed5c7660484e6dc30536e8a148f23 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ac31ed5c7660484e6dc30536e8a148f23">getTrainedDataID</a> () const </td></tr>
+<tr class="separator:ac31ed5c7660484e6dc30536e8a148f23 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22be21831de0994e2d0148896199a366 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a22be21831de0994e2d0148896199a366">setTrainedDataID</a> (std::string const &amp;trainedDataID)</td></tr>
+<tr class="separator:a22be21831de0994e2d0148896199a366 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -222,8 +258,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a88614de7d6d0ebc174f7831ce30cc5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac39647803ba09cc8f762c1b50c5e3540"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#ac39647803ba09cc8f762c1b50c5e3540">use_gpu_match</a></td></tr>
 <tr class="separator:ac39647803ba09cc8f762c1b50c5e3540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc06bacf656c5734afd915f9be36ba8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#afc06bacf656c5734afd915f9be36ba8f">metainfo</a></td></tr>
-<tr class="separator:afc06bacf656c5734afd915f9be36ba8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf0ec7036562965c28f8bfd89bc855a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#a1cf0ec7036562965c28f8bfd89bc855a">iterationsCount</a></td></tr>
 <tr class="separator:a1cf0ec7036562965c28f8bfd89bc855a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ceb75818ef0a22774c7b6baedf41c5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#a93ceb75818ef0a22774c7b6baedf41c5">reprojectionError</a></td></tr>
@@ -248,12 +282,12 @@ Protected Attributes</h2></td></tr>
 <tr class="inherit_header pro_attribs_classod_1_1_o_d_detector_common"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classod_1_1_o_d_detector_common')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classod_1_1_o_d_detector_common.html">od::ODDetectorCommon</a></td></tr>
 <tr class="memitem:a661add7800b587118774393c0556d39d inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a661add7800b587118774393c0556d39d">training_input_location_</a></td></tr>
 <tr class="separator:a661add7800b587118774393c0556d39d inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a042147d5c57ea3af5617a84f99a52b inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a></td></tr>
-<tr class="separator:a4a042147d5c57ea3af5617a84f99a52b inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0737d7d7688052065cf27a7d7e390d1c inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a0737d7d7688052065cf27a7d7e390d1c">TRAINED_DATA_EXT_</a></td></tr>
-<tr class="separator:a0737d7d7688052065cf27a7d7e390d1c inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c4394c495ef1d84985b0163242a6cdb inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a5c4394c495ef1d84985b0163242a6cdb">TRAINED_DATA_IDENTIFIER_</a></td></tr>
-<tr class="separator:a5c4394c495ef1d84985b0163242a6cdb inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641dc30579c65108a64526d868890f5 inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a></td></tr>
+<tr class="separator:a4641dc30579c65108a64526d868890f5 inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b950184a73271b19b0657fe70a3a66f inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a7b950184a73271b19b0657fe70a3a66f">TRAINED_DATA_ID_</a></td></tr>
+<tr class="separator:a7b950184a73271b19b0657fe70a3a66f inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d56c77d26f3770a9aa6517f2e63630 inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ae5d56c77d26f3770a9aa6517f2e63630">TRAINED_LOCATION_DENTIFIER_</a></td></tr>
+<tr class="separator:ae5d56c77d26f3770a9aa6517f2e63630 inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -269,7 +303,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00045">45</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afa60a137173ce1ba8d1652a41818aa59"></a>
+<a class="anchor" id="a4caf92d7bdb23e9b51cc10765e70bd27"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -280,7 +314,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">od::l2d::ODCADRecognizer2DLocal::ODCADRecognizer2DLocal </td>
           <td>(</td>
           <td class="paramtype">string const &amp;&#160;</td>
-          <td class="paramname"><em>training_data_location_</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>trained_data_location_</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -293,7 +327,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">168</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00210">blue</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00206">camera_intrinsic_file</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00224">confidence</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00236">f_type_default</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00216">fast_match</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00237">featureDetector</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00209">green</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00222">iterationsCount</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00227">minInliers</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00214">numKeyPoints</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00230">pnpMethod</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00215">ratioTest</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00208">red</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00223">reprojectionError</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00217">use_gpu</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00218">use_gpu_match</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00211">yellow</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00212">blue</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00208">camera_intrinsic_file</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00225">confidence</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00237">f_type_default</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00218">fast_match</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00238">featureDetector</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00211">green</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00223">iterationsCount</a>, <a class="el" href="_o_d_detector_8h_source.html#l00035">od::ODDetector::metainfo_</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00228">minInliers</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00216">numKeyPoints</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00231">pnpMethod</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00217">ratioTest</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00210">red</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00224">reprojectionError</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00219">use_gpu</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00220">use_gpu_match</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00213">yellow</a>.</p>
 
 </div>
 </div>
@@ -440,7 +474,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00048">48</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00206">camera_intrinsic_file</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00208">camera_intrinsic_file</a>.</p>
 
 </div>
 </div>
@@ -467,7 +501,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00138">138</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00224">confidence</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00225">confidence</a>.</p>
 
 </div>
 </div>
@@ -494,7 +528,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00118">118</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00222">iterationsCount</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00223">iterationsCount</a>.</p>
 
 </div>
 </div>
@@ -521,7 +555,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00148">148</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00227">minInliers</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00228">minInliers</a>.</p>
 
 </div>
 </div>
@@ -548,7 +582,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00058">58</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00214">numKeyPoints</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00216">numKeyPoints</a>.</p>
 
 </div>
 </div>
@@ -575,7 +609,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00158">158</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00230">pnpMethod</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00231">pnpMethod</a>.</p>
 
 </div>
 </div>
@@ -602,7 +636,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00068">68</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00215">ratioTest</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00217">ratioTest</a>.</p>
 
 </div>
 </div>
@@ -629,7 +663,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00128">128</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00223">reprojectionError</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00224">reprojectionError</a>.</p>
 
 </div>
 </div>
@@ -682,7 +716,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00078">78</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00216">fast_match</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00218">fast_match</a>.</p>
 
 </div>
 </div>
@@ -709,7 +743,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00108">108</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00219">metainfo</a>.</p>
+<p>References <a class="el" href="_o_d_detector_8h_source.html#l00035">od::ODDetector::metainfo_</a>.</p>
 
 </div>
 </div>
@@ -736,7 +770,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00088">88</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00217">use_gpu</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00219">use_gpu</a>.</p>
 
 </div>
 </div>
@@ -763,7 +797,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00098">98</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00218">use_gpu_match</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00220">use_gpu_match</a>.</p>
 
 </div>
 </div>
@@ -809,7 +843,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00053">53</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00206">camera_intrinsic_file</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00208">camera_intrinsic_file</a>.</p>
 
 </div>
 </div>
@@ -837,7 +871,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00143">143</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00224">confidence</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00225">confidence</a>.</p>
 
 </div>
 </div>
@@ -865,7 +899,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00083">83</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00216">fast_match</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00218">fast_match</a>.</p>
 
 </div>
 </div>
@@ -893,7 +927,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00123">123</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00222">iterationsCount</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00223">iterationsCount</a>.</p>
 
 </div>
 </div>
@@ -921,7 +955,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00113">113</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00219">metainfo</a>.</p>
+<p>References <a class="el" href="_o_d_detector_8h_source.html#l00035">od::ODDetector::metainfo_</a>.</p>
 
 </div>
 </div>
@@ -949,7 +983,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00153">153</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00227">minInliers</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00228">minInliers</a>.</p>
 
 </div>
 </div>
@@ -977,7 +1011,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00063">63</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00214">numKeyPoints</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00216">numKeyPoints</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1039,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00163">163</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00230">pnpMethod</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00231">pnpMethod</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1067,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00073">73</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00215">ratioTest</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00217">ratioTest</a>.</p>
 
 </div>
 </div>
@@ -1061,7 +1095,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00133">133</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00223">reprojectionError</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00224">reprojectionError</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1123,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00093">93</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00217">use_gpu</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00219">use_gpu</a>.</p>
 
 </div>
 </div>
@@ -1117,7 +1151,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00103">103</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00218">use_gpu_match</a>.</p>
+<p>References <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00220">use_gpu_match</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1174,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00210">210</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00212">212</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>.</p>
 
@@ -1164,7 +1198,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00206">206</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00208">208</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00048">getCameraIntrinsicFile()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00053">setCameraIntrinsicFile()</a>.</p>
 
@@ -1188,7 +1222,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00224">224</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00225">225</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00138">getConfidence()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00143">setConfidence()</a>.</p>
 
@@ -1212,7 +1246,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00236">236</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00237">237</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>.</p>
 
@@ -1236,7 +1270,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00216">216</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00218">218</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00078">isFast_match()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00083">setFast_match()</a>.</p>
 
@@ -1260,7 +1294,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00237">237</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00238">238</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>.</p>
 
@@ -1284,7 +1318,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00209">209</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00211">211</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>.</p>
 
@@ -1308,33 +1342,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00222">222</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00223">223</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00118">getIterationsCount()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00123">setIterationsCount()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afc06bacf656c5734afd915f9be36ba8f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool od::l2d::ODCADRecognizer2DLocal::metainfo</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00219">219</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
-
-<p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00108">isMetainfo()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00113">setMetainfo()</a>.</p>
 
 </div>
 </div>
@@ -1356,7 +1366,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00227">227</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00228">228</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00148">getMinInliers()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00153">setMinInliers()</a>.</p>
 
@@ -1380,7 +1390,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00233">233</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00234">234</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 </div>
 </div>
@@ -1402,7 +1412,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00234">234</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00235">235</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1434,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00214">214</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00216">216</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00058">getNumKeyPoints()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00063">setNumKeyPoints()</a>.</p>
 
@@ -1448,7 +1458,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00235">235</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00236">236</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 </div>
 </div>
@@ -1470,7 +1480,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00230">230</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00231">231</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00158">getPnpMethod()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00163">setPnpMethod()</a>.</p>
 
@@ -1494,7 +1504,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00215">215</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00217">217</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00068">getRatioTest()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00073">setRatioTest()</a>.</p>
 
@@ -1518,7 +1528,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00208">208</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00210">210</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>.</p>
 
@@ -1542,7 +1552,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00223">223</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00224">224</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00128">getReprojectionError()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00133">setReprojectionError()</a>.</p>
 
@@ -1566,7 +1576,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00217">217</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00219">219</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00088">isUse_gpu()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00093">setUse_gpu()</a>.</p>
 
@@ -1590,7 +1600,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00218">218</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00220">220</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00098">isUse_gpu_match()</a>, <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>, and <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00103">setUse_gpu_match()</a>.</p>
 
@@ -1614,7 +1624,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00211">211</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00213">213</a> of file <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html#l00168">ODCADRecognizer2DLocal()</a>.</p>
 
@@ -1624,12 +1634,13 @@ Additional Inherited Members</h2></td></tr>
 <li>/home/sarkar/opendetection/detectors/local2D/detection/<a class="el" href="_o_d_c_a_d_recognizer2_d_local_8h_source.html">ODCADRecognizer2DLocal.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <hr>
 <div id="footer">
 <p>
 Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
+<p>Pages generated on Fri Oct 2 2015 04:20:06</p>
 </div> <!-- #footer -->
 </body>
 </html>

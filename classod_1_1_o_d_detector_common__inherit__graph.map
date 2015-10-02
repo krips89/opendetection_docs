@@ -1,18 +1,20 @@
 <map id="od::ODDetectorCommon" name="od::ODDetectorCommon">
-<area shape="rect" id="node2" href="$classod_1_1_o_d_detector.html" title="The main detector class; all special Detectors derives from this. " alt="" coords="224,175,339,201"/>
-<area shape="rect" id="node13" href="$classod_1_1_o_d_trainer.html" title="The base class for all trainers. " alt="" coords="229,336,333,363"/>
-<area shape="rect" id="node3" href="$classod_1_1_o_d_detector2_d.html" title="The detector of 2D scene. " alt="" coords="429,20,560,47"/>
-<area shape="rect" id="node5" href="$classod_1_1_o_d_detector2_d_complete.html" title="The detector of 2D scene performing a &#39;complete detection&#39;. " alt="" coords="401,84,588,111"/>
-<area shape="rect" id="node8" href="$classod_1_1_o_d_detector3_d.html" title="The detector of 3D scene. " alt="" coords="398,144,591,171"/>
-<area shape="rect" id="node11" href="$classod_1_1_o_d_detector3_d.html" title="od::ODDetector3D\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="791,187,951,229"/>
-<area shape="rect" id="node12" href="$classod_1_1_o_d_detector_multi_algo.html" title="Class for running multiple Detection algorithms (with default parameters) on the same scene..." alt="" coords="411,245,579,272"/>
-<area shape="rect" id="node4" href="$classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="A linear classifier for HOG features. " alt="" coords="784,5,957,32"/>
-<area shape="rect" id="node6" href="$classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="766,57,975,98"/>
-<area shape="rect" id="node7" href="$classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html" title="Simple RANSAC based 3D object recognizer. " alt="" coords="1159,57,1350,98"/>
-<area shape="rect" id="node9" href="$classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. " alt="" coords="757,122,984,163"/>
-<area shape="rect" id="node10" href="$classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="od::g3d::ODCADDetector3DGlobal\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="1141,149,1368,190"/>
-<area shape="rect" id="node14" href="$classod_1_1g2d_1_1_o_d_h_o_g_trainer.html" title="Class for training HOG based detector. " alt="" coords="413,296,576,323"/>
-<area shape="rect" id="node15" href="$classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html" title="Training class for the detector ODCADDetector3DGlobal. " alt="" coords="391,347,599,389"/>
-<area shape="rect" id="node16" href="$classod_1_1l2d_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="390,413,599,454"/>
-<area shape="rect" id="node17" href="$classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html" title="ODCADRecogTrainerSnapshotBased; One of the new algorithm; details will be explained later..." alt="" coords="773,413,969,454"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector.html" title="The main detector class; all special Detectors derives from this. " alt="" coords="224,276,339,303"/>
+<area shape="rect" id="node15" href="$classod_1_1_o_d_trainer.html" title="The base class for all trainers. " alt="" coords="229,437,333,464"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_detector2_d.html" title="The detector of 2D scene. " alt="" coords="429,81,560,108"/>
+<area shape="rect" id="node7" href="$classod_1_1_o_d_detector2_d_complete.html" title="The detector of 2D scene performing a &#39;complete detection&#39;. " alt="" coords="401,185,588,212"/>
+<area shape="rect" id="node10" href="$classod_1_1_o_d_detector3_d.html" title="The detector of 3D scene. " alt="" coords="398,245,591,272"/>
+<area shape="rect" id="node13" href="$classod_1_1_o_d_detector3_d.html" title="od::ODDetector3D\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="791,289,951,330"/>
+<area shape="rect" id="node14" href="$classod_1_1_o_d_detector_multi_algo.html" title="od::ODDetectorMultiAlgo" alt="" coords="411,347,579,373"/>
+<area shape="rect" id="node4" href="$classod_1_1g2d_1_1_o_d_cascade_detector.html" title="A class for detection using Cascade classifiers. " alt="" coords="773,5,968,32"/>
+<area shape="rect" id="node5" href="$classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="A linear classifier for HOG features. " alt="" coords="784,56,957,83"/>
+<area shape="rect" id="node6" href="$classod_1_1_o_d_detector_multi_algo2_d.html" title="Class for running multiple Detection algorithms (with default parameters) on the same scene..." alt="" coords="778,107,963,133"/>
+<area shape="rect" id="node8" href="$classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="766,158,975,199"/>
+<area shape="rect" id="node9" href="$classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html" title="Simple RANSAC based 3D object recognizer. " alt="" coords="1159,158,1350,199"/>
+<area shape="rect" id="node11" href="$classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. " alt="" coords="757,223,984,265"/>
+<area shape="rect" id="node12" href="$classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="od::g3d::ODCADDetector3DGlobal\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="1141,250,1368,291"/>
+<area shape="rect" id="node16" href="$classod_1_1g2d_1_1_o_d_h_o_g_trainer.html" title="Class for training HOG based detector. " alt="" coords="413,397,576,424"/>
+<area shape="rect" id="node17" href="$classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html" title="Training class for the detector ODCADDetector3DGlobal. " alt="" coords="391,449,599,490"/>
+<area shape="rect" id="node18" href="$classod_1_1l2d_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="390,514,599,555"/>
+<area shape="rect" id="node19" href="$classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html" title="ODCADRecogTrainerSnapshotBased; One of the new algorithm; details will be explained later..." alt="" coords="773,514,969,555"/>
 </map>

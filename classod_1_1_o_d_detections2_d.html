@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.6-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,9 +6,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
 <title>Open Detection: od::ODDetections2D Class Reference</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -17,7 +35,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -42,8 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -66,11 +86,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceod.html">od</a></li><li class="navelem"><a class="el" href="classod_1_1_o_d_detections2_d.html">ODDetections2D</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classod_1_1_o_d_detections2_d.html','');});
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="classod_1_1_o_d_detections2_d-members.html">List of all members</a> &#124;
@@ -90,14 +120,14 @@ Inheritance diagram for od::ODDetections2D:</div>
 <div class="center"><img src="classod_1_1_o_d_detections2_d__inherit__graph.png" border="0" usemap="#od_1_1_o_d_detections2_d_inherit__map" alt="Inheritance graph"/></div>
 <map name="od_1_1_o_d_detections2_d_inherit__map" id="od_1_1_o_d_detections2_d_inherit__map">
 <area shape="rect" id="node2" href="classod_1_1_o_d_detections.html" title="The container class for ODDetection. " alt="" coords="14,5,140,32"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for od::ODDetections2D:</div>
 <div class="dyncontent">
 <div class="center"><img src="classod_1_1_o_d_detections2_d__coll__graph.png" border="0" usemap="#od_1_1_o_d_detections2_d_coll__map" alt="Collaboration graph"/></div>
 <map name="od_1_1_o_d_detections2_d_coll__map" id="od_1_1_o_d_detections2_d_coll__map">
 <area shape="rect" id="node2" href="classod_1_1_o_d_detections.html" title="The container class for ODDetection. " alt="" coords="14,5,140,32"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -147,9 +177,9 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The container class for <a class="el" href="classod_1_1_o_d_detection2_d.html" title="Detection for 2D with 2D location information. ">ODDetection2D</a> returned by <a class="el" href="classod_1_1_o_d_detector2_d.html" title="The detector of 2D scene. ">ODDetector2D</a>. </p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#_a10">objectdetector/od_hog_train.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_8cpp-example.html#_a3">objectdetector/od_image_hog.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_files_8cpp-example.html#_a4">objectdetector/od_image_hog_files.cpp</a>, and <a class="el" href="objectdetector_2od_multialgo_files_8cpp-example.html#_a3">objectdetector/od_multialgo_files.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="apps_2global2_d_2od_multihog_app_8cpp-example.html#_a4">apps/global2D/od_multihog_app.cpp</a>, <a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#_a10">objectdetector/od_hog_train.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_files_8cpp-example.html#_a4">objectdetector/od_image_hog_files.cpp</a>, and <a class="el" href="objectdetector_2od_multialgo_files_8cpp-example.html#_a3">objectdetector/od_multialgo_files.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00310">310</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00314">314</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aaa9d97471cceea7c94d89c48c460cab4"></a>
 <div class="memitem">
@@ -173,9 +203,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00337">337</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00342">342</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00300">od::ODDetections::detections_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00301">od::ODDetections::detections_</a>.</p>
 
 </div>
 </div>
@@ -201,9 +231,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00336">336</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00341">341</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00300">od::ODDetections::detections_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00301">od::ODDetections::detections_</a>.</p>
 
 </div>
 </div>
@@ -231,11 +261,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Draws rectangles over the input image using the bounding box information present in all the 2D detections. </p>
 <p>This is a quick function to render and verify the detections made. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a13">objectdetector/od_hog_train.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_8cpp-example.html#a6">objectdetector/od_image_hog.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_files_8cpp-example.html#a7">objectdetector/od_image_hog_files.cpp</a>, and <a class="el" href="objectdetector_2od_multialgo_files_8cpp-example.html#a6">objectdetector/od_multialgo_files.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="apps_2global2_d_2od_multihog_app_8cpp-example.html#a7">apps/global2D/od_multihog_app.cpp</a>, <a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a13">objectdetector/od_hog_train.cpp</a>, <a class="el" href="objectdetector_2od_image_hog_files_8cpp-example.html#a7">objectdetector/od_image_hog_files.cpp</a>, and <a class="el" href="objectdetector_2od_multialgo_files_8cpp-example.html#a6">objectdetector/od_multialgo_files.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00316">316</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00320">320</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00139">od::ODDetection2D::bounding_box_2d_</a>, <a class="el" href="_o_d_detection_8h_source.html#l00300">od::ODDetections::detections_</a>, and <a class="el" href="_o_d_scene_8h_source.html#l00067">od::ODSceneImage::getCVImage()</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00140">od::ODDetection2D::bounding_box_2d_</a>, <a class="el" href="_o_d_detection_8h_source.html#l00301">od::ODDetections::detections_</a>, <a class="el" href="_o_d_scene_8h_source.html#l00079">od::ODSceneImage::getCVImage()</a>, and <a class="el" href="namespaceod.html#a85f3eabcbab94bca457a6ebfa50813a0">od::getHashedColor()</a>.</p>
 
 </div>
 </div>
@@ -243,12 +273,13 @@ Additional Inherited Members</h2></td></tr>
 <li>/home/sarkar/opendetection/common/pipeline/<a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <hr>
 <div id="footer">
 <p>
 Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
+<p>Pages generated on Fri Oct 2 2015 04:20:06</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.6-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,9 +6,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
 <title>Open Detection: od::ODDetector3D&lt; PointT &gt; Class Template Reference</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -17,7 +35,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -42,8 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -66,11 +86,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceod.html">od</a></li><li class="navelem"><a class="el" href="classod_1_1_o_d_detector3_d.html">ODDetector3D</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classod_1_1_o_d_detector3_d.html','');});
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="classod_1_1_o_d_detector3_d-members.html">List of all members</a> &#124;
@@ -90,19 +120,19 @@ Inheritance diagram for od::ODDetector3D&lt; PointT &gt;:</div>
 <div class="center"><img src="classod_1_1_o_d_detector3_d__inherit__graph.png" border="0" usemap="#od_1_1_o_d_detector3_d_3_01_point_t_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="od_1_1_o_d_detector3_d_3_01_point_t_01_4_inherit__map" id="od_1_1_o_d_detector3_d_3_01_point_t_01_4_inherit__map">
 <area shape="rect" id="node4" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. " alt="" coords="5,251,232,293"/><area shape="rect" id="node6" href="classod_1_1_o_d_detector3_d.html" title="od::ODDetector3D\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="256,251,415,293"/><area shape="rect" id="node2" href="classod_1_1_o_d_detector.html" title="The main detector class; all special Detectors derives from this. " alt="" coords="125,83,240,109"/><area shape="rect" id="node3" href="classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="99,5,265,32"/><area shape="rect" id="node5" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="od::g3d::ODCADDetector3DGlobal\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="124,358,351,399"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for od::ODDetector3D&lt; PointT &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classod_1_1_o_d_detector3_d__coll__graph.png" border="0" usemap="#od_1_1_o_d_detector3_d_3_01_point_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="od_1_1_o_d_detector3_d_3_01_point_t_01_4_coll__map" id="od_1_1_o_d_detector3_d_3_01_point_t_01_4_coll__map">
 <area shape="rect" id="node2" href="classod_1_1_o_d_detector.html" title="The main detector class; all special Detectors derives from this. " alt="" coords="44,80,159,107"/><area shape="rect" id="node3" href="classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="18,5,184,32"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac8d04086fac52bf457d396751ea31397"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector3_d.html#ac8d04086fac52bf457d396751ea31397">ODDetector3D</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>)</td></tr>
-<tr class="separator:ac8d04086fac52bf457d396751ea31397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9894dc6b87785770203ab551c5c70a44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector3_d.html#a9894dc6b87785770203ab551c5c70a44">ODDetector3D</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a>)</td></tr>
+<tr class="separator:a9894dc6b87785770203ab551c5c70a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87aa93bbf26ad2cf5992d075a1aaa202"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector3_d.html#a87aa93bbf26ad2cf5992d075a1aaa202">detect</a> (<a class="el" href="classod_1_1_o_d_scene_point_cloud.html">ODScenePointCloud</a>&lt; PointT &gt; *scene)=0</td></tr>
 <tr class="memdesc:a87aa93bbf26ad2cf5992d075a1aaa202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for performing detection on a segmented scene.  <a href="#a87aa93bbf26ad2cf5992d075a1aaa202">More...</a><br/></td></tr>
 <tr class="separator:a87aa93bbf26ad2cf5992d075a1aaa202"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,15 +140,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2e84489776b6bd5f540443dac06930fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for performing detection on an entire scene.  <a href="#a2e84489776b6bd5f540443dac06930fb">More...</a><br/></td></tr>
 <tr class="separator:a2e84489776b6bd5f540443dac06930fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classod_1_1_o_d_detector"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classod_1_1_o_d_detector')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classod_1_1_o_d_detector.html">od::ODDetector</a></td></tr>
-<tr class="memitem:aefe7562015d02db28798f1fe76a1c5fb inherit pub_methods_classod_1_1_o_d_detector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#aefe7562015d02db28798f1fe76a1c5fb">ODDetector</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>)</td></tr>
+<tr class="memitem:aefe7562015d02db28798f1fe76a1c5fb inherit pub_methods_classod_1_1_o_d_detector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#aefe7562015d02db28798f1fe76a1c5fb">ODDetector</a> (std::string const &amp;training_data_location_)</td></tr>
 <tr class="separator:aefe7562015d02db28798f1fe76a1c5fb inherit pub_methods_classod_1_1_o_d_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa19bd1e93eb936602ef21b384b9ba62 inherit pub_methods_classod_1_1_o_d_detector"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#afa19bd1e93eb936602ef21b384b9ba62">detect</a> (<a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *scene)</td></tr>
 <tr class="separator:afa19bd1e93eb936602ef21b384b9ba62 inherit pub_methods_classod_1_1_o_d_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0afc0da6e085dec24e2cd1ddba8bfcd inherit pub_methods_classod_1_1_o_d_detector"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classod_1_1_o_d_detections.html">ODDetections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector.html#af0afc0da6e085dec24e2cd1ddba8bfcd">detectOmni</a> (<a class="el" href="classod_1_1_o_d_scene.html">ODScene</a> *scene)</td></tr>
 <tr class="separator:af0afc0da6e085dec24e2cd1ddba8bfcd inherit pub_methods_classod_1_1_o_d_detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classod_1_1_o_d_detector_common"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classod_1_1_o_d_detector_common')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classod_1_1_o_d_detector_common.html">od::ODDetectorCommon</a></td></tr>
-<tr class="memitem:ae30bdc0902e79bc13392d1f15075cfce inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ae30bdc0902e79bc13392d1f15075cfce">ODDetectorCommon</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>=&quot;&quot;)</td></tr>
-<tr class="separator:ae30bdc0902e79bc13392d1f15075cfce inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410a9c4557998ba966f3ee28c00b3623 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a410a9c4557998ba966f3ee28c00b3623">ODDetectorCommon</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a>=&quot;&quot;)</td></tr>
+<tr class="separator:a410a9c4557998ba966f3ee28c00b3623 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb63286f6c84af9f73cce4af5bbe013 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a3eb63286f6c84af9f73cce4af5bbe013">init</a> ()=0</td></tr>
 <tr class="separator:a3eb63286f6c84af9f73cce4af5bbe013 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d6325c4a2d31f02615546430f13a07 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a04d6325c4a2d31f02615546430f13a07">getTrainingInputLocation</a> () const </td></tr>
@@ -127,15 +157,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a19122342f6d246755659c4c499a97be2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a19122342f6d246755659c4c499a97be2">setTrainingInputLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a661add7800b587118774393c0556d39d">training_input_location_</a>)</td></tr>
 <tr class="memdesc:a19122342f6d246755659c4c499a97be2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the directory containing the data for training.  <a href="#a19122342f6d246755659c4c499a97be2">More...</a><br/></td></tr>
 <tr class="separator:a19122342f6d246755659c4c499a97be2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab56b4eaf07a01187c7a63cbba7f0995a inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ab56b4eaf07a01187c7a63cbba7f0995a">getTrainingDataLocation</a> () const </td></tr>
-<tr class="memdesc:ab56b4eaf07a01187c7a63cbba7f0995a inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the base directory for trained data.  <a href="#ab56b4eaf07a01187c7a63cbba7f0995a">More...</a><br/></td></tr>
-<tr class="separator:ab56b4eaf07a01187c7a63cbba7f0995a inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e2b7f0044b9e0032d6eaeba8e6dc53f inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a1e2b7f0044b9e0032d6eaeba8e6dc53f">setTrainingDataLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>)</td></tr>
-<tr class="memdesc:a1e2b7f0044b9e0032d6eaeba8e6dc53f inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base directory for trained data.  <a href="#a1e2b7f0044b9e0032d6eaeba8e6dc53f">More...</a><br/></td></tr>
-<tr class="separator:a1e2b7f0044b9e0032d6eaeba8e6dc53f inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76955e605672a2ad95fbc81869d79a35 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a76955e605672a2ad95fbc81869d79a35">getTrainedDataLocation</a> () const </td></tr>
+<tr class="memdesc:a76955e605672a2ad95fbc81869d79a35 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the base directory for trained data.  <a href="#a76955e605672a2ad95fbc81869d79a35">More...</a><br/></td></tr>
+<tr class="separator:a76955e605672a2ad95fbc81869d79a35 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace88b89c12b81dbce4b713a2f9dbcbe8 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ace88b89c12b81dbce4b713a2f9dbcbe8">setTrainedDataLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a>)</td></tr>
+<tr class="memdesc:ace88b89c12b81dbce4b713a2f9dbcbe8 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base directory for trained data.  <a href="#ace88b89c12b81dbce4b713a2f9dbcbe8">More...</a><br/></td></tr>
+<tr class="separator:ace88b89c12b81dbce4b713a2f9dbcbe8 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a1403c4fad4d452ac51018b0f5212a14d">getSpecificTrainingDataLocation</a> ()</td></tr>
-<tr class="memdesc:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the specific directory for a Trainer or a Detector inside training_data_location_.  <a href="#a1403c4fad4d452ac51018b0f5212a14d">More...</a><br/></td></tr>
+<tr class="memdesc:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the specific directory for a Trainer or a Detector inside trained_data_location_.  <a href="#a1403c4fad4d452ac51018b0f5212a14d">More...</a><br/></td></tr>
 <tr class="separator:a1403c4fad4d452ac51018b0f5212a14d inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ede14f6944c19a295df1941f80e82f2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a6ede14f6944c19a295df1941f80e82f2">getSpecificTrainingData</a> ()</td></tr>
+<tr class="separator:a6ede14f6944c19a295df1941f80e82f2 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31ed5c7660484e6dc30536e8a148f23 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ac31ed5c7660484e6dc30536e8a148f23">getTrainedDataID</a> () const </td></tr>
+<tr class="separator:ac31ed5c7660484e6dc30536e8a148f23 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22be21831de0994e2d0148896199a366 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a22be21831de0994e2d0148896199a366">setTrainedDataID</a> (std::string const &amp;trainedDataID)</td></tr>
+<tr class="separator:a22be21831de0994e2d0148896199a366 inherit pub_methods_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -145,12 +181,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classod_1_1_o_d_detector_common"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classod_1_1_o_d_detector_common')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classod_1_1_o_d_detector_common.html">od::ODDetectorCommon</a></td></tr>
 <tr class="memitem:a661add7800b587118774393c0556d39d inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a661add7800b587118774393c0556d39d">training_input_location_</a></td></tr>
 <tr class="separator:a661add7800b587118774393c0556d39d inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a042147d5c57ea3af5617a84f99a52b inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a></td></tr>
-<tr class="separator:a4a042147d5c57ea3af5617a84f99a52b inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0737d7d7688052065cf27a7d7e390d1c inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a0737d7d7688052065cf27a7d7e390d1c">TRAINED_DATA_EXT_</a></td></tr>
-<tr class="separator:a0737d7d7688052065cf27a7d7e390d1c inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c4394c495ef1d84985b0163242a6cdb inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a5c4394c495ef1d84985b0163242a6cdb">TRAINED_DATA_IDENTIFIER_</a></td></tr>
-<tr class="separator:a5c4394c495ef1d84985b0163242a6cdb inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641dc30579c65108a64526d868890f5 inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a></td></tr>
+<tr class="separator:a4641dc30579c65108a64526d868890f5 inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b950184a73271b19b0657fe70a3a66f inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a7b950184a73271b19b0657fe70a3a66f">TRAINED_DATA_ID_</a></td></tr>
+<tr class="separator:a7b950184a73271b19b0657fe70a3a66f inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d56c77d26f3770a9aa6517f2e63630 inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ae5d56c77d26f3770a9aa6517f2e63630">TRAINED_LOCATION_DENTIFIER_</a></td></tr>
+<tr class="separator:ae5d56c77d26f3770a9aa6517f2e63630 inherit pro_attribs_classod_1_1_o_d_detector_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename PointT = pcl::PointXYZRGBA&gt;<br/>
@@ -162,7 +198,7 @@ class od::ODDetector3D&lt; PointT &gt;</h3>
 
 <p>Definition at line <a class="el" href="_o_d_detector_8h_source.html#l00080">80</a> of file <a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac8d04086fac52bf457d396751ea31397"></a>
+<a class="anchor" id="a9894dc6b87785770203ab551c5c70a44"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -175,7 +211,7 @@ template&lt;typename PointT = pcl::PointXYZRGBA&gt; </div>
           <td class="memname"><a class="el" href="classod_1_1_o_d_detector3_d.html">od::ODDetector3D</a>&lt; PointT &gt;::<a class="el" href="classod_1_1_o_d_detector3_d.html">ODDetector3D</a> </td>
           <td>(</td>
           <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>training_data_location_</em></td><td>)</td>
+          <td class="paramname"><em>trained_data_location_</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -271,12 +307,13 @@ template&lt;typename PointT = pcl::PointXYZRGBA&gt; </div>
 <li>/home/sarkar/opendetection/common/pipeline/<a class="el" href="_o_d_detector_8h_source.html">ODDetector.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <hr>
 <div id="footer">
 <p>
 Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
+<p>Pages generated on Fri Oct 2 2015 04:20:06</p>
 </div> <!-- #footer -->
 </body>
 </html>

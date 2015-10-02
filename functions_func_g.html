@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.6-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,9 +6,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
 <title>Open Detection: Class Members - Functions</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -17,7 +35,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -42,8 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -94,6 +114,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func_g.html','');});
+</script>
+<div id="doc-content">
 <div class="contents">
 &#160;
 
@@ -130,7 +164,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classod_1_1_o_d_scene_image.html#aa612c7d253de19c5e168b5f4c64e71b8">od::ODSceneImage</a>
 </li>
 <li>getData()
-: <a class="el" href="classod_1_1_o_d_scene_image.html#a6e2d9f61c8d79907a1da0fc6d7b6f95a">od::ODSceneImage</a>
+: <a class="el" href="classod_1_1_o_d_scene.html#aff927712c5e9a6112812d4a709cefdfb">od::ODScene</a>
+, <a class="el" href="classod_1_1_o_d_scene_image.html#a6e2d9f61c8d79907a1da0fc6d7b6f95a">od::ODSceneImage</a>
 , <a class="el" href="classod_1_1_o_d_scene_point_cloud.html#ab632b4502db516e008cf418cb8fb1d6f">od::ODScenePointCloud&lt; PointType &gt;</a>
 </li>
 <li>getDescName()
@@ -208,6 +243,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getNumKeyPoints()
 : <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#a187caa92b242061397ac915d58a7c218">od::l2d::ODCADRecognizer2DLocal</a>
 </li>
+<li>getPath()
+: <a class="el" href="classod_1_1_o_d_scene.html#aeba1def292bc951d3b9d88c8584bc997">od::ODScene</a>
+</li>
 <li>getPnpMethod()
 : <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#a7d66d99a01b7cc3c51c97aa72d0abd72">od::l2d::ODCADRecognizer2DLocal</a>
 </li>
@@ -238,6 +276,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getSingleDetectingVector()
 : <a class="el" href="class_s_v_mlight.html#a43d700d39faeb12bb8eda275bc73e8f4">SVMlight</a>
 </li>
+<li>getSpecificTrainingData()
+: <a class="el" href="classod_1_1_o_d_detector_common.html#a6ede14f6944c19a295df1941f80e82f2">od::ODDetectorCommon</a>
+</li>
 <li>getSpecificTrainingDataLocation()
 : <a class="el" href="classod_1_1_object_detector.html#adf07ac992eaae1a445a8986667e795f7">od::ObjectDetector</a>
 , <a class="el" href="classod_1_1_o_d_detector_common.html#a1403c4fad4d452ac51018b0f5212a14d">od::ODDetectorCommon</a>
@@ -255,12 +296,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classod_1_1g2d_1_1_o_d_face_recognizer.html#a570c599c642ea886704fb3f01a6d2988">od::g2d::ODFaceRecognizer</a>
 , <a class="el" href="class_s_v_mlight.html#a57729dfbad14cb4c517e88f9a9eea49f">SVMlight</a>
 </li>
+<li>getTrainedDataID()
+: <a class="el" href="classod_1_1_o_d_detector_common.html#ac31ed5c7660484e6dc30536e8a148f23">od::ODDetectorCommon</a>
+</li>
+<li>getTrainedDataLocation()
+: <a class="el" href="classod_1_1_o_d_detector_common.html#a76955e605672a2ad95fbc81869d79a35">od::ODDetectorCommon</a>
+</li>
 <li>getTrainer()
 : <a class="el" href="classod_1_1l2d_1_1_o_d_image_local_matching.html#a86b6518e4b1e48758790a14a6de59521">od::l2d::ODImageLocalMatching</a>
 </li>
 <li>getTrainingDataLocation()
 : <a class="el" href="classod_1_1_object_detector.html#a97f13105ceddbfa41186e68fe60d6a56">od::ObjectDetector</a>
-, <a class="el" href="classod_1_1_o_d_detector_common.html#ab56b4eaf07a01187c7a63cbba7f0995a">od::ODDetectorCommon</a>
 </li>
 <li>getTrainingInputLocation()
 : <a class="el" href="classod_1_1_object_detector.html#a754e6fb1d71472450c66e827489de3d5">od::ObjectDetector</a>
@@ -278,12 +324,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <hr>
 <div id="footer">
 <p>
 Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
+<p>Pages generated on Fri Oct 2 2015 04:20:06</p>
 </div> <!-- #footer -->
 </body>
 </html>

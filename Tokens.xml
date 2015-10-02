@@ -2,6 +2,62 @@
 <Tokens version="1.0">
   <Token>
     <TokenIdentifier>
+      <Name>basic_structures</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>basic_structures.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detection_2d</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>detection_2d.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detection_3d</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>detection_3d.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getting_started</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>getting_started.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>installation_instruction</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>installation_instruction.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>introduction_general</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>introduction_general.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>tutorial_root</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>tutorial_root.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>writing_a_new_app</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>writing_a_new_app.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>SVMlight</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -154,6 +210,40 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>normL2</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>od</Scope>
+    </TokenIdentifier>
+    <Path>namespaceod.html</Path>
+    <Anchor>a596090cc0484d588737799de278230ff</Anchor>
+    <DeclaredIn>utils.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>makeCanvasMultiImages</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>od</Scope>
+    </TokenIdentifier>
+    <Path>namespaceod.html</Path>
+    <Anchor>a055d1749c9212f40b840643989d3e3ab</Anchor>
+    <Abstract>Makes composite image from the given images. </Abstract>
+    <DeclaredIn>utils.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getHashedColor</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>od</Scope>
+    </TokenIdentifier>
+    <Path>namespaceod.html</Path>
+    <Anchor>a85f3eabcbab94bca457a6ebfa50813a0</Anchor>
+    <DeclaredIn>utils.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>getTexfileinObj</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
@@ -259,7 +349,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -299,25 +389,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -330,7 +420,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -345,33 +468,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -436,7 +559,7 @@
       <Scope>od::ObjectDetector</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_object_detector.html</Path>
-    <Anchor>a477e1675f6cff6aedfefbcd20d357897</Anchor>
+    <Anchor>ad5b8307982a486edb91ef694edc2e8ff</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -2566,7 +2689,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -2606,25 +2729,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -2637,7 +2760,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -2662,33 +2818,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -2709,7 +2865,7 @@
       <Scope>od::ODDetector2D</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector2_d.html</Path>
-    <Anchor>adb9b709efceb7330b640bfa169a11dd1</Anchor>
+    <Anchor>ad41c5854937566e209d3f88f3e7b07ee</Anchor>
     <DeclaredIn>ODDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -2777,7 +2933,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -2817,25 +2973,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -2848,7 +3004,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -2873,33 +3062,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -2920,7 +3109,7 @@
       <Scope>od::ODDetector3D</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector3_d.html</Path>
-    <Anchor>ac8d04086fac52bf457d396751ea31397</Anchor>
+    <Anchor>a9894dc6b87785770203ab551c5c70a44</Anchor>
     <DeclaredIn>ODDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -2988,7 +3177,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -3028,25 +3217,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -3059,7 +3248,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -3084,33 +3306,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3131,7 +3353,7 @@
       <Scope>od::ODDetector2DComplete</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector2_d_complete.html</Path>
-    <Anchor>ade8aa2c6a45a23b65ee55664c6cd34b3</Anchor>
+    <Anchor>a7e7abd158f07a4acffe421c81c0e8b74</Anchor>
     <DeclaredIn>ODDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -3199,7 +3421,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -3239,25 +3461,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -3270,7 +3492,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -3295,33 +3550,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3333,6 +3588,38 @@
     <Path>classod_1_1_o_d_scene.html</Path>
     <Abstract>Base class for Scenes. </Abstract>
     <DeclaredIn>ODScene.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODScene</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_scene.html</Path>
+    <Anchor>aff927712c5e9a6112812d4a709cefdfb</Anchor>
+    <DeclaredIn>ODScene.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getPath</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODScene</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_scene.html</Path>
+    <Anchor>aeba1def292bc951d3b9d88c8584bc997</Anchor>
+    <DeclaredIn>ODScene.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>path_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODScene</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_scene.html</Path>
+    <Anchor>aca063b3386713f4ece014a701bfd976e</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3435,6 +3722,17 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>getPath</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODScene</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_scene.html</Path>
+    <Anchor>aeba1def292bc951d3b9d88c8584bc997</Anchor>
+    <DeclaredIn>ODScene.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>cvimage_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -3472,6 +3770,16 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_scene_image.html</Path>
     <Anchor>a7b51869592326113c83be20e50f9516f</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>path_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODScene</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_scene.html</Path>
+    <Anchor>aca063b3386713f4ece014a701bfd976e</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3573,6 +3881,17 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>getPath</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODScene</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_scene.html</Path>
+    <Anchor>aeba1def292bc951d3b9d88c8584bc997</Anchor>
+    <DeclaredIn>ODScene.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>point_cloud_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -3580,6 +3899,16 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_scene_point_cloud.html</Path>
     <Anchor>a4234d3e787e26dba069d72b70ed1543c</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>path_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODScene</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_scene.html</Path>
+    <Anchor>aca063b3386713f4ece014a701bfd976e</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3622,7 +3951,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -3662,25 +3991,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -3693,7 +4022,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -3708,33 +4070,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -3799,6 +4161,17 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
     <Anchor>a92ca5648347cd305f11764dd3ec2249d</Anchor>
+    <DeclaredIn>ODFeatureDetector2D.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>computeAndSave</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODFeatureDetector2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+    <Anchor>a75d37f2e0941ac4d635609b78f319074</Anchor>
     <DeclaredIn>ODFeatureDetector2D.h</DeclaredIn>
   </Token>
   <Token>
@@ -4027,13 +4400,299 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>od::ODDetectorMultiAlgo2D</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>od::ODDetectorMultiAlgo2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+    <Abstract>Class for running multiple Detection algorithms (with default parameters) on the same scene...</Abstract>
+    <DeclaredIn>ODDetectorMultiAlgo.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PointT</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>tdef</Type>
+      <Scope>od::ODDetectorMultiAlgo2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+    <Anchor>a1efb809ae8cf2ffa96191abacf520d0a</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ODDetectorMultiAlgo2D</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorMultiAlgo2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+    <Anchor>a7059d961f00ad96ba45cc4a6abae385e</Anchor>
+    <DeclaredIn>ODDetectorMultiAlgo.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detect</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorMultiAlgo2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+    <Anchor>aba7deffa93847f9b8e53a7aa0e8a228c</Anchor>
+    <Abstract>Function for performing detection on a segmented scene. </Abstract>
+    <DeclaredIn>ODDetectorMultiAlgo.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detectOmni</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorMultiAlgo2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+    <Anchor>abd7eda10af8e80332d9a3f1529f5ab47</Anchor>
+    <Abstract>Function for performing detection on an entire scene. </Abstract>
+    <DeclaredIn>ODDetectorMultiAlgo.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detect</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorMultiAlgo2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+    <Anchor>a0a766f8f85085905cb961c234355bdc8</Anchor>
+    <DeclaredIn>ODDetectorMultiAlgo.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detectOmni</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorMultiAlgo2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+    <Anchor>af95bc1fc82e0a46c746caaa747dba230</Anchor>
+    <DeclaredIn>ODDetectorMultiAlgo.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>init</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorMultiAlgo2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+    <Anchor>ab51ad79361aec590192a1b7a31264991</Anchor>
+    <DeclaredIn>ODDetectorMultiAlgo.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ODDetector2D</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetector2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector2_d.html</Path>
+    <Anchor>ad41c5854937566e209d3f88f3e7b07ee</Anchor>
+    <DeclaredIn>ODDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detect</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetector2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector2_d.html</Path>
+    <Anchor>a15a867016967045014dceaa57665f5e6</Anchor>
+    <DeclaredIn>ODDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ODDetector</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector.html</Path>
+    <Anchor>aefe7562015d02db28798f1fe76a1c5fb</Anchor>
+    <DeclaredIn>ODDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detectOmni</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector.html</Path>
+    <Anchor>af0afc0da6e085dec24e2cd1ddba8bfcd</Anchor>
+    <DeclaredIn>ODDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ODDetectorCommon</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainingInputLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a04d6325c4a2d31f02615546430f13a07</Anchor>
+    <Abstract>Gets/Sets the directory containing the data for training. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainingInputLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a19122342f6d246755659c4c499a97be2</Anchor>
+    <Abstract>Gets/Sets the directory containing the data for training. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
+    <Abstract>Gets/Sets the base directory for trained data. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
+    <Abstract>The base directory for trained data. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingDataLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>metainfo_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector.html</Path>
+    <Anchor>a1e65ee754ba37db23c18295a83c4ca6a</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>training_input_location_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a661add7800b587118774393c0556d39d</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>trained_data_location_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TRAINED_DATA_ID_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>od::ODDetectorMultiAlgo</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
       <Scope>od::ODDetectorMultiAlgo</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_multi_algo.html</Path>
-    <Abstract>Class for running multiple Detection algorithms (with default parameters) on the same scene...</Abstract>
     <DeclaredIn>ODDetectorMultiAlgo.h</DeclaredIn>
   </Token>
   <Token>
@@ -4153,7 +4812,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -4182,25 +4841,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -4213,7 +4872,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -4238,33 +4930,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -4274,6 +4966,261 @@
       <Scope>od::g2d</Scope>
     </TokenIdentifier>
     <Path>namespaceod_1_1g2d.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>od::g2d::ODCascadeDetector</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>od::g2d::ODCascadeDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+    <Abstract>A class for detection using Cascade classifiers. </Abstract>
+    <DeclaredIn>ODCascadeDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ODCascadeDetector</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::g2d::ODCascadeDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+    <Anchor>ae09535635933358a936f5ab3c8d6ded2</Anchor>
+    <DeclaredIn>ODCascadeDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>init</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::g2d::ODCascadeDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+    <Anchor>a08daea146a957a577ede2c0c74fdab4b</Anchor>
+    <DeclaredIn>ODCascadeDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detectOmni</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::g2d::ODCascadeDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+    <Anchor>a2ea123281500acd9be45f1262107eab3</Anchor>
+    <Abstract>Function for performing detection on an entire scene. </Abstract>
+    <DeclaredIn>ODCascadeDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detect</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::g2d::ODCascadeDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+    <Anchor>a37b0d1c71d756b5bd0728acf60131eef</Anchor>
+    <Abstract>Function for performing detection on a segmented scene. </Abstract>
+    <DeclaredIn>ODCascadeDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ODDetector2D</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetector2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector2_d.html</Path>
+    <Anchor>ad41c5854937566e209d3f88f3e7b07ee</Anchor>
+    <DeclaredIn>ODDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detect</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetector2D</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector2_d.html</Path>
+    <Anchor>a15a867016967045014dceaa57665f5e6</Anchor>
+    <DeclaredIn>ODDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ODDetector</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector.html</Path>
+    <Anchor>aefe7562015d02db28798f1fe76a1c5fb</Anchor>
+    <DeclaredIn>ODDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>detectOmni</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector.html</Path>
+    <Anchor>af0afc0da6e085dec24e2cd1ddba8bfcd</Anchor>
+    <DeclaredIn>ODDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ODDetectorCommon</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainingInputLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a04d6325c4a2d31f02615546430f13a07</Anchor>
+    <Abstract>Gets/Sets the directory containing the data for training. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainingInputLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a19122342f6d246755659c4c499a97be2</Anchor>
+    <Abstract>Gets/Sets the directory containing the data for training. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
+    <Abstract>Gets/Sets the base directory for trained data. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
+    <Abstract>The base directory for trained data. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingDataLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>metainfo_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector.html</Path>
+    <Anchor>a1e65ee754ba37db23c18295a83c4ca6a</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>training_input_location_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a661add7800b587118774393c0556d39d</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>trained_data_location_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TRAINED_DATA_ID_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -4374,6 +5321,18 @@
     </TokenIdentifier>
     <Path>classod_1_1g2d_1_1_o_d_h_o_g_detector.html</Path>
     <Anchor>ae9ed85307c9ff03e93c37948402762cd</Anchor>
+    <DeclaredIn>ODHOGDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataLocation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::g2d::ODHOGDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1g2d_1_1_o_d_h_o_g_detector.html</Path>
+    <Anchor>a12c511fc0775162ff24587c609e50a8a</Anchor>
+    <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ODHOGDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -4510,13 +5469,24 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>printParameters</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::g2d::ODHOGDetector</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1g2d_1_1_o_d_h_o_g_detector.html</Path>
+    <Anchor>a64d7b82903878f1023b48c87c5e877b6</Anchor>
+    <DeclaredIn>ODHOGDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>ODDetector2D</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetector2D</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector2_d.html</Path>
-    <Anchor>adb9b709efceb7330b640bfa169a11dd1</Anchor>
+    <Anchor>ad41c5854937566e209d3f88f3e7b07ee</Anchor>
     <DeclaredIn>ODDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -4560,7 +5530,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -4589,26 +5559,14 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
-    <DeclaredIn>ObjectDetector.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>od::ODDetectorCommon</Scope>
-    </TokenIdentifier>
-    <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
-    <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -4620,7 +5578,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -4705,33 +5696,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -4927,7 +5918,7 @@
       <Scope>od::ObjectDetector</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_object_detector.html</Path>
-    <Anchor>a477e1675f6cff6aedfefbcd20d357897</Anchor>
+    <Anchor>ad5b8307982a486edb91ef694edc2e8ff</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -5198,7 +6189,7 @@
       <Scope>od::g2d::ODHOGTrainer</Scope>
     </TokenIdentifier>
     <Path>classod_1_1g2d_1_1_o_d_h_o_g_trainer.html</Path>
-    <Anchor>a82f9a4d1e69daa258ad28f3e609e059b</Anchor>
+    <Anchor>ae478871f0e7a1c73ad41ea52f4d2a595</Anchor>
     <DeclaredIn>ODHOGTrainer.h</DeclaredIn>
   </Token>
   <Token>
@@ -5473,7 +6464,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -5502,25 +6493,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -5533,7 +6524,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -5678,33 +6702,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -5824,7 +6848,7 @@
       <Scope>od::ODDetector3D</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector3_d.html</Path>
-    <Anchor>ac8d04086fac52bf457d396751ea31397</Anchor>
+    <Anchor>a9894dc6b87785770203ab551c5c70a44</Anchor>
     <DeclaredIn>ODDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -5868,7 +6892,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -5897,25 +6921,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -5928,7 +6952,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -5973,33 +7030,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -6137,7 +7194,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -6166,25 +7223,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -6197,7 +7254,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -6222,33 +7312,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -6542,7 +7632,7 @@
       <Scope>od::l2d::ODCADRecognizer2DLocal</Scope>
     </TokenIdentifier>
     <Path>classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html</Path>
-    <Anchor>afa60a137173ce1ba8d1652a41818aa59</Anchor>
+    <Anchor>a4caf92d7bdb23e9b51cc10765e70bd27</Anchor>
     <DeclaredIn>ODCADRecognizer2DLocal.h</DeclaredIn>
   </Token>
   <Token>
@@ -6610,7 +7700,7 @@
       <Scope>od::ODDetector2DComplete</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector2_d_complete.html</Path>
-    <Anchor>ade8aa2c6a45a23b65ee55664c6cd34b3</Anchor>
+    <Anchor>a7e7abd158f07a4acffe421c81c0e8b74</Anchor>
     <DeclaredIn>ODDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -6654,7 +7744,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -6683,25 +7773,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -6714,7 +7804,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -6830,16 +7953,6 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>metainfo</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>od::l2d::ODCADRecognizer2DLocal</Scope>
-    </TokenIdentifier>
-    <Path>classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html</Path>
-    <Anchor>afc06bacf656c5734afd915f9be36ba8f</Anchor>
-  </Token>
-  <Token>
-    <TokenIdentifier>
       <Name>iterationsCount</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
@@ -6950,33 +8063,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -7040,7 +8153,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -7080,25 +8193,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -7111,7 +8224,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -7126,33 +8272,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -7184,7 +8330,7 @@
       <Scope>od::ODDetector2DComplete</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector2_d_complete.html</Path>
-    <Anchor>ade8aa2c6a45a23b65ee55664c6cd34b3</Anchor>
+    <Anchor>a7e7abd158f07a4acffe421c81c0e8b74</Anchor>
     <DeclaredIn>ODDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -7252,7 +8398,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -7292,25 +8438,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -7323,7 +8469,40 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -7348,33 +8527,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -7527,7 +8706,7 @@
       <Scope>od::ObjectDetector</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_object_detector.html</Path>
-    <Anchor>a477e1675f6cff6aedfefbcd20d357897</Anchor>
+    <Anchor>ad5b8307982a486edb91ef694edc2e8ff</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -7804,7 +8983,7 @@
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+    <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
@@ -7833,25 +9012,25 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>getTrainingDataLocation</Name>
+      <Name>getTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+    <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
     <Abstract>Gets/Sets the base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>setTrainingDataLocation</Name>
+      <Name>setTrainedDataLocation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+    <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
     <Abstract>The base directory for trained data. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
   </Token>
@@ -7864,8 +9043,71 @@
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
     <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
-    <Abstract>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </Abstract>
+    <Abstract>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </Abstract>
     <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getSpecificTrainingData</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>getTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTrainedDataID</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>od::ODDetectorCommon</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1_o_d_detector_common.html</Path>
+    <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
+    <DeclaredIn>ObjectDetector.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>no_ring_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::l2d::ODCADRecogTrainerSnapshotBased</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html</Path>
+    <Anchor>a27bc22e43172c9d1de806107e032c81b</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>view_angle_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::l2d::ODCADRecogTrainerSnapshotBased</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html</Path>
+    <Anchor>a1914be3473455768e5c67f6c0b70a4b3</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>no_snapshot_per_ring_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>od::l2d::ODCADRecogTrainerSnapshotBased</Scope>
+    </TokenIdentifier>
+    <Path>classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html</Path>
+    <Anchor>a59e260189b71816b35f4557c30a76593</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -7879,33 +9121,33 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>training_data_location_</Name>
+      <Name>trained_data_location_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+    <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_EXT_</Name>
+      <Name>TRAINED_DATA_ID_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+    <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>TRAINED_DATA_IDENTIFIER_</Name>
+      <Name>TRAINED_LOCATION_DENTIFIER_</Name>
       <APILanguage>cpp</APILanguage>
       <Type>data</Type>
       <Scope>od::ODDetectorCommon</Scope>
     </TokenIdentifier>
     <Path>classod_1_1_o_d_detector_common.html</Path>
-    <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+    <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>

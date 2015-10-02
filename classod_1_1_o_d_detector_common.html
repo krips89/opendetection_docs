@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.6-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,9 +6,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
 <title>Open Detection: od::ODDetectorCommon Class Reference</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -17,7 +35,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -42,8 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -66,11 +86,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceod.html">od</a></li><li class="navelem"><a class="el" href="classod_1_1_o_d_detector_common.html">ODDetectorCommon</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classod_1_1_o_d_detector_common.html','');});
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="classod_1_1_o_d_detector_common-members.html">List of all members</a> &#124;
@@ -90,13 +120,13 @@ Inheritance diagram for od::ODDetectorCommon:</div>
 <div class="dyncontent">
 <div class="center"><img src="classod_1_1_o_d_detector_common__inherit__graph.png" border="0" usemap="#od_1_1_o_d_detector_common_inherit__map" alt="Inheritance graph"/></div>
 <map name="od_1_1_o_d_detector_common_inherit__map" id="od_1_1_o_d_detector_common_inherit__map">
-<area shape="rect" id="node2" href="classod_1_1_o_d_detector.html" title="The main detector class; all special Detectors derives from this. " alt="" coords="224,175,339,201"/><area shape="rect" id="node13" href="classod_1_1_o_d_trainer.html" title="The base class for all trainers. " alt="" coords="229,336,333,363"/><area shape="rect" id="node3" href="classod_1_1_o_d_detector2_d.html" title="The detector of 2D scene. " alt="" coords="429,20,560,47"/><area shape="rect" id="node5" href="classod_1_1_o_d_detector2_d_complete.html" title="The detector of 2D scene performing a &#39;complete detection&#39;. " alt="" coords="401,84,588,111"/><area shape="rect" id="node8" href="classod_1_1_o_d_detector3_d.html" title="The detector of 3D scene. " alt="" coords="398,144,591,171"/><area shape="rect" id="node11" href="classod_1_1_o_d_detector3_d.html" title="od::ODDetector3D\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="791,187,951,229"/><area shape="rect" id="node12" href="classod_1_1_o_d_detector_multi_algo.html" title="Class for running multiple Detection algorithms (with default parameters) on the same scene..." alt="" coords="411,245,579,272"/><area shape="rect" id="node4" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="A linear classifier for HOG features. " alt="" coords="784,5,957,32"/><area shape="rect" id="node6" href="classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="766,57,975,98"/><area shape="rect" id="node7" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html" title="Simple RANSAC based 3D object recognizer. " alt="" coords="1159,57,1350,98"/><area shape="rect" id="node9" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. " alt="" coords="757,122,984,163"/><area shape="rect" id="node10" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="od::g3d::ODCADDetector3DGlobal\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="1141,149,1368,190"/><area shape="rect" id="node14" href="classod_1_1g2d_1_1_o_d_h_o_g_trainer.html" title="Class for training HOG based detector. " alt="" coords="413,296,576,323"/><area shape="rect" id="node15" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html" title="Training class for the detector ODCADDetector3DGlobal. " alt="" coords="391,347,599,389"/><area shape="rect" id="node16" href="classod_1_1l2d_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="390,413,599,454"/><area shape="rect" id="node17" href="classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html" title="ODCADRecogTrainerSnapshotBased; One of the new algorithm; details will be explained later..." alt="" coords="773,413,969,454"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<area shape="rect" id="node2" href="classod_1_1_o_d_detector.html" title="The main detector class; all special Detectors derives from this. " alt="" coords="224,276,339,303"/><area shape="rect" id="node15" href="classod_1_1_o_d_trainer.html" title="The base class for all trainers. " alt="" coords="229,437,333,464"/><area shape="rect" id="node3" href="classod_1_1_o_d_detector2_d.html" title="The detector of 2D scene. " alt="" coords="429,81,560,108"/><area shape="rect" id="node7" href="classod_1_1_o_d_detector2_d_complete.html" title="The detector of 2D scene performing a &#39;complete detection&#39;. " alt="" coords="401,185,588,212"/><area shape="rect" id="node10" href="classod_1_1_o_d_detector3_d.html" title="The detector of 3D scene. " alt="" coords="398,245,591,272"/><area shape="rect" id="node13" href="classod_1_1_o_d_detector3_d.html" title="od::ODDetector3D\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="791,289,951,330"/><area shape="rect" id="node14" href="classod_1_1_o_d_detector_multi_algo.html" title="od::ODDetectorMultiAlgo" alt="" coords="411,347,579,373"/><area shape="rect" id="node4" href="classod_1_1g2d_1_1_o_d_cascade_detector.html" title="A class for detection using Cascade classifiers. " alt="" coords="773,5,968,32"/><area shape="rect" id="node5" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html" title="A linear classifier for HOG features. " alt="" coords="784,56,957,83"/><area shape="rect" id="node6" href="classod_1_1_o_d_detector_multi_algo2_d.html" title="Class for running multiple Detection algorithms (with default parameters) on the same scene..." alt="" coords="778,107,963,133"/><area shape="rect" id="node8" href="classod_1_1l2d_1_1_o_d_image_local_matching_detector.html" title="ODImageLocalMatchingDetector. " alt="" coords="766,158,975,199"/><area shape="rect" id="node9" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html" title="Simple RANSAC based 3D object recognizer. " alt="" coords="1159,158,1350,199"/><area shape="rect" id="node11" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="Detector based on 3D global features like VFH, ESF, CVFH etc. " alt="" coords="757,223,984,265"/><area shape="rect" id="node12" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html" title="od::g3d::ODCADDetector3DGlobal\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="1141,250,1368,291"/><area shape="rect" id="node16" href="classod_1_1g2d_1_1_o_d_h_o_g_trainer.html" title="Class for training HOG based detector. " alt="" coords="413,397,576,424"/><area shape="rect" id="node17" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html" title="Training class for the detector ODCADDetector3DGlobal. " alt="" coords="391,449,599,490"/><area shape="rect" id="node18" href="classod_1_1l2d_1_1_o_d_image_local_matching_trainer.html" title="ODImageLocalMatchingTrainer. " alt="" coords="390,514,599,555"/><area shape="rect" id="node19" href="classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html" title="ODCADRecogTrainerSnapshotBased; One of the new algorithm; details will be explained later..." alt="" coords="773,514,969,555"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae30bdc0902e79bc13392d1f15075cfce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ae30bdc0902e79bc13392d1f15075cfce">ODDetectorCommon</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>=&quot;&quot;)</td></tr>
-<tr class="separator:ae30bdc0902e79bc13392d1f15075cfce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410a9c4557998ba966f3ee28c00b3623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a410a9c4557998ba966f3ee28c00b3623">ODDetectorCommon</a> (std::string const &amp;<a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a>=&quot;&quot;)</td></tr>
+<tr class="separator:a410a9c4557998ba966f3ee28c00b3623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb63286f6c84af9f73cce4af5bbe013"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a3eb63286f6c84af9f73cce4af5bbe013">init</a> ()=0</td></tr>
 <tr class="separator:a3eb63286f6c84af9f73cce4af5bbe013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d6325c4a2d31f02615546430f13a07"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a04d6325c4a2d31f02615546430f13a07">getTrainingInputLocation</a> () const </td></tr>
@@ -105,35 +135,41 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a19122342f6d246755659c4c499a97be2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a19122342f6d246755659c4c499a97be2">setTrainingInputLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a661add7800b587118774393c0556d39d">training_input_location_</a>)</td></tr>
 <tr class="memdesc:a19122342f6d246755659c4c499a97be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the directory containing the data for training.  <a href="#a19122342f6d246755659c4c499a97be2">More...</a><br/></td></tr>
 <tr class="separator:a19122342f6d246755659c4c499a97be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab56b4eaf07a01187c7a63cbba7f0995a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ab56b4eaf07a01187c7a63cbba7f0995a">getTrainingDataLocation</a> () const </td></tr>
-<tr class="memdesc:ab56b4eaf07a01187c7a63cbba7f0995a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the base directory for trained data.  <a href="#ab56b4eaf07a01187c7a63cbba7f0995a">More...</a><br/></td></tr>
-<tr class="separator:ab56b4eaf07a01187c7a63cbba7f0995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e2b7f0044b9e0032d6eaeba8e6dc53f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a1e2b7f0044b9e0032d6eaeba8e6dc53f">setTrainingDataLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a>)</td></tr>
-<tr class="memdesc:a1e2b7f0044b9e0032d6eaeba8e6dc53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base directory for trained data.  <a href="#a1e2b7f0044b9e0032d6eaeba8e6dc53f">More...</a><br/></td></tr>
-<tr class="separator:a1e2b7f0044b9e0032d6eaeba8e6dc53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76955e605672a2ad95fbc81869d79a35"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a76955e605672a2ad95fbc81869d79a35">getTrainedDataLocation</a> () const </td></tr>
+<tr class="memdesc:a76955e605672a2ad95fbc81869d79a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets/Sets the base directory for trained data.  <a href="#a76955e605672a2ad95fbc81869d79a35">More...</a><br/></td></tr>
+<tr class="separator:a76955e605672a2ad95fbc81869d79a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace88b89c12b81dbce4b713a2f9dbcbe8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ace88b89c12b81dbce4b713a2f9dbcbe8">setTrainedDataLocation</a> (std::string <a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a>)</td></tr>
+<tr class="memdesc:ace88b89c12b81dbce4b713a2f9dbcbe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base directory for trained data.  <a href="#ace88b89c12b81dbce4b713a2f9dbcbe8">More...</a><br/></td></tr>
+<tr class="separator:ace88b89c12b81dbce4b713a2f9dbcbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1403c4fad4d452ac51018b0f5212a14d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a1403c4fad4d452ac51018b0f5212a14d">getSpecificTrainingDataLocation</a> ()</td></tr>
-<tr class="memdesc:a1403c4fad4d452ac51018b0f5212a14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the specific directory for a Trainer or a Detector inside training_data_location_.  <a href="#a1403c4fad4d452ac51018b0f5212a14d">More...</a><br/></td></tr>
+<tr class="memdesc:a1403c4fad4d452ac51018b0f5212a14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the specific directory for a Trainer or a Detector inside trained_data_location_.  <a href="#a1403c4fad4d452ac51018b0f5212a14d">More...</a><br/></td></tr>
 <tr class="separator:a1403c4fad4d452ac51018b0f5212a14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ede14f6944c19a295df1941f80e82f2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a6ede14f6944c19a295df1941f80e82f2">getSpecificTrainingData</a> ()</td></tr>
+<tr class="separator:a6ede14f6944c19a295df1941f80e82f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31ed5c7660484e6dc30536e8a148f23"><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ac31ed5c7660484e6dc30536e8a148f23">getTrainedDataID</a> () const </td></tr>
+<tr class="separator:ac31ed5c7660484e6dc30536e8a148f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22be21831de0994e2d0148896199a366"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a22be21831de0994e2d0148896199a366">setTrainedDataID</a> (std::string const &amp;trainedDataID)</td></tr>
+<tr class="separator:a22be21831de0994e2d0148896199a366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a661add7800b587118774393c0556d39d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a661add7800b587118774393c0556d39d">training_input_location_</a></td></tr>
 <tr class="separator:a661add7800b587118774393c0556d39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a042147d5c57ea3af5617a84f99a52b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a4a042147d5c57ea3af5617a84f99a52b">training_data_location_</a></td></tr>
-<tr class="separator:a4a042147d5c57ea3af5617a84f99a52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0737d7d7688052065cf27a7d7e390d1c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a0737d7d7688052065cf27a7d7e390d1c">TRAINED_DATA_EXT_</a></td></tr>
-<tr class="separator:a0737d7d7688052065cf27a7d7e390d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c4394c495ef1d84985b0163242a6cdb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a5c4394c495ef1d84985b0163242a6cdb">TRAINED_DATA_IDENTIFIER_</a></td></tr>
-<tr class="separator:a5c4394c495ef1d84985b0163242a6cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641dc30579c65108a64526d868890f5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a4641dc30579c65108a64526d868890f5">trained_data_location_</a></td></tr>
+<tr class="separator:a4641dc30579c65108a64526d868890f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b950184a73271b19b0657fe70a3a66f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#a7b950184a73271b19b0657fe70a3a66f">TRAINED_DATA_ID_</a></td></tr>
+<tr class="separator:a7b950184a73271b19b0657fe70a3a66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d56c77d26f3770a9aa6517f2e63630"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classod_1_1_o_d_detector_common.html#ae5d56c77d26f3770a9aa6517f2e63630">TRAINED_LOCATION_DENTIFIER_</a></td></tr>
+<tr class="separator:ae5d56c77d26f3770a9aa6517f2e63630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The common class for detectors. </p>
 <p>Both Trainers and Detectors drerives from this and therefore, all the common data/functionalities of Trainers and Detectors should go here.</p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00035">35</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00034">34</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae30bdc0902e79bc13392d1f15075cfce"></a>
+<a class="anchor" id="a410a9c4557998ba966f3ee28c00b3623"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -144,7 +180,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">od::ODDetectorCommon::ODDetectorCommon </td>
           <td>(</td>
           <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>training_data_location_</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td class="paramname"><em>trained_data_location_</em> = <code>&quot;&quot;</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -155,11 +191,40 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00039">39</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00038">38</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+
+<p>References <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_DATA_ID_</a>, and <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_LOCATION_DENTIFIER_</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6ede14f6944c19a295df1941f80e82f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string od::ODDetectorCommon::getSpecificTrainingData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00088">88</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+
+<p>References <a class="el" href="_object_detector_8h_source.html#l00083">getSpecificTrainingDataLocation()</a>, and <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_DATA_ID_</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1403c4fad4d452ac51018b0f5212a14d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -181,17 +246,17 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the specific directory for a Trainer or a Detector inside training_data_location_. </p>
+<p>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </p>
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00079">79</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00083">83</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00086">TRAINED_DATA_IDENTIFIER_</a>, and <a class="el" href="_object_detector_8h_source.html#l00085">training_data_location_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00104">trained_data_location_</a>, and <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_LOCATION_DENTIFIER_</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>.</p>
+<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00088">getSpecificTrainingData()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00041">od::g2d::ODCascadeDetector::init()</a>, and <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab56b4eaf07a01187c7a63cbba7f0995a"></a>
+<a class="anchor" id="ac31ed5c7660484e6dc30536e8a148f23"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -199,7 +264,34 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string od::ODDetectorCommon::getTrainingDataLocation </td>
+          <td class="memname">std::string const&amp; od::ODDetectorCommon::getTrainedDataID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00093">93</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+
+<p>References <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_DATA_ID_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76955e605672a2ad95fbc81869d79a35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string od::ODDetectorCommon::getTrainedDataLocation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -215,9 +307,9 @@ Protected Attributes</h2></td></tr>
 <p>Gets/Sets the base directory for trained data. </p>
 <p>This should be same for all Trainers and Detectors and can be considered as the 'database' of trained data. Trainers uses one of its subdirectories based on its type to store algo specific trained data. The corresponding Detector would use the same directory to fetch the trained data for online detection. </p>
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00062">62</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00066">66</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00085">training_data_location_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00104">trained_data_location_</a>.</p>
 
 </div>
 </div>
@@ -245,9 +337,9 @@ Protected Attributes</h2></td></tr>
 <p>Gets/Sets the directory containing the data for training. </p>
 <p>The trainer uses the data from directory for training. Detectors can use this location to get additional information in its detection algirhtms as well. </p>
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00047">47</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00051">51</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00085">training_input_location_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00104">training_input_location_</a>.</p>
 
 </div>
 </div>
@@ -272,11 +364,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#aa1f0a04214ff8fa76c0f3369e221ae29">od::l2d::ODCADRecognizer2DLocal</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_trainer.html#a466cbf617a6735f0c7531fb1b97dc886">od::g2d::ODHOGTrainer</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html#a91e1f4d3512561bf151cf299cfefa7b8">od::g3d::ODCADDetectTrainer3DGlobal</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a03940e18d6357d4c01d3159417f4355c">od::g2d::ODHOGDetector</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html#a8a6e277f39b4cc3690eb70c6746af06b">od::g3d::ODCADDetector3DGlobal&lt; PointT &gt;</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html#a8a6e277f39b4cc3690eb70c6746af06b">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;</a>, <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html#a18655c04a7e523589a87837218ffcdc6">od::l2d::ODCADRecogTrainerSnapshotBased</a>, and <a class="el" href="classod_1_1_o_d_detector_multi_algo.html#ae95ec9cc71ca463c5ae8564df130fb8d">od::ODDetectorMultiAlgo</a>.</p>
+<p>Implemented in <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#aa1f0a04214ff8fa76c0f3369e221ae29">od::l2d::ODCADRecognizer2DLocal</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_trainer.html#a466cbf617a6735f0c7531fb1b97dc886">od::g2d::ODHOGTrainer</a>, <a class="el" href="classod_1_1_o_d_detector_multi_algo.html#ae95ec9cc71ca463c5ae8564df130fb8d">od::ODDetectorMultiAlgo</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html#a91e1f4d3512561bf151cf299cfefa7b8">od::g3d::ODCADDetectTrainer3DGlobal</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a03940e18d6357d4c01d3159417f4355c">od::g2d::ODHOGDetector</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html#a8a6e277f39b4cc3690eb70c6746af06b">od::g3d::ODCADDetector3DGlobal&lt; PointT &gt;</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html#a8a6e277f39b4cc3690eb70c6746af06b">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_cascade_detector.html#a08daea146a957a577ede2c0c74fdab4b">od::g2d::ODCascadeDetector</a>, <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html#a18655c04a7e523589a87837218ffcdc6">od::l2d::ODCADRecogTrainerSnapshotBased</a>, and <a class="el" href="classod_1_1_o_d_detector_multi_algo2_d.html#ab51ad79361aec590192a1b7a31264991">od::ODDetectorMultiAlgo2D</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1e2b7f0044b9e0032d6eaeba8e6dc53f"></a>
+<a class="anchor" id="a22be21831de0994e2d0148896199a366"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -284,10 +376,10 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void od::ODDetectorCommon::setTrainingDataLocation </td>
+          <td class="memname">void od::ODDetectorCommon::setTrainedDataID </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>training_data_location_</em></td><td>)</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>trainedDataID</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -298,13 +390,42 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00098">98</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+
+<p>References <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_DATA_ID_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace88b89c12b81dbce4b713a2f9dbcbe8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void od::ODDetectorCommon::setTrainedDataLocation </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>trained_data_location_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p>The base directory for trained data. </p>
 <p>This should be same for all Trainers and Detectors and can be considered as the 'database' of trained data. Trainers uses one of its subdirectories based on its type to store algo specific trained data. The corresponding Detector would use the same directory to fetch the trained data for online detection. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_hog_train_8cpp-example.html#a7">objectdetector/od_hog_train.cpp</a>, and <a class="el" href="objectdetector_2od_image_hog_files_8cpp-example.html#a1">objectdetector/od_image_hog_files.cpp</a>.</dd>
-</dl>
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00071">71</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00085">training_data_location_</a>.</p>
+<p>Reimplemented in <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a12c511fc0775162ff24587c609e50a8a">od::g2d::ODHOGDetector</a>.</p>
+
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00075">75</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+
+<p>References <a class="el" href="_object_detector_8h_source.html#l00104">trained_data_location_</a>.</p>
 
 </div>
 </div>
@@ -334,14 +455,14 @@ Protected Attributes</h2></td></tr>
 <p>The trainer uses the data from directory for training. Detectors can use this location to get additional information in its detection algirhtms as well. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_multialgo_pc_8cpp-example.html#a1">objectdetector/od_multialgo_pc.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00054">54</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00058">58</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00085">training_input_location_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00104">training_input_location_</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a0737d7d7688052065cf27a7d7e390d1c"></a>
+<a class="anchor" id="a7b950184a73271b19b0657fe70a3a66f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -349,7 +470,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string od::ODDetectorCommon::TRAINED_DATA_EXT_</td>
+          <td class="memname">std::string od::ODDetectorCommon::TRAINED_DATA_ID_</td>
         </tr>
       </table>
   </td>
@@ -359,13 +480,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00086">86</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00105">105</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00039">od::g2d::ODHOGDetector::OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00044">od::l2d::ODImageLocalMatchingDetector::ODImageLocalMatchingDetector()</a>, and <a class="el" href="_o_d_image_local_matching_8h_source.html#l00028">od::l2d::ODImageLocalMatchingTrainer::ODImageLocalMatchingTrainer()</a>.</p>
+<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00088">getSpecificTrainingData()</a>, <a class="el" href="_object_detector_8h_source.html#l00093">getTrainedDataID()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00041">od::g2d::ODCascadeDetector::init()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00039">od::g2d::ODHOGDetector::OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00033">od::g2d::ODCascadeDetector::ODCascadeDetector()</a>, <a class="el" href="_object_detector_8h_source.html#l00038">ODDetectorCommon()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00044">od::l2d::ODImageLocalMatchingDetector::ODImageLocalMatchingDetector()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00028">od::l2d::ODImageLocalMatchingTrainer::ODImageLocalMatchingTrainer()</a>, and <a class="el" href="_object_detector_8h_source.html#l00098">setTrainedDataID()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5c4394c495ef1d84985b0163242a6cdb"></a>
+<a class="anchor" id="a4641dc30579c65108a64526d868890f5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -373,7 +494,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string od::ODDetectorCommon::TRAINED_DATA_IDENTIFIER_</td>
+          <td class="memname">std::string od::ODDetectorCommon::trained_data_location_</td>
         </tr>
       </table>
   </td>
@@ -383,13 +504,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00086">86</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00104">104</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00079">getSpecificTrainingDataLocation()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00039">od::g2d::ODHOGDetector::OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>, <a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html#l00046">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;::ODCADDetector3DGlobal()</a>, <a class="el" href="_o_d_c_a_d_detect_trainer3_d_global_8h_source.html#l00049">od::g3d::ODCADDetectTrainer3DGlobal::ODCADDetectTrainer3DGlobal()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00044">od::l2d::ODImageLocalMatchingDetector::ODImageLocalMatchingDetector()</a>, and <a class="el" href="_o_d_image_local_matching_8h_source.html#l00028">od::l2d::ODImageLocalMatchingTrainer::ODImageLocalMatchingTrainer()</a>.</p>
+<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00083">getSpecificTrainingDataLocation()</a>, <a class="el" href="_object_detector_8h_source.html#l00066">getTrainedDataLocation()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00074">od::g2d::ODHOGDetector::setTrainedDataLocation()</a>, and <a class="el" href="_object_detector_8h_source.html#l00075">setTrainedDataLocation()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4a042147d5c57ea3af5617a84f99a52b"></a>
+<a class="anchor" id="ae5d56c77d26f3770a9aa6517f2e63630"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -397,7 +518,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string od::ODDetectorCommon::training_data_location_</td>
+          <td class="memname">std::string od::ODDetectorCommon::TRAINED_LOCATION_DENTIFIER_</td>
         </tr>
       </table>
   </td>
@@ -407,9 +528,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00085">85</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00105">105</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00079">getSpecificTrainingDataLocation()</a>, <a class="el" href="_object_detector_8h_source.html#l00062">getTrainingDataLocation()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, and <a class="el" href="_object_detector_8h_source.html#l00071">setTrainingDataLocation()</a>.</p>
+<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00083">getSpecificTrainingDataLocation()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00039">od::g2d::ODHOGDetector::OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>, <a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html#l00046">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;::ODCADDetector3DGlobal()</a>, <a class="el" href="_o_d_c_a_d_detect_trainer3_d_global_8h_source.html#l00049">od::g3d::ODCADDetectTrainer3DGlobal::ODCADDetectTrainer3DGlobal()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00033">od::g2d::ODCascadeDetector::ODCascadeDetector()</a>, <a class="el" href="_object_detector_8h_source.html#l00038">ODDetectorCommon()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00044">od::l2d::ODImageLocalMatchingDetector::ODImageLocalMatchingDetector()</a>, and <a class="el" href="_o_d_image_local_matching_8h_source.html#l00028">od::l2d::ODImageLocalMatchingTrainer::ODImageLocalMatchingTrainer()</a>.</p>
 
 </div>
 </div>
@@ -431,9 +552,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00085">85</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00104">104</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00047">getTrainingInputLocation()</a>, <a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html#l00046">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;::ODCADDetector3DGlobal()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_trainer_8h_source.html#l00029">od::ODTrainer::ODTrainer()</a>, and <a class="el" href="_object_detector_8h_source.html#l00054">setTrainingInputLocation()</a>.</p>
+<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00051">getTrainingInputLocation()</a>, <a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html#l00046">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;::ODCADDetector3DGlobal()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_trainer_8h_source.html#l00029">od::ODTrainer::ODTrainer()</a>, and <a class="el" href="_object_detector_8h_source.html#l00058">setTrainingInputLocation()</a>.</p>
 
 </div>
 </div>
@@ -441,12 +562,13 @@ Protected Attributes</h2></td></tr>
 <li>/home/sarkar/opendetection/common/pipeline/<a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <hr>
 <div id="footer">
 <p>
 Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
+<p>Pages generated on Fri Oct 2 2015 04:20:06</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -6,8 +6,217 @@
       <Path>index.html</Path>
       <Subnodes>
        <Node>
-        <Name>PCL API Documentation</Name>
+        <Name>About</Name>
         <Path>index.html</Path>
+       </Node>
+       <Node>
+        <Name>OD Manual</Name>
+        <Path>tutorial_root.html</Path>
+        <Subnodes>
+         <Node>
+          <Name>Introduction</Name>
+          <Path>introduction_general.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>Philosophy and motivation </Name>
+            <Path>introduction_general.html</Path>
+            <Anchor>phil</Anchor>
+           </Node>
+           <Node>
+            <Name>Usage and target audience </Name>
+            <Path>introduction_general.html</Path>
+            <Anchor>targetaud</Anchor>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Installation Instructions</Name>
+          <Path>installation_instruction.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>Dependencies </Name>
+            <Path>installation_instruction.html</Path>
+            <Anchor>installation_instruction1</Anchor>
+            <Subnodes>
+             <Node>
+              <Name>OpenCV 3.0</Name>
+              <Path>installation_instruction.html</Path>
+              <Anchor>installation_instruction2</Anchor>
+             </Node>
+             <Node>
+              <Name>VTK 6.0 or above</Name>
+              <Path>installation_instruction.html</Path>
+              <Anchor>installation_instruction3</Anchor>
+             </Node>
+             <Node>
+              <Name>PCL 1.6 or above</Name>
+              <Path>installation_instruction.html</Path>
+              <Anchor>installation_instruction4</Anchor>
+             </Node>
+             <Node>
+              <Name>Eigen</Name>
+              <Path>installation_instruction.html</Path>
+              <Anchor>installation_instruction5</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>Installing Open Detection </Name>
+            <Path>installation_instruction.html</Path>
+            <Anchor>installation_instruction6</Anchor>
+            <Subnodes>
+             <Node>
+              <Name>Instructions:</Name>
+              <Path>installation_instruction.html</Path>
+              <Anchor>installation_instruction7</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Getting Started</Name>
+          <Path>getting_started.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>Getting Started </Name>
+            <Path>getting_started.html</Path>
+            <Anchor>getting_started11</Anchor>
+            <Subnodes>
+             <Node>
+              <Name>Install OD</Name>
+              <Path>getting_started.html</Path>
+              <Anchor>getting_started1</Anchor>
+             </Node>
+             <Node>
+              <Name>Get Data</Name>
+              <Path>getting_started.html</Path>
+              <Anchor>getting_started2</Anchor>
+             </Node>
+             <Node>
+              <Name>Run your first examples</Name>
+              <Path>getting_started.html</Path>
+              <Anchor>getting_started3</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Basic Structures</Name>
+          <Path>basic_structures.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>Basic Structure </Name>
+            <Path>basic_structures.html</Path>
+            <Anchor>basic_structures1</Anchor>
+            <Subnodes>
+             <Node>
+              <Name>Trainer</Name>
+              <Path>basic_structures.html</Path>
+              <Anchor>basic_structures2</Anchor>
+             </Node>
+             <Node>
+              <Name>Detector</Name>
+              <Path>basic_structures.html</Path>
+              <Anchor>basic_structures3</Anchor>
+             </Node>
+             <Node>
+              <Name>Detection</Name>
+              <Path>basic_structures.html</Path>
+              <Anchor>basic_structures4</Anchor>
+             </Node>
+             <Node>
+              <Name>Typical code structure</Name>
+              <Path>basic_structures.html</Path>
+              <Anchor>basic_structures5</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Detection 2D</Name>
+          <Path>detection_2d.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>Detection 2D </Name>
+            <Path>detection_2d.html</Path>
+            <Anchor>detection_2d1</Anchor>
+            <Subnodes>
+             <Node>
+              <Name>HOG feature based detection</Name>
+              <Path>detection_2d.html</Path>
+              <Anchor>detection_2d2</Anchor>
+              <Subnodes>
+               <Node>
+                <Name>Data</Name>
+                <Path>detection_2d.html</Path>
+                <Anchor>detection_2d3</Anchor>
+               </Node>
+               <Node>
+                <Name>Code explanation</Name>
+                <Path>detection_2d.html</Path>
+                <Anchor>detection_2d4</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+            </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Detection 3D</Name>
+          <Path>detection_3d.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>Detection 3D </Name>
+            <Path>detection_3d.html</Path>
+            <Anchor>detection_3d1</Anchor>
+            <Subnodes>
+             <Node>
+              <Name>Detection based on global features</Name>
+              <Path>detection_3d.html</Path>
+              <Anchor>detection_3d2</Anchor>
+              <Subnodes>
+               <Node>
+                <Name>Data</Name>
+                <Path>detection_3d.html</Path>
+                <Anchor>detection_3d3</Anchor>
+               </Node>
+               <Node>
+                <Name>Code</Name>
+                <Path>detection_3d.html</Path>
+                <Anchor>detection_3d4</Anchor>
+               </Node>
+               <Node>
+                <Name>Execution</Name>
+                <Path>detection_3d.html</Path>
+                <Anchor>detection_3d5</Anchor>
+               </Node>
+               <Node>
+                <Name>Code explanation</Name>
+                <Path>detection_3d.html</Path>
+                <Anchor>detection_3d6</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+            </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Writing your own app</Name>
+          <Path>writing_a_new_app.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>Writing your own app</Name>
+            <Path>writing_a_new_app.html</Path>
+            <Anchor>writing_a_new_app1</Anchor>
+           </Node>
+          </Subnodes>
+         </Node>
+        </Subnodes>
        </Node>
        <Node>
         <Name>Namespaces</Name>
@@ -82,6 +291,32 @@
               <Path>namespaceod_1_1g2d.html</Path>
               <Subnodes>
                <Node>
+                <Name>ODCascadeDetector</Name>
+                <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+                <Subnodes>
+                 <Node>
+                  <Name>ODCascadeDetector</Name>
+                  <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+                  <Anchor>ae09535635933358a936f5ab3c8d6ded2</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>detect</Name>
+                  <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+                  <Anchor>a37b0d1c71d756b5bd0728acf60131eef</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>detectOmni</Name>
+                  <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+                  <Anchor>a2ea123281500acd9be45f1262107eab3</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>init</Name>
+                  <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+                  <Anchor>a08daea146a957a577ede2c0c74fdab4b</Anchor>
+                 </Node>
+                </Subnodes>
+               </Node>
+               <Node>
                 <Name>ODHOGDetector</Name>
                 <Path>classod_1_1g2d_1_1_o_d_h_o_g_detector.html</Path>
                 <Subnodes>
@@ -146,6 +381,11 @@
                   <Anchor>a3f8b1a05eb7f4aac905bc5b1ca3d3f11</Anchor>
                  </Node>
                  <Node>
+                  <Name>printParameters</Name>
+                  <Path>classod_1_1g2d_1_1_o_d_h_o_g_detector.html</Path>
+                  <Anchor>a64d7b82903878f1023b48c87c5e877b6</Anchor>
+                 </Node>
+                 <Node>
                   <Name>setBlockSize</Name>
                   <Path>classod_1_1g2d_1_1_o_d_h_o_g_detector.html</Path>
                   <Anchor>ab45012a88e0a0240bd6f6b965565f15e</Anchor>
@@ -179,6 +419,11 @@
                   <Name>setSvmtype</Name>
                   <Path>classod_1_1g2d_1_1_o_d_h_o_g_detector.html</Path>
                   <Anchor>a47c57b507c965c09dfd8371121239979</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>setTrainedDataLocation</Name>
+                  <Path>classod_1_1g2d_1_1_o_d_h_o_g_detector.html</Path>
+                  <Anchor>a12c511fc0775162ff24587c609e50a8a</Anchor>
                  </Node>
                  <Node>
                   <Name>setWinSize</Name>
@@ -330,7 +575,7 @@
                  <Node>
                   <Name>ODHOGTrainer</Name>
                   <Path>classod_1_1g2d_1_1_o_d_h_o_g_trainer.html</Path>
-                  <Anchor>a82f9a4d1e69daa258ad28f3e609e059b</Anchor>
+                  <Anchor>ae478871f0e7a1c73ad41ea52f4d2a595</Anchor>
                  </Node>
                  <Node>
                   <Name>getBlockSize</Name>
@@ -651,7 +896,7 @@
                  <Node>
                   <Name>ODCADRecognizer2DLocal</Name>
                   <Path>classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html</Path>
-                  <Anchor>afa60a137173ce1ba8d1652a41818aa59</Anchor>
+                  <Anchor>a4caf92d7bdb23e9b51cc10765e70bd27</Anchor>
                  </Node>
                  <Node>
                   <Name>detect</Name>
@@ -839,11 +1084,6 @@
                   <Anchor>a1cf0ec7036562965c28f8bfd89bc855a</Anchor>
                  </Node>
                  <Node>
-                  <Name>metainfo</Name>
-                  <Path>classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html</Path>
-                  <Anchor>afc06bacf656c5734afd915f9be36ba8f</Anchor>
-                 </Node>
-                 <Node>
                   <Name>minInliers</Name>
                   <Path>classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html</Path>
                   <Anchor>adcc09a1f2250a3ce778e4089885989bb</Anchor>
@@ -1007,6 +1247,21 @@
                   <Path>classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html</Path>
                   <Anchor>a7e3da2d3d59e23b19113db55ee9989e2</Anchor>
                  </Node>
+                 <Node>
+                  <Name>no_ring_</Name>
+                  <Path>classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html</Path>
+                  <Anchor>a27bc22e43172c9d1de806107e032c81b</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>no_snapshot_per_ring_</Name>
+                  <Path>classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html</Path>
+                  <Anchor>a59e260189b71816b35f4557c30a76593</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>view_angle_</Name>
+                  <Path>classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html</Path>
+                  <Anchor>a1914be3473455768e5c67f6c0b70a4b3</Anchor>
+                 </Node>
                 </Subnodes>
                </Node>
               </Subnodes>
@@ -1018,7 +1273,12 @@
                <Node>
                 <Name>ODDetectorCommon</Name>
                 <Path>classod_1_1_o_d_detector_common.html</Path>
-                <Anchor>ae30bdc0902e79bc13392d1f15075cfce</Anchor>
+                <Anchor>a410a9c4557998ba966f3ee28c00b3623</Anchor>
+               </Node>
+               <Node>
+                <Name>getSpecificTrainingData</Name>
+                <Path>classod_1_1_o_d_detector_common.html</Path>
+                <Anchor>a6ede14f6944c19a295df1941f80e82f2</Anchor>
                </Node>
                <Node>
                 <Name>getSpecificTrainingDataLocation</Name>
@@ -1026,9 +1286,14 @@
                 <Anchor>a1403c4fad4d452ac51018b0f5212a14d</Anchor>
                </Node>
                <Node>
-                <Name>getTrainingDataLocation</Name>
+                <Name>getTrainedDataID</Name>
                 <Path>classod_1_1_o_d_detector_common.html</Path>
-                <Anchor>ab56b4eaf07a01187c7a63cbba7f0995a</Anchor>
+                <Anchor>ac31ed5c7660484e6dc30536e8a148f23</Anchor>
+               </Node>
+               <Node>
+                <Name>getTrainedDataLocation</Name>
+                <Path>classod_1_1_o_d_detector_common.html</Path>
+                <Anchor>a76955e605672a2ad95fbc81869d79a35</Anchor>
                </Node>
                <Node>
                 <Name>getTrainingInputLocation</Name>
@@ -1041,9 +1306,14 @@
                 <Anchor>a3eb63286f6c84af9f73cce4af5bbe013</Anchor>
                </Node>
                <Node>
-                <Name>setTrainingDataLocation</Name>
+                <Name>setTrainedDataID</Name>
                 <Path>classod_1_1_o_d_detector_common.html</Path>
-                <Anchor>a1e2b7f0044b9e0032d6eaeba8e6dc53f</Anchor>
+                <Anchor>a22be21831de0994e2d0148896199a366</Anchor>
+               </Node>
+               <Node>
+                <Name>setTrainedDataLocation</Name>
+                <Path>classod_1_1_o_d_detector_common.html</Path>
+                <Anchor>ace88b89c12b81dbce4b713a2f9dbcbe8</Anchor>
                </Node>
                <Node>
                 <Name>setTrainingInputLocation</Name>
@@ -1051,19 +1321,19 @@
                 <Anchor>a19122342f6d246755659c4c499a97be2</Anchor>
                </Node>
                <Node>
-                <Name>TRAINED_DATA_EXT_</Name>
+                <Name>TRAINED_DATA_ID_</Name>
                 <Path>classod_1_1_o_d_detector_common.html</Path>
-                <Anchor>a0737d7d7688052065cf27a7d7e390d1c</Anchor>
+                <Anchor>a7b950184a73271b19b0657fe70a3a66f</Anchor>
                </Node>
                <Node>
-                <Name>TRAINED_DATA_IDENTIFIER_</Name>
+                <Name>trained_data_location_</Name>
                 <Path>classod_1_1_o_d_detector_common.html</Path>
-                <Anchor>a5c4394c495ef1d84985b0163242a6cdb</Anchor>
+                <Anchor>a4641dc30579c65108a64526d868890f5</Anchor>
                </Node>
                <Node>
-                <Name>training_data_location_</Name>
+                <Name>TRAINED_LOCATION_DENTIFIER_</Name>
                 <Path>classod_1_1_o_d_detector_common.html</Path>
-                <Anchor>a4a042147d5c57ea3af5617a84f99a52b</Anchor>
+                <Anchor>ae5d56c77d26f3770a9aa6517f2e63630</Anchor>
                </Node>
                <Node>
                 <Name>training_input_location_</Name>
@@ -1139,7 +1409,7 @@
                <Node>
                 <Name>setAlwaysTrain</Name>
                 <Path>classod_1_1_object_detector.html</Path>
-                <Anchor>a477e1675f6cff6aedfefbcd20d357897</Anchor>
+                <Anchor>ad5b8307982a486edb91ef694edc2e8ff</Anchor>
                </Node>
                <Node>
                 <Name>setDetectionMethod</Name>
@@ -1598,7 +1868,7 @@
                <Node>
                 <Name>ODDetector2D</Name>
                 <Path>classod_1_1_o_d_detector2_d.html</Path>
-                <Anchor>adb9b709efceb7330b640bfa169a11dd1</Anchor>
+                <Anchor>ad41c5854937566e209d3f88f3e7b07ee</Anchor>
                </Node>
                <Node>
                 <Name>detect</Name>
@@ -1624,7 +1894,7 @@
                <Node>
                 <Name>ODDetector3D</Name>
                 <Path>classod_1_1_o_d_detector3_d.html</Path>
-                <Anchor>ac8d04086fac52bf457d396751ea31397</Anchor>
+                <Anchor>a9894dc6b87785770203ab551c5c70a44</Anchor>
                </Node>
                <Node>
                 <Name>detect</Name>
@@ -1645,7 +1915,7 @@
                <Node>
                 <Name>ODDetector2DComplete</Name>
                 <Path>classod_1_1_o_d_detector2_d_complete.html</Path>
-                <Anchor>ade8aa2c6a45a23b65ee55664c6cd34b3</Anchor>
+                <Anchor>a7e7abd158f07a4acffe421c81c0e8b74</Anchor>
                </Node>
                <Node>
                 <Name>detect</Name>
@@ -1663,6 +1933,21 @@
               <Name>ODScene</Name>
               <Path>classod_1_1_o_d_scene.html</Path>
               <Subnodes>
+               <Node>
+                <Name>getData</Name>
+                <Path>classod_1_1_o_d_scene.html</Path>
+                <Anchor>aff927712c5e9a6112812d4a709cefdfb</Anchor>
+               </Node>
+               <Node>
+                <Name>getPath</Name>
+                <Path>classod_1_1_o_d_scene.html</Path>
+                <Anchor>aeba1def292bc951d3b9d88c8584bc997</Anchor>
+               </Node>
+               <Node>
+                <Name>path_</Name>
+                <Path>classod_1_1_o_d_scene.html</Path>
+                <Anchor>aca063b3386713f4ece014a701bfd976e</Anchor>
+               </Node>
               </Subnodes>
              </Node>
              <Node>
@@ -1845,6 +2130,11 @@
                 <Anchor>aeff93d7849410c1198d6ca9ab1d13053</Anchor>
                </Node>
                <Node>
+                <Name>computeAndSave</Name>
+                <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
+                <Anchor>a75d37f2e0941ac4d635609b78f319074</Anchor>
+               </Node>
+               <Node>
                 <Name>computeKeypointsAndDescriptors</Name>
                 <Path>classod_1_1_o_d_feature_detector2_d.html</Path>
                 <Anchor>a89968230cb4225b650f4aa56d4edd6b9</Anchor>
@@ -1940,6 +2230,47 @@
                 <Name>getFirstFile</Name>
                 <Path>classod_1_1_file_utils.html</Path>
                 <Anchor>a68b85f602447ff65f31b1153b0b7f837</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
+              <Name>ODDetectorMultiAlgo2D</Name>
+              <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>PointT</Name>
+                <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+                <Anchor>a1efb809ae8cf2ffa96191abacf520d0a</Anchor>
+               </Node>
+               <Node>
+                <Name>ODDetectorMultiAlgo2D</Name>
+                <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+                <Anchor>a7059d961f00ad96ba45cc4a6abae385e</Anchor>
+               </Node>
+               <Node>
+                <Name>detect</Name>
+                <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+                <Anchor>aba7deffa93847f9b8e53a7aa0e8a228c</Anchor>
+               </Node>
+               <Node>
+                <Name>detect</Name>
+                <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+                <Anchor>a0a766f8f85085905cb961c234355bdc8</Anchor>
+               </Node>
+               <Node>
+                <Name>detectOmni</Name>
+                <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+                <Anchor>abd7eda10af8e80332d9a3f1529f5ab47</Anchor>
+               </Node>
+               <Node>
+                <Name>detectOmni</Name>
+                <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+                <Anchor>af95bc1fc82e0a46c746caaa747dba230</Anchor>
+               </Node>
+               <Node>
+                <Name>init</Name>
+                <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
+                <Anchor>ab51ad79361aec590192a1b7a31264991</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -2139,8 +2470,16 @@
                 <Path>classod_1_1_o_d_detector2_d.html</Path>
                 <Subnodes>
                  <Node>
+                  <Name>od::g2d::ODCascadeDetector</Name>
+                  <Path>classod_1_1g2d_1_1_o_d_cascade_detector.html</Path>
+                 </Node>
+                 <Node>
                   <Name>od::g2d::ODHOGDetector</Name>
                   <Path>classod_1_1g2d_1_1_o_d_h_o_g_detector.html</Path>
+                 </Node>
+                 <Node>
+                  <Name>od::ODDetectorMultiAlgo2D</Name>
+                  <Path>classod_1_1_o_d_detector_multi_algo2_d.html</Path>
                  </Node>
                 </Subnodes>
                </Node>
@@ -2321,6 +2660,10 @@
               <Path>functions_u.html</Path>
              </Node>
              <Node>
+              <Name>v</Name>
+              <Path>functions_v.html</Path>
+             </Node>
+             <Node>
               <Name>w</Name>
               <Path>functions_w.html</Path>
              </Node>
@@ -2409,6 +2752,64 @@
             <Path>functions_eval.html</Path>
            </Node>
           </Subnodes>
+         </Node>
+        </Subnodes>
+       </Node>
+       <Node>
+        <Name>Examples</Name>
+        <Path>examples.html</Path>
+        <Subnodes>
+         <Node>
+          <Name>apps/global2D/od_multihog_app.cpp</Name>
+          <Path>apps_2global2_d_2od_multihog_app_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_hog_train.cpp</Name>
+          <Path>objectdetector_2od_hog_train_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_image_cadrecog_camera.cpp</Name>
+          <Path>objectdetector_2od_image_cadrecog_camera_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_image_cadrecog_files.cpp</Name>
+          <Path>objectdetector_2od_image_cadrecog_files_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_image_cascade.cpp</Name>
+          <Path>objectdetector_2od_image_cascade_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_image_cascade_files.cpp</Name>
+          <Path>objectdetector_2od_image_cascade_files_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_image_facerecog.cpp</Name>
+          <Path>objectdetector_2od_image_facerecog_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_image_hog.cpp</Name>
+          <Path>objectdetector_2od_image_hog_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_image_hog_files.cpp</Name>
+          <Path>objectdetector_2od_image_hog_files_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_multialgo_files.cpp</Name>
+          <Path>objectdetector_2od_multialgo_files_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_multialgo_pc.cpp</Name>
+          <Path>objectdetector_2od_multialgo_pc_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_pc_global_files.cpp</Name>
+          <Path>objectdetector_2od_pc_global_files_8cpp-example.html</Path>
+         </Node>
+         <Node>
+          <Name>objectdetector/od_pc_global_real_time.cpp</Name>
+          <Path>objectdetector_2od_pc_global_real_time_8cpp-example.html</Path>
          </Node>
         </Subnodes>
        </Node>

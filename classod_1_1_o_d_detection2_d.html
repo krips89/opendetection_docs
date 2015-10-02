@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.6-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,9 +6,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
 <title>Open Detection: od::ODDetection2D Class Reference</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -17,7 +35,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -42,8 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -66,11 +86,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceod.html">od</a></li><li class="navelem"><a class="el" href="classod_1_1_o_d_detection2_d.html">ODDetection2D</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classod_1_1_o_d_detection2_d.html','');});
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="classod_1_1_o_d_detection2_d-members.html">List of all members</a> &#124;
@@ -91,14 +121,14 @@ Inheritance diagram for od::ODDetection2D:</div>
 <div class="center"><img src="classod_1_1_o_d_detection2_d__inherit__graph.png" border="0" usemap="#od_1_1_o_d_detection2_d_inherit__map" alt="Inheritance graph"/></div>
 <map name="od_1_1_o_d_detection2_d_inherit__map" id="od_1_1_o_d_detection2_d_inherit__map">
 <area shape="rect" id="node3" href="classod_1_1_o_d_detection_complete.html" title="Detection in 2D with complete information. " alt="" coords="5,155,181,181"/><area shape="rect" id="node2" href="classod_1_1_o_d_detection.html" title="The base class of all the detection. " alt="" coords="33,5,153,32"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for od::ODDetection2D:</div>
 <div class="dyncontent">
 <div class="center"><img src="classod_1_1_o_d_detection2_d__coll__graph.png" border="0" usemap="#od_1_1_o_d_detection2_d_coll__map" alt="Collaboration graph"/></div>
 <map name="od_1_1_o_d_detection2_d_coll__map" id="od_1_1_o_d_detection2_d_coll__map">
 <area shape="rect" id="node2" href="classod_1_1_o_d_detection.html" title="The base class of all the detection. " alt="" coords="13,5,133,32"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -153,7 +183,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Detection for 2D with 2D location information. </p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00095">95</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00096">96</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8843233aa3db9416e5a3b303daa2111f"></a>
 <div class="memitem">
@@ -176,7 +206,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00099">99</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00100">100</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
 </div>
 </div>
@@ -218,9 +248,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00102">102</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00103">103</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00138">location_2d_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00139">location_2d_</a>.</p>
 
 </div>
 </div>
@@ -246,9 +276,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00117">117</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00118">118</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00139">bounding_box_2d_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00140">bounding_box_2d_</a>.</p>
 
 </div>
 </div>
@@ -273,9 +303,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00107">107</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00108">108</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00138">location_2d_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00139">location_2d_</a>.</p>
 
 </div>
 </div>
@@ -300,9 +330,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00127">127</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00128">128</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00140">metainfo_image_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00141">metainfo_image_</a>.</p>
 
 </div>
 </div>
@@ -328,9 +358,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00122">122</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00123">123</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00139">bounding_box_2d_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00140">bounding_box_2d_</a>.</p>
 
 </div>
 </div>
@@ -356,9 +386,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00112">112</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00113">113</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00138">location_2d_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00139">location_2d_</a>.</p>
 
 </div>
 </div>
@@ -384,9 +414,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00132">132</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00133">133</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>References <a class="el" href="_o_d_detection_8h_source.html#l00140">metainfo_image_</a>.</p>
+<p>References <a class="el" href="_o_d_detection_8h_source.html#l00141">metainfo_image_</a>.</p>
 
 </div>
 </div>
@@ -401,9 +431,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00139">139</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00140">140</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00117">getBoundingBox()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00316">od::ODDetections2D::renderMetainfo()</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00122">setBoundingBox()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00118">getBoundingBox()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00320">od::ODDetections2D::renderMetainfo()</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00123">setBoundingBox()</a>.</p>
 
 </div>
 </div>
@@ -417,9 +447,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00138">138</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00139">139</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00107">getLocation()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00102">ODDetection2D()</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00112">setLocation()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00108">getLocation()</a>, <a class="el" href="_o_d_detection_8h_source.html#l00103">ODDetection2D()</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00113">setLocation()</a>.</p>
 
 </div>
 </div>
@@ -433,9 +463,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00140">140</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
+<p>Definition at line <a class="el" href="_o_d_detection_8h_source.html#l00141">141</a> of file <a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00127">getMetainfoImage()</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00132">setMetainfoImage()</a>.</p>
+<p>Referenced by <a class="el" href="_o_d_detection_8h_source.html#l00128">getMetainfoImage()</a>, and <a class="el" href="_o_d_detection_8h_source.html#l00133">setMetainfoImage()</a>.</p>
 
 </div>
 </div>
@@ -443,12 +473,13 @@ Public Attributes</h2></td></tr>
 <li>/home/sarkar/opendetection/common/pipeline/<a class="el" href="_o_d_detection_8h_source.html">ODDetection.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <hr>
 <div id="footer">
 <p>
 Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
+<p>Pages generated on Fri Oct 2 2015 04:20:06</p>
 </div> <!-- #footer -->
 </body>
 </html>

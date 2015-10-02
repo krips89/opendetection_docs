@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.6-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,9 +6,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
 <title>Open Detection: /home/sarkar/opendetection/detectors/global2D/detection/ODCascadeDetector.h Source File</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -17,7 +35,7 @@
 </script>
 <link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Open Detection"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen_style.css" rel="stylesheet" type="text/css"/>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -42,8 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -58,11 +78,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d5b1bec2c78dd22ca1e7668251a571ad.html">detectors</a></li><li class="navelem"><a class="el" href="dir_864fd1d43a774d6fa0017aff9128fdd0.html">global2D</a></li><li class="navelem"><a class="el" href="dir_65013584f16c0a282d842bb7fb6c3d68.html">detection</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_o_d_cascade_detector_8h_source.html','');});
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle">
 <div class="title">ODCascadeDetector.h</div>  </div>
@@ -85,62 +115,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>od</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">namespace </span>g2d</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceod_1_1g2d.html">   18</a></span>&#160;  <span class="keyword">namespace </span>g2d</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {<span class="comment"></span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    /** \brief A class for detection using Cascade classifiers.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">     * Given a scene and a cascade classifier, this class performs a classification and returns detections. The training is not supported in OD currently but is compatible to the cascade training of OpenCV.</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">     * Train your cascade classifiers using OpenCV&#39;s *opencv_traincascade* utility (http://docs.opencv.org/master/dc/d88/tutorial_traincascade.html#gsc.tab=0). It is a great tool for traning your cascade.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     * Paste the generated xml in training_data_location_/CASCADE/*.cascade.xml to use your trained cascade.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     * Paste the generated xml in trained_data_location_/TD_CASCADE/\*.cascade.xml to use your trained cascade.</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     *</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     * \author Kripasindhu Sarkar</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     *</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">class </span>ODCascadeDetector : <span class="keyword">public</span> ODDetector2D</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classod_1_1g2d_1_1_o_d_cascade_detector.html">   29</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classod_1_1g2d_1_1_o_d_cascade_detector.html">ODCascadeDetector</a> : <span class="keyword">public</span> <a class="code" href="classod_1_1_o_d_detector2_d.html">ODDetector2D</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      ODCascadeDetector(std::string <span class="keyword">const</span> &amp;training_data_location_ = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">double</span> scaleFactor = 1.1, <span class="keywordtype">int</span> minNeighbors = 3, <span class="keywordtype">int</span> flags = 0, cv::Size minSize = cv::Size(), cv::Size maxSize = cv::Size())</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;          : ODDetector2D(training_data_location_), scaleFactor_(scaleFactor), minNeighbors_(minNeighbors), minSize_(minSize), maxSize_(maxSize)</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classod_1_1g2d_1_1_o_d_cascade_detector.html#ae09535635933358a936f5ab3c8d6ded2">   33</a></span>&#160;      <a class="code" href="classod_1_1g2d_1_1_o_d_cascade_detector.html#ae09535635933358a936f5ab3c8d6ded2">ODCascadeDetector</a>(std::string <span class="keyword">const</span> &amp;trained_data_location = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">double</span> scaleFactor = 1.1, <span class="keywordtype">int</span> minNeighbors = 3, <span class="keywordtype">int</span> flags = 0, cv::Size minSize = cv::Size(), cv::Size maxSize = cv::Size())</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;          : <a class="code" href="classod_1_1_o_d_detector2_d.html">ODDetector2D</a>(trained_data_location), scaleFactor_(scaleFactor), minNeighbors_(minNeighbors), minSize_(minSize), maxSize_(maxSize)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        TRAINED_DATA_IDENTIFIER_ = <span class="stringliteral">&quot;CASCADE&quot;</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        TRAINED_DATA_EXT_ = <span class="stringliteral">&quot;cascade.xml&quot;</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        metainfo_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classod_1_1_o_d_detector_common.html#ae5d56c77d26f3770a9aa6517f2e63630">TRAINED_LOCATION_DENTIFIER_</a> = <span class="stringliteral">&quot;CASCADE&quot;</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classod_1_1_o_d_detector_common.html#a7b950184a73271b19b0657fe70a3a66f">TRAINED_DATA_ID_</a> = <span class="stringliteral">&quot;cascade.xml&quot;</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classod_1_1_o_d_detector.html#a1e65ee754ba37db23c18295a83c4ca6a">metainfo_</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordtype">void</span> init()</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classod_1_1g2d_1_1_o_d_cascade_detector.html#a08daea146a957a577ede2c0c74fdab4b">   41</a></span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classod_1_1g2d_1_1_o_d_cascade_detector.html#a08daea146a957a577ede2c0c74fdab4b">init</a>()</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        haar_cascade_ = boost::make_shared&lt;cv::CascadeClassifier&gt;(<a class="code" href="classod_1_1_file_utils.html#a68b85f602447ff65f31b1153b0b7f837">FileUtils::getFirstFile</a>(getSpecificTrainingDataLocation(), TRAINED_DATA_EXT_));</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      ODDetections2D *detectOmni(ODSceneImage *scene);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      ODDetections* detect(ODSceneImage *scene);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      boost::shared_ptr&lt;cv::CascadeClassifier&gt; haar_cascade_;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordtype">double</span> scaleFactor_;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordtype">int</span> minNeighbors_;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      cv::Size minSize_;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      cv::Size maxSize_;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };<span class="comment"></span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">    /** \example objectdetector/od_image_cascade.cpp</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">     *  \example objectdetector/od_image_cascade_files.cpp</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif //OPENDETECTION_ODCASCADEDETECTOR_H</span></div>
-<div class="ttc" id="classod_1_1_file_utils_html_a68b85f602447ff65f31b1153b0b7f837"><div class="ttname"><a href="classod_1_1_file_utils.html#a68b85f602447ff65f31b1153b0b7f837">od::FileUtils::getFirstFile</a></div><div class="ttdeci">static std::string getFirstFile(std::string base_path, std::string extension)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00174">utils.h:174</a></div></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        haar_cascade_ = boost::make_shared&lt;cv::CascadeClassifier&gt;(<a class="code" href="classod_1_1_file_utils.html#a68b85f602447ff65f31b1153b0b7f837">FileUtils::getFirstFile</a>(<a class="code" href="classod_1_1_o_d_detector_common.html#a1403c4fad4d452ac51018b0f5212a14d">getSpecificTrainingDataLocation</a>(),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                                          <a class="code" href="classod_1_1_o_d_detector_common.html#a7b950184a73271b19b0657fe70a3a66f">TRAINED_DATA_ID_</a>));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="classod_1_1_o_d_detections2_d.html">ODDetections2D</a> *<a class="code" href="classod_1_1g2d_1_1_o_d_cascade_detector.html#a2ea123281500acd9be45f1262107eab3">detectOmni</a>(<a class="code" href="classod_1_1_o_d_scene_image.html">ODSceneImage</a> *scene);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="classod_1_1_o_d_detections.html">ODDetections</a>* <a class="code" href="classod_1_1g2d_1_1_o_d_cascade_detector.html#a37b0d1c71d756b5bd0728acf60131eef">detect</a>(<a class="code" href="classod_1_1_o_d_scene_image.html">ODSceneImage</a> *scene);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      boost::shared_ptr&lt;cv::CascadeClassifier&gt; haar_cascade_;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordtype">double</span> scaleFactor_;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordtype">int</span> minNeighbors_;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      cv::Size minSize_;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      cv::Size maxSize_;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };<span class="comment"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">    /** \example objectdetector/od_image_cascade.cpp</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     *  \example objectdetector/od_image_cascade_files.cpp</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif //OPENDETECTION_ODCASCADEDETECTOR_H</span></div>
+<div class="ttc" id="classod_1_1_o_d_detector_common_html_ae5d56c77d26f3770a9aa6517f2e63630"><div class="ttname"><a href="classod_1_1_o_d_detector_common.html#ae5d56c77d26f3770a9aa6517f2e63630">od::ODDetectorCommon::TRAINED_LOCATION_DENTIFIER_</a></div><div class="ttdeci">std::string TRAINED_LOCATION_DENTIFIER_</div><div class="ttdef"><b>Definition:</b> <a href="_object_detector_8h_source.html#l00105">ObjectDetector.h:105</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detector_common_html_a7b950184a73271b19b0657fe70a3a66f"><div class="ttname"><a href="classod_1_1_o_d_detector_common.html#a7b950184a73271b19b0657fe70a3a66f">od::ODDetectorCommon::TRAINED_DATA_ID_</a></div><div class="ttdeci">std::string TRAINED_DATA_ID_</div><div class="ttdef"><b>Definition:</b> <a href="_object_detector_8h_source.html#l00105">ObjectDetector.h:105</a></div></div>
+<div class="ttc" id="classod_1_1g2d_1_1_o_d_cascade_detector_html"><div class="ttname"><a href="classod_1_1g2d_1_1_o_d_cascade_detector.html">od::g2d::ODCascadeDetector</a></div><div class="ttdoc">A class for detection using Cascade classifiers. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_cascade_detector_8h_source.html#l00029">ODCascadeDetector.h:29</a></div></div>
+<div class="ttc" id="classod_1_1g2d_1_1_o_d_cascade_detector_html_a08daea146a957a577ede2c0c74fdab4b"><div class="ttname"><a href="classod_1_1g2d_1_1_o_d_cascade_detector.html#a08daea146a957a577ede2c0c74fdab4b">od::g2d::ODCascadeDetector::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_cascade_detector_8h_source.html#l00041">ODCascadeDetector.h:41</a></div></div>
+<div class="ttc" id="classod_1_1g2d_1_1_o_d_cascade_detector_html_a2ea123281500acd9be45f1262107eab3"><div class="ttname"><a href="classod_1_1g2d_1_1_o_d_cascade_detector.html#a2ea123281500acd9be45f1262107eab3">od::g2d::ODCascadeDetector::detectOmni</a></div><div class="ttdeci">ODDetections2D * detectOmni(ODSceneImage *scene)</div><div class="ttdoc">Function for performing detection on an entire scene. </div></div>
+<div class="ttc" id="classod_1_1_o_d_detector_html_a1e65ee754ba37db23c18295a83c4ca6a"><div class="ttname"><a href="classod_1_1_o_d_detector.html#a1e65ee754ba37db23c18295a83c4ca6a">od::ODDetector::metainfo_</a></div><div class="ttdeci">bool metainfo_</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detector_8h_source.html#l00035">ODDetector.h:35</a></div></div>
+<div class="ttc" id="classod_1_1g2d_1_1_o_d_cascade_detector_html_ae09535635933358a936f5ab3c8d6ded2"><div class="ttname"><a href="classod_1_1g2d_1_1_o_d_cascade_detector.html#ae09535635933358a936f5ab3c8d6ded2">od::g2d::ODCascadeDetector::ODCascadeDetector</a></div><div class="ttdeci">ODCascadeDetector(std::string const &amp;trained_data_location=&quot;&quot;, double scaleFactor=1.1, int minNeighbors=3, int flags=0, cv::Size minSize=cv::Size(), cv::Size maxSize=cv::Size())</div><div class="ttdef"><b>Definition:</b> <a href="_o_d_cascade_detector_8h_source.html#l00033">ODCascadeDetector.h:33</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_scene_image_html"><div class="ttname"><a href="classod_1_1_o_d_scene_image.html">od::ODSceneImage</a></div><div class="ttdoc">Class for Image Scene. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_scene_8h_source.html#l00043">ODScene.h:43</a></div></div>
+<div class="ttc" id="classod_1_1g2d_1_1_o_d_cascade_detector_html_a37b0d1c71d756b5bd0728acf60131eef"><div class="ttname"><a href="classod_1_1g2d_1_1_o_d_cascade_detector.html#a37b0d1c71d756b5bd0728acf60131eef">od::g2d::ODCascadeDetector::detect</a></div><div class="ttdeci">ODDetections * detect(ODSceneImage *scene)</div><div class="ttdoc">Function for performing detection on a segmented scene. </div></div>
+<div class="ttc" id="classod_1_1_o_d_detector_common_html_a1403c4fad4d452ac51018b0f5212a14d"><div class="ttname"><a href="classod_1_1_o_d_detector_common.html#a1403c4fad4d452ac51018b0f5212a14d">od::ODDetectorCommon::getSpecificTrainingDataLocation</a></div><div class="ttdeci">std::string getSpecificTrainingDataLocation()</div><div class="ttdoc">Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </div><div class="ttdef"><b>Definition:</b> <a href="_object_detector_8h_source.html#l00083">ObjectDetector.h:83</a></div></div>
+<div class="ttc" id="classod_1_1_file_utils_html_a68b85f602447ff65f31b1153b0b7f837"><div class="ttname"><a href="classod_1_1_file_utils.html#a68b85f602447ff65f31b1153b0b7f837">od::FileUtils::getFirstFile</a></div><div class="ttdeci">static std::string getFirstFile(std::string base_path, std::string extension)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00191">utils.h:191</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detections2_d_html"><div class="ttname"><a href="classod_1_1_o_d_detections2_d.html">od::ODDetections2D</a></div><div class="ttdoc">The container class for ODDetection2D returned by ODDetector2D. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00314">ODDetection.h:314</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detections_html"><div class="ttname"><a href="classod_1_1_o_d_detections.html">od::ODDetections</a></div><div class="ttdoc">The container class for ODDetection. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detection_8h_source.html#l00249">ODDetection.h:249</a></div></div>
+<div class="ttc" id="classod_1_1_o_d_detector2_d_html"><div class="ttname"><a href="classod_1_1_o_d_detector2_d.html">od::ODDetector2D</a></div><div class="ttdoc">The detector of 2D scene. </div><div class="ttdef"><b>Definition:</b> <a href="_o_d_detector_8h_source.html#l00046">ODDetector.h:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <hr>
 <div id="footer">
 <p>
 Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Mon Aug 24 2015 17:06:15</p>
+<p>Pages generated on Fri Oct 2 2015 04:20:06</p>
 </div> <!-- #footer -->
 </body>
 </html>

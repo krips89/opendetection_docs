@@ -6,15 +6,15 @@
      <key>CFBundleName</key>
      <string>Open Detection</string>
      <key>CFBundleIdentifier</key>
-     <string>pointclouds.org</string>
+     <string>opendetection.org</string>
      <key>CFBundleVersion</key>
      <string>1.0</string>
      <key>DocSetFeedName</key>
      <string>Doxygen generated docs</string>
      <key>DocSetPublisherIdentifier</key>
-     <string>pointclouds.org.Publisher</string>
+     <string>opendetection.org.Publisher</string>
      <key>DocSetPublisherName</key>
-     <string>PointCloudLibrary(PCL)DevelopmentTeam</string>
+     <string>OpenDetection(OD)</string>
      <key>DashDocSetFamily</key>
      <string>doxy</string>
      <key>DocSetPlatformFamily</key>
