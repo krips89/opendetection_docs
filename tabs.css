@@ -1,5 +1,6 @@
 .tabs, .tabs2, .tabs3 {
     background-image: url('tab_b.png');
+    /*background-color: rgb(51, 76, 131);*/
     width: 100%;
     z-index: 101;
     font-size: 13px;
@@ -57,4 +58,31 @@
     background-repeat:repeat-x;
     color: #fff;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 1.0);
+}
+
+
+.topnav {
+    position:relative;
+    z-index:1;
+    font-size: 17px;
+    background-color:#5f5f5f;
+    color:#f1f1f1;
+    width:100%;
+    padding:0;
+    letter-spacing:1px;
+}
+.topnav a{
+    text-decoration:none;
+    padding:10px 15px 9px 15px !important;
+    border-bottom:none;
+    display:inline-block;
+}
+.topnav a:hover{
+    border-bottom:none;
+    background-color:#000000;
+    color:#ffffff;
+}
+.topnav a.active {
+    background-color:#8AC007;
+    color:#ffffff;
 }

@@ -2,10 +2,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Open Detection: About</title>
+<title>Open Detection: Open Detection</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -61,9 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
+      <li><a href="usergroup0.html"><span>API&#160;Documentation</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -95,26 +94,111 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">About </div>  </div>
+<div class="title">Open Detection </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Open Detection (OD)</b> is a standalone open source project for object detection and recognition in images and 3D point clouds.</p>
+<div class="textblock"><h1>Open Detection </h1>
+ 
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-6">
+<p><b>Open Detection (OD)</b> is a standalone open source project for object detection and recognition in images and 3D point clouds. Open Detection is released under the terms of the <b>BSD license</b>, and thus free for commercial and research use. The project was originated under <b>Google Summer of Code 2015</b> with the aim of having a vision tool for robotics (in particular for <a href="https://github.com/robocomp/robocomp">Robocomp</a>).</p>
+<p>The library is built with a very specific goal - to answer the fundamental problem of Computer Vision - Object Recognition and Detection. We make available to everyone the existing solution in this direction in a common, intuitive and user-friendly APIs. Our simple and user-friendly APIs make this a great tool for <b>Robotics Applications and robots</b> and <b>Computer Vision beginners and enthusiasts</b>. And of course, the method dependent parameters to fine-tune detections to the limit, makes this a great tool for <b>Computer Vision researchers and experts</b>.</p>
+<h2>Getting Started</h2>
 <ul>
-<li><a class="el" href="tutorial_root.html">OD Manual</a></li>
+<li>Download and compile using <a class="el" href="installation_instruction.html">Installation Instructions</a></li>
+<li>The <a class="el" href="getting_started.html">Getting Started</a> guide</li>
+<li>Go through the <a class="el" href="tutorial_root.html">User Manual</a></li>
+<li>Learn the <a class="el" href="basic_structures.html">Basic Structures</a> and pipeline</li>
 </ul>
-<h2>Quick Links </h2>
+<h2>Quick Links</h2>
 <ul>
+<li><a href="annotated.html"><b>API Documentation</b></a></li>
 <li>Source Code: <a href="https://github.com/krips89/opendetection">https://github.com/krips89/opendetection</a></li>
-<li>Bug report and queries: <a href="#" onclick="location.href='mai'+'lto:'+'kri'+'pa'+'sin'+'dh'+'u.s'+'ar'+'kar'+'@d'+'fki'+'.d'+'e'; return false;">kripa<span style="display: none;">.nosp@m.</span>sind<span style="display: none;">.nosp@m.</span>hu.sa<span style="display: none;">.nosp@m.</span>rkar<span style="display: none;">.nosp@m.</span>@dfki<span style="display: none;">.nosp@m.</span>.de</a> </li>
+<li>Bug report and queries: <a href="#" onclick="location.href='mai'+'lto:'+'kri'+'pa'+'sin'+'dh'+'u.s'+'ar'+'kar'+'@d'+'fki'+'.d'+'e'; return false;">kripa<span style="display: none;">.nosp@m.</span>sind<span style="display: none;">.nosp@m.</span>hu.sa<span style="display: none;">.nosp@m.</span>rkar<span style="display: none;">.nosp@m.</span>@dfki<span style="display: none;">.nosp@m.</span>.de</a></li>
 </ul>
-</div></div><!-- contents -->
+ 
+    </div>
+  <div class="col-sm-6" >
+<div class="odlCarouselClass">
+  <div id="odlCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#odlCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#odlCarousel" data-slide-to="1"></li>
+      <li data-target="#odlCarousel" data-slide-to="2"></li>
+      <li data-target="#odlCarousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      
+      <div class="item active">
+        <img src="odlogo_detailed.png">
+      </div>
+      
+      <div class="item">
+         <a class="el" href="detection_2d.html"> 
+        <img src="snap_hog3.png">         
+        <div class="carousel-caption">
+          <h4>HOG based detector</h4>          
+        </div>
+         </a>  
+      </div>
+           
+      <div class="item"> 
+         <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html"> 
+        <img src="cadrecog2d.png">        
+        <div class="carousel-caption">
+          <h4>CAD Recognizer 2D</h4>
+          <p>Recognize 3D CAD models from a single 2D image!</p>
+        </div>
+         </a>  
+      </div>
+      
+      <div class="item">
+         <a class="el" href="detection_3d.html"> 
+        <img src="cadrecog3d.png">
+        <div class="carousel-caption">
+          <h4>CAD Recognizer 3D</h4>
+          <p>Recognize/Detect 3D CAD models in Point Cloud from Kinect</p>
+        </div>
+         </a>  
+      </div> 
+            
+      <div class="item">
+         <a class="el" href="classod_1_1g2d_1_1_o_d_cascade_detector.html"> 
+        <img src="face_business.jpg">
+        <div class="carousel-caption">
+          <h4>Cascade Classifier and Face Recognizer</h4>    
+          <p>Detect face and other objects using Cascade Classifier</p>
+        </div>
+         </a>  
+      </div>      
+      
+    </div>
+    <!-- Controls -->
+    <a class="carousel-control left" href="#odlCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#odlCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div></div>
+    </div>
+    
+  </div>
+</div>
+
+
+ </div></div><!-- contents -->
 </div><!-- doc-content -->
 <hr>
 <div id="footer">
 <p>
 Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Fri Oct 2 2015 04:20:06</p>
+<p>Pages generated on Sat Oct 3 2015 15:38:37</p>
 </div> <!-- #footer -->
 </body>
 </html>
