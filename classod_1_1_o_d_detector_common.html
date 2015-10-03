@@ -173,7 +173,7 @@ Protected Attributes</h2></td></tr>
 <p>Both Trainers and Detectors drerives from this and therefore, all the common data/functionalities of Trainers and Detectors should go here.</p>
 <dl class="section author"><dt>Author</dt><dd>Kripasindhu Sarkar </dd></dl>
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00034">34</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00060">60</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a410a9c4557998ba966f3ee28c00b3623"></a>
 <div class="memitem">
@@ -197,9 +197,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00038">38</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00064">64</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_DATA_ID_</a>, and <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_LOCATION_DENTIFIER_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00131">TRAINED_DATA_ID_</a>, and <a class="el" href="_object_detector_8h_source.html#l00131">TRAINED_LOCATION_DENTIFIER_</a>.</p>
 
 </div>
 </div>
@@ -225,9 +225,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00088">88</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00114">114</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00083">getSpecificTrainingDataLocation()</a>, and <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_DATA_ID_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00109">getSpecificTrainingDataLocation()</a>, and <a class="el" href="_object_detector_8h_source.html#l00131">TRAINED_DATA_ID_</a>.</p>
 
 </div>
 </div>
@@ -254,11 +254,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Gets the specific directory for a Trainer or a Detector inside trained_data_location_. </p>
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00083">83</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00109">109</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00104">trained_data_location_</a>, and <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_LOCATION_DENTIFIER_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00130">trained_data_location_</a>, and <a class="el" href="_object_detector_8h_source.html#l00131">TRAINED_LOCATION_DENTIFIER_</a>.</p>
 
-<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00088">getSpecificTrainingData()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00041">od::g2d::ODCascadeDetector::init()</a>, and <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>.</p>
+<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00114">getSpecificTrainingData()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00066">od::g2d::ODCascadeDetector::init()</a>, and <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00057">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>.</p>
 
 </div>
 </div>
@@ -283,9 +283,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00093">93</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00119">119</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_DATA_ID_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00131">TRAINED_DATA_ID_</a>.</p>
 
 </div>
 </div>
@@ -313,9 +313,9 @@ Protected Attributes</h2></td></tr>
 <p>Gets/Sets the base directory for trained data. </p>
 <p>This should be same for all Trainers and Detectors and can be considered as the 'database' of trained data. Trainers uses one of its subdirectories based on its type to store algo specific trained data. The corresponding Detector would use the same directory to fetch the trained data for online detection. </p>
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00066">66</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00092">92</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00104">trained_data_location_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00130">trained_data_location_</a>.</p>
 
 </div>
 </div>
@@ -343,9 +343,9 @@ Protected Attributes</h2></td></tr>
 <p>Gets/Sets the directory containing the data for training. </p>
 <p>The trainer uses the data from directory for training. Detectors can use this location to get additional information in its detection algirhtms as well. </p>
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00051">51</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00077">77</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00104">training_input_location_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00130">training_input_location_</a>.</p>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#aa1f0a04214ff8fa76c0f3369e221ae29">od::l2d::ODCADRecognizer2DLocal</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_trainer.html#a466cbf617a6735f0c7531fb1b97dc886">od::g2d::ODHOGTrainer</a>, <a class="el" href="classod_1_1_o_d_detector_multi_algo.html#ae95ec9cc71ca463c5ae8564df130fb8d">od::ODDetectorMultiAlgo</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html#a91e1f4d3512561bf151cf299cfefa7b8">od::g3d::ODCADDetectTrainer3DGlobal</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a03940e18d6357d4c01d3159417f4355c">od::g2d::ODHOGDetector</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html#a8a6e277f39b4cc3690eb70c6746af06b">od::g3d::ODCADDetector3DGlobal&lt; PointT &gt;</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html#a8a6e277f39b4cc3690eb70c6746af06b">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_cascade_detector.html#a08daea146a957a577ede2c0c74fdab4b">od::g2d::ODCascadeDetector</a>, <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html#a18655c04a7e523589a87837218ffcdc6">od::l2d::ODCADRecogTrainerSnapshotBased</a>, and <a class="el" href="classod_1_1_o_d_detector_multi_algo2_d.html#ab51ad79361aec590192a1b7a31264991">od::ODDetectorMultiAlgo2D</a>.</p>
+<p>Implemented in <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recognizer2_d_local.html#aa1f0a04214ff8fa76c0f3369e221ae29">od::l2d::ODCADRecognizer2DLocal</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_trainer.html#a466cbf617a6735f0c7531fb1b97dc886">od::g2d::ODHOGTrainer</a>, <a class="el" href="classod_1_1_o_d_detector_multi_algo.html#ae95ec9cc71ca463c5ae8564df130fb8d">od::ODDetectorMultiAlgo</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html#a91e1f4d3512561bf151cf299cfefa7b8">od::g3d::ODCADDetectTrainer3DGlobal</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a03940e18d6357d4c01d3159417f4355c">od::g2d::ODHOGDetector</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html#a8a6e277f39b4cc3690eb70c6746af06b">od::g3d::ODCADDetector3DGlobal&lt; PointT &gt;</a>, <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detector3_d_global.html#a8a6e277f39b4cc3690eb70c6746af06b">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;</a>, <a class="el" href="classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html#a18655c04a7e523589a87837218ffcdc6">od::l2d::ODCADRecogTrainerSnapshotBased</a>, <a class="el" href="classod_1_1g2d_1_1_o_d_cascade_detector.html#a08daea146a957a577ede2c0c74fdab4b">od::g2d::ODCascadeDetector</a>, and <a class="el" href="classod_1_1_o_d_detector_multi_algo2_d.html#ab51ad79361aec590192a1b7a31264991">od::ODDetectorMultiAlgo2D</a>.</p>
 
 </div>
 </div>
@@ -396,9 +396,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00098">98</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00124">124</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00105">TRAINED_DATA_ID_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00131">TRAINED_DATA_ID_</a>.</p>
 
 </div>
 </div>
@@ -429,9 +429,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a12c511fc0775162ff24587c609e50a8a">od::g2d::ODHOGDetector</a>.</p>
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00075">75</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00101">101</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00104">trained_data_location_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00130">trained_data_location_</a>.</p>
 
 </div>
 </div>
@@ -461,9 +461,9 @@ Protected Attributes</h2></td></tr>
 <p>The trainer uses the data from directory for training. Detectors can use this location to get additional information in its detection algirhtms as well. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="objectdetector_2od_multialgo_pc_8cpp-example.html#a1">objectdetector/od_multialgo_pc.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00058">58</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00084">84</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>References <a class="el" href="_object_detector_8h_source.html#l00104">training_input_location_</a>.</p>
+<p>References <a class="el" href="_object_detector_8h_source.html#l00130">training_input_location_</a>.</p>
 
 </div>
 </div>
@@ -486,9 +486,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00105">105</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00131">131</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00088">getSpecificTrainingData()</a>, <a class="el" href="_object_detector_8h_source.html#l00093">getTrainedDataID()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00041">od::g2d::ODCascadeDetector::init()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00039">od::g2d::ODHOGDetector::OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00033">od::g2d::ODCascadeDetector::ODCascadeDetector()</a>, <a class="el" href="_object_detector_8h_source.html#l00038">ODDetectorCommon()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00044">od::l2d::ODImageLocalMatchingDetector::ODImageLocalMatchingDetector()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00028">od::l2d::ODImageLocalMatchingTrainer::ODImageLocalMatchingTrainer()</a>, and <a class="el" href="_object_detector_8h_source.html#l00098">setTrainedDataID()</a>.</p>
+<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00114">getSpecificTrainingData()</a>, <a class="el" href="_object_detector_8h_source.html#l00119">getTrainedDataID()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00066">od::g2d::ODCascadeDetector::init()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00064">od::g2d::ODHOGDetector::OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00058">od::g2d::ODCascadeDetector::ODCascadeDetector()</a>, <a class="el" href="_object_detector_8h_source.html#l00064">ODDetectorCommon()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00057">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00070">od::l2d::ODImageLocalMatchingDetector::ODImageLocalMatchingDetector()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00054">od::l2d::ODImageLocalMatchingTrainer::ODImageLocalMatchingTrainer()</a>, and <a class="el" href="_object_detector_8h_source.html#l00124">setTrainedDataID()</a>.</p>
 
 </div>
 </div>
@@ -510,9 +510,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00104">104</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00130">130</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00083">getSpecificTrainingDataLocation()</a>, <a class="el" href="_object_detector_8h_source.html#l00066">getTrainedDataLocation()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00074">od::g2d::ODHOGDetector::setTrainedDataLocation()</a>, and <a class="el" href="_object_detector_8h_source.html#l00075">setTrainedDataLocation()</a>.</p>
+<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00109">getSpecificTrainingDataLocation()</a>, <a class="el" href="_object_detector_8h_source.html#l00092">getTrainedDataLocation()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00057">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00099">od::g2d::ODHOGDetector::setTrainedDataLocation()</a>, and <a class="el" href="_object_detector_8h_source.html#l00101">setTrainedDataLocation()</a>.</p>
 
 </div>
 </div>
@@ -534,9 +534,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00105">105</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00131">131</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00083">getSpecificTrainingDataLocation()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00039">od::g2d::ODHOGDetector::OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>, <a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html#l00046">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;::ODCADDetector3DGlobal()</a>, <a class="el" href="_o_d_c_a_d_detect_trainer3_d_global_8h_source.html#l00049">od::g3d::ODCADDetectTrainer3DGlobal::ODCADDetectTrainer3DGlobal()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00033">od::g2d::ODCascadeDetector::ODCascadeDetector()</a>, <a class="el" href="_object_detector_8h_source.html#l00038">ODDetectorCommon()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00044">od::l2d::ODImageLocalMatchingDetector::ODImageLocalMatchingDetector()</a>, and <a class="el" href="_o_d_image_local_matching_8h_source.html#l00028">od::l2d::ODImageLocalMatchingTrainer::ODImageLocalMatchingTrainer()</a>.</p>
+<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00109">getSpecificTrainingDataLocation()</a>, <a class="el" href="_o_d_h_o_g_detector_8h_source.html#l00064">od::g2d::ODHOGDetector::OD_DEFINE_ENUM_WITH_STRING_CONVERSIONS()</a>, <a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html#l00071">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;::ODCADDetector3DGlobal()</a>, <a class="el" href="_o_d_c_a_d_detect_trainer3_d_global_8h_source.html#l00074">od::g3d::ODCADDetectTrainer3DGlobal::ODCADDetectTrainer3DGlobal()</a>, <a class="el" href="_o_d_cascade_detector_8h_source.html#l00058">od::g2d::ODCascadeDetector::ODCascadeDetector()</a>, <a class="el" href="_object_detector_8h_source.html#l00064">ODDetectorCommon()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00057">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_image_local_matching_8h_source.html#l00070">od::l2d::ODImageLocalMatchingDetector::ODImageLocalMatchingDetector()</a>, and <a class="el" href="_o_d_image_local_matching_8h_source.html#l00054">od::l2d::ODImageLocalMatchingTrainer::ODImageLocalMatchingTrainer()</a>.</p>
 
 </div>
 </div>
@@ -558,9 +558,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00104">104</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
+<p>Definition at line <a class="el" href="_object_detector_8h_source.html#l00130">130</a> of file <a class="el" href="_object_detector_8h_source.html">ObjectDetector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00051">getTrainingInputLocation()</a>, <a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html#l00046">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;::ODCADDetector3DGlobal()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00032">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_trainer_8h_source.html#l00029">od::ODTrainer::ODTrainer()</a>, and <a class="el" href="_object_detector_8h_source.html#l00058">setTrainingInputLocation()</a>.</p>
+<p>Referenced by <a class="el" href="_object_detector_8h_source.html#l00077">getTrainingInputLocation()</a>, <a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html#l00071">od::g3d::ODCADDetector3DGlobal&lt; pcl::PointXYZ &gt;::ODCADDetector3DGlobal()</a>, <a class="el" href="_o_d_h_o_g_trainer_8h_source.html#l00057">od::g2d::ODHOGTrainer::ODHOGTrainer()</a>, <a class="el" href="_o_d_trainer_8h_source.html#l00055">od::ODTrainer::ODTrainer()</a>, and <a class="el" href="_object_detector_8h_source.html#l00084">setTrainingInputLocation()</a>.</p>
 
 </div>
 </div>
@@ -574,7 +574,7 @@ Protected Attributes</h2></td></tr>
 <p>
 Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.
 </p>
-<p>Pages generated on Sat Oct 3 2015 15:38:37</p>
+<p>Pages generated on Sat Oct 3 2015 21:00:43</p>
 </div> <!-- #footer -->
 </body>
 </html>
