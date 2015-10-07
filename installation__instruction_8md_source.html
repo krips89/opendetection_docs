@@ -60,9 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>OD</span></a></li>
+      <li><a href="pages.html"><span>User&#160;Guide</span></a></li>
       <li class="current"><a href="usergroup0.html"><span>API&#160;Documentation</span></a></li>
+      <li><a href="installation_instruction.html"><span>Downloads</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -154,33 +155,38 @@ $(document).ready(function(){initNavTree('installation__instruction_8md.html',''
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">##Eigen {#installation_instruction5}</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span>Get the latest version of Eigen (source) using your package manager.</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;Installing Open Detection {#installation_instruction6}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;====</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;With the above dependencies installed, OD should compile without any problem. Download the source from https:<span class="comment">//github.com/krips89/opendetection and compile it with default cmake options. The code while platform independent, is only tested and run in Linux machine. Instructions for the usage for linux are provided below: </span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">##SVMLight{#installation_instruction51}</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span>We use SVMLight <span class="keywordflow">for</span> training. To user the feature of training <span class="keyword">using</span> SVMLight, you need to download the source and put in a specific folder (we could not include the source in 3rdparty because of its restrictive licence). Please see http:<span class="comment">//svmlight.joachims.org/ for the details and terms of use.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;Download the source code from http:<span class="comment">//svmlight.joachims.org/ and extract it to `opendetection/3rdparty/svmlight`. You should have files like `svm_common.c`, `svm_learn.c`, etc. under the directory `opendetection/3rdparty/svmlight`.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">##Instructions: {#installation_instruction7}</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span>Compile out of source <span class="keyword">using</span> cmake+your favorite compiler. For example:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;Installing Open Detection {#installation_instruction6}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;====</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;Download the code: </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;@code{.bash}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;cd &lt;path_to_desired_download_location&gt;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;git clone https:<span class="comment">//github.com/krips89/opendetection.git</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">@end</span>code</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;configure with CMake and compile </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;@code{.bash}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;cd &lt;path_to_source&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;mkdir build; cd build</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;cmake ..</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;make -j8</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;make install</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">@end</span>code</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;With the above dependencies installed, OD should compile without any problem. Download the source from https:<span class="comment">//github.com/krips89/opendetection and compile it with default cmake options. The code while platform independent, is only tested and run in Linux machine. Instructions for the usage for linux are provided below: </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">##Instructions: {#installation_instruction7}</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>Compile out of source <span class="keyword">using</span> cmake+your favorite compiler. For example:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;Download the code: </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;@code{.bash}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;cd &lt;path_to_desired_download_location&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;git clone https:<span class="comment">//github.com/krips89/opendetection.git</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">@end</span>code</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;configure with CMake and compile </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;@code{.bash}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;cd &lt;path_to_source&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;mkdir build; cd build</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;cmake ..</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;make -j8</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;make install</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">@end</span>code</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->

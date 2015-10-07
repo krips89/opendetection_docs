@@ -54,6 +54,11 @@
               <Path>installation_instruction.html</Path>
               <Anchor>installation_instruction5</Anchor>
              </Node>
+             <Node>
+              <Name>SVMLight</Name>
+              <Path>installation_instruction.html</Path>
+              <Anchor>installation_instruction51</Anchor>
+             </Node>
             </Subnodes>
            </Node>
            <Node>
@@ -2813,6 +2818,12 @@
            </Node>
           </Subnodes>
          </Node>
+        </Subnodes>
+       </Node>
+       <Node>
+        <Name>Downloads</Name>
+        <Path>installation_instruction.html</Path>
+        <Subnodes>
         </Subnodes>
        </Node>
       </Subnodes>

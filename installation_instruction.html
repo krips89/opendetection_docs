@@ -60,9 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>OD</span></a></li>
+      <li class="current"><a href="pages.html"><span>User&#160;Guide</span></a></li>
       <li><a href="usergroup0.html"><span>API&#160;Documentation</span></a></li>
+      <li><a href="installation_instruction.html"><span>Downloads</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
           <div class="left">
@@ -102,6 +103,7 @@ $(document).ready(function(){initNavTree('installation_instruction.html','');});
 <li class="level2"><a href="#installation_instruction3">VTK 6.0 or above</a></li>
 <li class="level2"><a href="#installation_instruction4">PCL 1.6 or above</a></li>
 <li class="level2"><a href="#installation_instruction5">Eigen</a></li>
+<li class="level2"><a href="#installation_instruction51">SVMLight</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#installation_instruction6">Installing Open Detection </a><ul><li class="level2"><a href="#installation_instruction7">Instructions:</a></li>
@@ -145,6 +147,10 @@ PCL 1.6 or above</h2>
 <h2><a class="anchor" id="installation_instruction5"></a>
 Eigen</h2>
 <p>Get the latest version of Eigen (source) using your package manager.</p>
+<h2><a class="anchor" id="installation_instruction51"></a>
+SVMLight</h2>
+<p>We use SVMLight for training. To user the feature of training using SVMLight, you need to download the source and put in a specific folder (we could not include the source in 3rdparty because of its restrictive licence). Please see <a href="http://svmlight.joachims.org/">http://svmlight.joachims.org/</a> for the details and terms of use.</p>
+<p>Download the source code from <a href="http://svmlight.joachims.org/">http://svmlight.joachims.org/</a> and extract it to <code>opendetection/3rdparty/svmlight</code>. You should have files like <code>svm_common.c</code>, <code>svm_learn.c</code>, etc. under the directory <code>opendetection/3rdparty/svmlight</code>.</p>
 <h1><a class="anchor" id="installation_instruction6"></a>
 Installing Open Detection </h1>
 <p>With the above dependencies installed, OD should compile without any problem. Download the source from <a href="https://github.com/krips89/opendetection">https://github.com/krips89/opendetection</a> and compile it with default cmake options. The code while platform independent, is only tested and run in Linux machine. Instructions for the usage for linux are provided below:</p>

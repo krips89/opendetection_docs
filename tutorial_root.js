@@ -9,7 +9,8 @@ var tutorial_root =
         [ "OpenCV 3.0", "installation_instruction.html#installation_instruction2", null ],
         [ "VTK 6.0 or above", "installation_instruction.html#installation_instruction3", null ],
         [ "PCL 1.6 or above", "installation_instruction.html#installation_instruction4", null ],
-        [ "Eigen", "installation_instruction.html#installation_instruction5", null ]
+        [ "Eigen", "installation_instruction.html#installation_instruction5", null ],
+        [ "SVMLight", "installation_instruction.html#installation_instruction51", null ]
       ] ],
       [ "Installing Open Detection ", "installation_instruction.html#installation_instruction6", [
         [ "Instructions:", "installation_instruction.html#installation_instruction7", null ]

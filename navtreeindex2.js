@@ -1,7 +1,9 @@
 var NAVTREEINDEX2 =
 {
-"namespacesvmlight.html":[1,1,0,1],
+"namespaceod_1_1l2d.html":[1,1,0,0,2],
+"namespaces.html":[1,0,0],
 "namespacesvmlight.html":[1,0,0,1],
+"namespacesvmlight.html":[1,1,0,1],
 "objectdetector_2od_hog_train_8cpp-example.html":[1,2,1],
 "objectdetector_2od_image_cadrecog_camera_8cpp-example.html":[1,2,2],
 "objectdetector_2od_image_cadrecog_files_8cpp-example.html":[1,2,3],

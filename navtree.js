@@ -26,7 +26,8 @@ var NAVTREE =
         ] ]
       ] ],
       [ "Examples", "examples.html", "examples" ]
-    ] ]
+    ] ],
+    [ "Downloads", "installation_instruction.html", null ]
   ] ]
 ];
 
@@ -34,7 +35,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classod_1_1g2d_1_1_o_d_h_o_g_detector.html",
-"namespacesvmlight.html"
+"namespaceod_1_1l2d.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
