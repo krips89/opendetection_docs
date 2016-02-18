@@ -27,7 +27,8 @@ var NAVTREE =
       ] ],
       [ "Examples", "examples.html", "examples" ]
     ] ],
-    [ "Downloads", "installation_instruction.html", null ]
+    [ "Downloads", "installation_instruction.html", null ],
+    [ "GSoC 2016 Ideas", "idea_list_gsoc2016.html", null ]
   ] ]
 ];
 
@@ -35,7 +36,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classod_1_1g2d_1_1_o_d_h_o_g_detector.html",
-"namespaceod_1_1l2d.html"
+"namespaceod.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

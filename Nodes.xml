@@ -217,6 +217,41 @@
            </Node>
           </Subnodes>
          </Node>
+         <Node>
+          <Name>GSoC 2016 Ideas</Name>
+          <Path>idea_list_gsoc2016.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>Google Summer of Code 2016 - Ideas  </Name>
+            <Path>idea_list_gsoc2016.html</Path>
+            <Anchor>idea_list_gsoc20161</Anchor>
+            <Subnodes>
+             <Node>
+              <Name>Project Idea summary</Name>
+              <Path>idea_list_gsoc2016.html</Path>
+              <Anchor>idea_list_gsoc20162</Anchor>
+              <Subnodes>
+               <Node>
+                <Name>1. CNN based algorithms in OpenDetection</Name>
+                <Path>idea_list_gsoc2016.html</Path>
+                <Anchor>idea_list_gsoc20163</Anchor>
+               </Node>
+               <Node>
+                <Name>2. Maintenance and expansion to different platforms</Name>
+                <Path>idea_list_gsoc2016.html</Path>
+                <Anchor>idea_list_gsoc20164</Anchor>
+               </Node>
+               <Node>
+                <Name>3. Integration of some other popular detection algorithm in OpenDetection</Name>
+                <Path>idea_list_gsoc2016.html</Path>
+                <Anchor>idea_list_gsoc20165</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+            </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
         </Subnodes>
        </Node>
        <Node>
@@ -2825,6 +2860,10 @@
         <Path>installation_instruction.html</Path>
         <Subnodes>
         </Subnodes>
+       </Node>
+       <Node>
+        <Name>GSoC 2016 Ideas</Name>
+        <Path>idea_list_gsoc2016.html</Path>
        </Node>
       </Subnodes>
     </Node>

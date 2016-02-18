@@ -51,5 +51,14 @@ var tutorial_root =
     ] ],
     [ "Writing your own app", "writing_a_new_app.html", [
       [ "Writing your own app", "writing_a_new_app.html#writing_a_new_app1", null ]
+    ] ],
+    [ "GSoC 2016 Ideas", "idea_list_gsoc2016.html", [
+      [ "Google Summer of Code 2016 - Ideas  ", "idea_list_gsoc2016.html#idea_list_gsoc20161", [
+        [ "Project Idea summary", "idea_list_gsoc2016.html#idea_list_gsoc20162", [
+          [ "1. CNN based algorithms in OpenDetection", "idea_list_gsoc2016.html#idea_list_gsoc20163", null ],
+          [ "2. Maintenance and expansion to different platforms", "idea_list_gsoc2016.html#idea_list_gsoc20164", null ],
+          [ "3. Integration of some other popular detection algorithm in OpenDetection", "idea_list_gsoc2016.html#idea_list_gsoc20165", null ]
+        ] ]
+      ] ]
     ] ]
 ];

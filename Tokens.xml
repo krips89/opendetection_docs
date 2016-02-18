@@ -30,6 +30,13 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>idea_list_gsoc2016</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>idea_list_gsoc2016.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>installation_instruction</Name>
       <APILanguage>markdown</APILanguage>
     </TokenIdentifier>
