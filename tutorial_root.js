@@ -1,8 +1,11 @@
 var tutorial_root =
 [
     [ "Introduction", "introduction_general.html", [
-      [ "Philosophy and motivation ", "introduction_general.html#phil", null ],
-      [ "Usage and target audience ", "introduction_general.html#targetaud", null ]
+      [ "Philosophy and motivation ", "introduction_general.html#introduction_general1", [
+        [ "Objective ", "introduction_general.html#introduction_general2", null ],
+        [ "Why OpenDetection? ", "introduction_general.html#introduction_general3", null ],
+        [ "Usage and target audience ", "introduction_general.html#introduction_general4", null ]
+      ] ]
     ] ],
     [ "Installation Instructions", "installation_instruction.html", [
       [ "Dependencies ", "installation_instruction.html#installation_instruction1", [

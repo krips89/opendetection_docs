@@ -16,12 +16,24 @@
            <Node>
             <Name>Philosophy and motivation </Name>
             <Path>introduction_general.html</Path>
-            <Anchor>phil</Anchor>
-           </Node>
-           <Node>
-            <Name>Usage and target audience </Name>
-            <Path>introduction_general.html</Path>
-            <Anchor>targetaud</Anchor>
+            <Anchor>introduction_general1</Anchor>
+            <Subnodes>
+             <Node>
+              <Name>Objective </Name>
+              <Path>introduction_general.html</Path>
+              <Anchor>introduction_general2</Anchor>
+             </Node>
+             <Node>
+              <Name>Why OpenDetection? </Name>
+              <Path>introduction_general.html</Path>
+              <Anchor>introduction_general3</Anchor>
+             </Node>
+             <Node>
+              <Name>Usage and target audience </Name>
+              <Path>introduction_general.html</Path>
+              <Anchor>introduction_general4</Anchor>
+             </Node>
+            </Subnodes>
            </Node>
           </Subnodes>
          </Node>
