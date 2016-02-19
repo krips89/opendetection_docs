@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('idea_list_gsoc2016.html','');});
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#idea_list_gsoc20161">Google Summer of Code 2016 - Ideas  </a><ul><li class="level2"><a href="#idea_list_gsoc20162">Project Idea summary</a><ul><li class="level3"><a href="#idea_list_gsoc20163">1. CNN based algorithms in OpenDetection</a></li>
 <li class="level3"><a href="#idea_list_gsoc20164">2. Maintenance and expansion to different platforms</a></li>
-<li class="level3"><a href="#idea_list_gsoc20165">3. Integration of some other popular detection algorithm in OpenDetection</a></li>
+<li class="level3"><a href="#idea_list_gsoc20165">3. Integration of some other popular detection algorithms in OpenDetection</a></li>
 </ul>
 </li>
 </ul>
@@ -114,21 +114,45 @@ Google Summer of Code 2016 - Ideas  </h1>
 <p>This year we plan to participate in Google Summer of Code as an organisation. Student participating should already have some idea of the detection framework of the library. The best way to get started is to follow some examples and demos after going through <a class="el" href="getting_started.html">Getting Started</a> guide.</p>
 <h2><a class="anchor" id="idea_list_gsoc20162"></a>
 Project Idea summary</h2>
-<p>Following are the list of ideas we will focus for this time.</p>
+<p>Following are the list of ideas we will focus for this time in decreasing order of priority.</p>
 <h3><a class="anchor" id="idea_list_gsoc20163"></a>
 1. CNN based algorithms in OpenDetection</h3>
-<p>descriptions</p>
+<p><b>Key tasks</b>:</p>
+<ul>
+<li>Make a short report of the popular and state-of-the-art detection/recognition techniques (to let us know that you have the proficiency in this area)</li>
+<li>Add CNN based algorithms in the library with OpenDetection Compatible APIs (probably using Caffe).<ul>
+<li>Having a simple CNN based model using Caffe is a simple task. Wrapping this under API should be the first step.</li>
+<li>The next steps should be to make it more configurable and adding more techniques (different models/preprocessing techniques/different architectures etc.) under different Detectors.</li>
+</ul>
+</li>
+</ul>
+<p><b>Prerequisites</b>:</p>
+<ul>
+<li>We are expecting a Master student/PhD student in Machine Learning/Computer Vision for this project. If not, you should have a good knowledge in neural networks and experience in training and testing different types of neural networks/CNNs.</li>
+<li>Knowledge of Caffe is plus.</li>
+<li>High command in C++.</li>
+</ul>
 <h3><a class="anchor" id="idea_list_gsoc20164"></a>
 2. Maintenance and expansion to different platforms</h3>
+<p><b>Key tasks</b>:</p>
 <ul>
-<li>Reduce dependencies to minimum.</li>
-<li>Verifying cross platform compilation.</li>
+<li>Verifying and fixing cross platform compilation.</li>
 <li>Package creation for different platforms.</li>
-<li>General maintenance.</li>
+<li>Reduce dependencies of the library to minimum if possible.</li>
+<li>General maintenance, bug fixing, etc.</li>
+<li>Adding more helper functions/classes to improve the library.</li>
+</ul>
+<p><b>Prerequisites</b>:</p>
+<ul>
+<li>We will prefer someone who has already maintained/managed a C++ library before. If not, you should have experience coding in different platforms and bug fixing.</li>
+<li>High command in C++ and CMake (Good knowledge of CMake is very important).</li>
+<li>Good knowledge of Software Engineering principles.</li>
+<li>Knowledge of OpenCV/PCL is plus.</li>
 </ul>
 <h3><a class="anchor" id="idea_list_gsoc20165"></a>
-3. Integration of some other popular detection algorithm in OpenDetection</h3>
-<p>description </p>
+3. Integration of some other popular detection algorithms in OpenDetection</h3>
+<p><b>Key tasks</b>: This is an open idea. We always would like to integrate state-of-the art algorithms in our framework. It would be easy to port different C++ code in this framework instead of implementing an idea/paper from scratch. So, we expect you to do some literature review and report different algorithms with their availability and the one you would like to add.</p>
+<p><b>Prerequisites</b>: Expertise in Computer Vision and C++. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
