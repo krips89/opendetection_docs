@@ -59,7 +59,7 @@ var tutorial_root =
       [ "Google Summer of Code 2016 - Ideas  ", "idea_list_gsoc2016.html#idea_list_gsoc20161", [
         [ "Project Idea summary", "idea_list_gsoc2016.html#idea_list_gsoc20162", [
           [ "1. CNN based algorithms in OpenDetection", "idea_list_gsoc2016.html#idea_list_gsoc20163", null ],
-          [ "2. Maintenance and expansion to different platforms", "idea_list_gsoc2016.html#idea_list_gsoc20164", null ],
+          [ "2. Library maintenance and cross platform integration", "idea_list_gsoc2016.html#idea_list_gsoc20164", null ],
           [ "3. Integration of some other popular detection algorithms in OpenDetection", "idea_list_gsoc2016.html#idea_list_gsoc20165", null ]
         ] ]
       ] ]

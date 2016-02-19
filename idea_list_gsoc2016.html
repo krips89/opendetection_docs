@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('idea_list_gsoc2016.html','');});
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#idea_list_gsoc20161">Google Summer of Code 2016 - Ideas  </a><ul><li class="level2"><a href="#idea_list_gsoc20162">Project Idea summary</a><ul><li class="level3"><a href="#idea_list_gsoc20163">1. CNN based algorithms in OpenDetection</a></li>
-<li class="level3"><a href="#idea_list_gsoc20164">2. Maintenance and expansion to different platforms</a></li>
+<li class="level3"><a href="#idea_list_gsoc20164">2. Library maintenance and cross platform integration</a></li>
 <li class="level3"><a href="#idea_list_gsoc20165">3. Integration of some other popular detection algorithms in OpenDetection</a></li>
 </ul>
 </li>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('idea_list_gsoc2016.html','');});
 <div class="textblock"><h1><a class="anchor" id="idea_list_gsoc20161"></a>
 Google Summer of Code 2016 - Ideas  </h1>
 <p>This year we plan to participate in Google Summer of Code as an organisation. Student participating should already have some idea of the detection framework of the library. The best way to get started is to follow some examples and demos after going through <a class="el" href="getting_started.html">Getting Started</a> guide.</p>
-<p>Application should be done early and go through the mentors for few iterations. Post the application at <a href="https://groups.google.com/forum/#!forum/opendetection">https://groups.google.com/forum/#!forum/opendetection</a> as well as the respective mentors.</p>
+<p>Application should be made early and go through the mentors for few iterations. Post the application at <a href="https://groups.google.com/forum/#!forum/opendetection">https://groups.google.com/forum/#!forum/opendetection</a> as well as the respective mentors.</p>
 <h2><a class="anchor" id="idea_list_gsoc20162"></a>
 Project Idea summary</h2>
 <p>Following are the list of ideas we will focus for this time in decreasing order of priority.</p>
@@ -122,26 +122,26 @@ Project Idea summary</h2>
 <p><b>Key tasks</b>:</p>
 <ul>
 <li>Make a short report of the popular and state-of-the-art detection/recognition techniques (to let us know that you have the proficiency in this area)</li>
-<li>Add CNN based algorithms in the library with OpenDetection Compatible APIs (probably using Caffe).<ul>
-<li>Having a simple CNN based model using Caffe is a simple task. Wrapping this under API should be the first step.</li>
-<li>The next steps should be to make it more configurable and adding more techniques (different models/preprocessing techniques/architectures etc.) under different Detectors.</li>
-</ul>
-</li>
+<li>Add CNN based algorithms in the library with OpenDetection Compatible APIs in the following order: -</li>
+<li>Implement OD interface for training and testing (under Trainers) neural network architectures with convolutional layer and possible recurrent layers using Caffe.</li>
+<li>Implement interface for forward phase of object detection (under Detectors) on some pre-trained caffe models (or trained models from the previous step) based on architectures which have been used for object detection.</li>
+<li>Implement train/test data preparation/region extraction and other preprocessing steps (maybe in a separate module).</li>
+<li>Implement any other state-of-the-art detection architectures which uses CNNs.</li>
 </ul>
 <p><b>Prerequisites</b>:</p>
 <ul>
 <li>We are expecting a Master student/PhD student in Machine Learning/Computer Vision for this project. If not, you should have a good knowledge in neural networks and experience in training and testing different types of neural networks/CNNs.</li>
-<li>Knowledge of Caffe is plus.</li>
+<li>Knowledge of Caffe.</li>
 <li>High command in C++.</li>
 </ul>
-<p><b>Possible mentors</b>: Kripasindhu Sarkar, Aditya Tewari</p>
+<p><b>Mentors</b>: Kripasindhu Sarkar, Aditya Tewari</p>
 <h3><a class="anchor" id="idea_list_gsoc20164"></a>
-2. Maintenance and expansion to different platforms</h3>
+2. Library maintenance and cross platform integration</h3>
 <p><b>Key tasks</b>:</p>
 <ul>
 <li>Verifying and fixing cross platform compilation.</li>
 <li>Package creation for different platforms.</li>
-<li>Reduce dependencies of the library to minimum if possible.</li>
+<li>Reduce dependencies of the library to minimum.</li>
 <li>Preparing ProjectConfig.cmake file to make the library usable by other projects.</li>
 <li>General maintenance, bug fixing, etc.</li>
 <li>Adding more helper functions/classes to improve the library.</li>
@@ -153,12 +153,12 @@ Project Idea summary</h2>
 <li>Good knowledge of Software Engineering principles.</li>
 <li>Knowledge of OpenCV/PCL is plus.</li>
 </ul>
-<p><b>Possible mentors</b>: Marco A. Gutiérrez, Kripasindhu Sarkar</p>
+<p><b>Mentors</b>: Marco A. Gutiérrez, Kripasindhu Sarkar</p>
 <h3><a class="anchor" id="idea_list_gsoc20165"></a>
 3. Integration of some other popular detection algorithms in OpenDetection</h3>
 <p><b>Key tasks</b>: This is an open idea. We always would like to integrate state-of-the art algorithms in our framework. It would be easy to port an available C++ code in this framework instead of implementing an idea/paper from scratch. So, we expect you to do some literature review and report different algorithms with their availability and the ones you would like to add.</p>
 <p><b>Prerequisites</b>: Expertise in Computer Vision and C++.</p>
-<p><b>Possible mentors</b>: Kripasindhu Sarkar, Marco A. Gutiérrez</p>
+<p><b>Mentors</b>: Kripasindhu Sarkar, Marco A. Gutiérrez</p>
 <h2>Mentors:</h2>
 <pre class="fragment">Kripasindhu Sarkar
 PhD Student, Augmented Vision Group, 
