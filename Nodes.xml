@@ -239,6 +239,11 @@
             <Anchor>idea_list_gsoc20161</Anchor>
             <Subnodes>
              <Node>
+              <Name>Basic principles</Name>
+              <Path>idea_list_gsoc2016.html</Path>
+              <Anchor>idea_list_gsoc201611</Anchor>
+             </Node>
+             <Node>
               <Name>Project Idea summary</Name>
               <Path>idea_list_gsoc2016.html</Path>
               <Anchor>idea_list_gsoc20162</Anchor>
@@ -249,7 +254,7 @@
                 <Anchor>idea_list_gsoc20163</Anchor>
                </Node>
                <Node>
-                <Name>2. Library maintenance and cross platform integration</Name>
+                <Name>2. Framework design and library maintenance</Name>
                 <Path>idea_list_gsoc2016.html</Path>
                 <Anchor>idea_list_gsoc20164</Anchor>
                </Node>

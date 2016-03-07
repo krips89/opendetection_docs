@@ -7,6 +7,9 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
+    <meta name="keywords" content="object detection, object recognition, detection, recognition, vision, computer vision, image processing, point cloud, opens ource"/>
+    <meta name="description" content="Open Detection, OD, is a standalone open source project for object detection and recognition in images and 3D point clouds."/>
+    <meta name="author" content="Kripasindhu Sarkar"/>
 <title>Open Detection: /home/sarkar/opendetection/doc/doxygen/tutorials_doxygen/idea_list_gsoc2016.md Source File</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -115,78 +118,94 @@ $(document).ready(function(){initNavTree('idea__list__gsoc2016_8md.html','');});
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;Google Summer of Code 2016 - Ideas  {#idea_list_gsoc20161}</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;====</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;This year we plan to participate in Google Summer of Code as an organisation. Student participating should already have some idea of the detection framework of the library. The best way to <span class="keyword">get</span> started is to follow some examples and demos after going through \ref getting_started guide.</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;**We are in!**</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;Application should be made early and go through the mentors <span class="keywordflow">for</span> few iterations. Post the application at https:<span class="comment">//groups.google.com/forum/#!forum/opendetection as well as the respective mentors. </span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">##Project Idea summary {#idea_list_gsoc20162}</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span>Following are the list of ideas we will focus <span class="keywordflow">for</span> <span class="keyword">this</span> time in decreasing order of priority.</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;###1. CNN based algorithms in OpenDetection {#idea_list_gsoc20163}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;**Key tasks**: </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;* Make a <span class="keywordtype">short</span> report of the popular and state-of-the-art detection/recognition techniques (to let us know that you have the proficiency in <span class="keyword">this</span> area)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;* Add CNN based algorithms in the library with OpenDetection Compatible APIs in the following order: - </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;* Implement OD <span class="keyword">interface </span>for training and testing (under Trainers) neural network architectures with convolutional layer and possible recurrent layers using Caffe.</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;* Implement <span class="keyword">interface </span>for forward phase of object detection (under Detectors) on some pre-trained caffe models (or trained models from the previous step) based on architectures which have been used for object detection. </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;* Implement train/test data preparation/region extraction and other preprocessing steps (maybe in a separate module).</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;* Implement any other state-of-the-art detection architectures which uses CNNs.  </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;**Prerequisites**:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;* We are expecting a Master student/PhD student in Machine Learning/Computer Vision <span class="keywordflow">for</span> <span class="keyword">this</span> project. If not, you should have a good knowledge in neural networks and experience in training and testing different types of neural networks/CNNs. </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;* Knowledge of Caffe. </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;* High command in C++. </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;**Mentors**: Kripasindhu Sarkar, Aditya Tewari </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">###2. Library maintenance and cross platform integration {#idea_list_gsoc20164}</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span> </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;**Key tasks**:  </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; * Verifying and fixing cross platform compilation.</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; * Package creation <span class="keywordflow">for</span> different platforms.</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; * Reduce dependencies of the library to minimum.</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; * Preparing ProjectConfig.cmake file to make the library usable by other projects. </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; * General maintenance, bug fixing, etc.</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; * Adding more helper functions/classes to improve the library. </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;**Prerequisites**:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;* We will prefer someone who has already maintained/managed a C++ library before. If not, you should have experience coding in different platforms and bug fixing. </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;* High command in C++ and CMake (Good knowledge of CMake is very important).</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;* Good knowledge of Software Engineering principles. </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;* Knowledge of OpenCV/PCL is plus.</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;**Mentors**: Marco A. Gutiérrez, Kripasindhu Sarkar </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">###3. Integration of some other popular detection algorithms in OpenDetection {#idea_list_gsoc20165}</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;**Key tasks**:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;This is an open idea. We always would like to integrate state-of-the art algorithms in our framework. It would be easy to port an available C++ code in <span class="keyword">this</span> framework instead of implementing an idea/paper from scratch. So, we expect you to <span class="keywordflow">do</span> some literature review and report different algorithms with their availability and the ones you would like to add.</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;**Prerequisites**: Expertise in Computer Vision and C++. </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;**Mentors**: Kripasindhu Sarkar, Marco A. Gutiérrez </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">##Mentors:</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    Kripasindhu Sarkar</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    PhD Student, Augmented Vision Group, </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    German Research Center <span class="keywordflow">for</span> Artificial Intelligence (DFKI), Kaiserslautern</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    kripasindhu.sarkar@dfki.de             </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Aditya Tewari  </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    PhD Student, Augmented Vision Group, </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    German Research Center <span class="keywordflow">for</span> Artificial Intelligence (DFKI), Kaiserslautern</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    aditya.tewari@dfki.de</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Marco A. Gutiérrez    </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    PhD Student, RoboLab,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    University of Extremadura</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    marcog@unex.es    </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;We are selected in Google Summer of Code 2016 as a mentoring organization! &lt;a href=<span class="stringliteral">&quot;https://summerofcode.withgoogle.com/organizations/6007728078061568/&quot;</span>&gt;&lt;b&gt;This&lt;/b&gt;&lt;/a&gt; is our page in the GSoC site. The project ideas are discussed in <span class="keyword">this</span> page. Note that *we changed the descriptions of the project ideas slightly* from the time of our application.</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;Student participating should already have some idea of the detection framework of the library. The best way to <span class="keyword">get</span> started is to follow some examples and demos after going through \ref getting_started guide.</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;Application should go through the mentors <span class="keywordflow">for</span> few iterations. Post the application at https:<span class="comment">//groups.google.com/forum/#!forum/opendetection **as well as the respective mentors.** The mentors can decide to take the topic offline and discuss with the applicant with more depth based on the applicant&#39;s expertise. </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">##Basic principles {#idea_list_gsoc201611}</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span>The main philosophy of <span class="keyword">this</span> library is to provide user detection/recognition algorithms in a **common, intuitive and user-friendly APIs** (perhaps we want to build up a structure similar to VTK <span class="keywordflow">for</span> <span class="keywordtype">object</span> detection algorithms). This is the only reason we have <span class="keyword">this</span> separate library. Therefore, please go through the existing &lt;a href=&quot;inherits.html&quot;&gt;&lt;b&gt;classes&lt;/b&gt;&lt;/a&gt; to understand the framework before your application.</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; Thus, all the algorithms/methods you propose in your application have to extend the previous interfaces which will <span class="keyword">abstract</span> all the implementation details from the user, and at the same time provide users the ability to configure with parameters. In other words, we don<span class="stringliteral">&#39;t want one of the many demo applications of detection algorithms. We want the detection algorithms under the existing APIs (Trainers and Detectors). This should be the main focus of the contribution. </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral"> </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">If you think that some of our APIs and framework interfaces are not optimal (in terms of usability and speed or any other reason) and have some suggestions for the improvement, please provide them in your application (specifically in Project Idea 2) as well.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral"> </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral">##Project Idea summary {#idea_list_gsoc20162}</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="stringliteral">Following are the list of ideas we will focus for this time in decreasing order of priority.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="stringliteral">###1. CNN based algorithms in OpenDetection {#idea_list_gsoc20163}</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">**Key tasks**: </span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">* Make a short report of the popular and state-of-the-art detection/recognition techniques (to let us know that you have the proficiency in this area)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">* Add CNN based algorithms in the library with OpenDetection Compatible APIs in the following order: - </span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">* Implement OD interface for training and testing (under od::Trainers) neural network architectures with convolutional layer and possible recurrent layers using Caffe.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral">* Implement interface for forward phase of object detection (under od::Detectors) on some pre-trained caffe models (or trained models from the previous step) based on architectures which have been used for object detection. </span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">* Implement train/test data preparation/region extraction and other preprocessing steps (maybe in a separate module).</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">* Implement any other state-of-the-art detection architectures which uses CNNs.  </span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">**Prerequisites**:</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">* We are expecting a Master student/PhD student in Machine Learning/Computer Vision for this project. If not, you should have a good knowledge in neural networks and experience in training and testing different types of neural networks/CNNs. </span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral">* Knowledge of Caffe. </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">* High command in C++. </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">**Mentors**: Kripasindhu Sarkar, Aditya Tewari </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">###2. Framework design and library maintenance {#idea_list_gsoc20164}</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral">This is one of the important project and have a very strong influence to the future of the library. </span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="stringliteral"> </span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="stringliteral">**Key tasks**:  </span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="stringliteral"> * Improve the existing OpenDetection framework in terms of usability.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="stringliteral"> * Adding more helper functions/classes to improve the library </span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="stringliteral">    - Some wrappers for visualization - right now we directly use opencv functions and pcl visualizers</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="stringliteral">    - Other changes</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="stringliteral"> * Preparing ProjectConfig.cmake file to make the library usable by other projects. </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="stringliteral"> * Verifying and fixing cross platform compilation.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="stringliteral"> * Package creation for different platforms.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="stringliteral"> * Reduce dependencies of the library to minimum. </span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="stringliteral"> * General maintenance</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="stringliteral">**Prerequisites**:</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="stringliteral">* Good knowledge of Software Engineering principles. </span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="stringliteral">* High command in C++ and **CMake** (Good knowledge of CMake is very important).</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="stringliteral">* Knowledge of OpenCV/PCL.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="stringliteral">* It will be nice if you have already maintained/managed a C++ library before. If not, you should have experience coding in different platforms (at least have knowledge in build toolchains in windows and linux). </span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="stringliteral">**Mentors**: Marco A. Gutiérrez, Kripasindhu Sarkar </span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="stringliteral">###3. Integration of some other popular detection algorithms in OpenDetection {#idea_list_gsoc20165}</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="stringliteral">**Key tasks**:</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="stringliteral">This is an open idea. We always would like to integrate **state-of-the-art** algorithms in our framework. It would be easy to port an available C++ code in this framework instead of implementing an idea/paper from scratch. So, we expect you to *do some literature review and report different algorithms* with their availability and the ones you would like to add. Please note that, just because the implementation of some algorithm is available online does not mean that it is the state-of-the-art or one of the popular algorithms. </span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="stringliteral"> </span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="stringliteral">**Prerequisites**: Expertise in Computer Vision and C++. </span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="stringliteral">**Mentors**: Kripasindhu Sarkar, Marco A. Gutiérrez </span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="stringliteral">##Mentors:</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="stringliteral">    Kripasindhu Sarkar</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="stringliteral">    PhD Student, Augmented Vision Group, </span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="stringliteral">    German Research Center for Artificial Intelligence (DFKI), Kaiserslautern</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="stringliteral">    kripasindhu.sarkar@dfki.de             </span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="stringliteral">    </span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="stringliteral">    Aditya Tewari  </span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="stringliteral">    PhD Student, Augmented Vision Group, </span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="stringliteral">    German Research Center for Artificial Intelligence (DFKI), Kaiserslautern</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="stringliteral">    aditya.tewari@dfki.de</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="stringliteral">    </span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="stringliteral">    Marco A. Gutiérrez    </span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="stringliteral">    PhD Student, RoboLab,</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="stringliteral">    University of Extremadura</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="stringliteral">    marcog@unex.es    </span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="stringliteral">    </span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="stringliteral">    </span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
