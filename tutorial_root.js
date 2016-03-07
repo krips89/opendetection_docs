@@ -11,7 +11,7 @@ var tutorial_root =
       [ "Dependencies ", "installation_instruction.html#installation_instruction1", [
         [ "OpenCV 3.0", "installation_instruction.html#installation_instruction2", null ],
         [ "VTK 6.0 or above", "installation_instruction.html#installation_instruction3", null ],
-        [ "PCL 1.6 or above", "installation_instruction.html#installation_instruction4", null ],
+        [ "PCL 1.8 or above", "installation_instruction.html#installation_instruction4", null ],
         [ "Eigen", "installation_instruction.html#installation_instruction5", null ],
         [ "SVMLight", "installation_instruction.html#installation_instruction51", null ]
       ] ],

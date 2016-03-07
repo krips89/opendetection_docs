@@ -141,57 +141,58 @@ $(document).ready(function(){initNavTree('installation__instruction_8md.html',''
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;             </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        *CMAKE options*: WITH_CUDA=ON       </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">##VTK 6.0 or above {#installation_instruction3}</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span>    </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;Download and compile latest VTK with its <span class="keywordflow">default</span> settings.</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">##PCL 1.6 or above {#installation_instruction4}   </span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span>    </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;- **Source:** https:<span class="comment">//github.com/PointCloudLibrary/pcl or https://github.com/PointCloudLibrary/pcl/releases</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;- **Required settings:**</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  * *3d_rec_framework* - <span class="keywordflow">for</span> ESF, ESF etc recognition pipeline.</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      *Additional CMAKE options:* BUILD_apps=ON, BUILD_apps_3d_rec_framework=ON</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">##Eigen {#installation_instruction5}</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span>Get the latest version of Eigen (source) using your package manager.</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">##SVMLight{#installation_instruction51}</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span>We use SVMLight <span class="keywordflow">for</span> training. To user the feature of training <span class="keyword">using</span> SVMLight, you need to download the source and put in a specific folder (we could not include the source in 3rdparty because of its restrictive licence). Please see http:<span class="comment">//svmlight.joachims.org/ for the details and terms of use.</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;Download the source code from http:<span class="comment">//svmlight.joachims.org/ and extract it to `opendetection/3rdparty/svmlight`. You should have files like `svm_common.c`, `svm_learn.c`, etc. under the directory `opendetection/3rdparty/svmlight`.</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">##VTK 6.0 or above {#installation_instruction3}</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span>    </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;Download and compile latest VTK with its <span class="keywordflow">default</span> settings.</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;   </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">##PCL 1.8 or above {#installation_instruction4}   </span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span>    </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;- **Source:** https:<span class="comment">//github.com/PointCloudLibrary/pcl or https://github.com/PointCloudLibrary/pcl/releases</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;- **Required settings:**</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  * *3d_rec_framework* - <span class="keywordflow">for</span> ESF, ESF etc recognition pipeline. To build with <span class="keyword">this</span> setting you need to install OpenNI as well, which is the mandatory dependency <span class="keywordflow">for</span> <span class="keyword">this</span> app. Please refer to the PCL website <span class="keywordflow">for</span> the version information. </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      *Additional CMAKE options:* BUILD_apps=ON, BUILD_apps_3d_rec_framework=ON</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">##Eigen {#installation_instruction5}</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span>Get the latest version of Eigen (source) using your package manager.</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">##SVMLight{#installation_instruction51}</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span>We use SVMLight <span class="keywordflow">for</span> training. To user the feature of training <span class="keyword">using</span> SVMLight, you need to download the source and put in a specific folder (we could not include the source in 3rdparty because of its restrictive licence). Please see http:<span class="comment">//svmlight.joachims.org/ for the details and terms of use.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;Download the source code from http:<span class="comment">//svmlight.joachims.org/ and extract it to `opendetection/3rdparty/svmlight`. You should have files like `svm_common.c`, `svm_learn.c`, etc. under the directory `opendetection/3rdparty/svmlight`.</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;Installing Open Detection {#installation_instruction6}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;====</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;With the above dependencies installed, OD should compile without any problem. Download the source from https:<span class="comment">//github.com/krips89/opendetection and compile it with default cmake options. The code while platform independent, is only tested and run in Linux machine. Instructions for the usage for linux are provided below: </span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">##Instructions: {#installation_instruction7}</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>Compile out of source <span class="keyword">using</span> cmake+your favorite compiler. For example:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;Download the code: </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;@code{.bash}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;cd &lt;path_to_desired_download_location&gt;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;git clone https:<span class="comment">//github.com/krips89/opendetection.git</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">@end</span>code</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;configure with CMake and compile </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;@code{.bash}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;cd &lt;path_to_source&gt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;mkdir build; cd build</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;cmake ..</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;make -j8</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;make install</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">@end</span>code</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;Installing Open Detection {#installation_instruction6}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;====</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;With the above dependencies installed, OD should compile without any problem. Download the source from https:<span class="comment">//github.com/krips89/opendetection and compile it with default cmake options. The code while platform independent, is only tested and run in Linux machine. Instructions for the usage for linux are provided below: </span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">##Instructions: {#installation_instruction7}</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span>Compile out of source <span class="keyword">using</span> cmake+your favorite compiler. For example:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;Download the code: </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;@code{.bash}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;cd &lt;path_to_desired_download_location&gt;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;git clone https:<span class="comment">//github.com/krips89/opendetection.git</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">@end</span>code</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;configure with CMake and compile </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;@code{.bash}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;cd &lt;path_to_source&gt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;mkdir build; cd build</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;cmake ..</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;make -j8</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;make install</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">@end</span>code</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
