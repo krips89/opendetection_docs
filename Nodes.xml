@@ -2873,14 +2873,16 @@
         </Subnodes>
        </Node>
        <Node>
-        <Name>Downloads</Name>
-        <Path>installation_instruction.html</Path>
+        <Name>GSoC 2016 Ideas</Name>
+        <Path>idea_list_gsoc2016.html</Path>
         <Subnodes>
         </Subnodes>
        </Node>
        <Node>
-        <Name>GSoC 2016 Ideas</Name>
-        <Path>idea_list_gsoc2016.html</Path>
+        <Name>Downloads</Name>
+        <Path>installation_instruction.html</Path>
+        <Subnodes>
+        </Subnodes>
        </Node>
       </Subnodes>
     </Node>

@@ -27,8 +27,8 @@ var NAVTREE =
       ] ],
       [ "Examples", "examples.html", "examples" ]
     ] ],
-    [ "Downloads", "installation_instruction.html", null ],
-    [ "GSoC 2016 Ideas", "idea_list_gsoc2016.html", null ]
+    [ "GSoC 2016 Ideas", "idea_list_gsoc2016.html", null ],
+    [ "Downloads", "installation_instruction.html", null ]
   ] ]
 ];
 
