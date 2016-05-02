@@ -64,5 +64,11 @@ var tutorial_root =
           [ "3. Integration of some other popular detection algorithms in OpenDetection", "idea_list_gsoc2016.html#idea_list_gsoc20165", null ]
         ] ]
       ] ]
+    ] ],
+    [ "GSoC 2016 Blog - Giacomo", "gsoc2016_blog_giacomo.html", [
+      [ "Framework design and library maintenance  ", "gsoc2016_blog_giacomo.html#gsoc2016_blog_giacomo1", null ]
+    ] ],
+    [ "GSoC 2016 Blog - Abhishek", "gsoc2016_blog_abhishek.html", [
+      [ "CNN based object localization and recognition for openDetection library  ", "gsoc2016_blog_abhishek.html#gsoc2016_blog_abhishek1", null ]
     ] ]
 ];

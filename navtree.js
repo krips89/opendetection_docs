@@ -1,7 +1,15 @@
 var NAVTREE =
 [
   [ "Open Detection", "index.html", [
-    [ "User Guide", "tutorial_root.html", "tutorial_root" ],
+    [ "User Guide", "tutorial_root.html", [
+      [ "Introduction", "introduction_general.html", null ],
+      [ "Installation Instructions", "installation_instruction.html", null ],
+      [ "Getting Started", "getting_started.html", null ],
+      [ "Basic Structures", "basic_structures.html", null ],
+      [ "Detection 2D", "detection_2d.html", null ],
+      [ "Detection 3D", "detection_3d.html", null ],
+      [ "Writing your own app", "writing_a_new_app.html", null ]
+    ] ],
     [ "API Documentation", "usergroup0.html", [
       [ "Namespace List", null, [
         [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -27,6 +35,10 @@ var NAVTREE =
       ] ],
       [ "Examples", "examples.html", "examples" ]
     ] ],
+    [ "GSoC16 Blogs", "usergroup1.html", [
+      [ "GSoC 2016 Blog - Giacomo", "gsoc2016_blog_giacomo.html", null ],
+      [ "GSoC 2016 Blog - Abhishek", "gsoc2016_blog_abhishek.html", null ]
+    ] ],
     [ "GSoC 2016 Ideas", "idea_list_gsoc2016.html", null ],
     [ "Downloads", "installation_instruction.html", null ]
   ] ]
@@ -35,8 +47,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classod_1_1g2d_1_1_o_d_h_o_g_detector.html",
-"namespacemembers_enum.html"
+"classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a1a43676c7ac7f93d0496e0e5e6879010"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

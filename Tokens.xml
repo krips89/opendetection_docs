@@ -30,6 +30,20 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>gsoc2016_blog_abhishek</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>gsoc2016_blog_abhishek.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>gsoc2016_blog_giacomo</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>gsoc2016_blog_giacomo.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>idea_list_gsoc2016</Name>
       <APILanguage>markdown</APILanguage>
     </TokenIdentifier>

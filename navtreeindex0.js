@@ -3,11 +3,6 @@ var NAVTREEINDEX0 =
 "annotated.html":[1,1,0],
 "apps_2global2_d_2od_multihog_app_8cpp-example.html":[1,2,0],
 "basic_structures.html":[0,3],
-"basic_structures.html#basic_structures1":[0,3,0],
-"basic_structures.html#basic_structures2":[0,3,0,0],
-"basic_structures.html#basic_structures3":[0,3,0,1],
-"basic_structures.html#basic_structures4":[0,3,0,2],
-"basic_structures.html#basic_structures5":[0,3,0,3],
 "class_s_v_mlight.html":[1,1,0,2],
 "class_s_v_mlight.html#a04a2fa94f4b9cc0c53e1031321c5b32d":[1,1,0,2,4],
 "class_s_v_mlight.html#a0978f0680aea8050df13b70133c23d0b":[1,1,0,2,8],
@@ -249,5 +244,10 @@ var NAVTREEINDEX0 =
 "classod_1_1g2d_1_1_o_d_face_recognizer.html#ac2994bfb1ae30ddd29033fa02f1f9b4c":[1,1,0,0,0,2,10],
 "classod_1_1g2d_1_1_o_d_face_recognizer.html#acea330088fced3302a2c4acd40827778":[1,1,0,0,0,2,1],
 "classod_1_1g2d_1_1_o_d_face_recognizer.html#af177f142f3e35902e039ce7facf88a21":[1,1,0,0,0,2,11],
-"classod_1_1g2d_1_1_o_d_face_recognizer.html#af3c1928fa37ab761d1e0d5c555458dfe":[1,1,0,0,0,2,4]
+"classod_1_1g2d_1_1_o_d_face_recognizer.html#af3c1928fa37ab761d1e0d5c555458dfe":[1,1,0,0,0,2,4],
+"classod_1_1g2d_1_1_o_d_h_o_g_detector.html":[1,1,0,0,0,1],
+"classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a03940e18d6357d4c01d3159417f4355c":[1,1,0,0,0,1,9],
+"classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a09a780635034036daf2e0ff713523825":[1,1,0,0,0,1,2],
+"classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a0fcd8e1f5491676d6ea8a8f01b507656":[1,1,0,0,0,1,23],
+"classod_1_1g2d_1_1_o_d_h_o_g_detector.html#a12c511fc0775162ff24587c609e50a8a":[1,1,0,0,0,1,20]
 };
