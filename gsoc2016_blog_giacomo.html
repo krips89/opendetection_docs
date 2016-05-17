@@ -139,8 +139,10 @@ Framework design and library maintenance  </h1>
 <ul>
 <li>SiftGPU can just be added with the <b>add_subdirectory</b> cmake command which will execute the CMakeLists.txt in the library folder and export the produced targets (libsiftGPU.so in this case).</li>
 <li>Pugixml is a bit more tricky since it has no cmake file; it contains a Make file which produces a test executable but no library. The library can be easily built since we have just two include files and one .cpp file. To fix the issue I created a separate pugixml_build folder with a simple custom cmake which builds the library. This way we can just add that folder as add_subdirectory and directly export the newly compile libpugixml.so library.</li>
-<li>svmlight will be inserted in the system with a find_package or something similar and a custom WITH_SVMLIGHT cmake flag. These steps will come shortly; we will just leave the svmlight binding. </li>
+<li>svmlight will be inserted in the system with a find_package or something similar and a custom WITH_SVMLIGHT cmake flag. These steps will come shortly; we will just leave the svmlight binding.</li>
 </ul>
+<p><b>Moving files</b></p>
+<p>I started to move files in appropriate folders and to fix the "Main" CmakeLists.txt file. I renamed the ODconfig.h.in file to <a class="el" href="od__config_8h_source.html">od_config.h</a> and moved it into the cmake folder for now. Then I moved the opendetection.cpp source file away from the root (not nice to have source files in the root of a library) and added it as separate app in a new version folder whichi builds the od_version executable. I fixed the OD_ADD_EXAMPLE macro adding the INCLUDE argument to include specific headers and used it in the od_version app. I separated the OD_CMAKE_DIR from CMAKE_MODULE_PATH in order to have a clear struture and to not mix up folders; the files in the cmake folder have also been renamed to have a common naming scheme. The next step will involve separating source and header files in appropriate folders and adding them in the cmake without explicitly naming them to avoid problems when renaming files in the library </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
