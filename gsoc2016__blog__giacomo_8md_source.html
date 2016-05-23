@@ -179,6 +179,55 @@ $(document).ready(function(){initNavTree('gsoc2016__blog__giacomo_8md.html','');
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;After refactoring the folders, all the involved CMakeFiles had to be restructured to adapt to the <span class="keyword">new</span> structure. The first version still uses all file names explicitly, but it should be possible to automate the file detection process by <span class="keyword">using</span> the cmake command *file(GLOB VAR PATTERN)* which finds all file in a gve folder which match a given pattern. This can be done also in a recursive manner. I will probably use <span class="keyword">this</span> <span class="keywordflow">for</span> some folders to be independent (partially) of file names, locations and number.</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">##Making examples optional##</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;Examples should not be built always, or at least it should be possible to not build them at all or partially. To <span class="keywordflow">do</span> so I added the **WITH_EXAMPLES** option whichi enables the building of the examples. Then <span class="keywordflow">for each</span> example I added a variable to trigger the building process of that examples:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;@code</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;option(image_hog_files_example <span class="stringliteral">&quot;Build the hog image example&quot;</span> ON)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordflow">if</span>(image_hog_files_example)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        OD_ADD_EXAMPLE(od_image_hog_files FILES od_image_hog_files.cpp</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        LINK_WITH od_common od_global_image_detector)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;endif()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">@end</span>code</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;The option command adds an option in the cmake; the first parameter is the cmake option name (which <span class="keywordflow">for</span> now is written in that way but it will probably change), the second is a description of the option, and the third is the <span class="keywordflow">default</span> option value. I left it on on so that even unexperienced user can build some examples to test the library. The option is then followed by an <span class="keywordflow">if</span> which checks the option vale and in <span class="keywordflow">case</span> adds the example to the build process. I would like to change also the structure of the example folder by creating subfolders which then contain the different examples subdividing them by **type** . Each folder will then have its own *CMakeLists.txt* file which can be added by the parent cmake with the usual *add_subdirectory* command. This helps also since we can add automatically all the subfolders of the example folder to the build process without stating the names explicitly.</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;##Include structure##</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;While continuing to restructure the library I came across a decision which can be solved in different ways but <span class="keywordflow">for</span> which I still don<span class="stringliteral">&#39;t have the best solution. Lets assume we want to include a global 3D detector for example, we would use *ODCADDetector3DGlobal.h* . We could have in our file </span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="stringliteral">@code</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="stringliteral">#include &lt;ODCADDetector3DGlobal.h&gt; </span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="stringliteral">@endcode</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="stringliteral">and the compiler would need the include folder where the file is located to compile. This means that the file should be localted directly in the upper include folder, but this is not our case since the structure is like *detectors/global3D/detection/* so it would be better to have</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="stringliteral">@code</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="stringliteral">#include &lt;detectors/global3D/detection/ODCADDetector3DGlobal.h&gt; </span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="stringliteral">@endcode</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="stringliteral">and include the upper level folder. To use the first solution we would need to include *detectors/global3D/detection/* but this is not really appealing since it would mess with the whole include structure. For now I opted for the second solution, but the include structure could be changed at any time. This way the include file structure resables exactly the source file structure:</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="stringliteral">- common</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="stringliteral">  * bindings</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="stringliteral">  * pipeline</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="stringliteral">  * utils</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="stringliteral">- detectors</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="stringliteral">  * global2D</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="stringliteral">    - detection</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="stringliteral">    - training</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="stringliteral">  * global3D</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="stringliteral">    - detection</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="stringliteral">    - training</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="stringliteral">  * local2D</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="stringliteral">    - detection</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="stringliteral">    - training</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="stringliteral">  * misc</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="stringliteral">    - detection</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="stringliteral">The new structure compiles fines except for three examples which have a linker bug (undefined reference to `vtable for od::g3d::ODCADDetectTrainer3DGlobal&#39;</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;) which I am trying to resolve. I fixed a bit the source code of all the examples removing unnecessary includes, fixing namespaces, maintaining a common interface and avoiding dynamic memory allocation where possible. The next step after fixing the linker bug will be to fix the install paths <span class="keywordflow">for</span> includes and libs. </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->

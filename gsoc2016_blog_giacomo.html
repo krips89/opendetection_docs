@@ -153,7 +153,52 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <li>impl : a floder containing the template files (.hpp usually).</li>
 </ul>
 <p>This resembles also the structure used in the PCL library.</p>
-<p>After refactoring the folders, all the involved CMakeFiles had to be restructured to adapt to the new structure. The first version still uses all file names explicitly, but it should be possible to automate the file detection process by using the cmake command <em>file(GLOB VAR PATTERN)</em> which finds all file in a gve folder which match a given pattern. This can be done also in a recursive manner. I will probably use this for some folders to be independent (partially) of file names, locations and number. </p>
+<p>After refactoring the folders, all the involved CMakeFiles had to be restructured to adapt to the new structure. The first version still uses all file names explicitly, but it should be possible to automate the file detection process by using the cmake command <em>file(GLOB VAR PATTERN)</em> which finds all file in a gve folder which match a given pattern. This can be done also in a recursive manner. I will probably use this for some folders to be independent (partially) of file names, locations and number.</p>
+<h2>Making examples optional</h2>
+<p>Examples should not be built always, or at least it should be possible to not build them at all or partially. To do so I added the <b>WITH_EXAMPLES</b> option whichi enables the building of the examples. Then for each example I added a variable to trigger the building process of that examples:</p>
+<div class="fragment"><div class="line">option(image_hog_files_example <span class="stringliteral">&quot;Build the hog image example&quot;</span> ON)</div>
+<div class="line"><span class="keywordflow">if</span>(image_hog_files_example)</div>
+<div class="line">        OD_ADD_EXAMPLE(od_image_hog_files FILES od_image_hog_files.cpp</div>
+<div class="line">                        LINK_WITH od_common od_global_image_detector)</div>
+<div class="line">endif()</div>
+</div><!-- fragment --><p>The option command adds an option in the cmake; the first parameter is the cmake option name (which for now is written in that way but it will probably change), the second is a description of the option, and the third is the default option value. I left it on on so that even unexperienced user can build some examples to test the library. The option is then followed by an if which checks the option vale and in case adds the example to the build process. I would like to change also the structure of the example folder by creating subfolders which then contain the different examples subdividing them by <b>type</b> . Each folder will then have its own <em>CMakeLists.txt</em> file which can be added by the parent cmake with the usual <em>add_subdirectory</em> command. This helps also since we can add automatically all the subfolders of the example folder to the build process without stating the names explicitly.</p>
+<h2>Include structure</h2>
+<p>While continuing to restructure the library I came across a decision which can be solved in different ways but for which I still don't have the best solution. Lets assume we want to include a global 3D detector for example, we would use <em><a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html">ODCADDetector3DGlobal.h</a></em> . We could have in our file</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;ODCADDetector3DGlobal.h&gt;</span> </div>
+</div><!-- fragment --><p>and the compiler would need the include folder where the file is located to compile. This means that the file should be localted directly in the upper include folder, but this is not our case since the structure is like <em>detectors/global3D/detection/</em> so it would be better to have</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;detectors/global3D/detection/ODCADDetector3DGlobal.h&gt;</span> </div>
+</div><!-- fragment --><p>and include the upper level folder. To use the first solution we would need to include <em>detectors/global3D/detection/</em> but this is not really appealing since it would mess with the whole include structure. For now I opted for the second solution, but the include structure could be changed at any time. This way the include file structure resables exactly the source file structure:</p>
+<ul>
+<li>common<ul>
+<li>bindings</li>
+<li>pipeline</li>
+<li>utils</li>
+</ul>
+</li>
+<li>detectors<ul>
+<li>global2D<ul>
+<li>detection</li>
+<li>training</li>
+</ul>
+</li>
+<li>global3D<ul>
+<li>detection</li>
+<li>training</li>
+</ul>
+</li>
+<li>local2D<ul>
+<li>detection</li>
+<li>training</li>
+</ul>
+</li>
+<li>misc<ul>
+<li>detection</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>The new structure compiles fines except for three examples which have a linker bug (undefined reference to `vtable for <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html" title="Training class for the detector ODCADDetector3DGlobal. ">od::g3d::ODCADDetectTrainer3DGlobal</a>' ) which I am trying to resolve. I fixed a bit the source code of all the examples removing unnecessary includes, fixing namespaces, maintaining a common interface and avoiding dynamic memory allocation where possible. The next step after fixing the linker bug will be to fix the install paths for includes and libs. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
