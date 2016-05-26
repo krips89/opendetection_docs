@@ -228,6 +228,24 @@ $(document).ready(function(){initNavTree('gsoc2016__blog__giacomo_8md.html','');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="stringliteral"></span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="stringliteral">The new structure compiles fines except for three examples which have a linker bug (undefined reference to `vtable for od::g3d::ODCADDetectTrainer3DGlobal&#39;</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;) which I am trying to resolve. I fixed a bit the source code of all the examples removing unnecessary includes, fixing namespaces, maintaining a common interface and avoiding dynamic memory allocation where possible. The next step after fixing the linker bug will be to fix the install paths <span class="keywordflow">for</span> includes and libs. </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;##Include structure 2 and install target##</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;I fixed the linking error; it came from a wrong variable name in a cmake file which specified some source files which were not compiled and so the linking error. I split simple_ransac_detection in src and include and reinserted it in local2D detectors since it is used only there. The source files are just added to the local2D library and compiled together.</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;Next I moved to fix the install target in the cmake. In our <span class="keywordflow">case</span>, since we have already a clean structure of the include folders which we want to maintain we can directly copy the include folders of each module (detectors and common) into the include folder specified by *CMAKE_INSTALL_PREFIX* . We just need to create an upper folder called od-$VERSION to avoid conflicts with different library versions on the same machine. The clean include structure allows also to <span class="keyword">remove</span> the <span class="keyword">explicit</span> single include files from the install targets and allows to use directly the cmake command</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;@code</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;install(DIRECTORY ${DETECTORS_INCLUDE_DIR}/od DESTINATION ${OD_INSTALL_INCLUDE_DIR})</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;@endcode</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;with the DIRECTORY keyword to copy the whole folder. Also I removed the include files from the </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;@code</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;OD_ADD_LIBRARY_ALL(<span class="stringliteral">&quot;${SUBSYS_NAME}&quot;</span> SRCS ${SOURCES})</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;@endcode</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;since you don<span class="stringliteral">&#39;t have to compile headers files.It is enough to specify the include folders to find the includes at compile time. It could be possible to add header precompilation, but I believe this would be an advanced step which could be implemented at the end. I still need to check if this way of installing includes using the *DIRECTORY* keyword without specifying the single files is the clearest way.</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
