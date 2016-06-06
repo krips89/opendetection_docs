@@ -106,6 +106,8 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_abhishek.html','');});
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#gsoc2016_blog_abhishek1">CNN based object localization and recognition for openDetection library  </a></li>
+<li class="level1"><a href="#target1">Classification of digits in Mnist Library using CNN </a></li>
+<li class="level1"><a href="#target2">Training a classifier for digits in Mnist Library using CNN. Part 1 </a></li>
 </ul>
 </div>
 <div class="textblock"><h1><a class="anchor" id="gsoc2016_blog_abhishek1"></a>
@@ -133,6 +135,163 @@ CNN based object localization and recognition for openDetection library  </h1>
 <li>Adding documentation for the above</li>
 </ul>
 <p>All the completed and on-going work will be explained in detail here, as the process moves forward.</p>
+<p>Happy Coding!!!!</p>
+<h1><a class="anchor" id="target1"></a>
+Classification of digits in Mnist Library using CNN </h1>
+<p>The classification exampled added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</p>
+<ul>
+<li><a href="http://caffe.berkeleyvision.org/">Caffe Library</a></li>
+<li><a href="https://abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/">Using Caffe Library</a></li>
+<li><a href="https://github.com/abhi-kumar/opendetection/tree/cnn_cpu">Branch of OpenDetection for the below classifier</a></li>
+</ul>
+<p>This example involves inclusion of three new files:</p>
+<ul>
+<li>"opendetection/examples/objectdetector/od_cnn_mnist_classification.cpp"</li>
+<li>"opendetection/detectors/global2D/detection/ODConvClassification.cpp"</li>
+<li>"opendetection/detectors/global2D/detection/ODConvClassification.h"</li>
+</ul>
+<p>The Classification example has been implemented over the ODDetector2D class. The new ODConvClassification class inherits from the abstract class ODDetector2D under the namespace <a class="el" href="namespaceod_1_1g2d.html">od::g2d</a>. LEts go over each file briefly.</p>
+<p><b><a class="el" href="_o_d_conv_classification_8h_source.html">ODConvClassification.h</a> &amp; ODConvClassification.cpp files</b></p>
+<p>The file involves inclusion of the following headers. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#include &quot;caffe/caffe.hpp&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;caffe/util/io.hpp&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;caffe/blob.hpp&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span>caffe;</div>
+<div class="line"><span class="keyword">using namespace </span>std;</div>
+<div class="line"><span class="keyword">using namespace </span>cv;</div>
+</div><!-- fragment --><p>The first set involves the basic C++ headers, while the last three headers are from the caffe library. The namespaces are</p>
+<ul>
+<li>caffe for Caffe Modules</li>
+<li>std for C++ Standard Modules</li>
+<li>cv for C++ OpenCV Modules</li>
+</ul>
+<p>The variables involved are as follows </p>
+<div class="fragment"><div class="line"><span class="keywordtype">string</span> weightModelFileLoaction;</div>
+<div class="line"><span class="keywordtype">string</span> networkFileLocation;</div>
+<div class="line"><span class="keywordtype">string</span> imageFileLocation; </div>
+<div class="line">Datum strucBlob;</div>
+<div class="line">BlobProto protoBlob;</div>
+<div class="line">vector&lt;Blob&lt;float&gt;*&gt; inputBlob;</div>
+</div><!-- fragment --><ul>
+<li>"weightModelFileLoaction" stores the location of the trained weight caffemodel file.</li>
+<li>"networkFileLocation" stores the location of the CNN network file.</li>
+<li>"imageFileLocation" stores the location of the image to be classified.</li>
+<li>"strucBlob" keeps the details of the blob structure of the image to be compiled.</li>
+<li>"protoBlob" creates an initial storage for the input image to be converted from image file to Caffe Blob named "inputBlob"</li>
+</ul>
+<p>Lets go through the functions involved in the process.</p>
+<ul>
+<li><div class="fragment"><div class="line"><span class="keywordtype">void</span> ODConvClassification::setWeightModelFileLocation(<span class="keywordtype">string</span> location)</div>
+<div class="line">{</div>
+<div class="line">  ODConvClassification::weightModelFileLoaction = location;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> ODConvClassification::setNetworkModelFileLocation(<span class="keywordtype">string</span> location)</div>
+<div class="line">{</div>
+<div class="line">  networkFileLocation = location;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> ODConvClassification::setImageFileLocation(<span class="keywordtype">string</span> location)</div>
+<div class="line">{</div>
+<div class="line">  imageFileLocation = location;</div>
+<div class="line">} </div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">string</span> ODConvClassification::getWeightModelFileLocation()</div>
+<div class="line">{</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Weight Model File Location = &quot;</span> &lt;&lt; weightModelFileLoaction &lt;&lt; endl;</div>
+<div class="line">  <span class="keywordflow">return</span> weightModelFileLoaction;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">string</span> ODConvClassification::getNetworkModelFileLocation()</div>
+<div class="line">{</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Network Model File Location = &quot;</span> &lt;&lt; networkFileLocation &lt;&lt; endl;</div>
+<div class="line">  <span class="keywordflow">return</span> networkFileLocation;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">string</span> ODConvClassification::getImageFileLocation()</div>
+<div class="line">{</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Image File Location = &quot;</span> &lt;&lt; imageFileLocation &lt;&lt; endl;</div>
+<div class="line">  <span class="keywordflow">return</span> imageFileLocation;</div>
+<div class="line">}</div>
+</div><!-- fragment --> These functions are uite self explanatory. The first three functions are being used to get the location of the reuired files, while the rest are to retrieve these locations.</li>
+<li><div class="fragment"><div class="line"><span class="keywordtype">void</span> ODConvClassification::setTestBlob(<span class="keywordtype">int</span> numChannels, <span class="keywordtype">int</span> imgHeight, <span class="keywordtype">int</span> imgWidth) </div>
+</div><!-- fragment --> This function takes an input image and converts into a suitable format for caffe libraries.<div class="fragment"><div class="line"><span class="keywordflow">if</span> (!ReadImageToDatum(imageFileLocation, numChannels, imgHeight, imgWidth, &amp;strucBlob)) </div>
+<div class="line">{</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Image File Not Found&quot;</span> &lt;&lt; endl;</div>
+<div class="line">  exit(0);</div>
+<div class="line">}</div>
+<div class="line">Blob&lt;float&gt;* dataBlob = <span class="keyword">new</span> Blob&lt;float&gt;(1, strucBlob.channels(), strucBlob.height(), strucBlob.width());    </div>
+</div><!-- fragment --> This snippet reads the image, and creates a structure to save the input image as a blob.<div class="fragment"><div class="line"><span class="keywordflow">if</span> (data.size() != 0) </div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; sizeStrucBlob; ++i)</div>
+<div class="line">  {</div>
+<div class="line">    protoBlob.set_data(i, protoBlob.data(i) + (uint8_t)data[i]);</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line">dataBlob-&gt;FromProto(protoBlob);</div>
+<div class="line">inputBlob.push_back(dataBlob);</div>
+</div><!-- fragment --> The snippet mentioned above converts the image from the initial(".png") format to the blob format required by the caffe library.</li>
+<li>The net is initailized with the network parameters and trained weights using the following snippet.<div class="fragment"><div class="line">Caffe::set_mode(Caffe::CPU);</div>
+<div class="line">Net&lt;float&gt;  net(networkFileLocation, TEST);</div>
+<div class="line">net.CopyTrainedLayersFrom(weightModelFileLoaction); </div>
+</div><!-- fragment --> And the net is asked to move forward and present the probaility using the following snippet.<div class="fragment"><div class="line"><span class="keyword">const</span> vector&lt;Blob&lt;float&gt;*&gt;&amp; result =  net.Forward(inputBlob, &amp;type); </div>
+</div><!-- fragment --> This output vector, "result", contains the probabilities for each of the classes, The class with the maximum probobiility or score is the classified class.</li>
+</ul>
+<p><b>The CMake Changes</b></p>
+<p>The od_mandatory_dependency.cmake file has been added a new line</p>
+<div class="fragment"><div class="line">find_package( Caffe REQUIRED) </div>
+</div><!-- fragment --><p> And thus the inclusion of caffe include directory and caffe libraries. In the CMakeLists.txt file from detectors/global2D directory, the following snippet is added</p>
+<div class="fragment"><div class="line">ADD_DEFINITIONS(</div>
+<div class="line">    -std=c++11 </div>
+<div class="line">  ${Caffe_DEFINITIONS}</div>
+<div class="line">)</div>
+</div><!-- fragment --><p> This has been done to enable mode choice of caffe runtime, i.e., CPU or GPU, and in this example CPU.</p>
+<p><b>Usage</b></p>
+<p>The example can be invoked using the following command: (From the build folder)</p>
+<p>./examples/objectdetector/od_cnn_mnist_classification ../examples/objectdetector/Mnist_Classify/mnist.caffemodel ../examples/objectdetector/Mnist_Classify/lenet.prototxt ../examples/objectdetector/Mnist_Classify/1.png</p>
+<p>The example as shown above takes 3 arguments, the locations of the weight file, network file and the image.</p>
+<p><b>Next up will be a simple CNN trainer example.</b></p>
+<p>Happy Coding!!!!</p>
+<h1><a class="anchor" id="target2"></a>
+Training a classifier for digits in Mnist Library using CNN. Part 1 </h1>
+<p>This particular inclusion presents a simple trainer in a most crude and easy way possible. The major requirements of CNN training using caffe are</p>
+<ul>
+<li>Solver file</li>
+<li>Training Network file</li>
+<li>Image Dataset and a pointer to the Dataset</li>
+</ul>
+<p>The classification exampled added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</p>
+<ul>
+<li><a href="http://caffe.berkeleyvision.org/">Caffe Library</a></li>
+<li><a href="https://abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/">Using Caffe Library</a></li>
+<li><a href="https://github.com/abhi-kumar/opendetection/tree/cnn_cpu">Branch of OpenDetection for the below classifier</a></li>
+</ul>
+<p>This example involves inclusion of three new files:</p>
+<ul>
+<li>"opendetection/examples/objectdetector/od_cnn_mnist_train_simple.cpp"</li>
+<li>"opendetection/detectors/global2D/training/ODConvTrainer.cpp"</li>
+<li>"opendetection/detectors/global2D/training/ODConvTrainer.h"</li>
+</ul>
+<p><b>Invoking Training module of caffe</b></p>
+<p>These lines invoke the trainer: </p>
+<div class="fragment"><div class="line">Caffe::set_mode(Caffe::CPU);</div>
+<div class="line">SGDSolver&lt;float&gt; s(solverLocation);</div>
+<div class="line">s.Solve();</div>
+</div><!-- fragment --><p>This snippet points to solver file, the solver file points to the network file. This network file points to the file which in turn points to the dataset.</p>
+<p><b>Usage</b></p>
+<p>The example can be invoked using the following command: (From the build folder)</p>
+<p>./examples/objectdetector/od_cnn_mnist_train_simple ../examples/objectdetector/Mnist_Train/solver1.prototxt</p>
+<p>The only argument to be given is the solver file.</p>
+<p><b>Next up will be a simple CNN trainer example with a graphical user interface for the solver file.</b></p>
 <p>Happy Coding!!!! </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
