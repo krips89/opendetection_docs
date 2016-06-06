@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_abhishek.html','');});
 <ul><li class="level1"><a href="#gsoc2016_blog_abhishek1">CNN based object localization and recognition for openDetection library  </a></li>
 <li class="level1"><a href="#target1">Classification of digits in Mnist Library using CNN </a></li>
 <li class="level1"><a href="#target2">Training a classifier for digits in Mnist Library using CNN. Part 1 </a></li>
+<li class="level1"><a href="#target2_1">Training a classifier for digits in Mnist Library using CNN. Part 2 </a></li>
 </ul>
 </div>
 <div class="textblock"><h1><a class="anchor" id="gsoc2016_blog_abhishek1"></a>
@@ -138,7 +139,7 @@ CNN based object localization and recognition for openDetection library  </h1>
 <p>Happy Coding!!!!</p>
 <h1><a class="anchor" id="target1"></a>
 Classification of digits in Mnist Library using CNN </h1>
-<p>The classification exampled added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</p>
+<p>The classification example added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</p>
 <ul>
 <li><a href="http://caffe.berkeleyvision.org/">Caffe Library</a></li>
 <li><a href="https://abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/">Using Caffe Library</a></li>
@@ -269,7 +270,7 @@ Training a classifier for digits in Mnist Library using CNN. Part 1 </h1>
 <li>Training Network file</li>
 <li>Image Dataset and a pointer to the Dataset</li>
 </ul>
-<p>The classification exampled added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</p>
+<p>The classification example added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</p>
 <ul>
 <li><a href="http://caffe.berkeleyvision.org/">Caffe Library</a></li>
 <li><a href="https://abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/">Using Caffe Library</a></li>
@@ -292,6 +293,32 @@ Training a classifier for digits in Mnist Library using CNN. Part 1 </h1>
 <p>./examples/objectdetector/od_cnn_mnist_train_simple ../examples/objectdetector/Mnist_Train/solver1.prototxt</p>
 <p>The only argument to be given is the solver file.</p>
 <p><b>Next up will be a simple CNN trainer example with a graphical user interface for the solver file.</b></p>
+<p>Happy Coding!!!!</p>
+<h1><a class="anchor" id="target2_1"></a>
+Training a classifier for digits in Mnist Library using CNN. Part 2 </h1>
+<p>This commit consists of the same simple trainer from previous commit, except for the fact that it involves a graphical user interface to select solver parameters,The classification exampled added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</p>
+<ul>
+<li><a href="http://caffe.berkeleyvision.org/">Caffe Library</a></li>
+<li><a href="https://abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/">Using Caffe Library</a></li>
+<li><a href="https://github.com/abhi-kumar/opendetection/tree/cnn_cpu">Branch of OpenDetection for the below classifier</a></li>
+<li><a href="http://www.gtkmm.org/en/">GTKMM</a></li>
+</ul>
+<p>Installing GTKMM Required: In the terminal of ubuntu, type the following </p>
+<div class="fragment"><div class="line">sudo apt-<span class="keyword">get</span> install libglib2.0-dev libatk1.0* libpango1.0-dev libcairo2-dev gdk-pixbuf2.0-0 libsigc++-2.0-dev libgtk-3-dev libcairomm-1.0-dev libpangomm-1.4-dev libatkmm-1.6-dev libgtkmm-3.0-dev </div>
+</div><!-- fragment --><p><b>Usage</b></p>
+<p>From the build folder invoke:</p>
+<p>./examples/objectdetector/od_cnn_mnist_train_customSolver</p>
+<p>Note:</p>
+<ul>
+<li>The path to the solver, train network, snapshot have to be set inside examples/objectdetector/Mnist_Train folder for this alpha version.</li>
+<li>The GUI has a update button for every parameter. It is not necessary to press each one of them. They have been included for future, eg., when only one parameter from an existing solver need to be updated. This functionality has not been added</li>
+<li>After changing the parameters, press the "Save" button and then close the window using the "x" on the top just like closing any window in Ubuntu. A custom exit has not been added yet.</li>
+</ul>
+<p><b>Next up will be a updates and additions to the GUI.</b></p>
+<ul>
+<li>Adding a provision: if a solver file exists and the user wants to change only one parameters, it can be done</li>
+<li>Creation of CNN network using a simple GUI</li>
+</ul>
 <p>Happy Coding!!!! </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
