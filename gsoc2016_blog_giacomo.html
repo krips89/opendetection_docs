@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <div class="line">endif()</div>
 </div><!-- fragment --><p>The option command adds an option in the cmake; the first parameter is the cmake option name (which for now is written in that way but it will probably change), the second is a description of the option, and the third is the default option value. I left it on on so that even unexperienced user can build some examples to test the library. The option is then followed by an if which checks the option vale and in case adds the example to the build process. I would like to change also the structure of the example folder by creating subfolders which then contain the different examples subdividing them by <b>type</b> . Each folder will then have its own <em>CMakeLists.txt</em> file which can be added by the parent cmake with the usual <em>add_subdirectory</em> command. This helps also since we can add automatically all the subfolders of the example folder to the build process without stating the names explicitly.</p>
 <h2>Include structure 18/05/15</h2>
-<p>While continuing to restructure the library I came across a decision which can be solved in different ways but for which I still don't have the best solution. Lets assume we want to include a global 3D detector for example, we would use <em><a class="el" href="_o_d_c_a_d_detector3_d_global_8h_source.html">ODCADDetector3DGlobal.h</a></em> . We could have in our file</p>
+<p>While continuing to restructure the library I came across a decision which can be solved in different ways but for which I still don't have the best solution. Lets assume we want to include a global 3D detector for example, we would use <em>ODCADDetector3DGlobal.h</em> . We could have in our file</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;ODCADDetector3DGlobal.h&gt;</span> </div>
 </div><!-- fragment --><p>and the compiler would need the include folder where the file is located to compile. This means that the file should be localted directly in the upper include folder, but this is not our case since the structure is like <em>detectors/global3D/detection/</em> so it would be better to have</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;detectors/global3D/detection/ODCADDetector3DGlobal.h&gt;</span> </div>
@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <div class="fragment"><div class="line">OD_ADD_LIBRARY_ALL(<span class="stringliteral">&quot;${SUBSYS_NAME}&quot;</span> SRCS ${SOURCES})</div>
 </div><!-- fragment --><p>since you don't have to compile headers files.It is enough to specify the include folders to find the includes at compile time. It could be possible to add header precompilation, but I believe this would be an advanced step which could be implemented at the end. I still need to check if this way of installing includes using the <em>DIRECTORY</em> keyword without specifying the single files is the clearest way.</p>
 <h2>Code refactoring 01/06/15</h2>
-<p>Befor modifying and digging into the code I wanted to have a common coding style in all files, fixing also some common coding mistakes when found. Another decision was to use C++11 features whenever possible since it should be considered a basic standard, having already C++17 code online. I started by fixing the "common module"; here I did the following:</p>
+<p>Before modifying and digging into the code I wanted to have a common coding style in all files, fixing also some common coding mistakes when found. Another decision was to use C++11 features whenever possible since it should be considered a basic standard, having already C++17 code online. I started by fixing the "common module"; here I did the following:</p>
 <ul>
 <li>I removed the ToString method since in c++11 it is present as <em>to_string()</em>;</li>
 <li>I removed global variables from utils since they where just used in one function.</li>
@@ -216,7 +216,23 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <li>I added constness modifiers and references for passed arguments whereever possible to avoid useless parameter copyes.</li>
 <li>I modified the frame generator template to have as parameter generic clouds and not only pointrgba point clouds</li>
 </ul>
-<p>After this I started to fix the detectors which I am still working on. The first class which has bee updated is the <em>ODHOGDetector</em> which had also a lot of naming issues since it used a different naming style. There are stll some function which I dislike, for example the parsing methods. They are mainly based on creating a fake argc,argv couple of variables and the parsing them. This has to be removed in favor of a better and newer parsing library as the one included in boost. This will be one of the first steps which I will do as soon as I finished the basic refactoring step. </p>
+<p>After this I started to fix the detectors which I am still working on. The first class which has bee updated is the <em>ODHOGDetector</em> which had also a lot of naming issues since it used a different naming style. There are stll some function which I dislike, for example the parsing methods. They are mainly based on creating a fake argc,argv couple of variables and the parsing them. This has to be removed in favor of a better and newer parsing library as the one included in boost. This will be one of the first steps which I will do as soon as I finished the basic refactoring step.</p>
+<h2>Code refactoring 2 07/06/15</h2>
+<p>The first code refactoring phase terminated today, since I finished to review a bit all files; the main steps have been:</p>
+<ul>
+<li>moving around code in order to have implementations in the cpp files to reduce multiple compilation time, and declarations in .h files.</li>
+<li>added some minor c++11 features like <em>ranged-loops</em> instead of iterators which are hard to read, more standard function like <em>to_string()</em> and <em>itos()</em> where possible</li>
+<li>removed standard namespace and opencv namespace to avoid name clashing</li>
+<li>refactored the whole simple ransac file folder which was outside of the namespace</li>
+<li>used a common coding style through all files which is fundamental</li>
+<li>I moved the <b>ODDetectorMultiAlgo.h</b> and <b>ODDetectorMultiAlgo.cpp</b> files into <a class="el" href="_o_d_detector_multi_algo_8hpp_source.html">ODDetectorMultiAlgo.hpp</a> since I made the classes template to avoid having the explicit <b>Pcl::PointXYZRGBA</b> type since it was using <a class="el" href="_o_d_c_a_d_detector3_d_global_8hpp_source.html">ODCADDetector3DGlobal.hpp</a> which already defined template classes. The new file is situated in the impl folder in detectors to maintain the usual include structure. Now, since the default vale has been removed for the template classes, the type has to be specified when the class is instantiated which can been seen in the examples.</li>
+</ul>
+<p>Missing parts and next steps:</p>
+<ul>
+<li>I have to check that compilation works fine also with svmlight which was disabled till now</li>
+<li>Use shared pointer where normal pointer are used. We have to decide if we want to use boost or stds shared pointers since pcl is using the first version. The second would be better so we would have everything which is possible using std and then when pcl moves toward std shared pointer we move also the rest of the code to that.</li>
+<li>Remove where possible the argc,argv parsing methods using standard ones. </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
