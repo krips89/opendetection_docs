@@ -105,11 +105,11 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#gsoc2016_blog_giacomo1">#Framework design and library maintenance#  </a></li>
+<ul><li class="level1"><a href="#gsoc2016_blog_giacomo1">Framework design and library maintenance  </a></li>
 </ul>
 </div>
 <div class="textblock"><h1><a class="anchor" id="gsoc2016_blog_giacomo1"></a>
-#Framework design and library maintenance#  </h1>
+Framework design and library maintenance  </h1>
 <ul>
 <li><a href="https://docs.google.com/document/d/16Wyd0h5b9-7DaG7ZYJT30a2i096krviFUCcDYwg-jZc/edit?usp=sharing">Link to Proposal</a> - <a href="https://summerofcode.withgoogle.com/organizations/6007728078061568/#5675882488266752">Link to GSoC2016 Project Page</a></li>
 </ul>
@@ -237,10 +237,15 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <p>The following step took quite a bit in order to have everything work well. Until now the library was using normal C++ pointer created with new and then deleted when not used anymore. This can lead to bad habits of forgetting to delete pointers, causing memory leaks. To avoid this its always good to use safe pointers which get deallocated as soon as they are not referenced my anyone anymore. Safe pointers are called <b>shared_ptr</b> in C++ and were intially implemented in the <em>Boost</em> library; then, after C++11, they where also inserted in the standard in the <em>std::</em> namespace. Substituting all pointers n the library was quite a complex task for different reasons:</p>
 <ul>
 <li>Opendetection uses quite a lot the <em>Pcl</em> library. This library is still using the <b>boost::shared_ptr</b> implementation instead of the <b>std::shared_ptr</b> implementation. The two <b>shared_ptr</b> are not compatible and so a big issue arises. Should we use the first or second implementation? We should use the second solution since it relies on the standard, but we can't since <em>Pcl</em> still uses the first implementation. While <em>Pcl</em> moves to the <em>std::</em> solution we need to use the <em>boost</em> namespace, so in order to have the library compatible with both implementations, beeing able to switch from one to the other, I added a simple header file which switches between the two shared pointer types. This way as soon as <em>Pcl</em> moves to the <em>std::</em> we can also switch by just setting a variable in the cmake. The variable is called <b>WITH_BOOST_SHARED_PTR</b> ad is set to on by default so that we use <em>boost::shared_ptr</em> for now.</li>
-<li>Substituting a pointer with a shared pointer requirest also to use another set of functions for the creation and the casting. to create a <b>shared_ptr</b> you either pass the pointer to the constructor or use the <b>make_shared</b> template passing to the function the constructor arguments and as template argument the pointer type. Also static and dynamic casting have specific template functions which are <b>dynamic_pointer_cast</b> and <b>static_pointer_casto</b>.</li>
+<li>Substituting a pointer with a shared pointer requirest also to use another set of functions for the creation and the casting. to create a <b>shared_ptr</b> you either pass the pointer to the constructor or use the <b>make_shared</b> template passing to the function the constructor arguments and as template argument the pointer type. Also static and dynamic casting have specific template functions which are <b>dynamic_pointer_cast</b> and <b>static_pointer_cast</b>.</li>
 <li>It is important to remove all delete which are around the code since **shared_ptr* automatically destroy the pointed objects in the destructor if not referenced anymore.</li>
 </ul>
-<p>While restructuring the code I also fixed again some coding style issues, but I still have to go through the code a few more times in order to finish fixing everything. The next step is as previously mentioned, to check the compilation with the svmlight option. </p>
+<p>While restructuring the code I also fixed again some coding style issues, but I still have to go through the code a few more times in order to finish fixing everything. The next step is as previously mentioned, to check the compilation with the svmlight option.</p>
+<h2>Svmlight 13/06/15</h2>
+<p>Today I finished fixing everything for the svmlight compilation. At first I had to change a bit again the coding style in the involved files and then I downloaded the svmlight library to have a look at it. I noticed that the <b>MakeFile</b> does not produce a library but only two executables and that the library has an own license wich can't be integrated in the lib.</p>
+<p>It would be hard to ask a user to compile a library on its own, so I decided to create a small git with the source files and the license, and a custom <b>CMakeFiles.txt</b> which generate a library. This git has been added as submodule to the library which now compiles the library by just adding it with the usual cmake command <b>add_subdirectory</b> and then its possible to link it by linking svmlight. I removed the <em>WITH_SVM</em> option since now we will always have lightsvm available.</p>
+<p>After some small fixes everything compiles fine; while fixing everything I got rid of a lot of useless include files which where just slowing down compilation by adding code. It would be nice also to test the new source code against the old one to test the compilation speed.</p>
+<p>Next small step is to fix the parsing methods which don't look nice and use old style pointers. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
