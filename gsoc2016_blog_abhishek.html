@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_abhishek.html','');});
 <li class="level1"><a href="#target1">Classification of digits in Mnist Library using CNN </a></li>
 <li class="level1"><a href="#target2">Training a classifier for digits in Mnist Library using CNN. Part 1 </a></li>
 <li class="level1"><a href="#target2_1">Training a classifier for digits in Mnist Library using CNN. Part 2 </a></li>
+<li class="level1"><a href="#target3_1">A GUI for easy-designing of CNN networks for caffe library. Part 1 </a></li>
 </ul>
 </div>
 <div class="textblock"><h1><a class="anchor" id="gsoc2016_blog_abhishek1"></a>
@@ -318,6 +319,65 @@ Training a classifier for digits in Mnist Library using CNN. Part 2 </h1>
 <ul>
 <li>Adding a provision: if a solver file exists and the user wants to change only one parameters, it can be done</li>
 <li>Creation of CNN network using a simple GUI</li>
+</ul>
+<p>Happy Coding!!!!</p>
+<h1><a class="anchor" id="target3_1"></a>
+A GUI for easy-designing of CNN networks for caffe library. Part 1 </h1>
+<p>It is always a tedious job in designing networks in a ".prototxt" file. It was a need of the hour to reduce the time spent on creating this file from scratch. The latest commit includes a user interface intended to facilitate this job. The modalities and usage of the libraries can be studied at</p>
+<ul>
+<li><a href="http://caffe.berkeleyvision.org/">Caffe Library</a></li>
+<li><a href="https://abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/">Using Caffe Library</a></li>
+<li><a href="https://github.com/abhi-kumar/opendetection/tree/cnn_cpu">Branch of OpenDetection for the below classifier</a></li>
+<li><a href="http://www.gtkmm.org/en/">GTKMM</a></li>
+</ul>
+<p>Installing GTKMM Required: In the terminal of ubuntu, type the following </p>
+<div class="fragment"><div class="line">sudo apt-<span class="keyword">get</span> install libglib2.0-dev libatk1.0* libpango1.0-dev libcairo2-dev gdk-pixbuf2.0-0 libsigc++-2.0-dev libgtk-3-dev libcairomm-1.0-dev libpangomm-1.4-dev libatkmm-1.6-dev libgtkmm-3.0-dev </div>
+</div><!-- fragment --><p><b>Usage</b></p>
+<p>After building the library invoke the following command from build directory</p>
+<div class="fragment"><div class="line">./examples/objectdetector/od_cnn_network_design </div>
+</div><!-- fragment --><p>This will pop up the desined window. The layers have been divided into 6 major categories, activation, critical, normalization, loss, extra, and data. The drop down menus are available and after selection of any of the option from the drop-down menu and pressing the "Append Layer" button next to it , a user can fill the required properties. This layer then can be added or left out as per user's wish. A display button has been provided to visualize the network.</p>
+<p><b>Features</b></p>
+<p>1) The <b>activation</b> category includes the following activation layers</p>
+<ul>
+<li>Absolute Value (AbsVal) Layer</li>
+<li>Exponential (Exp) Layer</li>
+<li>Log Layer</li>
+<li>Power Layer</li>
+<li>Parameterized rectified linear unit (PReLU) Layer</li>
+<li>Rectified linear unit (ReLU) Layer</li>
+<li>Sigmoid Layer</li>
+<li>Hyperbolic tangent (TanH) Layer</li>
+</ul>
+<p>2) The <b>critical</b> category includes the most crucial layers</p>
+<ul>
+<li>Accuracy Layer</li>
+<li>Convolution Layer</li>
+<li>Deconvolution layer</li>
+<li>Dropout Layer</li>
+<li>InnerProduct (Fully Connected) Layer</li>
+<li>Pooling Layer</li>
+<li>Softmax classification Layer</li>
+</ul>
+<p>3) The weight initializers include the following options</p>
+<ul>
+<li>Constant</li>
+<li>Uniform</li>
+<li>Gaussian</li>
+<li>Positive Unit Ball</li>
+<li>Xavier</li>
+<li>MSRA</li>
+<li>Bilinear</li>
+</ul>
+<p>4) One more important feature included is that user can <b>display</b> the layers and simultaneously during the display <b>delete</b> the unwanted layers.</p>
+<p><b>Current limitations and modalities to be added soon</b></p>
+<p>This commit involves a alpha version of the GUI just for the review from users. The following the modalities that will be <b>updated</b> in the course of gsoc</p>
+<ul>
+<li>Concatenation layer in critical category has not been added yet</li>
+<li>User will be able to generate the file, but cannot edit it once the GUI is closed. The next commit will include the interface to read a created file and edit further. Also the modality to be added is to give memory to the application so that it may edit any one particular layer even after creation.</li>
+<li>The bias filler for the networks has the only constant type filler in this commit.</li>
+<li>User has no option to validate the network connection in this version. The next modalities may include a tester that would allow users to validate the network modalities, i.e., the connections between layers, the layer proerties, naming conventions, etc.</li>
+<li>The normalization, loss, and extra layers types' property editor will be added soon. Please see the layers in each after invoking the GUI.</li>
+<li>The data layer with "image" and "LMDB" type inputs will be added soon.</li>
 </ul>
 <p>Happy Coding!!!! </p>
 </div></div><!-- contents -->
