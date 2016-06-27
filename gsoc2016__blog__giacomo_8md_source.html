@@ -88,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,8 +115,8 @@ $(document).ready(function(){initNavTree('gsoc2016__blog__giacomo_8md.html','');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;====</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;[TOC]</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;Framework design and library maintenance  {#gsoc2016_blog_giacomo1}</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;====</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#Framework design and library maintenance#  {#gsoc2016_blog_giacomo1}</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span>====</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  - [Link to Proposal](https:<span class="comment">//docs.google.com/document/d/16Wyd0h5b9-7DaG7ZYJT30a2i096krviFUCcDYwg-jZc/edit?usp=sharing) - [Link to GSoC2016 Project Page](https://summerofcode.withgoogle.com/organizations/6007728078061568/#5675882488266752)</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
@@ -285,22 +284,52 @@ $(document).ready(function(){initNavTree('gsoc2016__blog__giacomo_8md.html','');
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="stringliteral"></span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="stringliteral">- Opendetection uses quite a lot the *Pcl* library. This library is still using the **boost::shared_ptr** implementation instead of the **std::shared_ptr** implementation. The two **shared_ptr** are not compatible and so a big issue arises. Should we use the first or second implementation? We should use the second solution since it relies on the standard, but we can&#39;</span>t since *Pcl* still uses the first implementation. While *Pcl* moves to the *std::* solution we need to use the *boost* <span class="keyword">namespace</span>, so in order to have the library compatible with both implementations, beeing able to <span class="keywordflow">switch</span> from one to the other, I added a simple header file which switches between the two shared pointer types. This way as soon as *Pcl* moves to the *std::* we can also <span class="keywordflow">switch</span> by just setting a variable in the cmake. The variable is called **WITH_BOOST_SHARED_PTR** ad is set to on by <span class="keywordflow">default</span> so that we use *boost::shared_ptr* <span class="keywordflow">for</span> now. </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;- Substituting a pointer with a shared pointer requirest also to use another set of functions <span class="keywordflow">for</span> the creation and the casting. to create a **shared_ptr** you either pass the pointer to the constructor or use the **make_shared** <span class="keyword">template</span> passing to the <span class="keyword">function</span> the constructor arguments and as <span class="keyword">template</span> argument the pointer type. Also <span class="keyword">static</span> and dynamic casting have specific <span class="keyword">template</span> functions which are **dynamic_pointer_cast** and **static_pointer_cast**.</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;- Substituting a pointer with a shared pointer requirest also to use another set of functions <span class="keywordflow">for</span> the creation and the casting. to create a **shared_ptr** you either pass the pointer to the constructor or use the **make_shared** <span class="keyword">template</span> passing to the <span class="keyword">function</span> the constructor arguments and as <span class="keyword">template</span> argument the pointer type. Also <span class="keyword">static</span> and dynamic casting have specific <span class="keyword">template</span> functions which are **dynamic_pointer_cast** and **static_pointer_casto**.</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;- It is important to <span class="keyword">remove</span> all <span class="keyword">delete</span> which are around the code since **shared_ptr* automatically destroy the pointed objects in the destructor <span class="keywordflow">if</span> not referenced anymore.</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;- It is important to <span class="keyword">remove</span> all <span class="keyword">delete</span> which are around the code since **shared_ptr** automatically destroy the pointed objects in the destructor <span class="keywordflow">if</span> not referenced anymore.</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;While restructuring the code I also fixed again some coding style issues, but I still have to go through the code a few more times in order to finish fixing everything. The next step is as previously mentioned, to check the compilation with the svmlight option.</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;##Svmlight 13/06/15##</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;Today I finished fixing everything <span class="keywordflow">for</span> the svmlight compilation. At first I had to change a bit again the coding style in the involved files and then I downloaded the svmlight library to have a look at it. I noticed that the **MakeFile** does not produce a library but only two executables and that the library has an own license wich can<span class="stringliteral">&#39;t be integrated in the lib. </span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="stringliteral">It would be hard to ask a user to compile a library on its own, so I decided to create a small git with the source files and the license, and a custom **CMakeFiles.txt** which generate a library. This git has been added as submodule to the library which now compiles the library by just adding it with the usual cmake command **add_subdirectory** and then its possible to link it by linking svmlight. I removed the *WITH_SVM* option since now we will always have lightsvm available.</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="stringliteral">After some small fixes everything compiles fine; while fixing everything I got rid of a lot of useless include files which where just slowing down compilation by adding code. It would be nice also to test the new source code against the old one to test the compilation speed.</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="stringliteral">Next small step is to fix the parsing methods which don&#39;</span>t look nice and use old style pointers.</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;##Cmake improvments 20/06/15##</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;I created a **FindOD.cmake** which can be used by other libraries to find the include directories path, the library path and the library names. The variables which <span class="keyword">get</span> set are:</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;- OD_INCLUDE_DIRS </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;- OD_LIBRARY_PATH </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;- OD_LIBRARIES </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;There variables can be used in any project by <span class="keyword">using</span>:</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;@code</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;find_package(OD REQUIRED)</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;include_directories(${OD_INCLUDE_DIRS})</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;link_directories(${OD_LIBRARY_PATH})</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;target_link_libraries(example_target ${OD_LIBRARIES})</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;@endcode</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;The **FindOD.cmake** is generated automatically starting from the **${CMAKE_INSTALL_PREFIX}** variable so there is no absolute path and it is installed in **${CMAKE_INSTALL_PREFIX}/lib/cmake<span class="comment">/** .</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">I added then an **uninstall** target to delete all the installed files if necessary. This custom target is standard and can be found easily on the internet.</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">Another important missing thing was the creation of a .deb package which can be useful to install the library on other systems. This package has been created using the **Cpack** utility provided by cmake. By just setting some basic variables it is possible to create e complete .deb file which can then be installed using the usual *dpkg -i package.deb* command.</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">All files in the library have been renamed according to a common scheme which consists in a Prefix &quot;OD&quot; followed by the first charachter of the file name uppercase.</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">##Templates and Windows compilation##</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">To improve compilation time of projects using the **OpenDetection** library I decided to precompile all the templates for the most common types. In this case almost all templates depend on *pcl* point types. The most commonly used point type for which I precompiled the library are:</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">- *pcl::PointXYZ*</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">- *pcl::PointXYZRGB*</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">- *pcl::PointXYZRGBA*</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">It is important to create for each .hpp header file containing the templates a .cpp file in which templates are instantiated with the different types. Explicit template instantiation is done by just writing *template* followed by the template declaration with the instantiated type.</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">The most important part is to insert in the header file the same declaration with the *extern* keyword at the beginning. This informs the compiler that the defined symbol is already present in another compilation unit and that it can be found at linking time. Without this the compiler will just reinstantiate the templates and recompile them since it has no knowledge about templates instantiated and compiled in other compilation units.</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">I then fixed all the linking in the whole library since there where some useless linked libraries in order to speed up even more the compilation. </span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">After that I tested compilation of the library under Windows, but without success. There have been several issues which are ut of the Open Deteciton library. I tested compilation using **Visual Studio 2015** and **MinGW**. Pcl has been installed by using the prebuilt version while opencv has to be built manually since *opencv_contrib* is necessary while not present in the prebuilt binaries. Building opencv3 with visual studio and cuda is not possible at the moment since cuda 7.5 is not compatible with visual studio 2015, so version 8 is necessary which will be available soon. MinGW is also not usable since compilation of opencv3 with cuda is disabled as flagged as incompatible by opencv.</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->

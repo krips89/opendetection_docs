@@ -105,11 +105,11 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#gsoc2016_blog_giacomo1">Framework design and library maintenance  </a></li>
+<ul><li class="level1"><a href="#gsoc2016_blog_giacomo1">#Framework design and library maintenance#  </a></li>
 </ul>
 </div>
 <div class="textblock"><h1><a class="anchor" id="gsoc2016_blog_giacomo1"></a>
-Framework design and library maintenance  </h1>
+#Framework design and library maintenance#  </h1>
 <ul>
 <li><a href="https://docs.google.com/document/d/16Wyd0h5b9-7DaG7ZYJT30a2i096krviFUCcDYwg-jZc/edit?usp=sharing">Link to Proposal</a> - <a href="https://summerofcode.withgoogle.com/organizations/6007728078061568/#5675882488266752">Link to GSoC2016 Project Page</a></li>
 </ul>
@@ -143,7 +143,7 @@ Framework design and library maintenance  </h1>
 <li><b>Svmlight</b> will be inserted in the system with a find_package or something similar and a custom <b>WITH_SVMLIGHT</b> cmake flag. These steps will come shortly; we will just leave the svmlight binding.</li>
 </ul>
 <h2>Refactoring file structure 13/05/15</h2>
-<p>I started to move files in appropriate folders and to fix the "Main" <em>CmakeLists.txt</em> file. I renamed the ODconfig.h.in file to <a class="el" href="od__config_8h_source.html">od_config.h</a> and moved it into the cmake folder for now. Then I moved the opendetection.cpp source file away from the root (not nice to have source files in the root of a library) and added it as separate app in a new version folder which builds the od_version executable.</p>
+<p>I started to move files in appropriate folders and to fix the "Main" <em>CmakeLists.txt</em> file. I renamed the ODconfig.h.in file to od_config.h and moved it into the cmake folder for now. Then I moved the opendetection.cpp source file away from the root (not nice to have source files in the root of a library) and added it as separate app in a new version folder which builds the od_version executable.</p>
 <p>I fixed the <b>OD_ADD_EXAMPLE</b> macro adding the <b>INCLUDE</b> argument to include specific headers and used it in the <em>od_version</em> app. A separate cmake file has benn created to include all MACROS, but I have still to check if it is possible to add ordering between include cmake statements since there are some dependencies between the files. I separated the <b>OD_CMAKE_DIR</b> from <b>CMAKE_MODULE_PATH</b> in order to have a clear struture and to not mix up folders; the files in the cmake folder have also been renamed to have a common naming scheme.The next step will involve separating source and header files in appropriate folders and adding them in the cmake without explicitly naming them to avoid problems when renaming files in the library.</p>
 <p>The next huge step consisted in refactoring common, detectors and example folders to have a common standard file structure. This is usually built having in each folder the following subflders/files:</p>
 <ul>
@@ -237,15 +237,36 @@ Framework design and library maintenance  </h1>
 <p>The following step took quite a bit in order to have everything work well. Until now the library was using normal C++ pointer created with new and then deleted when not used anymore. This can lead to bad habits of forgetting to delete pointers, causing memory leaks. To avoid this its always good to use safe pointers which get deallocated as soon as they are not referenced my anyone anymore. Safe pointers are called <b>shared_ptr</b> in C++ and were intially implemented in the <em>Boost</em> library; then, after C++11, they where also inserted in the standard in the <em>std::</em> namespace. Substituting all pointers n the library was quite a complex task for different reasons:</p>
 <ul>
 <li>Opendetection uses quite a lot the <em>Pcl</em> library. This library is still using the <b>boost::shared_ptr</b> implementation instead of the <b>std::shared_ptr</b> implementation. The two <b>shared_ptr</b> are not compatible and so a big issue arises. Should we use the first or second implementation? We should use the second solution since it relies on the standard, but we can't since <em>Pcl</em> still uses the first implementation. While <em>Pcl</em> moves to the <em>std::</em> solution we need to use the <em>boost</em> namespace, so in order to have the library compatible with both implementations, beeing able to switch from one to the other, I added a simple header file which switches between the two shared pointer types. This way as soon as <em>Pcl</em> moves to the <em>std::</em> we can also switch by just setting a variable in the cmake. The variable is called <b>WITH_BOOST_SHARED_PTR</b> ad is set to on by default so that we use <em>boost::shared_ptr</em> for now.</li>
-<li>Substituting a pointer with a shared pointer requirest also to use another set of functions for the creation and the casting. to create a <b>shared_ptr</b> you either pass the pointer to the constructor or use the <b>make_shared</b> template passing to the function the constructor arguments and as template argument the pointer type. Also static and dynamic casting have specific template functions which are <b>dynamic_pointer_cast</b> and <b>static_pointer_cast</b>.</li>
-<li>It is important to remove all delete which are around the code since **shared_ptr* automatically destroy the pointed objects in the destructor if not referenced anymore.</li>
+<li>Substituting a pointer with a shared pointer requirest also to use another set of functions for the creation and the casting. to create a <b>shared_ptr</b> you either pass the pointer to the constructor or use the <b>make_shared</b> template passing to the function the constructor arguments and as template argument the pointer type. Also static and dynamic casting have specific template functions which are <b>dynamic_pointer_cast</b> and <b>static_pointer_casto</b>.</li>
+<li>It is important to remove all delete which are around the code since <b>shared_ptr</b> automatically destroy the pointed objects in the destructor if not referenced anymore.</li>
 </ul>
 <p>While restructuring the code I also fixed again some coding style issues, but I still have to go through the code a few more times in order to finish fixing everything. The next step is as previously mentioned, to check the compilation with the svmlight option.</p>
-<h2>Svmlight 13/06/15</h2>
-<p>Today I finished fixing everything for the svmlight compilation. At first I had to change a bit again the coding style in the involved files and then I downloaded the svmlight library to have a look at it. I noticed that the <b>MakeFile</b> does not produce a library but only two executables and that the library has an own license wich can't be integrated in the lib.</p>
-<p>It would be hard to ask a user to compile a library on its own, so I decided to create a small git with the source files and the license, and a custom <b>CMakeFiles.txt</b> which generate a library. This git has been added as submodule to the library which now compiles the library by just adding it with the usual cmake command <b>add_subdirectory</b> and then its possible to link it by linking svmlight. I removed the <em>WITH_SVM</em> option since now we will always have lightsvm available.</p>
-<p>After some small fixes everything compiles fine; while fixing everything I got rid of a lot of useless include files which where just slowing down compilation by adding code. It would be nice also to test the new source code against the old one to test the compilation speed.</p>
-<p>Next small step is to fix the parsing methods which don't look nice and use old style pointers. </p>
+<h2>Cmake improvments 20/06/15</h2>
+<p>I created a <b>FindOD.cmake</b> which can be used by other libraries to find the include directories path, the library path and the library names. The variables which get set are:</p>
+<ul>
+<li>OD_INCLUDE_DIRS</li>
+<li>OD_LIBRARY_PATH</li>
+<li>OD_LIBRARIES</li>
+</ul>
+<p>There variables can be used in any project by using:</p>
+<div class="fragment"><div class="line">find_package(OD REQUIRED)</div>
+<div class="line">include_directories(${OD_INCLUDE_DIRS})</div>
+<div class="line">link_directories(${OD_LIBRARY_PATH})</div>
+<div class="line">target_link_libraries(example_target ${OD_LIBRARIES})</div>
+</div><!-- fragment --><p>The <b>FindOD.cmake</b> is generated automatically starting from the **${CMAKE_INSTALL_PREFIX}** variable so there is no absolute path and it is installed in **${CMAKE_INSTALL_PREFIX}/lib/cmake/** .</p>
+<p>I added then an <b>uninstall</b> target to delete all the installed files if necessary. This custom target is standard and can be found easily on the internet.</p>
+<p>Another important missing thing was the creation of a .deb package which can be useful to install the library on other systems. This package has been created using the <b>Cpack</b> utility provided by cmake. By just setting some basic variables it is possible to create e complete .deb file which can then be installed using the usual <em>dpkg -i package.deb</em> command.</p>
+<p>All files in the library have been renamed according to a common scheme which consists in a Prefix "OD" followed by the first charachter of the file name uppercase.</p>
+<h2>Templates and Windows compilation</h2>
+<p>To improve compilation time of projects using the <b>OpenDetection</b> library I decided to precompile all the templates for the most common types. In this case almost all templates depend on <em>pcl</em> point types. The most commonly used point type for which I precompiled the library are:</p>
+<ul>
+<li><em>pcl::PointXYZ</em></li>
+<li><em>pcl::PointXYZRGB</em></li>
+<li><em>pcl::PointXYZRGBA</em></li>
+</ul>
+<p>It is important to create for each .hpp header file containing the templates a .cpp file in which templates are instantiated with the different types. Explicit template instantiation is done by just writing <em>template</em> followed by the template declaration with the instantiated type. The most important part is to insert in the header file the same declaration with the <em>extern</em> keyword at the beginning. This informs the compiler that the defined symbol is already present in another compilation unit and that it can be found at linking time. Without this the compiler will just reinstantiate the templates and recompile them since it has no knowledge about templates instantiated and compiled in other compilation units.</p>
+<p>I then fixed all the linking in the whole library since there where some useless linked libraries in order to speed up even more the compilation.</p>
+<p>After that I tested compilation of the library under Windows, but without success. There have been several issues which are ut of the Open Deteciton library. I tested compilation using <b>Visual Studio 2015</b> and <b>MinGW</b>. Pcl has been installed by using the prebuilt version while opencv has to be built manually since <em>opencv_contrib</em> is necessary while not present in the prebuilt binaries. Building opencv3 with visual studio and cuda is not possible at the moment since cuda 7.5 is not compatible with visual studio 2015, so version 8 is necessary which will be available soon. MinGW is also not usable since compilation of opencv3 with cuda is disabled as flagged as incompatible by opencv. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
