@@ -267,12 +267,39 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <p>It is important to create for each .hpp header file containing the templates a .cpp file in which templates are instantiated with the different types. Explicit template instantiation is done by just writing <em>template</em> followed by the template declaration with the instantiated type. The most important part is to insert in the header file the same declaration with the <em>extern</em> keyword at the beginning. This informs the compiler that the defined symbol is already present in another compilation unit and that it can be found at linking time. Without this the compiler will just reinstantiate the templates and recompile them since it has no knowledge about templates instantiated and compiled in other compilation units.</p>
 <p>I then fixed all the linking in the whole library since there where some useless linked libraries in order to speed up even more the compilation.</p>
 <p>After that I tested compilation of the library under Windows, but without success. There have been several issues which are ut of the Open Deteciton library. I tested compilation using <b>Visual Studio 2015</b> and <b>MinGW</b>. Pcl has been installed by using the prebuilt version while opencv has to be built manually since <em>opencv_contrib</em> is necessary while not present in the prebuilt binaries. Building opencv3 with visual studio and cuda is not possible at the moment since cuda 7.5 is not compatible with visual studio 2015, so version 8 is necessary which will be available soon. MinGW is also not usable since compilation of opencv3 with cuda is disabled as flagged as incompatible by opencv.</p>
-<h2>Face detection 27/06/15</h2>
+<h2>Face detection 31/06/15</h2>
 <p>To test the new cmake and code structure I <b>implemented face detection</b> (not recognition which is already available). Face detection is implemented in <em>OpenCV</em> both in <b>CPU</b> mode and in <b>GPU</b> mode (using <b>CUDA</b>).</p>
 <p>I created an interface which is using the <em>ODDetector2D</em> interface to use both <b>CPU</b> and <b>GPU</b> mode based on a parameter passed in the constructor. <b>GPU</b> mode is only available if the library was built with <b>GPU</b> support (using the <em>WITH_GPU</em> flag in the cmake file).</p>
 <p>To test the new detector I created two examples; the first one is <em>od_face_detecor_cam.cpp</em> which uses the first found webcam to detect faces; the second example is called <em>od_face_detector_files.cpp</em> which uses a path to a file folder to execute the face detection algorithm over all files present in that folder.</p>
 <p>I noticed that it is necessary to pass to the <em>ODFrameGenerator</em> a file expression like /home/test/images/*.jpg. I don't really like this method since it is quite restrictive and not intuitive to call. I will add also a function using <b>boost filesystem</b> to iterate over all files which are OpenCV supported images, using as input a path name. I added in the cmake the two new examples with a custom option and tested them successfully.</p>
-<p>The next step will be to add the functionality previously described to the frame generator; I will also add the possibility to use standard containers as input sources in roder to be able to use arrays, vectors and lists for example. </p>
+<p>The next step will be to add the functionality previously described to the frame generator; I will also add the possibility to use standard containers as input sources in roder to be able to use arrays, vectors and lists for example.</p>
+<h2>Face detection 2 06/06/15</h2>
+<p>After talking with Kripa I found out that the CPU cascade detector (the detector used to detect faces) was already rpesent n the library; so only the gpu version had to be added. This implies to create in the library a new gpu folder containing all gpu modules which should be built only if support is present.</p>
+<p>To do this I created a separate gpu folder which contains for now a detector folder with the same structure as the external one. Everything defined here should be in the <b><a class="el" href="namespaceod_1_1gpu.html">od::gpu</a>::</b> namespace and each class should have the same name as the cpu version class. It is also a good habit to first create a common interface for the <b>CPU</b> and <b>GPU</b> version in order to be able to dinamically allocate objects of both types.</p>
+<p>To grasp better the meaning I implemented the <b>cascade detector</b> as follows:</p>
+<p>Both detectors derive already from the same class so there is no need for an additional interface</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span>ODCascadeDetector : <span class="keyword">public</span> ODDetector2D</div>
+</div><!-- fragment --><p>Each class has a different detector member:</p>
+<p>GPU </p>
+<div class="fragment"><div class="line">cv::Ptr&lt;cv::cuda::CascadeClassifier&gt; haar_cascade_;</div>
+</div><!-- fragment --><p>CPU </p>
+<div class="fragment"><div class="line">shared_ptr&lt;cv::CascadeClassifier&gt; haar_cascade_;</div>
+</div><!-- fragment --><p>This way we can do the following when using the detectors:</p>
+<div class="fragment"><div class="line">boost::shared_ptr&lt;od::ODDetector2D&gt; detector;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordflow">if</span>(gpu)</div>
+<div class="line">{</div>
+<div class="line">  detector = boost::make_shared&lt;od::gpu::g2d::ODCascadeDetector&gt;(argv[1]);</div>
+<div class="line">}<span class="keywordflow">else</span>{</div>
+<div class="line">  detector = boost::make_shared&lt;od::g2d::ODCascadeDetector&gt;(argv[1]);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>There were three possible solutions to how to impement gpu in the library:</p>
+<ul>
+<li>Add in the constructor a flag to decide the <b>CPU</b> / <b>GPU</b> mode. This mixes up gpu and cpu code in the same class and changing anything becomes more and more difficult</li>
+<li>Create two separate classes with dfferent names, one for each type. This fixes the previous issue but moving from one version to the other can be hard</li>
+<li>Create a common interface and have the same class imlemented in different namespaces. Clean solution which has been adopted.</li>
+</ul>
+<p>I removed the previous facedetector classes which I had added and used the new ones in the examples which I had previoulsy created. I also used the new viewer in all examples and fixed the build of the different examples to be independent and clean in the <em>CMake</em>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
