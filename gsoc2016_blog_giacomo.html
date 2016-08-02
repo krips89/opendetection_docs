@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <li><b>Task 9</b> - small task - merge other gsoc16 contributions : Merge changes from other contribution of GSOC. Other projects will be using existing APIs. There might me need to make small changes to fit to the changes made in this project</li>
 <li><b>Task 10</b> - moderate task - deb packaging : Create an automated way to generate a deb file for the library so it can be installed through debian packaging system.</li>
 </ul>
-<h2>Fix 3rd party dependencies 12/05/15</h2>
+<h2>Fix 3rd party dependencies 12/05/16</h2>
 <p>The library has some dependencies inserted as source code into the 3rdparty folder; these are pugixml and SiftGPU (and maybe others which will come later). There is also the dependency of svmlight, but this is not mandatory so it will be added as external dependency; if the library is present on the system all the depending libraries will be built.</p>
 <p>In general its a bad idea to integrate external source code into a library since you can't have update versions which maybe fix bugs etc.. and you have to take care of licenses. To fix this issue I removed the two folders (<b>pugixml</b> and <b>SiftGPU</b>) and added the git repositories of these two libraries as submodules. This way, when a user is downloading the opendetection library, he will also download the lates version of the two libraries. One could argue that the API of the libraries could change, but it is possible to checkout a fixed version in order to avoid these issues.</p>
 <ul>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <li><b>Pugixml</b> is a bit more tricky since it has no cmake file; it contains a Make file which produces a test executable but no library. The library can be easily built since we have just two include files and one .cpp file. To fix the issue I created a separate pugixml_build folder with a simple custom cmake which builds the library. This way we can just add that folder as add_subdirectory and directly export the newly compile <b>libpugixml.so</b> library.</li>
 <li><b>Svmlight</b> will be inserted in the system with a find_package or something similar and a custom <b>WITH_SVMLIGHT</b> cmake flag. These steps will come shortly; we will just leave the svmlight binding.</li>
 </ul>
-<h2>Refactoring file structure 13/05/15</h2>
+<h2>Refactoring file structure 13/05/16</h2>
 <p>I started to move files in appropriate folders and to fix the "Main" <em>CmakeLists.txt</em> file. I renamed the ODconfig.h.in file to od_config.h and moved it into the cmake folder for now. Then I moved the opendetection.cpp source file away from the root (not nice to have source files in the root of a library) and added it as separate app in a new version folder which builds the od_version executable.</p>
 <p>I fixed the <b>OD_ADD_EXAMPLE</b> macro adding the <b>INCLUDE</b> argument to include specific headers and used it in the <em>od_version</em> app. A separate cmake file has benn created to include all MACROS, but I have still to check if it is possible to add ordering between include cmake statements since there are some dependencies between the files. I separated the <b>OD_CMAKE_DIR</b> from <b>CMAKE_MODULE_PATH</b> in order to have a clear struture and to not mix up folders; the files in the cmake folder have also been renamed to have a common naming scheme.The next step will involve separating source and header files in appropriate folders and adding them in the cmake without explicitly naming them to avoid problems when renaming files in the library.</p>
 <p>The next huge step consisted in refactoring common, detectors and example folders to have a common standard file structure. This is usually built having in each folder the following subflders/files:</p>
@@ -198,8 +198,8 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 </ul>
 </li>
 </ul>
-<p>The new structure compiles fines except for three examples which have a linker bug (undefined reference to `vtable for <a class="el" href="classod_1_1g3d_1_1_o_d_c_a_d_detect_trainer3_d_global.html" title="Training class for the detector ODCADDetector3DGlobal. ">od::g3d::ODCADDetectTrainer3DGlobal</a>' ) which I am trying to resolve. I fixed a bit the source code of all the examples removing unnecessary includes, fixing namespaces, maintaining a common interface and avoiding dynamic memory allocation where possible. The next step after fixing the linker bug will be to fix the install paths for includes and libs.</p>
-<h2>Include structure and install target 23/05/15</h2>
+<p>The new structure compiles fines except for three examples which have a linker bug (undefined reference to `vtable for od::g3d::ODCADDetectTrainer3DGlobal' ) which I am trying to resolve. I fixed a bit the source code of all the examples removing unnecessary includes, fixing namespaces, maintaining a common interface and avoiding dynamic memory allocation where possible. The next step after fixing the linker bug will be to fix the install paths for includes and libs.</p>
+<h2>Include structure and install target 23/05/16</h2>
 <p>I fixed the linking error; it came from a wrong variable name in a cmake file which specified some source files which were not compiled and so the linking error. I split simple_ransac_detection in src and include and reinserted it in local2D detectors since it is used only there. The source files are just added to the local2D library and compiled together.</p>
 <p>Next I moved to fix the install target in the cmake. In our case, since we have already a clean structure of the include folders which we want to maintain we can directly copy the include folders of each module (detectors and common) into the include folder specified by <em>CMAKE_INSTALL_PREFIX</em> . We just need to create an upper folder called od-$VERSION to avoid conflicts with different library versions on the same machine. The clean include structure allows also to remove the explicit single include files from the install targets and allows to use directly the cmake command</p>
 <div class="fragment"><div class="line">install(DIRECTORY ${DETECTORS_INCLUDE_DIR}/od DESTINATION ${OD_INSTALL_INCLUDE_DIR})</div>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <li>I modified the frame generator template to have as parameter generic clouds and not only pointrgba point clouds</li>
 </ul>
 <p>After this I started to fix the detectors which I am still working on. The first class which has bee updated is the <em>ODHOGDetector</em> which had also a lot of naming issues since it used a different naming style. There are stll some function which I dislike, for example the parsing methods. They are mainly based on creating a fake argc,argv couple of variables and the parsing them. This has to be removed in favor of a better and newer parsing library as the one included in boost. This will be one of the first steps which I will do as soon as I finished the basic refactoring step.</p>
-<h2>Code refactoring 2 07/06/15</h2>
+<h2>Code refactoring 2 07/06/16</h2>
 <p>The first code refactoring phase terminated today, since I finished to review a bit all files; the main steps have been:</p>
 <ul>
 <li>moving around code in order to have implementations in the cpp files to reduce multiple compilation time, and declarations in .h files.</li>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <li>removed standard namespace and opencv namespace to avoid name clashing</li>
 <li>refactored the whole simple ransac file folder which was outside of the namespace</li>
 <li>used a common coding style through all files which is fundamental</li>
-<li>I moved the <b>ODDetectorMultiAlgo.h</b> and <b>ODDetectorMultiAlgo.cpp</b> files into <a class="el" href="_o_d_detector_multi_algo_8hpp_source.html">ODDetectorMultiAlgo.hpp</a> since I made the classes template to avoid having the explicit <b>Pcl::PointXYZRGBA</b> type since it was using <a class="el" href="_o_d_c_a_d_detector3_d_global_8hpp_source.html">ODCADDetector3DGlobal.hpp</a> which already defined template classes. The new file is situated in the impl folder in detectors to maintain the usual include structure. Now, since the default vale has been removed for the template classes, the type has to be specified when the class is instantiated which can been seen in the examples.</li>
+<li>I moved the <b>ODDetectorMultiAlgo.h</b> and <b>ODDetectorMultiAlgo.cpp</b> files into ODDetectorMultiAlgo.hpp since I made the classes template to avoid having the explicit <b>Pcl::PointXYZRGBA</b> type since it was using ODCADDetector3DGlobal.hpp which already defined template classes. The new file is situated in the impl folder in detectors to maintain the usual include structure. Now, since the default vale has been removed for the template classes, the type has to be specified when the class is instantiated which can been seen in the examples.</li>
 </ul>
 <p>Missing parts and next steps:</p>
 <ul>
@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <li>Use shared pointer where normal pointer are used. We have to decide if we want to use boost or stds shared pointers since pcl is using the first version. The second would be better so we would have everything which is possible using std and then when pcl moves toward std shared pointer we move also the rest of the code to that.</li>
 <li>Remove where possible the argc,argv parsing methods using standard ones.</li>
 </ul>
-<h2>Shared Pointers 10/06/15</h2>
+<h2>Shared Pointers 10/06/16</h2>
 <p>The following step took quite a bit in order to have everything work well. Until now the library was using normal C++ pointer created with new and then deleted when not used anymore. This can lead to bad habits of forgetting to delete pointers, causing memory leaks. To avoid this its always good to use safe pointers which get deallocated as soon as they are not referenced my anyone anymore. Safe pointers are called <b>shared_ptr</b> in C++ and were intially implemented in the <em>Boost</em> library; then, after C++11, they where also inserted in the standard in the <em>std::</em> namespace. Substituting all pointers n the library was quite a complex task for different reasons:</p>
 <ul>
 <li>Opendetection uses quite a lot the <em>Pcl</em> library. This library is still using the <b>boost::shared_ptr</b> implementation instead of the <b>std::shared_ptr</b> implementation. The two <b>shared_ptr</b> are not compatible and so a big issue arises. Should we use the first or second implementation? We should use the second solution since it relies on the standard, but we can't since <em>Pcl</em> still uses the first implementation. While <em>Pcl</em> moves to the <em>std::</em> solution we need to use the <em>boost</em> namespace, so in order to have the library compatible with both implementations, beeing able to switch from one to the other, I added a simple header file which switches between the two shared pointer types. This way as soon as <em>Pcl</em> moves to the <em>std::</em> we can also switch by just setting a variable in the cmake. The variable is called <b>WITH_BOOST_SHARED_PTR</b> ad is set to on by default so that we use <em>boost::shared_ptr</em> for now.</li>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <li>It is important to remove all delete which are around the code since <b>shared_ptr</b> automatically destroy the pointed objects in the destructor if not referenced anymore.</li>
 </ul>
 <p>While restructuring the code I also fixed again some coding style issues, but I still have to go through the code a few more times in order to finish fixing everything. The next step is as previously mentioned, to check the compilation with the svmlight option.</p>
-<h2>Cmake improvments 20/06/15</h2>
+<h2>Cmake improvments 20/06/16</h2>
 <p>I created a <b>FindOD.cmake</b> which can be used by other libraries to find the include directories path, the library path and the library names. The variables which get set are:</p>
 <ul>
 <li>OD_INCLUDE_DIRS</li>
@@ -257,7 +257,7 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <p>I added then an <b>uninstall</b> target to delete all the installed files if necessary. This custom target is standard and can be found easily on the internet.</p>
 <p>Another important missing thing was the creation of a .deb package which can be useful to install the library on other systems. This package has been created using the <b>Cpack</b> utility provided by cmake. By just setting some basic variables it is possible to create e complete .deb file which can then be installed using the usual <em>dpkg -i package.deb</em> command.</p>
 <p>All files in the library have been renamed according to a common scheme which consists in a Prefix "OD" followed by the first charachter of the file name uppercase.</p>
-<h2>Templates and Windows compilation 27/06/15</h2>
+<h2>Templates and Windows compilation 27/06/16</h2>
 <p>To improve compilation time of projects using the <b>OpenDetection</b> library I decided to precompile all the templates for the most common types. In this case almost all templates depend on <em>pcl</em> point types. The most commonly used point type for which I precompiled the library are:</p>
 <ul>
 <li><em>pcl::PointXYZ</em></li>
@@ -267,13 +267,13 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <p>It is important to create for each .hpp header file containing the templates a .cpp file in which templates are instantiated with the different types. Explicit template instantiation is done by just writing <em>template</em> followed by the template declaration with the instantiated type. The most important part is to insert in the header file the same declaration with the <em>extern</em> keyword at the beginning. This informs the compiler that the defined symbol is already present in another compilation unit and that it can be found at linking time. Without this the compiler will just reinstantiate the templates and recompile them since it has no knowledge about templates instantiated and compiled in other compilation units.</p>
 <p>I then fixed all the linking in the whole library since there where some useless linked libraries in order to speed up even more the compilation.</p>
 <p>After that I tested compilation of the library under Windows, but without success. There have been several issues which are ut of the Open Deteciton library. I tested compilation using <b>Visual Studio 2015</b> and <b>MinGW</b>. Pcl has been installed by using the prebuilt version while opencv has to be built manually since <em>opencv_contrib</em> is necessary while not present in the prebuilt binaries. Building opencv3 with visual studio and cuda is not possible at the moment since cuda 7.5 is not compatible with visual studio 2015, so version 8 is necessary which will be available soon. MinGW is also not usable since compilation of opencv3 with cuda is disabled as flagged as incompatible by opencv.</p>
-<h2>Face detection 31/06/15</h2>
+<h2>Face detection 31/06/16</h2>
 <p>To test the new cmake and code structure I <b>implemented face detection</b> (not recognition which is already available). Face detection is implemented in <em>OpenCV</em> both in <b>CPU</b> mode and in <b>GPU</b> mode (using <b>CUDA</b>).</p>
 <p>I created an interface which is using the <em>ODDetector2D</em> interface to use both <b>CPU</b> and <b>GPU</b> mode based on a parameter passed in the constructor. <b>GPU</b> mode is only available if the library was built with <b>GPU</b> support (using the <em>WITH_GPU</em> flag in the cmake file).</p>
 <p>To test the new detector I created two examples; the first one is <em>od_face_detecor_cam.cpp</em> which uses the first found webcam to detect faces; the second example is called <em>od_face_detector_files.cpp</em> which uses a path to a file folder to execute the face detection algorithm over all files present in that folder.</p>
 <p>I noticed that it is necessary to pass to the <em>ODFrameGenerator</em> a file expression like /home/test/images/*.jpg. I don't really like this method since it is quite restrictive and not intuitive to call. I will add also a function using <b>boost filesystem</b> to iterate over all files which are OpenCV supported images, using as input a path name. I added in the cmake the two new examples with a custom option and tested them successfully.</p>
 <p>The next step will be to add the functionality previously described to the frame generator; I will also add the possibility to use standard containers as input sources in roder to be able to use arrays, vectors and lists for example.</p>
-<h2>Face detection 2 06/06/15</h2>
+<h2>Face detection 2 06/07/16</h2>
 <p>After talking with Kripa I found out that the CPU cascade detector (the detector used to detect faces) was already rpesent n the library; so only the gpu version had to be added. This implies to create in the library a new gpu folder containing all gpu modules which should be built only if support is present.</p>
 <p>To do this I created a separate gpu folder which contains for now a detector folder with the same structure as the external one. Everything defined here should be in the <b><a class="el" href="namespaceod_1_1gpu.html">od::gpu</a>::</b> namespace and each class should have the same name as the cpu version class. It is also a good habit to first create a common interface for the <b>CPU</b> and <b>GPU</b> version in order to be able to dinamically allocate objects of both types.</p>
 <p>To grasp better the meaning I implemented the <b>cascade detector</b> as follows:</p>
@@ -300,9 +300,87 @@ $(document).ready(function(){initNavTree('gsoc2016_blog_giacomo.html','');});
 <li>Create a common interface and have the same class imlemented in different namespaces. Clean solution which has been adopted.</li>
 </ul>
 <p>I removed the previous facedetector classes which I had added and used the new ones in the examples which I had previoulsy created. I also used the new viewer in all examples and fixed the build of the different examples to be independent and clean in the <em>CMake</em>.</p>
-<h2>Visualizer update 11/06/15</h2>
+<h2>Visualizer update 11/07/16</h2>
 <p>To cover all examples and to have a more versatile viewer I added today an interface so add and remove text, clouds and added some improvments to be able to have multiple clouds in the same viewer at the same time. There is still some testing needed. I also added as usual all the template precompilation for the common PCL types.</p>
-<p>The next step consists in adding as stated before the std::containers to the frame generator class and then have a look if there are some modules to move to the gpu folder or maybe add some new methods there. </p>
+<p>The next step consists in adding as stated before the std::containers to the frame generator class and then have a look if there are some modules to move to the gpu folder or maybe add some new methods there.</p>
+<h2>Modular build 15/07/16</h2>
+<p>Looking at the <em>PCL</em> and <em>OpenCV</em> libraries I noticed how the libraries are subdivided into modules. I understood then the importance of having this structure also in the OD library and so started to change a bit the structure, expecially the <em>Cmake</em> structure, to support such a feature. With the new changes now each detector is a separate module which can be built or not as also gpu. One issue was that some modules might have dependencies on other modules and can be built only if a specific module was built. For example the misc detector can be only built if other detectors where built.</p>
+<p>To overcome this issue I found that you can specify targets in <b>IF</b> statments in <em>CMake</em>. This allowas to check if a specific module was built and in case continue with the build process. It the specific module was not built, an error message is displayed explaining which module is missing. The if statment needs the <b>TARGET</b> statment in fron of the moduel in order to search in the built targets. An example is the following:</p>
+<div class="fragment"><div class="line"><span class="keywordflow">if</span>(BUILD_MISC_DETECTION)</div>
+<div class="line">    <span class="keywordflow">if</span>(TARGET od_global_image_detector AND TARGET od_pointcloud_global_detector)</div>
+<div class="line">      set(SOURCES</div>
+<div class="line">          <span class="stringliteral">&quot;detection/ODDetectorMultiAlgo.cpp&quot;</span></div>
+<div class="line">          )</div>
+<div class="line"></div>
+<div class="line">      include_directories(${DETECTORS_IMPL_DIR})</div>
+<div class="line">      include_directories(${DETECTORS_INCLUDE_DIR})</div>
+<div class="line">      include_directories(${COMMON_INCLUDE_DIR})</div>
+<div class="line">      include_directories(${CMAKE_3RDPARTY_DIR}/svmlightlib/)</div>
+<div class="line">      include_directories(${PCL_INCLUDE_DIRS})</div>
+<div class="line"></div>
+<div class="line">      OD_ADD_LIBRARY(<span class="stringliteral">&quot;${SUBSYS_NAME}&quot;</span> SRCS ${SOURCES} LINK_WITH ${SUBSYS_DEPS})</div>
+<div class="line"></div>
+<div class="line">  <span class="keywordflow">else</span>()</div>
+<div class="line">    message(&quot;!!! BUILD_MISC_DETECTION is set to on but BUILD_GLOBAL_2D_DETECTION and BUILD_GLOBAL_3D_DETECTION is necessary to build BUILD_MISC_DETECTION&quot;)</div>
+<div class="line">  endif(TARGET od_global_image_detector AND TARGET od_pointcloud_global_detector)</div>
+</div><!-- fragment --><p>As you can see we need to have the global_image_detector and the pointcloud_global_detector in order to build the misc module, along with the option to build the misc module. If the <b>IF</b> statment fails an error message is displayed asking to build those missing modules. The same structure has been adde to all examples so that the correct examples are automatically built depending on the built modules. it is important to notice the repeated <b>include_directories</b> for each example. Its true that one is enough for all the built targets in that file, but with this modular built its not possible to know in advance which examples will be built. Also it is not nice to include everything at the beginning since this will only slow down compilation and make the code less readable since it covers up dependencies of example-&gt;includes.</p>
+<p>I also built the system on lniux 16.04 with gcc 5.3; I had some initial issues but also those were fixed. I will make a blogpost about them next week since some errors where quite interesting.</p>
+<h2>Modular build 2 and new interface for GPU 22/07/16</h2>
+<p>After discussing with my mentor, I did some changes to the code.</p>
+<p>The first new feature is that svmlight is optional, even if it comes as subdependency with the library for free. I added an <b>WITH_SVMLIGHT</b> option in the CMake to make it optional. Automatically all the dependand source files will be excluded (they should be the one using hog, the miscdetector and the depending examples).</p>
+<p>The second change is that I created a separate option Cmake file to set and create all options and I added a new option to show or remove compilation warnings.</p>
+<p>The third change is a major change composed by two parts. The first one involves changing the interface of the <b>ODCascadeDetector</b> to have a simple interface for the users. I changed it by creating an interface called <b>ODCascadeDetector</b> which derives from <b>ODDetector2D</b> so that we can use it in all the containers. This class contains a shared pointer of a common interface, called <b>ODCascadeDetectorInterface</b>. Both the GPU and the CPU version of the <b>ODCascadeDetector</b> are called the same, <b>ODCascadeDetectorImpl</b>, but are in different namespaces and modules. This way I maintained the code separated and easy to maintain. In the <b>ODCascadeDetector</b> class, the constructor checks the first parameter and builds accordingly the correct object. Also there is a <b>Pragma</b> to check that the lirbary was compiled with GPU support.</p>
+<div class="fragment"><div class="line">    ODCascadeDetector::ODCascadeDetector(<span class="keywordtype">bool</span> gpu, <span class="keyword">const</span> std::string &amp; trainer, <span class="keyword">const</span> std::string &amp; trained_data_location, <span class="keywordtype">double</span> scale_factor, <span class="keywordtype">int</span> min_neighbors, <span class="keywordtype">int</span> flags, </div>
+<div class="line">                                         <span class="keyword">const</span> cv::Size &amp; min_size, <span class="keyword">const</span> cv::Size &amp; max_size)</div>
+<div class="line">    {</div>
+<div class="line">      <span class="keywordflow">if</span>(gpu){</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;creating gpu cascade detector&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="preprocessor">#if WITH_GPU</span></div>
+<div class="line"><span class="preprocessor"></span><span class="preprocessor">  #ifdef WITH_BOOST_SHARED_PTR</span></div>
+<div class="line"><span class="preprocessor"></span>      cascade_detector_ = shared_ptr&lt;od::gpu::g2d::ODCascadeDetectorImpl&gt;(<span class="keyword">new</span> od::gpu::g2d::ODCascadeDetectorImpl(trainer, trained_data_location, scale_factor, min_neighbors, flags, min_size, max_size));</div>
+<div class="line"><span class="preprocessor">  #else</span></div>
+<div class="line"><span class="preprocessor"></span>      cascade_detector_ = make_shared&lt;od::gpu::g2d::ODCascadeDetectorImpl&gt;(trainer, trained_data_location, scale_factor, min_neighbors, flags, min_size, max_size);</div>
+<div class="line"><span class="preprocessor">  #endif</span></div>
+<div class="line"><span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor"></span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Error !! GPU CascadeDetector has not been compiled. Recompile with WITH_GPU.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">        exit(-1);</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>      }</div>
+<div class="line">      <span class="keywordflow">else</span> {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;creating cpu cascade detector&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="preprocessor">#ifdef WITH_BOOST_SHARED_PTR</span></div>
+<div class="line"><span class="preprocessor"></span>       cascade_detector_ = shared_ptr&lt;ODCascadeDetectorImpl&gt;(<span class="keyword">new</span> ODCascadeDetectorImpl(trainer, trained_data_location, scale_factor, min_neighbors, flags, min_size, max_size));</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor"></span>       cascade_detector_ = make_shared&lt;ODCascadeDetectorImpl&gt;(trainer, trained_data_location, scale_factor, min_neighbors, flags, min_size, max_size);</div>
+<div class="line"><span class="preprocessor">#endif    </span></div>
+<div class="line"><span class="preprocessor"></span>      }</div>
+<div class="line">    }</div>
+</div><!-- fragment --><p>The second main change was to create the same interface for the <b>ODFeatureDetector2D</b> which could create gpu detectors or cpu ones. I did the same interface as before creating <b>ODFeatureDetector</b>, <b>ODFeatureDetector2D</b>, <b>ODFeatureDetectorInterface</b>. The constructor switches the passed parameter and based on the type allocates the correct feature detector, cpu or gpu. Also the gpu part is in the gpu module to maintain the advantages described before. The only small drawback of this structure is that the common module and the gpu_common module have a circular dependency on the include files, so we have to set the <b>include_directories</b> statment outside of the two modules. I do this in the <b>ODDependency.cmake</b> file.</p>
+<p>Obviously I had to change all the examples to adapt to this new structure, but that was not so hard, while the new interface was quite tricky to be created in a clean way.</p>
+<h2>Naming convention and build example 29/07/16</h2>
+<p>I changed the nameing convention in the library to adapt it to a more C++ style. Before all file names started with <b>OD</b>, along with all classes and types. This is useful in C code since you are laking namespaces, but in C++ it makes no sense. I changed everything to the new style and fixed some compilation errors which arose.</p>
+<p>I also changed the <b>WITH_BOOST_SHARED_PTR</b> to <b>WITH_STD_SHARED_PTR</b> since when you include the file in your own project the default will be boost.</p>
+<p>I created an example in apps/buildExample which shows how to create your own project using the opendetection lirbary.</p>
+<div class="fragment"><div class="line"><span class="preprocessor"># Example on how to build a project using the OpenDetection Library</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line">cmake_minimum_required(VERSION 2.8)</div>
+<div class="line">project(viewer)</div>
+<div class="line"></div>
+<div class="line">find_package(OD REQUIRED)</div>
+<div class="line">find_package(PCL REQUIRED)</div>
+<div class="line">find_package(OpenCV REQUIRED)</div>
+<div class="line"></div>
+<div class="line">include_directories(${OD_INCLUDE_DIRS})</div>
+<div class="line">include_directories(${PCL_INCLUDE_DIRS})</div>
+<div class="line">include_directories(${OpenCV_INCLUDE_DIRS})</div>
+<div class="line"></div>
+<div class="line">link_directories(${OD_LIBRARY_PATH})</div>
+<div class="line"></div>
+<div class="line">add_executable(viewer VisualizationTest.cpp)</div>
+<div class="line">target_link_libraries(viewer ${OD_LIBRARIES} ${OpenCV_LIBS} ${PCL_LIBRARIES})</div>
+</div><!-- fragment --><p>This shows that you can use the provided config file, which is created during instllation time, to find and include the lirbary. I am finishing now the Doxygen documentation which is missing in some parts of the lbirary and then i will finish to do also some template percompilation which I saw was missing. After that there is the need to integrate the other google summer of code Project.</p>
+<h2>Integrating the caffe gsoc project 02/08/16</h2>
+<p>I integrated the work from Abhishek, who did the other gsoc project in opendetection. I had to adapt the fiel structure and naming convention to the new struture and change some code to use shared pointers; there is still some work to do to adapt and clean the code which has many flaws, but thats something which should be done as part of the other gsoc project. Anyway I added two new options in the cmake: <b>WITH_CAFFE</b> and <b>WITH_GTKMM</b>; the first one enables to build the OD library with Caffe support, while the second one adds to caffe also the visualization part. If the flag <b>WITH_GPU</b> is added then the Caffe gpu part will be used. I also restructured a bit the cmake structure adding some more searated cmake files and fixed the naming on the cmake files as for the other files. THe only thing missing now is a bit of documentation and then everything should be done :) </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.6-->
