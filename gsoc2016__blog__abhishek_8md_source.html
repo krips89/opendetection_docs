@@ -2932,270 +2932,271 @@ $(document).ready(function(){initNavTree('gsoc2016__blog__abhishek_8md.html','')
 <div class="line"><a name="l02817"></a><span class="lineno"> 2817</span>&#160;<span class="stringliteral"></span></div>
 <div class="line"><a name="l02818"></a><span class="lineno"> 2818</span>&#160;<span class="stringliteral">b) Heat map generator using cnn ( will require time as its is quite research intensive part)</span></div>
 <div class="line"><a name="l02819"></a><span class="lineno"> 2819</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l02820"></a><span class="lineno"> 2820</span>&#160;<span class="stringliteral">\n</span></div>
-<div class="line"><a name="l02821"></a><span class="lineno"> 2821</span>&#160;<span class="stringliteral">Older sections of the blog{#oldBlog}</span></div>
-<div class="line"><a name="l02822"></a><span class="lineno"> 2822</span>&#160;<span class="stringliteral">===</span></div>
-<div class="line"><a name="l02823"></a><span class="lineno"> 2823</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l02824"></a><span class="lineno"> 2824</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l02825"></a><span class="lineno"> 2825</span>&#160;<span class="stringliteral">CNN based object localization and recognition for openDetection library  {#gsoc2016_blog_abhishek1}</span></div>
-<div class="line"><a name="l02826"></a><span class="lineno"> 2826</span>&#160;<span class="stringliteral">---</span></div>
-<div class="line"><a name="l02827"></a><span class="lineno"> 2827</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l02828"></a><span class="lineno"> 2828</span>&#160;<span class="stringliteral">  - [Link to Proposal](https://storage.googleapis.com/summerofcode-prod.appspot.com/gsoc/core_project/doc/1458909012_ProposalGSoC16.pdf?Expires=1463646545&amp;GoogleAccessId=summerofcode-prod%40appspot.gserviceaccount.com&amp;Signature=u8ENsakhMhWcA16h57rY8BzZ9M1NoUOxmRRUSJfSaEjJc%2Fce%2FoknY4K3%2FuQTJI3r0kuJF2P5WcwKYNOJd8zkIo6YDtbqQ5Be%2Bz1jXTbfsUGpN7UvQwElqKlAcAVcKxMPq1KkNpJFzPQhm8tDl9wYyFzoSnV1kLgpBMesbWV3vggt12PFo8IYkbpD4esd%2B9kHK64iNG5AykTJzL0CrMQcPK1a4WLrzBcgS8Dp2z327Ri8W1BtRC1SF4pveEmd6daAuRK3zfVkq8B7NNsvvk7x3QM2lg9WTlrFyTzDNOkp0k0cByusZ5fvZ20eQHbqmsKM8skE7XT0fX98xoiED8bauA%3D%3D) - [Link to GSoC2016 Project Page](https://summerofcode.withgoogle.com/projects/#5234791976796160)</span></div>
-<div class="line"><a name="l02829"></a><span class="lineno"> 2829</span>&#160;<span class="stringliteral">    </span></div>
-<div class="line"><a name="l02830"></a><span class="lineno"> 2830</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l02831"></a><span class="lineno"> 2831</span>&#160;<span class="stringliteral">**About me**</span></div>
-<div class="line"><a name="l02832"></a><span class="lineno"> 2832</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l02833"></a><span class="lineno"> 2833</span>&#160;<span class="stringliteral">I am a final year engineering student from India, pursuing Electrical and Electronics Engineering at Bits-Pilani Goa Campus. Since my first year at the college, I have been interested in the fields of Computer Vision, Machine Learning and Artificial Intelligence. I have completed my undergraduate thesis at Research and Division Labs of Tata Elxsi Pvt Ltd, on the topic &quot;Scene-understanding and object classification using neural networks for autonomous robot navigation&quot;. Over the tenure of engineering in the past three and a half years I have worked over a few projects, </span></div>
-<div class="line"><a name="l02834"></a><span class="lineno"> 2834</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l02835"></a><span class="lineno"> 2835</span>&#160;<span class="stringliteral">  - Using Weber Local Descriptors to match forensics sketeches with their image counterparts</span></div>
-<div class="line"><a name="l02836"></a><span class="lineno"> 2836</span>&#160;<span class="stringliteral">  - Implementing a new course, on biomedical image processing, which is supposed to be added to the college&#39;</span>s academic curriculum</div>
-<div class="line"><a name="l02837"></a><span class="lineno"> 2837</span>&#160;  - Vehicle detection and tracking</div>
-<div class="line"><a name="l02838"></a><span class="lineno"> 2838</span>&#160;  - Analysing haar-cascades on face detection application</div>
-<div class="line"><a name="l02839"></a><span class="lineno"> 2839</span>&#160;</div>
-<div class="line"><a name="l02840"></a><span class="lineno"> 2840</span>&#160;**Project**</div>
-<div class="line"><a name="l02841"></a><span class="lineno"> 2841</span>&#160;</div>
-<div class="line"><a name="l02842"></a><span class="lineno"> 2842</span>&#160;The project is revolved over integrating <span class="keywordtype">object</span> detection and classification module <span class="keyword">using</span> Convolutional Neural Networks. The following shows the basic components of the work to be completed during the term of Google Summer Of Code, 2016</div>
-<div class="line"><a name="l02843"></a><span class="lineno"> 2843</span>&#160;</div>
-<div class="line"><a name="l02844"></a><span class="lineno"> 2844</span>&#160;  - Implement a way to invoke Caffe open source library from the OpenDetection module with a user-friendly code based way ( <span class="keyword">this</span> will include a tinge of GUI support <span class="keywordflow">for</span> instant access)</div>
-<div class="line"><a name="l02845"></a><span class="lineno"> 2845</span>&#160;  - Implement open source guidance and codes <span class="keywordflow">for</span> state-of-the art <span class="keywordtype">object</span> localization problems(hypothesis generation) specifically based on selective-search and convolutional neural network (CNN) approaches. </div>
-<div class="line"><a name="l02846"></a><span class="lineno"> 2846</span>&#160;  - Adding a ground-truth <a class="code" href="classannotation.html">annotation</a> tool to the module with a graphical-user-interface support. </div>
-<div class="line"><a name="l02847"></a><span class="lineno"> 2847</span>&#160;  - Implementing <span class="keywordtype">short</span>, but effective modules like mixed-pooling, recurrent networks to the Convolutional Neural Networks Training dependent on the invoked caffe library. </div>
-<div class="line"><a name="l02848"></a><span class="lineno"> 2848</span>&#160;  - Adding context based learning CNNs. </div>
-<div class="line"><a name="l02849"></a><span class="lineno"> 2849</span>&#160;  - Adding user-interface to train and test CNN based classifiers and <span class="keywordtype">object</span> detectors.</div>
-<div class="line"><a name="l02850"></a><span class="lineno"> 2850</span>&#160;  - Adding documentation for the above</div>
-<div class="line"><a name="l02851"></a><span class="lineno"> 2851</span>&#160;</div>
-<div class="line"><a name="l02852"></a><span class="lineno"> 2852</span>&#160;All the completed and on-going work will be explained in detail here, as the process moves forward.</div>
-<div class="line"><a name="l02853"></a><span class="lineno"> 2853</span>&#160;</div>
-<div class="line"><a name="l02854"></a><span class="lineno"> 2854</span>&#160;Happy Coding!!!!</div>
-<div class="line"><a name="l02855"></a><span class="lineno"> 2855</span>&#160;</div>
-<div class="line"><a name="l02856"></a><span class="lineno"> 2856</span>&#160;</div>
-<div class="line"><a name="l02857"></a><span class="lineno"> 2857</span>&#160;Classification of digits in Mnist Library using CNN {#target1}</div>
-<div class="line"><a name="l02858"></a><span class="lineno"> 2858</span>&#160;---</div>
-<div class="line"><a name="l02859"></a><span class="lineno"> 2859</span>&#160;</div>
-<div class="line"><a name="l02860"></a><span class="lineno"> 2860</span>&#160;The classification example added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</div>
-<div class="line"><a name="l02861"></a><span class="lineno"> 2861</span>&#160;</div>
-<div class="line"><a name="l02862"></a><span class="lineno"> 2862</span>&#160;  - [Caffe Library](http:<span class="comment">//caffe.berkeleyvision.org/)</span></div>
-<div class="line"><a name="l02863"></a><span class="lineno"> 2863</span>&#160;  - [Using Caffe Library](https:<span class="comment">//abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/)</span></div>
-<div class="line"><a name="l02864"></a><span class="lineno"> 2864</span>&#160;  - [Branch of OpenDetection <span class="keywordflow">for</span> the below classifier](https:<span class="comment">//github.com/abhi-kumar/opendetection/tree/cnn_cpu)</span></div>
-<div class="line"><a name="l02865"></a><span class="lineno"> 2865</span>&#160;</div>
-<div class="line"><a name="l02866"></a><span class="lineno"> 2866</span>&#160;</div>
-<div class="line"><a name="l02867"></a><span class="lineno"> 2867</span>&#160;This example involves inclusion of three <span class="keyword">new</span> files:</div>
-<div class="line"><a name="l02868"></a><span class="lineno"> 2868</span>&#160;</div>
-<div class="line"><a name="l02869"></a><span class="lineno"> 2869</span>&#160;  - <span class="stringliteral">&quot;opendetection/examples/objectdetector/od_cnn_mnist_classification.cpp&quot;</span></div>
-<div class="line"><a name="l02870"></a><span class="lineno"> 2870</span>&#160;  - <span class="stringliteral">&quot;opendetection/detectors/global2D/detection/ODConvClassification.cpp&quot;</span></div>
-<div class="line"><a name="l02871"></a><span class="lineno"> 2871</span>&#160;  - <span class="stringliteral">&quot;opendetection/detectors/global2D/detection/ODConvClassification.h&quot;</span></div>
-<div class="line"><a name="l02872"></a><span class="lineno"> 2872</span>&#160;</div>
-<div class="line"><a name="l02873"></a><span class="lineno"> 2873</span>&#160;The Classification example has been implemented over the ODDetector2D <span class="keyword">class</span>. The <span class="keyword">new</span> ODConvClassification <span class="keyword">class </span>inherits from the abstract class ODDetector2D under the namespace od::g2d. LEts go over each file briefly.</div>
-<div class="line"><a name="l02874"></a><span class="lineno"> 2874</span>&#160;</div>
-<div class="line"><a name="l02875"></a><span class="lineno"> 2875</span>&#160;**ODConvClassification.h &amp; ODConvClassification.cpp files**</div>
-<div class="line"><a name="l02876"></a><span class="lineno"> 2876</span>&#160;</div>
-<div class="line"><a name="l02877"></a><span class="lineno"> 2877</span>&#160;The file involves inclusion of the following headers.</div>
-<div class="line"><a name="l02878"></a><span class="lineno"> 2878</span>&#160;@code </div>
-<div class="line"><a name="l02879"></a><span class="lineno"> 2879</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
-<div class="line"><a name="l02880"></a><span class="lineno"> 2880</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
-<div class="line"><a name="l02881"></a><span class="lineno"> 2881</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l02882"></a><span class="lineno"> 2882</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l02883"></a><span class="lineno"> 2883</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l02884"></a><span class="lineno"> 2884</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l02885"></a><span class="lineno"> 2885</span>&#160;</div>
-<div class="line"><a name="l02886"></a><span class="lineno"> 2886</span>&#160;<span class="preprocessor">#include &quot;caffe/caffe.hpp&quot;</span></div>
-<div class="line"><a name="l02887"></a><span class="lineno"> 2887</span>&#160;<span class="preprocessor">#include &quot;caffe/util/io.hpp&quot;</span></div>
-<div class="line"><a name="l02888"></a><span class="lineno"> 2888</span>&#160;<span class="preprocessor">#include &quot;caffe/blob.hpp&quot;</span></div>
-<div class="line"><a name="l02889"></a><span class="lineno"> 2889</span>&#160;</div>
-<div class="line"><a name="l02890"></a><span class="lineno"> 2890</span>&#160;<span class="keyword">using namespace </span>caffe;</div>
-<div class="line"><a name="l02891"></a><span class="lineno"> 2891</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l02892"></a><span class="lineno"> 2892</span>&#160;<span class="keyword">using namespace </span>cv;</div>
-<div class="line"><a name="l02893"></a><span class="lineno"> 2893</span>&#160;<span class="keyword">@end</span>code</div>
-<div class="line"><a name="l02894"></a><span class="lineno"> 2894</span>&#160;</div>
-<div class="line"><a name="l02895"></a><span class="lineno"> 2895</span>&#160;The first set involves the basic C++ headers, <span class="keywordflow">while</span> the last three headers are from the caffe library. The namespaces are</div>
-<div class="line"><a name="l02896"></a><span class="lineno"> 2896</span>&#160;  - caffe <span class="keywordflow">for</span> Caffe Modules</div>
-<div class="line"><a name="l02897"></a><span class="lineno"> 2897</span>&#160;  - std <span class="keywordflow">for</span> C++ Standard Modules</div>
-<div class="line"><a name="l02898"></a><span class="lineno"> 2898</span>&#160;  - cv <span class="keywordflow">for</span> C++ OpenCV Modules</div>
-<div class="line"><a name="l02899"></a><span class="lineno"> 2899</span>&#160;</div>
-<div class="line"><a name="l02900"></a><span class="lineno"> 2900</span>&#160;The variables involved are as follows</div>
-<div class="line"><a name="l02901"></a><span class="lineno"> 2901</span>&#160;@code</div>
-<div class="line"><a name="l02902"></a><span class="lineno"> 2902</span>&#160;<span class="keywordtype">string</span> weightModelFileLoaction;</div>
-<div class="line"><a name="l02903"></a><span class="lineno"> 2903</span>&#160;<span class="keywordtype">string</span> networkFileLocation;</div>
-<div class="line"><a name="l02904"></a><span class="lineno"> 2904</span>&#160;<span class="keywordtype">string</span> imageFileLocation; </div>
-<div class="line"><a name="l02905"></a><span class="lineno"> 2905</span>&#160;Datum strucBlob;</div>
-<div class="line"><a name="l02906"></a><span class="lineno"> 2906</span>&#160;BlobProto protoBlob;</div>
-<div class="line"><a name="l02907"></a><span class="lineno"> 2907</span>&#160;vector&lt;Blob&lt;float&gt;*&gt; inputBlob;</div>
-<div class="line"><a name="l02908"></a><span class="lineno"> 2908</span>&#160;<span class="keyword">@end</span>code</div>
-<div class="line"><a name="l02909"></a><span class="lineno"> 2909</span>&#160;</div>
-<div class="line"><a name="l02910"></a><span class="lineno"> 2910</span>&#160;  - <span class="stringliteral">&quot;weightModelFileLoaction&quot;</span> stores the location of the trained weight caffemodel file.</div>
-<div class="line"><a name="l02911"></a><span class="lineno"> 2911</span>&#160;  - <span class="stringliteral">&quot;networkFileLocation&quot;</span> stores the location of the CNN network file.</div>
-<div class="line"><a name="l02912"></a><span class="lineno"> 2912</span>&#160;  - <span class="stringliteral">&quot;imageFileLocation&quot;</span> stores the location of the image to be classified.</div>
-<div class="line"><a name="l02913"></a><span class="lineno"> 2913</span>&#160;  - <span class="stringliteral">&quot;strucBlob&quot;</span> keeps the details of the blob structure of the image to be compiled.</div>
-<div class="line"><a name="l02914"></a><span class="lineno"> 2914</span>&#160;  - <span class="stringliteral">&quot;protoBlob&quot;</span> creates an initial storage <span class="keywordflow">for</span> the input image to be converted from image file to Caffe Blob named <span class="stringliteral">&quot;inputBlob&quot;</span></div>
-<div class="line"><a name="l02915"></a><span class="lineno"> 2915</span>&#160;</div>
-<div class="line"><a name="l02916"></a><span class="lineno"> 2916</span>&#160;Lets go through the functions involved in the process.</div>
-<div class="line"><a name="l02917"></a><span class="lineno"> 2917</span>&#160;  - @code</div>
-<div class="line"><a name="l02918"></a><span class="lineno"> 2918</span>&#160;    <span class="keywordtype">void</span> ODConvClassification::setWeightModelFileLocation(<span class="keywordtype">string</span> location)</div>
-<div class="line"><a name="l02919"></a><span class="lineno"> 2919</span>&#160;    {</div>
-<div class="line"><a name="l02920"></a><span class="lineno"> 2920</span>&#160;      ODConvClassification::weightModelFileLoaction = location;</div>
-<div class="line"><a name="l02921"></a><span class="lineno"> 2921</span>&#160;    }</div>
-<div class="line"><a name="l02922"></a><span class="lineno"> 2922</span>&#160;</div>
-<div class="line"><a name="l02923"></a><span class="lineno"> 2923</span>&#160;    <span class="keywordtype">void</span> ODConvClassification::setNetworkModelFileLocation(<span class="keywordtype">string</span> location)</div>
-<div class="line"><a name="l02924"></a><span class="lineno"> 2924</span>&#160;    {</div>
-<div class="line"><a name="l02925"></a><span class="lineno"> 2925</span>&#160;      networkFileLocation = location;</div>
-<div class="line"><a name="l02926"></a><span class="lineno"> 2926</span>&#160;    }</div>
-<div class="line"><a name="l02927"></a><span class="lineno"> 2927</span>&#160;</div>
-<div class="line"><a name="l02928"></a><span class="lineno"> 2928</span>&#160;    <span class="keywordtype">void</span> ODConvClassification::setImageFileLocation(<span class="keywordtype">string</span> location)</div>
-<div class="line"><a name="l02929"></a><span class="lineno"> 2929</span>&#160;    {</div>
-<div class="line"><a name="l02930"></a><span class="lineno"> 2930</span>&#160;      imageFileLocation = location;</div>
-<div class="line"><a name="l02931"></a><span class="lineno"> 2931</span>&#160;    } </div>
-<div class="line"><a name="l02932"></a><span class="lineno"> 2932</span>&#160;  </div>
-<div class="line"><a name="l02933"></a><span class="lineno"> 2933</span>&#160;    <span class="keywordtype">string</span> ODConvClassification::getWeightModelFileLocation()</div>
-<div class="line"><a name="l02934"></a><span class="lineno"> 2934</span>&#160;    {</div>
-<div class="line"><a name="l02935"></a><span class="lineno"> 2935</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;Weight Model File Location = &quot;</span> &lt;&lt; weightModelFileLoaction &lt;&lt; endl;</div>
-<div class="line"><a name="l02936"></a><span class="lineno"> 2936</span>&#160;      <span class="keywordflow">return</span> weightModelFileLoaction;</div>
-<div class="line"><a name="l02937"></a><span class="lineno"> 2937</span>&#160;    }</div>
-<div class="line"><a name="l02938"></a><span class="lineno"> 2938</span>&#160;    </div>
-<div class="line"><a name="l02939"></a><span class="lineno"> 2939</span>&#160;    <span class="keywordtype">string</span> ODConvClassification::getNetworkModelFileLocation()</div>
-<div class="line"><a name="l02940"></a><span class="lineno"> 2940</span>&#160;    {</div>
-<div class="line"><a name="l02941"></a><span class="lineno"> 2941</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;Network Model File Location = &quot;</span> &lt;&lt; networkFileLocation &lt;&lt; endl;</div>
-<div class="line"><a name="l02942"></a><span class="lineno"> 2942</span>&#160;      <span class="keywordflow">return</span> networkFileLocation;</div>
-<div class="line"><a name="l02943"></a><span class="lineno"> 2943</span>&#160;    }</div>
-<div class="line"><a name="l02944"></a><span class="lineno"> 2944</span>&#160;    </div>
-<div class="line"><a name="l02945"></a><span class="lineno"> 2945</span>&#160;    <span class="keywordtype">string</span> ODConvClassification::getImageFileLocation()</div>
-<div class="line"><a name="l02946"></a><span class="lineno"> 2946</span>&#160;    {</div>
-<div class="line"><a name="l02947"></a><span class="lineno"> 2947</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;Image File Location = &quot;</span> &lt;&lt; imageFileLocation &lt;&lt; endl;</div>
-<div class="line"><a name="l02948"></a><span class="lineno"> 2948</span>&#160;      <span class="keywordflow">return</span> imageFileLocation;</div>
-<div class="line"><a name="l02949"></a><span class="lineno"> 2949</span>&#160;    }</div>
-<div class="line"><a name="l02950"></a><span class="lineno"> 2950</span>&#160;    <span class="keyword">@end</span>code</div>
-<div class="line"><a name="l02951"></a><span class="lineno"> 2951</span>&#160;    These functions are uite <span class="keyword">self</span> explanatory. The first three functions are being used to <span class="keyword">get</span> the location of the reuired files, <span class="keywordflow">while</span> the rest are to retrieve these locations.</div>
-<div class="line"><a name="l02952"></a><span class="lineno"> 2952</span>&#160;</div>
-<div class="line"><a name="l02953"></a><span class="lineno"> 2953</span>&#160;  - @code <span class="keywordtype">void</span> ODConvClassification::setTestBlob(<span class="keywordtype">int</span> numChannels, <span class="keywordtype">int</span> imgHeight, <span class="keywordtype">int</span> imgWidth) <span class="keyword">@end</span>code This <span class="keyword">function</span> takes an input image and converts into a suitable format <span class="keywordflow">for</span> caffe libraries. @code</div>
-<div class="line"><a name="l02954"></a><span class="lineno"> 2954</span>&#160;      <span class="keywordflow">if</span> (!ReadImageToDatum(imageFileLocation, numChannels, imgHeight, imgWidth, &amp;strucBlob)) </div>
-<div class="line"><a name="l02955"></a><span class="lineno"> 2955</span>&#160;      {</div>
-<div class="line"><a name="l02956"></a><span class="lineno"> 2956</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Image File Not Found&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l02957"></a><span class="lineno"> 2957</span>&#160;        exit(0);</div>
-<div class="line"><a name="l02958"></a><span class="lineno"> 2958</span>&#160;      }</div>
-<div class="line"><a name="l02959"></a><span class="lineno"> 2959</span>&#160;      Blob&lt;float&gt;* dataBlob = <span class="keyword">new</span> Blob&lt;float&gt;(1, strucBlob.channels(), strucBlob.height(), strucBlob.width());    </div>
-<div class="line"><a name="l02960"></a><span class="lineno"> 2960</span>&#160;    <span class="keyword">@end</span>code This snippet reads the image, and creates a structure to save the input image as a blob.@code</div>
-<div class="line"><a name="l02961"></a><span class="lineno"> 2961</span>&#160;      <span class="keywordflow">if</span> (data.size() != 0) </div>
-<div class="line"><a name="l02962"></a><span class="lineno"> 2962</span>&#160;      {</div>
-<div class="line"><a name="l02963"></a><span class="lineno"> 2963</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; sizeStrucBlob; ++i)</div>
-<div class="line"><a name="l02964"></a><span class="lineno"> 2964</span>&#160;        {</div>
-<div class="line"><a name="l02965"></a><span class="lineno"> 2965</span>&#160;          protoBlob.set_data(i, protoBlob.data(i) + (uint8_t)data[i]);</div>
-<div class="line"><a name="l02966"></a><span class="lineno"> 2966</span>&#160;        }</div>
-<div class="line"><a name="l02967"></a><span class="lineno"> 2967</span>&#160;      }</div>
-<div class="line"><a name="l02968"></a><span class="lineno"> 2968</span>&#160;</div>
-<div class="line"><a name="l02969"></a><span class="lineno"> 2969</span>&#160;      dataBlob-&gt;FromProto(protoBlob);</div>
-<div class="line"><a name="l02970"></a><span class="lineno"> 2970</span>&#160;      inputBlob.push_back(dataBlob);</div>
-<div class="line"><a name="l02971"></a><span class="lineno"> 2971</span>&#160;    <span class="keyword">@end</span>code The snippet mentioned above converts the image from the initial(<span class="stringliteral">&quot;.png&quot;</span>) format to the blob format required by the caffe library.</div>
-<div class="line"><a name="l02972"></a><span class="lineno"> 2972</span>&#160;</div>
-<div class="line"><a name="l02973"></a><span class="lineno"> 2973</span>&#160;  - The net is initailized with the network parameters and trained weights using the following snippet. @code</div>
-<div class="line"><a name="l02974"></a><span class="lineno"> 2974</span>&#160;      Caffe::set_mode(Caffe::CPU);</div>
-<div class="line"><a name="l02975"></a><span class="lineno"> 2975</span>&#160;      Net&lt;<span class="keywordtype">float</span>&gt;  net(networkFileLocation, TEST);</div>
-<div class="line"><a name="l02976"></a><span class="lineno"> 2976</span>&#160;      net.CopyTrainedLayersFrom(weightModelFileLoaction); @endcode And the net is asked to move forward and present the probaility using the following snippet. @code</div>
-<div class="line"><a name="l02977"></a><span class="lineno"> 2977</span>&#160;const vector&lt;Blob&lt;<span class="keywordtype">float</span>&gt;*&gt;&amp; result =  net.Forward(inputBlob, &amp;type); @endcode This output vector, &quot;result&quot;, contains the probabilities for each of the classes, The class with the maximum probobiility or score is the classified class.</div>
-<div class="line"><a name="l02978"></a><span class="lineno"> 2978</span>&#160;</div>
-<div class="line"><a name="l02979"></a><span class="lineno"> 2979</span>&#160;**The CMake Changes**</div>
-<div class="line"><a name="l02980"></a><span class="lineno"> 2980</span>&#160;</div>
-<div class="line"><a name="l02981"></a><span class="lineno"> 2981</span>&#160;The od_mandatory_dependency.cmake file has been added a new line @code find_package( Caffe REQUIRED) @endcode And thus the inclusion of caffe include directory and caffe libraries. In the CMakeLists.txt file from detectors/global2D directory, the following snippet is added @code</div>
-<div class="line"><a name="l02982"></a><span class="lineno"> 2982</span>&#160;ADD_DEFINITIONS(</div>
-<div class="line"><a name="l02983"></a><span class="lineno"> 2983</span>&#160;    -std=c++11 </div>
-<div class="line"><a name="l02984"></a><span class="lineno"> 2984</span>&#160;  ${Caffe_DEFINITIONS}</div>
-<div class="line"><a name="l02985"></a><span class="lineno"> 2985</span>&#160;)</div>
-<div class="line"><a name="l02986"></a><span class="lineno"> 2986</span>&#160;@endcode This has been done to enable mode choice of caffe runtime, i.e., CPU or GPU, and in <span class="keyword">this</span> example CPU.</div>
-<div class="line"><a name="l02987"></a><span class="lineno"> 2987</span>&#160;</div>
-<div class="line"><a name="l02988"></a><span class="lineno"> 2988</span>&#160;</div>
-<div class="line"><a name="l02989"></a><span class="lineno"> 2989</span>&#160;**Usage**</div>
-<div class="line"><a name="l02990"></a><span class="lineno"> 2990</span>&#160;</div>
-<div class="line"><a name="l02991"></a><span class="lineno"> 2991</span>&#160;The example can be invoked <span class="keyword">using</span> the following command: (From the build folder)</div>
-<div class="line"><a name="l02992"></a><span class="lineno"> 2992</span>&#160;</div>
-<div class="line"><a name="l02993"></a><span class="lineno"> 2993</span>&#160;./examples/objectdetector/od_cnn_mnist_classification ../examples/objectdetector/Mnist_Classify/mnist.caffemodel ../examples/objectdetector/Mnist_Classify/lenet.prototxt ../examples/objectdetector/Mnist_Classify/1.png</div>
-<div class="line"><a name="l02994"></a><span class="lineno"> 2994</span>&#160;</div>
-<div class="line"><a name="l02995"></a><span class="lineno"> 2995</span>&#160;The example as shown above takes 3 arguments, the locations of the weight file, network file and the image.</div>
-<div class="line"><a name="l02996"></a><span class="lineno"> 2996</span>&#160;</div>
-<div class="line"><a name="l02997"></a><span class="lineno"> 2997</span>&#160;**Next up will be a simple CNN trainer example.**</div>
-<div class="line"><a name="l02998"></a><span class="lineno"> 2998</span>&#160;</div>
-<div class="line"><a name="l02999"></a><span class="lineno"> 2999</span>&#160;Happy Coding!!!! </div>
-<div class="line"><a name="l03000"></a><span class="lineno"> 3000</span>&#160;</div>
-<div class="line"><a name="l03001"></a><span class="lineno"> 3001</span>&#160;</div>
-<div class="line"><a name="l03002"></a><span class="lineno"> 3002</span>&#160;Training a classifier <span class="keywordflow">for</span> digits in Mnist Library <span class="keyword">using</span> CNN. Part 1 {#target2}</div>
-<div class="line"><a name="l03003"></a><span class="lineno"> 3003</span>&#160;---</div>
-<div class="line"><a name="l03004"></a><span class="lineno"> 3004</span>&#160;</div>
-<div class="line"><a name="l03005"></a><span class="lineno"> 3005</span>&#160;This particular inclusion presents a simple trainer in a most crude and easy way possible. The major requirements of CNN training <span class="keyword">using</span> caffe are</div>
-<div class="line"><a name="l03006"></a><span class="lineno"> 3006</span>&#160;  - Solver file</div>
-<div class="line"><a name="l03007"></a><span class="lineno"> 3007</span>&#160;  - Training Network file</div>
-<div class="line"><a name="l03008"></a><span class="lineno"> 3008</span>&#160;  - Image Dataset and a pointer to the Dataset</div>
-<div class="line"><a name="l03009"></a><span class="lineno"> 3009</span>&#160;</div>
-<div class="line"><a name="l03010"></a><span class="lineno"> 3010</span>&#160;</div>
-<div class="line"><a name="l03011"></a><span class="lineno"> 3011</span>&#160;The classification example added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</div>
-<div class="line"><a name="l03012"></a><span class="lineno"> 3012</span>&#160;</div>
-<div class="line"><a name="l03013"></a><span class="lineno"> 3013</span>&#160;  - [Caffe Library](http:<span class="comment">//caffe.berkeleyvision.org/)</span></div>
-<div class="line"><a name="l03014"></a><span class="lineno"> 3014</span>&#160;  - [Using Caffe Library](https:<span class="comment">//abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/)</span></div>
-<div class="line"><a name="l03015"></a><span class="lineno"> 3015</span>&#160;  - [Branch of OpenDetection <span class="keywordflow">for</span> the below classifier](https:<span class="comment">//github.com/abhi-kumar/opendetection/tree/cnn_cpu)</span></div>
-<div class="line"><a name="l03016"></a><span class="lineno"> 3016</span>&#160;</div>
-<div class="line"><a name="l03017"></a><span class="lineno"> 3017</span>&#160;</div>
-<div class="line"><a name="l03018"></a><span class="lineno"> 3018</span>&#160;This example involves inclusion of three <span class="keyword">new</span> files:</div>
-<div class="line"><a name="l03019"></a><span class="lineno"> 3019</span>&#160;</div>
-<div class="line"><a name="l03020"></a><span class="lineno"> 3020</span>&#160;  - <span class="stringliteral">&quot;opendetection/examples/objectdetector/od_cnn_mnist_train_simple.cpp&quot;</span></div>
-<div class="line"><a name="l03021"></a><span class="lineno"> 3021</span>&#160;  - <span class="stringliteral">&quot;opendetection/detectors/global2D/training/ODConvTrainer.cpp&quot;</span></div>
-<div class="line"><a name="l03022"></a><span class="lineno"> 3022</span>&#160;  - <span class="stringliteral">&quot;opendetection/detectors/global2D/training/ODConvTrainer.h&quot;</span></div>
-<div class="line"><a name="l03023"></a><span class="lineno"> 3023</span>&#160;</div>
-<div class="line"><a name="l03024"></a><span class="lineno"> 3024</span>&#160;**Invoking Training module of caffe**</div>
-<div class="line"><a name="l03025"></a><span class="lineno"> 3025</span>&#160;</div>
-<div class="line"><a name="l03026"></a><span class="lineno"> 3026</span>&#160;These lines invoke the trainer: </div>
-<div class="line"><a name="l03027"></a><span class="lineno"> 3027</span>&#160;@code</div>
-<div class="line"><a name="l03028"></a><span class="lineno"> 3028</span>&#160;      Caffe::set_mode(Caffe::CPU);</div>
-<div class="line"><a name="l03029"></a><span class="lineno"> 3029</span>&#160;      SGDSolver&lt;float&gt; s(solverLocation);</div>
-<div class="line"><a name="l03030"></a><span class="lineno"> 3030</span>&#160;      s.Solve();</div>
-<div class="line"><a name="l03031"></a><span class="lineno"> 3031</span>&#160;<span class="keyword">@end</span>code</div>
-<div class="line"><a name="l03032"></a><span class="lineno"> 3032</span>&#160;</div>
-<div class="line"><a name="l03033"></a><span class="lineno"> 3033</span>&#160;This snippet points to solver file, the solver file points to the network file. This network file points to the file which in turn points to the dataset.</div>
-<div class="line"><a name="l03034"></a><span class="lineno"> 3034</span>&#160;</div>
-<div class="line"><a name="l03035"></a><span class="lineno"> 3035</span>&#160;</div>
-<div class="line"><a name="l03036"></a><span class="lineno"> 3036</span>&#160;**Usage**</div>
-<div class="line"><a name="l03037"></a><span class="lineno"> 3037</span>&#160;</div>
-<div class="line"><a name="l03038"></a><span class="lineno"> 3038</span>&#160;The example can be invoked <span class="keyword">using</span> the following command: (From the build folder)</div>
-<div class="line"><a name="l03039"></a><span class="lineno"> 3039</span>&#160;</div>
-<div class="line"><a name="l03040"></a><span class="lineno"> 3040</span>&#160;./examples/objectdetector/od_cnn_mnist_train_simple ../examples/objectdetector/Mnist_Train/solver1.prototxt</div>
-<div class="line"><a name="l03041"></a><span class="lineno"> 3041</span>&#160;</div>
-<div class="line"><a name="l03042"></a><span class="lineno"> 3042</span>&#160;The only argument to be given is the solver file.</div>
-<div class="line"><a name="l03043"></a><span class="lineno"> 3043</span>&#160;</div>
-<div class="line"><a name="l03044"></a><span class="lineno"> 3044</span>&#160;**Next up will be a simple CNN trainer example with a graphical user interface <span class="keywordflow">for</span> the solver file.**</div>
-<div class="line"><a name="l03045"></a><span class="lineno"> 3045</span>&#160;</div>
-<div class="line"><a name="l03046"></a><span class="lineno"> 3046</span>&#160;Happy Coding!!!! </div>
-<div class="line"><a name="l03047"></a><span class="lineno"> 3047</span>&#160;</div>
-<div class="line"><a name="l03048"></a><span class="lineno"> 3048</span>&#160;</div>
-<div class="line"><a name="l03049"></a><span class="lineno"> 3049</span>&#160;Training a classifier <span class="keywordflow">for</span> digits in Mnist Library <span class="keyword">using</span> CNN. Part 2 {#target2_1}</div>
-<div class="line"><a name="l03050"></a><span class="lineno"> 3050</span>&#160;---</div>
-<div class="line"><a name="l03051"></a><span class="lineno"> 3051</span>&#160;</div>
-<div class="line"><a name="l03052"></a><span class="lineno"> 3052</span>&#160;This commit consists of the same simple trainer from previous commit, except <span class="keywordflow">for</span> the fact that it involves a graphical user <span class="keyword">interface </span>to select solver parameters,The classification exampled added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</div>
-<div class="line"><a name="l03053"></a><span class="lineno"> 3053</span>&#160;</div>
-<div class="line"><a name="l03054"></a><span class="lineno"> 3054</span>&#160;  - [Caffe Library](http:<span class="comment">//caffe.berkeleyvision.org/)</span></div>
-<div class="line"><a name="l03055"></a><span class="lineno"> 3055</span>&#160;  - [Using Caffe Library](https:<span class="comment">//abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/)</span></div>
-<div class="line"><a name="l03056"></a><span class="lineno"> 3056</span>&#160;  - [Branch of OpenDetection for the below classifier](https:<span class="comment">//github.com/abhi-kumar/opendetection/tree/cnn_cpu)</span></div>
-<div class="line"><a name="l03057"></a><span class="lineno"> 3057</span>&#160;  - [GTKMM](http:<span class="comment">//www.gtkmm.org/en/)</span></div>
-<div class="line"><a name="l03058"></a><span class="lineno"> 3058</span>&#160;</div>
-<div class="line"><a name="l03059"></a><span class="lineno"> 3059</span>&#160;Installing GTKMM Required: In the terminal of ubuntu, type the following</div>
-<div class="line"><a name="l03060"></a><span class="lineno"> 3060</span>&#160;@code  sudo apt-get install libglib2.0-dev libatk1.0* libpango1.0-dev libcairo2-dev gdk-pixbuf2.0-0 libsigc++-2.0-dev libgtk-3-dev libcairomm-1.0-dev libpangomm-1.4-dev libatkmm-1.6-dev libgtkmm-3.0-dev @endcode</div>
-<div class="line"><a name="l03061"></a><span class="lineno"> 3061</span>&#160;</div>
-<div class="line"><a name="l03062"></a><span class="lineno"> 3062</span>&#160;**Usage**</div>
-<div class="line"><a name="l03063"></a><span class="lineno"> 3063</span>&#160;</div>
-<div class="line"><a name="l03064"></a><span class="lineno"> 3064</span>&#160;From the build folder invoke:</div>
-<div class="line"><a name="l03065"></a><span class="lineno"> 3065</span>&#160;</div>
-<div class="line"><a name="l03066"></a><span class="lineno"> 3066</span>&#160;./examples/objectdetector/od_cnn_mnist_train_customSolver</div>
-<div class="line"><a name="l03067"></a><span class="lineno"> 3067</span>&#160;</div>
-<div class="line"><a name="l03068"></a><span class="lineno"> 3068</span>&#160;Note:</div>
-<div class="line"><a name="l03069"></a><span class="lineno"> 3069</span>&#160;  - The path to the solver, train network, snapshot have to be set inside examples/objectdetector/Mnist_Train folder for this alpha version.</div>
-<div class="line"><a name="l03070"></a><span class="lineno"> 3070</span>&#160;  - The GUI has a update button for every parameter. It is not necessary to press each one of them. They have been included for future, eg., when only one parameter from an existing solver need to be updated. This functionality has not been added</div>
-<div class="line"><a name="l03071"></a><span class="lineno"> 3071</span>&#160;  - After changing the parameters, press the &quot;Save&quot; button and then close the window using the &quot;x&quot; on the top just like closing any window in Ubuntu. A custom exit has not been added yet. </div>
-<div class="line"><a name="l03072"></a><span class="lineno"> 3072</span>&#160;</div>
-<div class="line"><a name="l03073"></a><span class="lineno"> 3073</span>&#160;</div>
-<div class="line"><a name="l03074"></a><span class="lineno"> 3074</span>&#160;**Next up will be a updates and additions to the GUI.**</div>
-<div class="line"><a name="l03075"></a><span class="lineno"> 3075</span>&#160;  - Adding a provision: if a solver file exists and the user wants to change only one parameters, it can be done</div>
-<div class="line"><a name="l03076"></a><span class="lineno"> 3076</span>&#160;  - Creation of CNN network using a simple GUI</div>
-<div class="line"><a name="l03077"></a><span class="lineno"> 3077</span>&#160;</div>
-<div class="line"><a name="l03078"></a><span class="lineno"> 3078</span>&#160;Happy Coding!!!!</div>
-<div class="line"><a name="l03079"></a><span class="lineno"> 3079</span>&#160;</div>
-<div class="line"><a name="l03080"></a><span class="lineno"> 3080</span>&#160;</div>
-<div class="line"><a name="l03081"></a><span class="lineno"> 3081</span>&#160;</div>
-<div class="line"><a name="l03082"></a><span class="lineno"> 3082</span>&#160;<div class="ttc" id="struct_node_html_aaa9e33aa02bd8bcd9282842aa799f2c3"><div class="ttname"><a href="struct_node.html#aaa9e33aa02bd8bcd9282842aa799f2c3">Node::nextLayer</a></div><div class="ttdeci">Node * nextLayer</div><div class="ttdef"><b>Definition:</b> <a href="node_8h_source.html#l00007">node.h:7</a></div></div>
-<div class="ttc" id="classannotation_html"><div class="ttname"><a href="classannotation.html">annotation</a></div><div class="ttdef"><b>Definition:</b> <a href="_o_d_annotation_8h_source.html#l00049">ODAnnotation.h:49</a></div></div>
+<div class="line"><a name="l02820"></a><span class="lineno"> 2820</span>&#160;<span class="stringliteral">c) Work to be integrated with Giacomo&#39;</span>s work and to be pushed to master.</div>
+<div class="line"><a name="l02821"></a><span class="lineno"> 2821</span>&#160;</div>
+<div class="line"><a name="l02822"></a><span class="lineno"> 2822</span>&#160;\n</div>
+<div class="line"><a name="l02823"></a><span class="lineno"> 2823</span>&#160;Older sections of the blog{#oldBlog}</div>
+<div class="line"><a name="l02824"></a><span class="lineno"> 2824</span>&#160;===</div>
+<div class="line"><a name="l02825"></a><span class="lineno"> 2825</span>&#160;</div>
+<div class="line"><a name="l02826"></a><span class="lineno"> 2826</span>&#160;</div>
+<div class="line"><a name="l02827"></a><span class="lineno"> 2827</span>&#160;CNN based <span class="keywordtype">object</span> localization and recognition <span class="keywordflow">for</span> openDetection library  {#gsoc2016_blog_abhishek1}</div>
+<div class="line"><a name="l02828"></a><span class="lineno"> 2828</span>&#160;---</div>
+<div class="line"><a name="l02829"></a><span class="lineno"> 2829</span>&#160;</div>
+<div class="line"><a name="l02830"></a><span class="lineno"> 2830</span>&#160;  - [Link to Proposal](https:<span class="comment">//storage.googleapis.com/summerofcode-prod.appspot.com/gsoc/core_project/doc/1458909012_ProposalGSoC16.pdf?Expires=1463646545&amp;GoogleAccessId=summerofcode-prod%40appspot.gserviceaccount.com&amp;Signature=u8ENsakhMhWcA16h57rY8BzZ9M1NoUOxmRRUSJfSaEjJc%2Fce%2FoknY4K3%2FuQTJI3r0kuJF2P5WcwKYNOJd8zkIo6YDtbqQ5Be%2Bz1jXTbfsUGpN7UvQwElqKlAcAVcKxMPq1KkNpJFzPQhm8tDl9wYyFzoSnV1kLgpBMesbWV3vggt12PFo8IYkbpD4esd%2B9kHK64iNG5AykTJzL0CrMQcPK1a4WLrzBcgS8Dp2z327Ri8W1BtRC1SF4pveEmd6daAuRK3zfVkq8B7NNsvvk7x3QM2lg9WTlrFyTzDNOkp0k0cByusZ5fvZ20eQHbqmsKM8skE7XT0fX98xoiED8bauA%3D%3D) - [Link to GSoC2016 Project Page](https://summerofcode.withgoogle.com/projects/#5234791976796160)</span></div>
+<div class="line"><a name="l02831"></a><span class="lineno"> 2831</span>&#160;    </div>
+<div class="line"><a name="l02832"></a><span class="lineno"> 2832</span>&#160;</div>
+<div class="line"><a name="l02833"></a><span class="lineno"> 2833</span>&#160;**About me**</div>
+<div class="line"><a name="l02834"></a><span class="lineno"> 2834</span>&#160;</div>
+<div class="line"><a name="l02835"></a><span class="lineno"> 2835</span>&#160;I am a <span class="keyword">final</span> year engineering student from India, pursuing Electrical and Electronics Engineering at Bits-Pilani Goa Campus. Since my first year at the college, I have been interested in the fields of Computer Vision, Machine Learning and Artificial Intelligence. I have completed my undergraduate thesis at Research and Division Labs of Tata Elxsi Pvt Ltd, on the topic <span class="stringliteral">&quot;Scene-understanding and object classification using neural networks for autonomous robot navigation&quot;</span>. Over the tenure of engineering in the past three and a half years I have worked over a few projects, </div>
+<div class="line"><a name="l02836"></a><span class="lineno"> 2836</span>&#160;</div>
+<div class="line"><a name="l02837"></a><span class="lineno"> 2837</span>&#160;  - Using Weber Local Descriptors to match forensics sketeches with their image counterparts</div>
+<div class="line"><a name="l02838"></a><span class="lineno"> 2838</span>&#160;  - Implementing a <span class="keyword">new</span> course, on biomedical image processing, which is supposed to be added to the college<span class="stringliteral">&#39;s academic curriculum</span></div>
+<div class="line"><a name="l02839"></a><span class="lineno"> 2839</span>&#160;<span class="stringliteral">  - Vehicle detection and tracking</span></div>
+<div class="line"><a name="l02840"></a><span class="lineno"> 2840</span>&#160;<span class="stringliteral">  - Analysing haar-cascades on face detection application</span></div>
+<div class="line"><a name="l02841"></a><span class="lineno"> 2841</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02842"></a><span class="lineno"> 2842</span>&#160;<span class="stringliteral">**Project**</span></div>
+<div class="line"><a name="l02843"></a><span class="lineno"> 2843</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02844"></a><span class="lineno"> 2844</span>&#160;<span class="stringliteral">The project is revolved over integrating object detection and classification module using Convolutional Neural Networks. The following shows the basic components of the work to be completed during the term of Google Summer Of Code, 2016</span></div>
+<div class="line"><a name="l02845"></a><span class="lineno"> 2845</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02846"></a><span class="lineno"> 2846</span>&#160;<span class="stringliteral">  - Implement a way to invoke Caffe open source library from the OpenDetection module with a user-friendly code based way ( this will include a tinge of GUI support for instant access)</span></div>
+<div class="line"><a name="l02847"></a><span class="lineno"> 2847</span>&#160;<span class="stringliteral">  - Implement open source guidance and codes for state-of-the art object localization problems(hypothesis generation) specifically based on selective-search and convolutional neural network (CNN) approaches. </span></div>
+<div class="line"><a name="l02848"></a><span class="lineno"> 2848</span>&#160;<span class="stringliteral">  - Adding a ground-truth annotation tool to the module with a graphical-user-interface support. </span></div>
+<div class="line"><a name="l02849"></a><span class="lineno"> 2849</span>&#160;<span class="stringliteral">  - Implementing short, but effective modules like mixed-pooling, recurrent networks to the Convolutional Neural Networks Training dependent on the invoked caffe library. </span></div>
+<div class="line"><a name="l02850"></a><span class="lineno"> 2850</span>&#160;<span class="stringliteral">  - Adding context based learning CNNs. </span></div>
+<div class="line"><a name="l02851"></a><span class="lineno"> 2851</span>&#160;<span class="stringliteral">  - Adding user-interface to train and test CNN based classifiers and object detectors.</span></div>
+<div class="line"><a name="l02852"></a><span class="lineno"> 2852</span>&#160;<span class="stringliteral">  - Adding documentation for the above</span></div>
+<div class="line"><a name="l02853"></a><span class="lineno"> 2853</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02854"></a><span class="lineno"> 2854</span>&#160;<span class="stringliteral">All the completed and on-going work will be explained in detail here, as the process moves forward.</span></div>
+<div class="line"><a name="l02855"></a><span class="lineno"> 2855</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02856"></a><span class="lineno"> 2856</span>&#160;<span class="stringliteral">Happy Coding!!!!</span></div>
+<div class="line"><a name="l02857"></a><span class="lineno"> 2857</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02858"></a><span class="lineno"> 2858</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02859"></a><span class="lineno"> 2859</span>&#160;<span class="stringliteral">Classification of digits in Mnist Library using CNN {#target1}</span></div>
+<div class="line"><a name="l02860"></a><span class="lineno"> 2860</span>&#160;<span class="stringliteral">---</span></div>
+<div class="line"><a name="l02861"></a><span class="lineno"> 2861</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02862"></a><span class="lineno"> 2862</span>&#160;<span class="stringliteral">The classification example added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</span></div>
+<div class="line"><a name="l02863"></a><span class="lineno"> 2863</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02864"></a><span class="lineno"> 2864</span>&#160;<span class="stringliteral">  - [Caffe Library](http://caffe.berkeleyvision.org/)</span></div>
+<div class="line"><a name="l02865"></a><span class="lineno"> 2865</span>&#160;<span class="stringliteral">  - [Using Caffe Library](https://abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/)</span></div>
+<div class="line"><a name="l02866"></a><span class="lineno"> 2866</span>&#160;<span class="stringliteral">  - [Branch of OpenDetection for the below classifier](https://github.com/abhi-kumar/opendetection/tree/cnn_cpu)</span></div>
+<div class="line"><a name="l02867"></a><span class="lineno"> 2867</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02868"></a><span class="lineno"> 2868</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02869"></a><span class="lineno"> 2869</span>&#160;<span class="stringliteral">This example involves inclusion of three new files:</span></div>
+<div class="line"><a name="l02870"></a><span class="lineno"> 2870</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02871"></a><span class="lineno"> 2871</span>&#160;<span class="stringliteral">  - &quot;opendetection/examples/objectdetector/od_cnn_mnist_classification.cpp&quot;</span></div>
+<div class="line"><a name="l02872"></a><span class="lineno"> 2872</span>&#160;<span class="stringliteral">  - &quot;opendetection/detectors/global2D/detection/ODConvClassification.cpp&quot;</span></div>
+<div class="line"><a name="l02873"></a><span class="lineno"> 2873</span>&#160;<span class="stringliteral">  - &quot;opendetection/detectors/global2D/detection/ODConvClassification.h&quot;</span></div>
+<div class="line"><a name="l02874"></a><span class="lineno"> 2874</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02875"></a><span class="lineno"> 2875</span>&#160;<span class="stringliteral">The Classification example has been implemented over the ODDetector2D class. The new ODConvClassification class inherits from the abstract class ODDetector2D under the namespace od::g2d. LEts go over each file briefly.</span></div>
+<div class="line"><a name="l02876"></a><span class="lineno"> 2876</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02877"></a><span class="lineno"> 2877</span>&#160;<span class="stringliteral">**ODConvClassification.h &amp; ODConvClassification.cpp files**</span></div>
+<div class="line"><a name="l02878"></a><span class="lineno"> 2878</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02879"></a><span class="lineno"> 2879</span>&#160;<span class="stringliteral">The file involves inclusion of the following headers.</span></div>
+<div class="line"><a name="l02880"></a><span class="lineno"> 2880</span>&#160;<span class="stringliteral">@code </span></div>
+<div class="line"><a name="l02881"></a><span class="lineno"> 2881</span>&#160;<span class="stringliteral">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l02882"></a><span class="lineno"> 2882</span>&#160;<span class="stringliteral">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l02883"></a><span class="lineno"> 2883</span>&#160;<span class="stringliteral">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l02884"></a><span class="lineno"> 2884</span>&#160;<span class="stringliteral">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l02885"></a><span class="lineno"> 2885</span>&#160;<span class="stringliteral">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l02886"></a><span class="lineno"> 2886</span>&#160;<span class="stringliteral">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l02887"></a><span class="lineno"> 2887</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02888"></a><span class="lineno"> 2888</span>&#160;<span class="stringliteral">#include &quot;caffe/caffe.hpp&quot;</span></div>
+<div class="line"><a name="l02889"></a><span class="lineno"> 2889</span>&#160;<span class="stringliteral">#include &quot;caffe/util/io.hpp&quot;</span></div>
+<div class="line"><a name="l02890"></a><span class="lineno"> 2890</span>&#160;<span class="stringliteral">#include &quot;caffe/blob.hpp&quot;</span></div>
+<div class="line"><a name="l02891"></a><span class="lineno"> 2891</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02892"></a><span class="lineno"> 2892</span>&#160;<span class="stringliteral">using namespace caffe;</span></div>
+<div class="line"><a name="l02893"></a><span class="lineno"> 2893</span>&#160;<span class="stringliteral">using namespace std;</span></div>
+<div class="line"><a name="l02894"></a><span class="lineno"> 2894</span>&#160;<span class="stringliteral">using namespace cv;</span></div>
+<div class="line"><a name="l02895"></a><span class="lineno"> 2895</span>&#160;<span class="stringliteral">@endcode</span></div>
+<div class="line"><a name="l02896"></a><span class="lineno"> 2896</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02897"></a><span class="lineno"> 2897</span>&#160;<span class="stringliteral">The first set involves the basic C++ headers, while the last three headers are from the caffe library. The namespaces are</span></div>
+<div class="line"><a name="l02898"></a><span class="lineno"> 2898</span>&#160;<span class="stringliteral">  - caffe for Caffe Modules</span></div>
+<div class="line"><a name="l02899"></a><span class="lineno"> 2899</span>&#160;<span class="stringliteral">  - std for C++ Standard Modules</span></div>
+<div class="line"><a name="l02900"></a><span class="lineno"> 2900</span>&#160;<span class="stringliteral">  - cv for C++ OpenCV Modules</span></div>
+<div class="line"><a name="l02901"></a><span class="lineno"> 2901</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02902"></a><span class="lineno"> 2902</span>&#160;<span class="stringliteral">The variables involved are as follows</span></div>
+<div class="line"><a name="l02903"></a><span class="lineno"> 2903</span>&#160;<span class="stringliteral">@code</span></div>
+<div class="line"><a name="l02904"></a><span class="lineno"> 2904</span>&#160;<span class="stringliteral">string weightModelFileLoaction;</span></div>
+<div class="line"><a name="l02905"></a><span class="lineno"> 2905</span>&#160;<span class="stringliteral">string networkFileLocation;</span></div>
+<div class="line"><a name="l02906"></a><span class="lineno"> 2906</span>&#160;<span class="stringliteral">string imageFileLocation; </span></div>
+<div class="line"><a name="l02907"></a><span class="lineno"> 2907</span>&#160;<span class="stringliteral">Datum strucBlob;</span></div>
+<div class="line"><a name="l02908"></a><span class="lineno"> 2908</span>&#160;<span class="stringliteral">BlobProto protoBlob;</span></div>
+<div class="line"><a name="l02909"></a><span class="lineno"> 2909</span>&#160;<span class="stringliteral">vector&lt;Blob&lt;float&gt;*&gt; inputBlob;</span></div>
+<div class="line"><a name="l02910"></a><span class="lineno"> 2910</span>&#160;<span class="stringliteral">@endcode</span></div>
+<div class="line"><a name="l02911"></a><span class="lineno"> 2911</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02912"></a><span class="lineno"> 2912</span>&#160;<span class="stringliteral">  - &quot;weightModelFileLoaction&quot; stores the location of the trained weight caffemodel file.</span></div>
+<div class="line"><a name="l02913"></a><span class="lineno"> 2913</span>&#160;<span class="stringliteral">  - &quot;networkFileLocation&quot; stores the location of the CNN network file.</span></div>
+<div class="line"><a name="l02914"></a><span class="lineno"> 2914</span>&#160;<span class="stringliteral">  - &quot;imageFileLocation&quot; stores the location of the image to be classified.</span></div>
+<div class="line"><a name="l02915"></a><span class="lineno"> 2915</span>&#160;<span class="stringliteral">  - &quot;strucBlob&quot; keeps the details of the blob structure of the image to be compiled.</span></div>
+<div class="line"><a name="l02916"></a><span class="lineno"> 2916</span>&#160;<span class="stringliteral">  - &quot;protoBlob&quot; creates an initial storage for the input image to be converted from image file to Caffe Blob named &quot;inputBlob&quot;</span></div>
+<div class="line"><a name="l02917"></a><span class="lineno"> 2917</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02918"></a><span class="lineno"> 2918</span>&#160;<span class="stringliteral">Lets go through the functions involved in the process.</span></div>
+<div class="line"><a name="l02919"></a><span class="lineno"> 2919</span>&#160;<span class="stringliteral">  - @code</span></div>
+<div class="line"><a name="l02920"></a><span class="lineno"> 2920</span>&#160;<span class="stringliteral">    void ODConvClassification::setWeightModelFileLocation(string location)</span></div>
+<div class="line"><a name="l02921"></a><span class="lineno"> 2921</span>&#160;<span class="stringliteral">    {</span></div>
+<div class="line"><a name="l02922"></a><span class="lineno"> 2922</span>&#160;<span class="stringliteral">      ODConvClassification::weightModelFileLoaction = location;</span></div>
+<div class="line"><a name="l02923"></a><span class="lineno"> 2923</span>&#160;<span class="stringliteral">    }</span></div>
+<div class="line"><a name="l02924"></a><span class="lineno"> 2924</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02925"></a><span class="lineno"> 2925</span>&#160;<span class="stringliteral">    void ODConvClassification::setNetworkModelFileLocation(string location)</span></div>
+<div class="line"><a name="l02926"></a><span class="lineno"> 2926</span>&#160;<span class="stringliteral">    {</span></div>
+<div class="line"><a name="l02927"></a><span class="lineno"> 2927</span>&#160;<span class="stringliteral">      networkFileLocation = location;</span></div>
+<div class="line"><a name="l02928"></a><span class="lineno"> 2928</span>&#160;<span class="stringliteral">    }</span></div>
+<div class="line"><a name="l02929"></a><span class="lineno"> 2929</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02930"></a><span class="lineno"> 2930</span>&#160;<span class="stringliteral">    void ODConvClassification::setImageFileLocation(string location)</span></div>
+<div class="line"><a name="l02931"></a><span class="lineno"> 2931</span>&#160;<span class="stringliteral">    {</span></div>
+<div class="line"><a name="l02932"></a><span class="lineno"> 2932</span>&#160;<span class="stringliteral">      imageFileLocation = location;</span></div>
+<div class="line"><a name="l02933"></a><span class="lineno"> 2933</span>&#160;<span class="stringliteral">    } </span></div>
+<div class="line"><a name="l02934"></a><span class="lineno"> 2934</span>&#160;<span class="stringliteral">  </span></div>
+<div class="line"><a name="l02935"></a><span class="lineno"> 2935</span>&#160;<span class="stringliteral">    string ODConvClassification::getWeightModelFileLocation()</span></div>
+<div class="line"><a name="l02936"></a><span class="lineno"> 2936</span>&#160;<span class="stringliteral">    {</span></div>
+<div class="line"><a name="l02937"></a><span class="lineno"> 2937</span>&#160;<span class="stringliteral">      cout &lt;&lt; &quot;Weight Model File Location = &quot; &lt;&lt; weightModelFileLoaction &lt;&lt; endl;</span></div>
+<div class="line"><a name="l02938"></a><span class="lineno"> 2938</span>&#160;<span class="stringliteral">      return weightModelFileLoaction;</span></div>
+<div class="line"><a name="l02939"></a><span class="lineno"> 2939</span>&#160;<span class="stringliteral">    }</span></div>
+<div class="line"><a name="l02940"></a><span class="lineno"> 2940</span>&#160;<span class="stringliteral">    </span></div>
+<div class="line"><a name="l02941"></a><span class="lineno"> 2941</span>&#160;<span class="stringliteral">    string ODConvClassification::getNetworkModelFileLocation()</span></div>
+<div class="line"><a name="l02942"></a><span class="lineno"> 2942</span>&#160;<span class="stringliteral">    {</span></div>
+<div class="line"><a name="l02943"></a><span class="lineno"> 2943</span>&#160;<span class="stringliteral">      cout &lt;&lt; &quot;Network Model File Location = &quot; &lt;&lt; networkFileLocation &lt;&lt; endl;</span></div>
+<div class="line"><a name="l02944"></a><span class="lineno"> 2944</span>&#160;<span class="stringliteral">      return networkFileLocation;</span></div>
+<div class="line"><a name="l02945"></a><span class="lineno"> 2945</span>&#160;<span class="stringliteral">    }</span></div>
+<div class="line"><a name="l02946"></a><span class="lineno"> 2946</span>&#160;<span class="stringliteral">    </span></div>
+<div class="line"><a name="l02947"></a><span class="lineno"> 2947</span>&#160;<span class="stringliteral">    string ODConvClassification::getImageFileLocation()</span></div>
+<div class="line"><a name="l02948"></a><span class="lineno"> 2948</span>&#160;<span class="stringliteral">    {</span></div>
+<div class="line"><a name="l02949"></a><span class="lineno"> 2949</span>&#160;<span class="stringliteral">      cout &lt;&lt; &quot;Image File Location = &quot; &lt;&lt; imageFileLocation &lt;&lt; endl;</span></div>
+<div class="line"><a name="l02950"></a><span class="lineno"> 2950</span>&#160;<span class="stringliteral">      return imageFileLocation;</span></div>
+<div class="line"><a name="l02951"></a><span class="lineno"> 2951</span>&#160;<span class="stringliteral">    }</span></div>
+<div class="line"><a name="l02952"></a><span class="lineno"> 2952</span>&#160;<span class="stringliteral">    @endcode</span></div>
+<div class="line"><a name="l02953"></a><span class="lineno"> 2953</span>&#160;<span class="stringliteral">    These functions are uite self explanatory. The first three functions are being used to get the location of the reuired files, while the rest are to retrieve these locations.</span></div>
+<div class="line"><a name="l02954"></a><span class="lineno"> 2954</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02955"></a><span class="lineno"> 2955</span>&#160;<span class="stringliteral">  - @code void ODConvClassification::setTestBlob(int numChannels, int imgHeight, int imgWidth) @endcode This function takes an input image and converts into a suitable format for caffe libraries. @code</span></div>
+<div class="line"><a name="l02956"></a><span class="lineno"> 2956</span>&#160;<span class="stringliteral">      if (!ReadImageToDatum(imageFileLocation, numChannels, imgHeight, imgWidth, &amp;strucBlob)) </span></div>
+<div class="line"><a name="l02957"></a><span class="lineno"> 2957</span>&#160;<span class="stringliteral">      {</span></div>
+<div class="line"><a name="l02958"></a><span class="lineno"> 2958</span>&#160;<span class="stringliteral">        cout &lt;&lt; &quot;Image File Not Found&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l02959"></a><span class="lineno"> 2959</span>&#160;<span class="stringliteral">        exit(0);</span></div>
+<div class="line"><a name="l02960"></a><span class="lineno"> 2960</span>&#160;<span class="stringliteral">      }</span></div>
+<div class="line"><a name="l02961"></a><span class="lineno"> 2961</span>&#160;<span class="stringliteral">      Blob&lt;float&gt;* dataBlob = new Blob&lt;float&gt;(1, strucBlob.channels(), strucBlob.height(), strucBlob.width());    </span></div>
+<div class="line"><a name="l02962"></a><span class="lineno"> 2962</span>&#160;<span class="stringliteral">    @endcode This snippet reads the image, and creates a structure to save the input image as a blob.@code</span></div>
+<div class="line"><a name="l02963"></a><span class="lineno"> 2963</span>&#160;<span class="stringliteral">      if (data.size() != 0) </span></div>
+<div class="line"><a name="l02964"></a><span class="lineno"> 2964</span>&#160;<span class="stringliteral">      {</span></div>
+<div class="line"><a name="l02965"></a><span class="lineno"> 2965</span>&#160;<span class="stringliteral">        for (int i = 0; i &lt; sizeStrucBlob; ++i)</span></div>
+<div class="line"><a name="l02966"></a><span class="lineno"> 2966</span>&#160;<span class="stringliteral">        {</span></div>
+<div class="line"><a name="l02967"></a><span class="lineno"> 2967</span>&#160;<span class="stringliteral">          protoBlob.set_data(i, protoBlob.data(i) + (uint8_t)data[i]);</span></div>
+<div class="line"><a name="l02968"></a><span class="lineno"> 2968</span>&#160;<span class="stringliteral">        }</span></div>
+<div class="line"><a name="l02969"></a><span class="lineno"> 2969</span>&#160;<span class="stringliteral">      }</span></div>
+<div class="line"><a name="l02970"></a><span class="lineno"> 2970</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02971"></a><span class="lineno"> 2971</span>&#160;<span class="stringliteral">      dataBlob-&gt;FromProto(protoBlob);</span></div>
+<div class="line"><a name="l02972"></a><span class="lineno"> 2972</span>&#160;<span class="stringliteral">      inputBlob.push_back(dataBlob);</span></div>
+<div class="line"><a name="l02973"></a><span class="lineno"> 2973</span>&#160;<span class="stringliteral">    @endcode The snippet mentioned above converts the image from the initial(&quot;.png&quot;) format to the blob format required by the caffe library.</span></div>
+<div class="line"><a name="l02974"></a><span class="lineno"> 2974</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02975"></a><span class="lineno"> 2975</span>&#160;<span class="stringliteral">  - The net is initailized with the network parameters and trained weights using the following snippet. @code</span></div>
+<div class="line"><a name="l02976"></a><span class="lineno"> 2976</span>&#160;<span class="stringliteral">      Caffe::set_mode(Caffe::CPU);</span></div>
+<div class="line"><a name="l02977"></a><span class="lineno"> 2977</span>&#160;<span class="stringliteral">      Net&lt;float&gt;  net(networkFileLocation, TEST);</span></div>
+<div class="line"><a name="l02978"></a><span class="lineno"> 2978</span>&#160;<span class="stringliteral">      net.CopyTrainedLayersFrom(weightModelFileLoaction); @endcode And the net is asked to move forward and present the probaility using the following snippet. @code</span></div>
+<div class="line"><a name="l02979"></a><span class="lineno"> 2979</span>&#160;<span class="stringliteral">const vector&lt;Blob&lt;float&gt;*&gt;&amp; result =  net.Forward(inputBlob, &amp;type); @endcode This output vector, &quot;result&quot;, contains the probabilities for each of the classes, The class with the maximum probobiility or score is the classified class.</span></div>
+<div class="line"><a name="l02980"></a><span class="lineno"> 2980</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02981"></a><span class="lineno"> 2981</span>&#160;<span class="stringliteral">**The CMake Changes**</span></div>
+<div class="line"><a name="l02982"></a><span class="lineno"> 2982</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02983"></a><span class="lineno"> 2983</span>&#160;<span class="stringliteral">The od_mandatory_dependency.cmake file has been added a new line @code find_package( Caffe REQUIRED) @endcode And thus the inclusion of caffe include directory and caffe libraries. In the CMakeLists.txt file from detectors/global2D directory, the following snippet is added @code</span></div>
+<div class="line"><a name="l02984"></a><span class="lineno"> 2984</span>&#160;<span class="stringliteral">ADD_DEFINITIONS(</span></div>
+<div class="line"><a name="l02985"></a><span class="lineno"> 2985</span>&#160;<span class="stringliteral">    -std=c++11 </span></div>
+<div class="line"><a name="l02986"></a><span class="lineno"> 2986</span>&#160;<span class="stringliteral">  ${Caffe_DEFINITIONS}</span></div>
+<div class="line"><a name="l02987"></a><span class="lineno"> 2987</span>&#160;<span class="stringliteral">)</span></div>
+<div class="line"><a name="l02988"></a><span class="lineno"> 2988</span>&#160;<span class="stringliteral">@endcode This has been done to enable mode choice of caffe runtime, i.e., CPU or GPU, and in this example CPU.</span></div>
+<div class="line"><a name="l02989"></a><span class="lineno"> 2989</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02990"></a><span class="lineno"> 2990</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02991"></a><span class="lineno"> 2991</span>&#160;<span class="stringliteral">**Usage**</span></div>
+<div class="line"><a name="l02992"></a><span class="lineno"> 2992</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02993"></a><span class="lineno"> 2993</span>&#160;<span class="stringliteral">The example can be invoked using the following command: (From the build folder)</span></div>
+<div class="line"><a name="l02994"></a><span class="lineno"> 2994</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02995"></a><span class="lineno"> 2995</span>&#160;<span class="stringliteral">./examples/objectdetector/od_cnn_mnist_classification ../examples/objectdetector/Mnist_Classify/mnist.caffemodel ../examples/objectdetector/Mnist_Classify/lenet.prototxt ../examples/objectdetector/Mnist_Classify/1.png</span></div>
+<div class="line"><a name="l02996"></a><span class="lineno"> 2996</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02997"></a><span class="lineno"> 2997</span>&#160;<span class="stringliteral">The example as shown above takes 3 arguments, the locations of the weight file, network file and the image.</span></div>
+<div class="line"><a name="l02998"></a><span class="lineno"> 2998</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l02999"></a><span class="lineno"> 2999</span>&#160;<span class="stringliteral">**Next up will be a simple CNN trainer example.**</span></div>
+<div class="line"><a name="l03000"></a><span class="lineno"> 3000</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03001"></a><span class="lineno"> 3001</span>&#160;<span class="stringliteral">Happy Coding!!!! </span></div>
+<div class="line"><a name="l03002"></a><span class="lineno"> 3002</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03003"></a><span class="lineno"> 3003</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03004"></a><span class="lineno"> 3004</span>&#160;<span class="stringliteral">Training a classifier for digits in Mnist Library using CNN. Part 1 {#target2}</span></div>
+<div class="line"><a name="l03005"></a><span class="lineno"> 3005</span>&#160;<span class="stringliteral">---</span></div>
+<div class="line"><a name="l03006"></a><span class="lineno"> 3006</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03007"></a><span class="lineno"> 3007</span>&#160;<span class="stringliteral">This particular inclusion presents a simple trainer in a most crude and easy way possible. The major requirements of CNN training using caffe are</span></div>
+<div class="line"><a name="l03008"></a><span class="lineno"> 3008</span>&#160;<span class="stringliteral">  - Solver file</span></div>
+<div class="line"><a name="l03009"></a><span class="lineno"> 3009</span>&#160;<span class="stringliteral">  - Training Network file</span></div>
+<div class="line"><a name="l03010"></a><span class="lineno"> 3010</span>&#160;<span class="stringliteral">  - Image Dataset and a pointer to the Dataset</span></div>
+<div class="line"><a name="l03011"></a><span class="lineno"> 3011</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03012"></a><span class="lineno"> 3012</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03013"></a><span class="lineno"> 3013</span>&#160;<span class="stringliteral">The classification example added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</span></div>
+<div class="line"><a name="l03014"></a><span class="lineno"> 3014</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03015"></a><span class="lineno"> 3015</span>&#160;<span class="stringliteral">  - [Caffe Library](http://caffe.berkeleyvision.org/)</span></div>
+<div class="line"><a name="l03016"></a><span class="lineno"> 3016</span>&#160;<span class="stringliteral">  - [Using Caffe Library](https://abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/)</span></div>
+<div class="line"><a name="l03017"></a><span class="lineno"> 3017</span>&#160;<span class="stringliteral">  - [Branch of OpenDetection for the below classifier](https://github.com/abhi-kumar/opendetection/tree/cnn_cpu)</span></div>
+<div class="line"><a name="l03018"></a><span class="lineno"> 3018</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03019"></a><span class="lineno"> 3019</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03020"></a><span class="lineno"> 3020</span>&#160;<span class="stringliteral">This example involves inclusion of three new files:</span></div>
+<div class="line"><a name="l03021"></a><span class="lineno"> 3021</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03022"></a><span class="lineno"> 3022</span>&#160;<span class="stringliteral">  - &quot;opendetection/examples/objectdetector/od_cnn_mnist_train_simple.cpp&quot;</span></div>
+<div class="line"><a name="l03023"></a><span class="lineno"> 3023</span>&#160;<span class="stringliteral">  - &quot;opendetection/detectors/global2D/training/ODConvTrainer.cpp&quot;</span></div>
+<div class="line"><a name="l03024"></a><span class="lineno"> 3024</span>&#160;<span class="stringliteral">  - &quot;opendetection/detectors/global2D/training/ODConvTrainer.h&quot;</span></div>
+<div class="line"><a name="l03025"></a><span class="lineno"> 3025</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03026"></a><span class="lineno"> 3026</span>&#160;<span class="stringliteral">**Invoking Training module of caffe**</span></div>
+<div class="line"><a name="l03027"></a><span class="lineno"> 3027</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03028"></a><span class="lineno"> 3028</span>&#160;<span class="stringliteral">These lines invoke the trainer: </span></div>
+<div class="line"><a name="l03029"></a><span class="lineno"> 3029</span>&#160;<span class="stringliteral">@code</span></div>
+<div class="line"><a name="l03030"></a><span class="lineno"> 3030</span>&#160;<span class="stringliteral">      Caffe::set_mode(Caffe::CPU);</span></div>
+<div class="line"><a name="l03031"></a><span class="lineno"> 3031</span>&#160;<span class="stringliteral">      SGDSolver&lt;float&gt; s(solverLocation);</span></div>
+<div class="line"><a name="l03032"></a><span class="lineno"> 3032</span>&#160;<span class="stringliteral">      s.Solve();</span></div>
+<div class="line"><a name="l03033"></a><span class="lineno"> 3033</span>&#160;<span class="stringliteral">@endcode</span></div>
+<div class="line"><a name="l03034"></a><span class="lineno"> 3034</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03035"></a><span class="lineno"> 3035</span>&#160;<span class="stringliteral">This snippet points to solver file, the solver file points to the network file. This network file points to the file which in turn points to the dataset.</span></div>
+<div class="line"><a name="l03036"></a><span class="lineno"> 3036</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03037"></a><span class="lineno"> 3037</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03038"></a><span class="lineno"> 3038</span>&#160;<span class="stringliteral">**Usage**</span></div>
+<div class="line"><a name="l03039"></a><span class="lineno"> 3039</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03040"></a><span class="lineno"> 3040</span>&#160;<span class="stringliteral">The example can be invoked using the following command: (From the build folder)</span></div>
+<div class="line"><a name="l03041"></a><span class="lineno"> 3041</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03042"></a><span class="lineno"> 3042</span>&#160;<span class="stringliteral">./examples/objectdetector/od_cnn_mnist_train_simple ../examples/objectdetector/Mnist_Train/solver1.prototxt</span></div>
+<div class="line"><a name="l03043"></a><span class="lineno"> 3043</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03044"></a><span class="lineno"> 3044</span>&#160;<span class="stringliteral">The only argument to be given is the solver file.</span></div>
+<div class="line"><a name="l03045"></a><span class="lineno"> 3045</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03046"></a><span class="lineno"> 3046</span>&#160;<span class="stringliteral">**Next up will be a simple CNN trainer example with a graphical user interface for the solver file.**</span></div>
+<div class="line"><a name="l03047"></a><span class="lineno"> 3047</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03048"></a><span class="lineno"> 3048</span>&#160;<span class="stringliteral">Happy Coding!!!! </span></div>
+<div class="line"><a name="l03049"></a><span class="lineno"> 3049</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03050"></a><span class="lineno"> 3050</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03051"></a><span class="lineno"> 3051</span>&#160;<span class="stringliteral">Training a classifier for digits in Mnist Library using CNN. Part 2 {#target2_1}</span></div>
+<div class="line"><a name="l03052"></a><span class="lineno"> 3052</span>&#160;<span class="stringliteral">---</span></div>
+<div class="line"><a name="l03053"></a><span class="lineno"> 3053</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03054"></a><span class="lineno"> 3054</span>&#160;<span class="stringliteral">This commit consists of the same simple trainer from previous commit, except for the fact that it involves a graphical user interface to select solver parameters,The classification exampled added to the library involves usage of caffe library. The modalities and usage of the libraries can be studied at</span></div>
+<div class="line"><a name="l03055"></a><span class="lineno"> 3055</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03056"></a><span class="lineno"> 3056</span>&#160;<span class="stringliteral">  - [Caffe Library](http://caffe.berkeleyvision.org/)</span></div>
+<div class="line"><a name="l03057"></a><span class="lineno"> 3057</span>&#160;<span class="stringliteral">  - [Using Caffe Library](https://abhishek4273.com/2016/02/07/ann-chapter-3-deep-learning-using-caffe-python/)</span></div>
+<div class="line"><a name="l03058"></a><span class="lineno"> 3058</span>&#160;<span class="stringliteral">  - [Branch of OpenDetection for the below classifier](https://github.com/abhi-kumar/opendetection/tree/cnn_cpu)</span></div>
+<div class="line"><a name="l03059"></a><span class="lineno"> 3059</span>&#160;<span class="stringliteral">  - [GTKMM](http://www.gtkmm.org/en/)</span></div>
+<div class="line"><a name="l03060"></a><span class="lineno"> 3060</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03061"></a><span class="lineno"> 3061</span>&#160;<span class="stringliteral">Installing GTKMM Required: In the terminal of ubuntu, type the following</span></div>
+<div class="line"><a name="l03062"></a><span class="lineno"> 3062</span>&#160;<span class="stringliteral">@code  sudo apt-get install libglib2.0-dev libatk1.0* libpango1.0-dev libcairo2-dev gdk-pixbuf2.0-0 libsigc++-2.0-dev libgtk-3-dev libcairomm-1.0-dev libpangomm-1.4-dev libatkmm-1.6-dev libgtkmm-3.0-dev @endcode</span></div>
+<div class="line"><a name="l03063"></a><span class="lineno"> 3063</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03064"></a><span class="lineno"> 3064</span>&#160;<span class="stringliteral">**Usage**</span></div>
+<div class="line"><a name="l03065"></a><span class="lineno"> 3065</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03066"></a><span class="lineno"> 3066</span>&#160;<span class="stringliteral">From the build folder invoke:</span></div>
+<div class="line"><a name="l03067"></a><span class="lineno"> 3067</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03068"></a><span class="lineno"> 3068</span>&#160;<span class="stringliteral">./examples/objectdetector/od_cnn_mnist_train_customSolver</span></div>
+<div class="line"><a name="l03069"></a><span class="lineno"> 3069</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03070"></a><span class="lineno"> 3070</span>&#160;<span class="stringliteral">Note:</span></div>
+<div class="line"><a name="l03071"></a><span class="lineno"> 3071</span>&#160;<span class="stringliteral">  - The path to the solver, train network, snapshot have to be set inside examples/objectdetector/Mnist_Train folder for this alpha version.</span></div>
+<div class="line"><a name="l03072"></a><span class="lineno"> 3072</span>&#160;<span class="stringliteral">  - The GUI has a update button for every parameter. It is not necessary to press each one of them. They have been included for future, eg., when only one parameter from an existing solver need to be updated. This functionality has not been added</span></div>
+<div class="line"><a name="l03073"></a><span class="lineno"> 3073</span>&#160;<span class="stringliteral">  - After changing the parameters, press the &quot;Save&quot; button and then close the window using the &quot;x&quot; on the top just like closing any window in Ubuntu. A custom exit has not been added yet. </span></div>
+<div class="line"><a name="l03074"></a><span class="lineno"> 3074</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03075"></a><span class="lineno"> 3075</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03076"></a><span class="lineno"> 3076</span>&#160;<span class="stringliteral">**Next up will be a updates and additions to the GUI.**</span></div>
+<div class="line"><a name="l03077"></a><span class="lineno"> 3077</span>&#160;<span class="stringliteral">  - Adding a provision: if a solver file exists and the user wants to change only one parameters, it can be done</span></div>
+<div class="line"><a name="l03078"></a><span class="lineno"> 3078</span>&#160;<span class="stringliteral">  - Creation of CNN network using a simple GUI</span></div>
+<div class="line"><a name="l03079"></a><span class="lineno"> 3079</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03080"></a><span class="lineno"> 3080</span>&#160;<span class="stringliteral">Happy Coding!!!!</span></div>
+<div class="line"><a name="l03081"></a><span class="lineno"> 3081</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03082"></a><span class="lineno"> 3082</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03083"></a><span class="lineno"> 3083</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l03084"></a><span class="lineno"> 3084</span>&#160;<span class="stringliteral"><div class="ttc" id="struct_node_html_aaa9e33aa02bd8bcd9282842aa799f2c3"><div class="ttname"><a href="struct_node.html#aaa9e33aa02bd8bcd9282842aa799f2c3">Node::nextLayer</a></div><div class="ttdeci">Node * nextLayer</div><div class="ttdef"><b>Definition:</b> <a href="node_8h_source.html#l00007">node.h:7</a></div></div>
 <div class="ttc" id="classod_1_1g2d_1_1_o_d_conv_trainer_html_af1f228bf3c1e80be799768f85fb95ad1"><div class="ttname"><a href="classod_1_1g2d_1_1_o_d_conv_trainer.html#af1f228bf3c1e80be799768f85fb95ad1">od::g2d::ODConvTrainer::startTraining</a></div><div class="ttdeci">void startTraining()</div></div>
 <div class="ttc" id="classimage_html"><div class="ttname"><a href="classimage.html">image</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00027">image.h:27</a></div></div>
 <div class="ttc" id="classimage_html_a51d9e4a8e20b9a5af2e11e0e4b39815a"><div class="ttname"><a href="classimage.html#a51d9e4a8e20b9a5af2e11e0e4b39815a">image::width</a></div><div class="ttdeci">int width() const </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00042">image.h:42</a></div></div>
