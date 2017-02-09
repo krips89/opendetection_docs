@@ -2641,23 +2641,35 @@
         </Subnodes>
        </Node>
        <Node>
-        <Name>GSoC16 Blogs</Name>
-        <Path>usergroup1.html</Path>
+        <Name>GSoC 2017 Ideas</Name>
+        <Path>idea_list_gsoc2017.html</Path>
         <Subnodes>
-         <Node>
-          <Name>GSoC 2016 Blog - Giacomo</Name>
-          <Path>gsoc2016_blog_giacomo.html</Path>
-         </Node>
-         <Node>
-          <Name>GSoC 2016 Blog - Abhishek</Name>
-          <Path>gsoc2016_blog_abhishek.html</Path>
-         </Node>
         </Subnodes>
        </Node>
        <Node>
-        <Name>GSoC 2016 Ideas</Name>
-        <Path>idea_list_gsoc2016.html</Path>
+        <Name>GSoC16</Name>
+        <Path>usergroup1.html</Path>
         <Subnodes>
+         <Node>
+          <Name>GSoC16 Blogs</Name>
+          <Path>usergroup2.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>GSoC 2016 Blog - Giacomo</Name>
+            <Path>gsoc2016_blog_giacomo.html</Path>
+           </Node>
+           <Node>
+            <Name>GSoC 2016 Blog - Abhishek</Name>
+            <Path>gsoc2016_blog_abhishek.html</Path>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>GSoC 2016 Ideas</Name>
+          <Path>idea_list_gsoc2016.html</Path>
+          <Subnodes>
+          </Subnodes>
+         </Node>
         </Subnodes>
        </Node>
        <Node>

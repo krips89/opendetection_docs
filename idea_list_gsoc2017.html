@@ -10,7 +10,7 @@
     <meta name="keywords" content="object detection, object recognition, detection, recognition, vision, computer vision, image processing, point cloud, opens ource"/>
     <meta name="description" content="Open Detection, OD, is a standalone open source project for object detection and recognition in images and 3D point clouds."/>
     <meta name="author" content="Kripasindhu Sarkar"/>
-<title>Open Detection: GSoC 2016 Ideas</title>
+<title>Open Detection: GSoC 2017 Ideas</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -96,91 +96,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('idea_list_gsoc2016.html','');});
+$(document).ready(function(){initNavTree('idea_list_gsoc2017.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">GSoC 2016 Ideas </div>  </div>
+<div class="title">GSoC 2017 Ideas </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#idea_list_gsoc20161">Google Summer of Code 2016 - Ideas  </a><ul><li class="level2"><a href="#idea_list_gsoc201611">Basic principles</a></li>
-<li class="level2"><a href="#idea_list_gsoc20162">Project Idea summary</a><ul><li class="level3"><a href="#idea_list_gsoc20163">1. CNN based algorithms in OpenDetection</a></li>
-<li class="level3"><a href="#idea_list_gsoc20164">2. Framework design and library maintenance</a></li>
-<li class="level3"><a href="#idea_list_gsoc20165">3. Integration of some other popular detection algorithms in OpenDetection</a></li>
-</ul>
-</li>
+<ul><li class="level1"><a href="#idea_list_gsoc20171">Google Summer of Code 2017 - Ideas  </a><ul><li class="level2"><a href="#idea_list_gsoc201711">Basic principles</a></li>
+<li class="level2"><a href="#idea_list_gsoc20172">Project Idea summary</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="textblock"><h1><a class="anchor" id="idea_list_gsoc20161"></a>
-Google Summer of Code 2016 - Ideas  </h1>
-<p><b>We are in!</b></p>
-<p>We are selected in Google Summer of Code 2016 as a mentoring organization! <a href="https://summerofcode.withgoogle.com/organizations/6007728078061568/"><b>This</b></a> is our page in the GSoC site. The project ideas are discussed in this page. Note that <em>we changed the descriptions of the project ideas slightly</em> from the time of our application.</p>
+<div class="textblock"><h1><a class="anchor" id="idea_list_gsoc20171"></a>
+Google Summer of Code 2017 - Ideas  </h1>
 <p>Student participating should already have some idea of the detection framework of the library. The best way to get started is to follow some examples and demos after going through <a class="el" href="getting_started.html">Getting Started</a> guide.</p>
-<p>Application should go through the mentors for few iterations. Post the application at <a href="https://groups.google.com/forum/#!forum/opendetection">https://groups.google.com/forum/#!forum/opendetection</a> <b>as well as the respective mentors.</b> The mentors can decide to take the topic offline and discuss with the applicant with more depth based on the applicant's expertise.</p>
-<h2><a class="anchor" id="idea_list_gsoc201611"></a>
+<p>Application should go through the mentors for few iterations. Post the application to the <b>the respective mentors</b> and not to the group. This is to stop discouraging from students to apply in the same project which has already been applied by another student. The mentors wiill then discuss with the applicant with more depth based on the applicant's expertise.</p>
+<h2><a class="anchor" id="idea_list_gsoc201711"></a>
 Basic principles</h2>
 <p>The main philosophy of this library is to provide user detection/recognition algorithms in a <b>common, intuitive and user-friendly APIs</b> (perhaps we want to build up a structure similar to VTK for object detection algorithms). This is the only reason we have this separate library. Therefore, please go through the existing <a href="inherits.html"><b>classes</b></a> to understand the framework before your application.</p>
 <p>Thus, all the algorithms/methods you propose in your application have to extend the previous interfaces which will abstract all the implementation details from the user, and at the same time provide users the ability to configure with parameters. In other words, we don't want one of the many demo applications of detection algorithms. We want the detection algorithms under the existing APIs (Trainers and Detectors). This should be the main focus of the contribution.</p>
-<p>If you think that some of our APIs and framework interfaces are not optimal (in terms of usability and speed or any other reason) and have some suggestions for the improvement, please provide them in your application (specifically in Project Idea 2) as well.</p>
-<h2><a class="anchor" id="idea_list_gsoc20162"></a>
+<h2><a class="anchor" id="idea_list_gsoc20172"></a>
 Project Idea summary</h2>
 <p>Following are the list of ideas we will focus for this time in decreasing order of priority.</p>
-<h3><a class="anchor" id="idea_list_gsoc20163"></a>
-1. CNN based algorithms in OpenDetection</h3>
+<h3>Improving the Framework for CNNs for 2D detection</h3>
 <p><b>Key tasks</b>:</p>
 <ul>
 <li>Make a short report of the popular and state-of-the-art detection/recognition techniques (to let us know that you have the proficiency in this area)</li>
 <li>Add CNN based algorithms in the library with OpenDetection Compatible APIs in the following order: -</li>
 <li>Implement OD interface for training and testing (under <a class="el" href="classod_1_1_o_d_trainer.html" title="The base class for all trainers. ">od::ODTrainer</a> s) neural network architectures with convolutional layer and possible recurrent layers using Caffe.</li>
-<li>Implement interface for forward phase of object detection (under <a class="el" href="classod_1_1_o_d_detector.html" title="The main detector class; all special Detectors derives from this. ">od::ODDetector</a> s or one of its subclasses) on some pre-trained caffe models (or trained models from the previous step) based on architectures which have been used for object detection.</li>
-<li>Implement train/test data preparation/region extraction and other preprocessing steps (maybe in a separate module).</li>
-<li>Implement any other state-of-the-art detection architectures which uses CNNs.</li>
+<li>Add to OpenDitection the following algorithms: ..1. Classification (simple Deep CNN will do) - Types: different options - AlexNet, VGG, Resnet50, Resnet150, GoogLenet. ..2. Detection - Faster RCNN ..3. Location probability map</li>
 </ul>
-<p><b>Prerequisites</b>:</p>
-<ul>
-<li>We are expecting a Master student/PhD student in Machine Learning/Computer Vision for this project. If not, you should have a good knowledge in neural networks and experience in training and testing different types of neural networks/CNNs.</li>
-<li>Knowledge of Caffe.</li>
-<li>High command in C++.</li>
-</ul>
+<p><b>Skills needed</b>: Good background in Computer Vision research and CNN. We are expecting a graduate student with computer vision/machine learning as his/her research topic.</p>
 <p><b>Mentors</b>: Kripasindhu Sarkar, Aditya Tewari</p>
-<h3><a class="anchor" id="idea_list_gsoc20164"></a>
-2. Framework design and library maintenance</h3>
-<p>This is one of the important project and have a very strong influence to the future of the library.</p>
-<p><b>Key tasks</b>:</p>
+<h3>Standardizing all state of the art detection algorithms.</h3>
+<p>How do we bring make the state of the art to a common platform? This projects aims to bring everything to a common interface. This will enable researcher to evaluate their algorithms easily. Initial tasks are:</p>
 <ul>
-<li>Improve the existing OpenDetection framework in terms of usability.</li>
-<li>Adding more helper functions/classes to improve the library<ul>
-<li>Some wrappers for visualization - right now we directly use opencv functions and pcl visualizers</li>
-<li>Other changes</li>
+<li>Identify popular publically available datasets.</li>
+<li>Provide easy APIs for classification/detection in 2D and 3D to evaluate on the respective datasets of a new algorithm.</li>
 </ul>
-</li>
-<li>Preparing ProjectConfig.cmake file to make the library usable by other projects.</li>
-<li>Verifying and fixing cross platform compilation.</li>
-<li>Package creation for different platforms.</li>
-<li>Reduce dependencies of the library to minimum.</li>
-<li>General maintenance</li>
-</ul>
-<p><b>Prerequisites</b>:</p>
-<ul>
-<li>Good knowledge of Software Engineering principles.</li>
-<li>High command in C++ and <b>CMake</b> (Good knowledge of CMake is very important).</li>
-<li>Knowledge of OpenCV/PCL.</li>
-<li>It will be nice if you have already maintained/managed a C++ library before. If not, you should have experience coding in different platforms (at least have knowledge in build toolchains in windows and linux).</li>
-</ul>
+<p>This could be improved and designed better. The project design sould evolve with time.</p>
+<p><b>Skills needed</b>: Good background in Computer Vision research and CNN. We are expecting a graduate student with computer vision/machine learning as his/her research topic.</p>
+<p><b>Mentors</b>: Kripasindhu Sarkar, Aditya Tewari</p>
+<h3>Python binding</h3>
+<p>Current opendetection implementation is done on C++, however lots of people use python, specially when it comes to rapid prototyping. Having python bindings in our library will help spread the use of the library and expand the options it offers to the users.</p>
+<p><b>Skills needed</b>: Python, C++, CMake</p>
 <p><b>Mentors</b>: Marco A. Gutiérrez, Kripasindhu Sarkar</p>
-<h3><a class="anchor" id="idea_list_gsoc20165"></a>
-3. Integration of some other popular detection algorithms in OpenDetection</h3>
-<p><b>Key tasks</b>:</p>
-<ul>
-<li>This is an open idea. We always would like to integrate <b>state-of-the-art</b> algorithms in our framework. It would be easy to port an available C++ code in this framework instead of implementing an idea/paper from scratch. So, we expect you to <em>do some literature review and report different algorithms</em> with their availability and the ones you would like to add. Please note that, just because the implementation of some algorithm is available online does not mean that it is the state-of-the-art or one of the popular algorithms.</li>
-<li>Implement/port the identified detection algorithms under <a class="el" href="classod_1_1_o_d_detector2_d.html" title="The detector of 2D scene. ">od::ODDetector2D</a>/od::ODDetector3D and the respective <em>Trainer</em> s.</li>
-</ul>
-<p><b>Prerequisites</b>: Expertise in Computer Vision and C++.</p>
-<p><b>Mentors</b>: Kripasindhu Sarkar, Marco A. Gutiérrez</p>
+<h2>Development of examples and tutorials</h2>
+<p>Learn by example is a very big and important issue when users come to a new technology. We believe that to make the user base of OpenDetection grow a nice set of examples and tutorials that can be easily followed can help grow the community and finally catch more interested developers. Skills needed: C++, Markup languages, CMake</p>
+<p><b>Mentors</b>: Marco A. Gutiérrez, Kripasindhu Sarkar</p>
+<h2>Ease library deployment, automated dependencies installation.</h2>
+<p>As a high level development robotics oriented computer vision library it stands on top of other software. Reducing this dependencies to a maximum and easing installation procedures, like fixing dependencies can also help overcome the initial problems a future user might have when starting to use opendetection. This also includes the development of different operating systems packages for easy installation.</p>
+<p><b>Skills needed</b>: CMake, package management knowledge, C++</p>
+<p><b>Mentors</b>: Marco A. Gutiérrez, Kripasindhu Sarkar</p>
 <h2>Mentors:</h2>
 <pre class="fragment">Kripasindhu Sarkar
 PhD Student, Augmented Vision Group, 
@@ -201,7 +172,6 @@ marcog@unex.es    </pre> </div></div><!-- contents -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="tutorial_root.html">User Guide</a></li>
     <li class="footer">Send your queries <a href="mailto:kripasindhu.sarkar@dfki.de?Subject=OpenDetection" target="_top">here</a>.</li>
   </ul>
 </div>

@@ -35,11 +35,14 @@ var NAVTREE =
       ] ],
       [ "Examples", "examples.html", "examples" ]
     ] ],
-    [ "GSoC16 Blogs", "usergroup1.html", [
-      [ "GSoC 2016 Blog - Giacomo", "gsoc2016_blog_giacomo.html", null ],
-      [ "GSoC 2016 Blog - Abhishek", "gsoc2016_blog_abhishek.html", null ]
+    [ "GSoC 2017 Ideas", "idea_list_gsoc2017.html", null ],
+    [ "GSoC16", "usergroup1.html", [
+      [ "GSoC16 Blogs", "usergroup2.html", [
+        [ "GSoC 2016 Blog - Giacomo", "gsoc2016_blog_giacomo.html", null ],
+        [ "GSoC 2016 Blog - Abhishek", "gsoc2016_blog_abhishek.html", null ]
+      ] ],
+      [ "GSoC 2016 Ideas", "idea_list_gsoc2016.html", null ]
     ] ],
-    [ "GSoC 2016 Ideas", "idea_list_gsoc2016.html", null ],
     [ "Downloads", "installation_instruction.html", null ]
   ] ]
 ];

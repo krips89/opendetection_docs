@@ -67,8 +67,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>OD</span></a></li>
       <li><a href="tutorial_root.html"><span>User&#160;Guide</span></a></li>
       <li><a href="usergroup0.html"><span>API&#160;Documentation</span></a></li>
-      <li><a href="usergroup1.html"><span>GSoC16&#160;Blogs</span></a></li>
-      <li><a href="idea_list_gsoc2016.html"><span>GSoC&#160;2016&#160;Ideas</span></a></li>
+      <li><a href="idea_list_gsoc2017.html"><span>GSoC&#160;2017&#160;Ideas</span></a></li>
+      <li><a href="usergroup1.html"><span>GSoC16</span></a></li>
       <li><a href="installation_instruction.html"><span>Downloads</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
