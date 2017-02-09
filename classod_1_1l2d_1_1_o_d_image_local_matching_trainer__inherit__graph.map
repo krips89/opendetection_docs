@@ -1,0 +1,5 @@
+<map id="od::l2d::ODImageLocalMatchingTrainer" name="od::l2d::ODImageLocalMatchingTrainer">
+<area shape="rect" id="node4" href="$classod_1_1l2d_1_1_o_d_c_a_d_recog_trainer_snapshot_based.html" title="ODCADRecogTrainerSnapshotBased; One of the new algorithm; details will be explained later..." alt="" coords="11,246,207,287"/>
+<area shape="rect" id="node2" href="$classod_1_1_o_d_trainer.html" title="The base class for all trainers. " alt="" coords="57,80,161,107"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="26,5,192,32"/>
+</map>

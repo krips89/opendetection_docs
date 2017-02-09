@@ -1,0 +1,5 @@
+<map id="od::l2d::ODImageLocalMatchingDetector" name="od::l2d::ODImageLocalMatchingDetector">
+<area shape="rect" id="node2" href="$classod_1_1_o_d_detector2_d_complete.html" title="The detector of 2D scene performing a &#39;complete detection&#39;. " alt="" coords="16,155,203,181"/>
+<area shape="rect" id="node3" href="$classod_1_1_o_d_detector.html" title="The main detector class; all special Detectors derives from this. " alt="" coords="52,80,167,107"/>
+<area shape="rect" id="node4" href="$classod_1_1_o_d_detector_common.html" title="The common class for detectors. " alt="" coords="26,5,192,32"/>
+</map>
